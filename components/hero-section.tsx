@@ -10,7 +10,7 @@ export function HeroSection() {
           {/* Left: Text */}
           <div className="flex flex-col gap-6">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] text-foreground text-balance font-serif">
-              Profesjonalne zdjęcia dań — bez fotografa, w kilka sekund
+              ChefVision: Zmień swoje zdjęcie w kulinarne arcydzieło — bez fotografa, w kilka sekund
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
