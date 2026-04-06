@@ -17,23 +17,16 @@ export function HeroSection() {
               Wgraj zdjęcie z telefonu i zamień je w profesjonalne zdjęcie do menu. Dodatkowo twórz automatyczne menu online z kodem QR.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 pt-2">
-              <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
+            <div className="pt-2 flex justify-center">
+              <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer" className="inline-flex">
                 <Button
-                  size="lg"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-7 gap-2 text-base shadow-md shadow-primary/20 w-full"
+                  size="default"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 gap-2 text-sm sm:text-base shadow-md shadow-primary/20 w-fit"
                 >
                   Stwórz zdjęcie w kilka sekund
                   <ArrowRight size={16} />
                 </Button>
               </a>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-border text-foreground hover:bg-secondary font-medium text-base"
-              >
-                Zobacz przykłady
-              </Button>
             </div>
 
             <p className="text-xs text-muted-foreground text-center w-full">
