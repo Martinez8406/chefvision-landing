@@ -21,7 +21,7 @@ export function HeroSection() {
               <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer" className="inline-flex">
                 <Button
                   size="default"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 gap-2 text-sm sm:text-base shadow-md shadow-primary/20 w-fit"
+                  className="bg-primary text-primary-foreground hover:bg-primary/75 font-semibold px-6 gap-2 text-sm sm:text-base shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/35 w-fit"
                 >
                   Wypróbuj za darmo
                   <ArrowRight size={16} />

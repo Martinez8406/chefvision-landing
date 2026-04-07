@@ -166,7 +166,7 @@ function HeroSection() {
                                     className: "inline-flex",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
                                         size: "default",
-                                        className: "bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 gap-2 text-sm sm:text-base shadow-md shadow-primary/20 w-fit",
+                                        className: "bg-primary text-primary-foreground hover:bg-primary/75 font-semibold px-6 gap-2 text-sm sm:text-base shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/35 w-fit",
                                         children: [
                                             "Wypróbuj za darmo",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
@@ -1198,8 +1198,9 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$qr$2d$code$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__QrCode$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/qr-code.js [app-rsc] (ecmascript) <export default as QrCode>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-rsc] (ecmascript) <export default as Star>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -1219,7 +1220,7 @@ function MenuLiveSection() {
                                 children: "Menu Live & QR"
                             }, void 0, false, {
                                 fileName: "[project]/components/menu-live-section.tsx",
-                                lineNumber: 11,
+                                lineNumber: 12,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1227,7 +1228,7 @@ function MenuLiveSection() {
                                 children: "Twoje menu zawsze aktualne — w telefonie każdego gościa."
                             }, void 0, false, {
                                 fileName: "[project]/components/menu-live-section.tsx",
-                                lineNumber: 14,
+                                lineNumber: 15,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1235,7 +1236,7 @@ function MenuLiveSection() {
                                 children: "Bo wiem, jak szybko zmienia się karta w sezonie. ChefVision aktualizuje zdjęcia i ceny automatycznie. Gość skanuje kod i widzi danie tak, jakby właśnie stało przed nim na stole."
                             }, void 0, false, {
                                 fileName: "[project]/components/menu-live-section.tsx",
-                                lineNumber: 17,
+                                lineNumber: 18,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1255,64 +1256,56 @@ function MenuLiveSection() {
                                                     className: "text-primary fill-primary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/menu-live-section.tsx",
-                                                    lineNumber: 30,
+                                                    lineNumber: 31,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/menu-live-section.tsx",
-                                                lineNumber: 29,
+                                                lineNumber: 30,
                                                 columnNumber: 19
                                             }, this),
                                             item
                                         ]
                                     }, item, true, {
                                         fileName: "[project]/components/menu-live-section.tsx",
-                                        lineNumber: 28,
+                                        lineNumber: 29,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/menu-live-section.tsx",
-                                lineNumber: 21,
+                                lineNumber: 22,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-3 pt-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-primary/90 transition-colors",
-                                        children: "Wypróbuj Menu Live"
+                                className: "pt-2",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
+                                    size: "sm",
+                                    className: "bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-5 py-2.5 rounded-xl",
+                                    asChild: true,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://app.chefvision.pl",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        children: "Wypróbuj ChefVision"
                                     }, void 0, false, {
                                         fileName: "[project]/components/menu-live-section.tsx",
-                                        lineNumber: 38,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$qr$2d$code$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__QrCode$3e$__["QrCode"], {
-                                                size: 14
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/menu-live-section.tsx",
-                                                lineNumber: 42,
-                                                columnNumber: 17
-                                            }, this),
-                                            "Wygeneruj kod QR"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/menu-live-section.tsx",
-                                        lineNumber: 41,
-                                        columnNumber: 15
+                                        lineNumber: 44,
+                                        columnNumber: 17
                                     }, this)
-                                ]
-                            }, void 0, true, {
+                                }, void 0, false, {
+                                    fileName: "[project]/components/menu-live-section.tsx",
+                                    lineNumber: 39,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/components/menu-live-section.tsx",
-                                lineNumber: 37,
+                                lineNumber: 38,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/menu-live-section.tsx",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1327,7 +1320,7 @@ function MenuLiveSection() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/components/menu-live-section.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 55,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1337,7 +1330,7 @@ function MenuLiveSection() {
                                             className: "absolute top-0 left-1/2 -translate-x-1/2 w-28 h-7 bg-[#f5f5f5] rounded-b-2xl z-20"
                                         }, void 0, false, {
                                             fileName: "[project]/components/menu-live-section.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 66,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1354,45 +1347,45 @@ function MenuLiveSection() {
                                                 className: "object-cover object-top"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/menu-live-section.tsx",
-                                                lineNumber: 67,
+                                                lineNumber: 70,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/menu-live-section.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 69,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/menu-live-section.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 64,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/menu-live-section.tsx",
-                            lineNumber: 50,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/menu-live-section.tsx",
-                        lineNumber: 49,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/menu-live-section.tsx",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/menu-live-section.tsx",
-            lineNumber: 7,
+            lineNumber: 8,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/menu-live-section.tsx",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -1468,7 +1461,8 @@ function CtaSection() {
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 bg-secondary",
+        id: "cennik",
+        className: "py-20 bg-secondary scroll-mt-16",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto px-4 md:px-6",
             children: [
@@ -1966,24 +1960,39 @@ function Footer() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                     className: "flex flex-col gap-2.5",
                                     children: [
-                                        "Funkcje",
-                                        "Cennik",
-                                        "Przykłady",
-                                        "Nowości",
-                                        "Status"
+                                        {
+                                            label: "Funkcje",
+                                            href: "#funkcje"
+                                        },
+                                        {
+                                            label: "Cennik",
+                                            href: "#cennik"
+                                        },
+                                        {
+                                            label: "Przykłady",
+                                            href: "#przyklady"
+                                        },
+                                        {
+                                            label: "Nowości",
+                                            href: "#"
+                                        },
+                                        {
+                                            label: "Status",
+                                            href: "#"
+                                        }
                                     ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                href: "#",
+                                                href: item.href,
                                                 className: "text-sm text-muted-foreground hover:text-foreground transition-colors",
-                                                children: item
+                                                children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/components/footer.tsx",
-                                                lineNumber: 49,
+                                                lineNumber: 55,
                                                 columnNumber: 19
                                             }, this)
-                                        }, item, false, {
+                                        }, item.label, false, {
                                             fileName: "[project]/components/footer.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 54,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
@@ -2005,7 +2014,7 @@ function Footer() {
                                     children: "Konto"
                                 }, void 0, false, {
                                     fileName: "[project]/components/footer.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2034,23 +2043,23 @@ function Footer() {
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/components/footer.tsx",
-                                                lineNumber: 68,
+                                                lineNumber: 74,
                                                 columnNumber: 19
                                             }, this)
                                         }, item.label, false, {
                                             fileName: "[project]/components/footer.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 73,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/footer.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 66,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/footer.tsx",
-                            lineNumber: 58,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2061,7 +2070,7 @@ function Footer() {
                                     children: "Wsparcie"
                                 }, void 0, false, {
                                     fileName: "[project]/components/footer.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2079,23 +2088,23 @@ function Footer() {
                                                 children: item
                                             }, void 0, false, {
                                                 fileName: "[project]/components/footer.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 88,
                                                 columnNumber: 19
                                             }, this)
                                         }, item, false, {
                                             fileName: "[project]/components/footer.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 87,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/footer.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/footer.tsx",
-                            lineNumber: 77,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     ]
@@ -2112,7 +2121,7 @@ function Footer() {
                             children: "© 2025 ChefVision.pl — Wszelkie prawa zastrzeżone."
                         }, void 0, false, {
                             fileName: "[project]/components/footer.tsx",
-                            lineNumber: 93,
+                            lineNumber: 99,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2132,7 +2141,7 @@ function Footer() {
                                             fill: "#fff"
                                         }, void 0, false, {
                                             fileName: "[project]/components/footer.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 105,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -2142,25 +2151,25 @@ function Footer() {
                                             fill: "#DC143C"
                                         }, void 0, false, {
                                             fileName: "[project]/components/footer.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 106,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/footer.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/footer.tsx",
-                            lineNumber: 96,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/footer.tsx",
-                    lineNumber: 92,
+                    lineNumber: 98,
                     columnNumber: 9
                 }, this)
             ]

@@ -44,10 +44,16 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h4 className="text-sm font-semibold text-foreground">Produkt</h4>
             <ul className="flex flex-col gap-2.5">
-              {["Funkcje", "Cennik", "Przykłady", "Nowości", "Status"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    {item}
+              {[
+                { label: "Funkcje", href: "#funkcje" },
+                { label: "Cennik", href: "#cennik" },
+                { label: "Przykłady", href: "#przyklady" },
+                { label: "Nowości", href: "#" },
+                { label: "Status", href: "#" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {item.label}
                   </Link>
                 </li>
               ))}

@@ -46,7 +46,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-8">
           {[
             { label: "Funkcje", href: "#funkcje" },
-            { label: "Cennik", href: "#" },
+            { label: "Cennik", href: "#cennik" },
             { label: "Przykłady", href: "#przyklady" },
             { label: "O mnie", href: "#omnie" },
           ].map((item) => (
@@ -61,12 +61,11 @@ export function Navbar() {
         </nav>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center gap-3">
-          <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Zaloguj się
-          </Link>
-          <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-5">
-            Zacznij za darmo
+        <div className="hidden md:flex items-center">
+          <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-5" asChild>
+            <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
+              Zacznij za darmo
+            </a>
           </Button>
         </div>
 
@@ -85,7 +84,7 @@ export function Navbar() {
         <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-6 py-4 flex flex-col gap-4">
           {[
             { label: "Funkcje", href: "#funkcje" },
-            { label: "Cennik", href: "#" },
+            { label: "Cennik", href: "#cennik" },
             { label: "Przykłady", href: "#przyklady" },
             { label: "O mnie", href: "#omnie" },
           ].map((item) => (
@@ -99,11 +98,15 @@ export function Navbar() {
             </Link>
           ))}
           <hr className="border-border" />
-          <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Zaloguj się
-          </Link>
-          <Button size="sm" className="bg-primary text-primary-foreground w-full font-medium">
-            Zacznij za darmo
+          <Button size="sm" className="bg-primary text-primary-foreground w-full font-medium" asChild>
+            <a
+              href="https://app.chefvision.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+            >
+              Zacznij za darmo
+            </a>
           </Button>
         </div>
       )}

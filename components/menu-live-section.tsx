@@ -1,5 +1,6 @@
 import Image from "next/image"
-import { QrCode, Star } from "lucide-react"
+import { Star } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function MenuLiveSection() {
   return (
@@ -34,14 +35,16 @@ export function MenuLiveSection() {
               ))}
             </ul>
 
-            <div className="flex items-center gap-3 pt-2">
-              <button className="bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-primary/90 transition-colors">
-                Wypróbuj Menu Live
-              </button>
-              <button className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5">
-                <QrCode size={14} />
-                Wygeneruj kod QR
-              </button>
+            <div className="pt-2">
+              <Button
+                size="sm"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-5 py-2.5 rounded-xl"
+                asChild
+              >
+                <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
+                  Wypróbuj ChefVision
+                </a>
+              </Button>
             </div>
           </div>
 

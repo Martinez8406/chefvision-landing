@@ -59,7 +59,7 @@ export function CtaSection() {
   ]
 
   return (
-    <section className="py-20 bg-secondary">
+    <section id="cennik" className="py-20 bg-secondary scroll-mt-16">
       <div className="container mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-16">

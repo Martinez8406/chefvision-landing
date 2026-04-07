@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback, useEffect } from "react"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 
 export function BeforeAfterSlider() {
   const [position, setPosition] = useState(50)
@@ -126,9 +127,15 @@ export function BeforeAfterSlider() {
 
         {/* CTA and Trust Text */}
         <div className="flex flex-col items-center gap-4 mt-10">
-          <button className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 py-3 rounded-lg text-base transition-colors shadow-md shadow-primary/20">
-            Wypróbuj za darmo
-          </button>
+          <Button
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 shadow-md shadow-primary/20"
+            asChild
+          >
+            <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
+              Wypróbuj za darmo
+            </a>
+          </Button>
           <p className="text-xs text-muted-foreground">
             Bez fotografa • Bez studia • Efekt w kilka sekund
           </p>

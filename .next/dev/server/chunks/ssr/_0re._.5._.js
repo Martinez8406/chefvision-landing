@@ -162,7 +162,7 @@ function Navbar() {
                             },
                             {
                                 label: "Cennik",
-                                href: "#"
+                                href: "#cennik"
                             },
                             {
                                 label: "Przykłady",
@@ -187,28 +187,27 @@ function Navbar() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "hidden md:flex items-center gap-3",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "#",
-                                className: "text-sm text-muted-foreground hover:text-foreground transition-colors",
-                                children: "Zaloguj się"
-                            }, void 0, false, {
-                                fileName: "[project]/components/navbar.tsx",
-                                lineNumber: 65,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                size: "sm",
-                                className: "bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-5",
+                        className: "hidden md:flex items-center",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                            size: "sm",
+                            className: "bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-5",
+                            asChild: true,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "https://app.chefvision.pl",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
                                 children: "Zacznij za darmo"
                             }, void 0, false, {
                                 fileName: "[project]/components/navbar.tsx",
-                                lineNumber: 68,
-                                columnNumber: 11
+                                lineNumber: 66,
+                                columnNumber: 13
                             }, this)
-                        ]
-                    }, void 0, true, {
+                        }, void 0, false, {
+                            fileName: "[project]/components/navbar.tsx",
+                            lineNumber: 65,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/components/navbar.tsx",
                         lineNumber: 64,
                         columnNumber: 9
@@ -221,18 +220,18 @@ function Navbar() {
                             size: 22
                         }, void 0, false, {
                             fileName: "[project]/components/navbar.tsx",
-                            lineNumber: 79,
+                            lineNumber: 78,
                             columnNumber: 23
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                             size: 22
                         }, void 0, false, {
                             fileName: "[project]/components/navbar.tsx",
-                            lineNumber: 79,
+                            lineNumber: 78,
                             columnNumber: 41
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/navbar.tsx",
-                        lineNumber: 74,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this)
                 ]
@@ -251,7 +250,7 @@ function Navbar() {
                         },
                         {
                             label: "Cennik",
-                            href: "#"
+                            href: "#cennik"
                         },
                         {
                             label: "Przykłady",
@@ -268,38 +267,40 @@ function Navbar() {
                             children: item.label
                         }, item.label, false, {
                             fileName: "[project]/components/navbar.tsx",
-                            lineNumber: 92,
+                            lineNumber: 91,
                             columnNumber: 13
                         }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
                         className: "border-border"
                     }, void 0, false, {
                         fileName: "[project]/components/navbar.tsx",
-                        lineNumber: 101,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        href: "#",
-                        className: "text-sm text-muted-foreground hover:text-foreground transition-colors",
-                        children: "Zaloguj się"
-                    }, void 0, false, {
-                        fileName: "[project]/components/navbar.tsx",
-                        lineNumber: 102,
+                        lineNumber: 100,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                         size: "sm",
                         className: "bg-primary text-primary-foreground w-full font-medium",
-                        children: "Zacznij za darmo"
+                        asChild: true,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "https://app.chefvision.pl",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            onClick: ()=>setMenuOpen(false),
+                            children: "Zacznij za darmo"
+                        }, void 0, false, {
+                            fileName: "[project]/components/navbar.tsx",
+                            lineNumber: 102,
+                            columnNumber: 13
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/navbar.tsx",
-                        lineNumber: 105,
+                        lineNumber: 101,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/navbar.tsx",
-                lineNumber: 85,
+                lineNumber: 84,
                 columnNumber: 9
             }, this)
         ]
@@ -320,7 +321,9 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -376,7 +379,7 @@ function BeforeAfterSlider() {
                             children: "Zobacz Różnice Przed i Po"
                         }, void 0, false, {
                             fileName: "[project]/components/before-after-slider.tsx",
-                            lineNumber: 54,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -384,13 +387,13 @@ function BeforeAfterSlider() {
                             children: "Przeciągnij i porównaj efekt przed i po."
                         }, void 0, false, {
                             fileName: "[project]/components/before-after-slider.tsx",
-                            lineNumber: 57,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/before-after-slider.tsx",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -414,7 +417,7 @@ function BeforeAfterSlider() {
                                 className: "object-cover"
                             }, void 0, false, {
                                 fileName: "[project]/components/before-after-slider.tsx",
-                                lineNumber: 77,
+                                lineNumber: 78,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -431,17 +434,17 @@ function BeforeAfterSlider() {
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/components/before-after-slider.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 92,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/before-after-slider.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 91,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/before-after-slider.tsx",
-                                lineNumber: 85,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -451,7 +454,7 @@ function BeforeAfterSlider() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/before-after-slider.tsx",
-                                lineNumber: 101,
+                                lineNumber: 102,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -473,7 +476,7 @@ function BeforeAfterSlider() {
                                             strokeLinejoin: "round"
                                         }, void 0, false, {
                                             fileName: "[project]/components/before-after-slider.tsx",
-                                            lineNumber: 112,
+                                            lineNumber: 113,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -484,18 +487,18 @@ function BeforeAfterSlider() {
                                             strokeLinejoin: "round"
                                         }, void 0, false, {
                                             fileName: "[project]/components/before-after-slider.tsx",
-                                            lineNumber: 113,
+                                            lineNumber: 114,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/before-after-slider.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 112,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/before-after-slider.tsx",
-                                lineNumber: 107,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -503,7 +506,7 @@ function BeforeAfterSlider() {
                                 children: "PRZED"
                             }, void 0, false, {
                                 fileName: "[project]/components/before-after-slider.tsx",
-                                lineNumber: 118,
+                                lineNumber: 119,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -511,29 +514,40 @@ function BeforeAfterSlider() {
                                 children: "PO"
                             }, void 0, false, {
                                 fileName: "[project]/components/before-after-slider.tsx",
-                                lineNumber: 121,
+                                lineNumber: 122,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/before-after-slider.tsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/before-after-slider.tsx",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-col items-center gap-4 mt-10",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 py-3 rounded-lg text-base transition-colors shadow-md shadow-primary/20",
-                            children: "Wypróbuj za darmo"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                            size: "lg",
+                            className: "bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 shadow-md shadow-primary/20",
+                            asChild: true,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "https://app.chefvision.pl",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                children: "Wypróbuj za darmo"
+                            }, void 0, false, {
+                                fileName: "[project]/components/before-after-slider.tsx",
+                                lineNumber: 135,
+                                columnNumber: 13
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/before-after-slider.tsx",
-                            lineNumber: 129,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -541,24 +555,24 @@ function BeforeAfterSlider() {
                             children: "Bez fotografa • Bez studia • Efekt w kilka sekund"
                         }, void 0, false, {
                             fileName: "[project]/components/before-after-slider.tsx",
-                            lineNumber: 132,
+                            lineNumber: 139,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/before-after-slider.tsx",
-                    lineNumber: 128,
+                    lineNumber: 129,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/before-after-slider.tsx",
-            lineNumber: 52,
+            lineNumber: 53,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/before-after-slider.tsx",
-        lineNumber: 51,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }
