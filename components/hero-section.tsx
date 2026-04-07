@@ -23,7 +23,7 @@ export function HeroSection() {
                   size="default"
                   className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 gap-2 text-sm sm:text-base shadow-md shadow-primary/20 w-fit"
                 >
-                  Stwórz zdjęcie w kilka sekund
+                  Wypróbuj za darmo
                   <ArrowRight size={16} />
                 </Button>
               </a>
