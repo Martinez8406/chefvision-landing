@@ -31,7 +31,7 @@ export function AboutSection() {
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              {`Moje doświadczenie w kuchni, połączone z pasją do AI, pozwala mi budować narzędzie, które naprawdę rozumie branżę gastronomiczną. Wierzę, że nawet w tak tradycyjnej dziedzinie innowacja może być przyprawą, która odmieni wszystko. Zapraszam do odkrywania Chef Vision — bo nawet najlepszy kucharz potrzebuje dobrego cyfrowego asystenta!`}
+              {`Moje doświadczenie w kuchni, połączone z pasją do technologii, pozwala mi budować narzędzie, które naprawdę rozumie branżę gastronomiczną. Wierzę, że nawet w tak tradycyjnej dziedzinie innowacja może być przyprawą, która odmieni wszystko. Zapraszam do odkrywania Chef Vision — bo nawet najlepszy kucharz potrzebuje dobrego cyfrowego asystenta!`}
             </p>
           </div>
 
