@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div className="flex flex-col gap-4 md:col-span-1">
             <div className="flex items-center gap-2.5">
@@ -48,27 +48,6 @@ export function Footer() {
                 { label: "Funkcje", href: "#funkcje" },
                 { label: "Cennik", href: "#cennik" },
                 { label: "Przykłady", href: "#przyklady" },
-                { label: "Nowości", href: "#" },
-                { label: "Status", href: "#" },
-              ].map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Konto */}
-          <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold text-foreground">Konto</h4>
-            <ul className="flex flex-col gap-2.5">
-              {[
-                { label: "Zaloguj się", href: "https://chefvision.pl/login" },
-                { label: "Zarejestruj się", href: "https://chefvision.pl/register" },
-                { label: "Zapomniałem hasła", href: "#" },
-                { label: "Dashboard", href: "#" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link href={item.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -97,7 +76,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground">
-            © 2025 ChefVision.pl — Wszelkie prawa zastrzeżone.
+            © 2026 ChefVision.pl — Wszelkie prawa zastrzeżone.
           </p>
           <p className="text-xs text-muted-foreground flex items-center gap-1.5">
             Stworzone z serca dla polskiej gastronomii
