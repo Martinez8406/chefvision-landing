@@ -46,7 +46,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-8">
           {[
             { label: "Funkcje", href: "#funkcje" },
-            { label: "Cennik", href: "#cennik" },
+            { label: "Testy beta", href: "#beta-testing" },
             { label: "Przykłady", href: "#przyklady" },
             { label: "O mnie", href: "#omnie" },
           ].map((item) => (
@@ -84,7 +84,7 @@ export function Navbar() {
         <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-6 py-4 flex flex-col gap-4">
           {[
             { label: "Funkcje", href: "#funkcje" },
-            { label: "Cennik", href: "#cennik" },
+            { label: "Testy beta", href: "#beta-testing" },
             { label: "Przykłady", href: "#przyklady" },
             { label: "O mnie", href: "#omnie" },
           ].map((item) => (

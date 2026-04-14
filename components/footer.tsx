@@ -46,7 +46,7 @@ export function Footer() {
             <ul className="flex flex-col gap-2.5">
               {[
                 { label: "Funkcje", href: "#funkcje" },
-                { label: "Cennik", href: "#cennik" },
+                { label: "Testy beta", href: "#beta-testing" },
                 { label: "Przykłady", href: "#przyklady" },
               ].map((item) => (
                 <li key={item.label}>
