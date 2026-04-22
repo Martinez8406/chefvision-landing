@@ -209,7 +209,7 @@ export function CtaSection() {
             </a>
 
             <p className="text-sm text-muted-foreground mt-4">
-              Pracuję bezpośrednio z właścicielami restauracji, żeby dopracować produkt.
+              Pracuję bezpośrednio z właścicielami restauracji/managerami, żeby dopracować produkt.
             </p>
           </div>
         </div>
