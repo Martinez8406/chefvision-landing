@@ -46,10 +46,10 @@ export function ProblemSolutionSection() {
             {/* Tworzymy. Ulepszamy. Section */}
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4 font-serif">
-                Tworzymy. Ulepszamy. Zawsze z szacunkiem dla Twojego rzemiosła.
+                Chef's Studio – Profesjonalny Retusz Twoich Dań
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed mb-6">
-                {`W Chef Vision rozumiemy, że autentyczność i elastyczność to podstawa. Nasze AI jest do Twojej dyspozycji, aby Twoje `}<strong>{`istniejące dania zabłysły pełnym blaskiem`}</strong>{`, zachowując ich prawdziwy charakter. To nie tylko narzędzie do tworzenia – to `}<strong>{`mistrz oświetlenia, stylista i retuszer w jednym`}</strong>{`, który pracuje na Twoich prawdziwych zdjęciach, tworząc wizualizacje, które idealnie oddają ducha Twojej kuchni. Dodatkowo, dzięki `}<strong>{`sezonowym motywom`}</strong>{` oraz `}<strong>{`integracji z Google Maps`}</strong>{`, Twoje menu będzie zawsze aktualne i przyciągnie więcej klientów.`}
+                Nie potrzebujesz drogiego sprzętu ani studia fotograficznego. Wgraj zdjęcie zrobione w kuchni, a nasze AI zadba o idealne oświetlenie, wydobędzie tekstury i nada Twoim potrawom profesjonalny wygląd, na jaki zasługują. Wszystko z szacunkiem dla Twojego rzemiosła.
               </p>
             </div>
 
@@ -61,23 +61,23 @@ export function ProblemSolutionSection() {
                   <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Check size={16} className="text-primary" />
                   </span>
-                  Ulepszanie istniejących zdjęć – z zachowaniem struktury dania
+                  Profesjonalne Ulepszanie Zdjęć – Z Zachowaniem Autentyczności Dania
                 </h4>
                 <p className="text-sm text-muted-foreground mb-3 ml-8">
-                  To kluczowe! Kucharze i goście widzą, że to WCIĄŻ Twoje, prawdziwe dzieło. Bez sztucznych dodatków, bez udziwnień. Nasze AI:
+Nasze AI to Twój osobisty fotograf kulinarny, który pracuje z Twoimi prawdziwymi zdjęciami, aby wydobyć z nich to, co najlepsze. Bez sztucznych dodatków, bez udziwnień. ChefVision oferuje:
                 </p>
                 <ul className="ml-8 space-y-2">
                   <li className="flex items-start gap-2 text-sm text-muted-foreground">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong>Światło:</strong> Odpowiednie oświetlenie wydobywa kolory i tekstury, sprawiając, że danie wygląda apetycznie.</span>
+                    <span><strong>Profesjonalne Oświetlenie:</strong> Wydobywa kolory i tekstury, sprawiając, że danie wygląda apetycznie i realistycznie.</span>
                   </li>
                   <li className="flex items-start gap-2 text-sm text-muted-foreground">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong>Kąt:</strong> Optymalna perspektywa, która prezentuje danie w najlepszy możliwy sposób.</span>
+                    <span><strong>Korekta Kolorów i Tekstur:</strong> Wzmacnia naturalne piękno potraw, czyniąc je jeszcze bardziej apetycznymi.</span>
                   </li>
                   <li className="flex items-start gap-2 text-sm text-muted-foreground">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong>Tło:</strong> Eleganckie, spójne tło, które nie odwraca uwagi, a podkreśla danie.</span>
+                    <span><strong>Stylizacja Tła:</strong> Eleganckie, spójne tło, które podkreśla danie, nie odwracając od niego uwagi.</span>
                   </li>
                   <li className="flex items-start gap-2 text-sm text-muted-foreground">
                     <span className="text-primary font-bold">•</span>
