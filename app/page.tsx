@@ -6,6 +6,7 @@ import { ProblemSolutionSection } from "@/components/problem-solution-section"
 import { ComparisonSection } from "@/components/comparison-section"
 import { FeaturesSection } from "@/components/features-section"
 import { MenuLiveSection } from "@/components/menu-live-section"
+import { DishStorySection } from "@/components/dish-story-section"
 import { CtaSection } from "@/components/cta-section"
 import { AntiPlatformSection } from "@/components/anti-platform-section"
 import { AboutSection } from "@/components/about-section"
@@ -23,6 +24,7 @@ export default function Home() {
       <AntiPlatformSection />
       <FeaturesSection />
       <MenuLiveSection />
+      <DishStorySection />
       <CtaSection />
       <AboutSection />
       <Footer />
