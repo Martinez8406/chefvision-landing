@@ -18,8 +18,8 @@ const features = [
     badge: "Pro",
     title: "Chef's Studio",
     description:
-      "Projektuj nowe dania od zera i dopasuj detale do Twojej kuchni. Kontroluj tło, zastawę, oświetlenie, perspektywę i styl. Możesz też ulepszyć swoje danie jednym kliknięciem.",
-    bullets: ["Dowolna zastawa", "Zmiana oświetlenia", "Widok z góry"],
+      "Profesjonalny retusz Twoich dań. Wgraj zdjęcie z kuchni, a nasze AI zadba o idealne oświetlenie, wydobędzie tekstury i nada potrawom wygląd, na jaki zasługują. Wszystko z szacunkiem dla Twojego rzemiosła.",
+    bullets: ["Profesjonalne oświetlenie", "Korekta tekstur", "Stylizacja tła"],
     tag: "Plan Professional",
     highlight: true,
     previewImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Zrzut%20ekranu%202026-03-31%20002850-A77L51vfvfp4HyoCy1kQ2bKoueBLcJ.png",
