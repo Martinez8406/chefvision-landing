@@ -49,7 +49,7 @@ export function ProblemSolutionSection() {
                 Tworzymy. Ulepszamy. Zawsze z szacunkiem dla Twojego rzemiosła.
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed mb-6">
-                {`W Chef Vision rozumiemy, że autentyczność i elastyczność to podstawa. Niezależnie od tego, czy potrzebujesz `}<strong>{`zupełnie nowych, apetycznych zdjęć od zera`}</strong>{`, czy chcesz, by Twoje `}<strong>{`istniejące dania zabłysły pełnym blaskiem`}</strong>{`, nasze AI jest do Twojej dyspozycji. To nie tylko narzędzie do tworzenia – to `}<strong>{`mistrz oświetlenia, stylista i retuszer w jednym`}</strong>{`, który pracuje na Twoich prawdziwych zdjęciach lub tworzy wizualizacje, które idealnie oddają ducha Twojej kuchni.`}
+                {`W Chef Vision rozumiemy, że autentyczność i elastyczność to podstawa. Nasze AI jest do Twojej dyspozycji, aby Twoje `}<strong>{`istniejące dania zabłysły pełnym blaskiem`}</strong>{`, zachowując ich prawdziwy charakter. To nie tylko narzędzie do tworzenia – to `}<strong>{`mistrz oświetlenia, stylista i retuszer w jednym`}</strong>{`, który pracuje na Twoich prawdziwych zdjęciach, tworząc wizualizacje, które idealnie oddają ducha Twojej kuchni. Dodatkowo, dzięki `}<strong>{`sezonowym motywom`}</strong>{` oraz `}<strong>{`integracji z Google Maps`}</strong>{`, Twoje menu będzie zawsze aktualne i przyciągnie więcej klientów.`}
               </p>
             </div>
 
@@ -79,20 +79,15 @@ export function ProblemSolutionSection() {
                     <span className="text-primary font-bold">•</span>
                     <span><strong>Tło:</strong> Eleganckie, spójne tło, które nie odwraca uwagi, a podkreśla danie.</span>
                   </li>
+                  <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong>Motywy Sezonowe:</strong> Dopasuj tło i styl do okazji (np. świąteczne, halloweenowe), aby Twoje menu było zawsze świeże i angażujące.</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong>Integracja z Google Maps:</strong> Zwiększ widoczność i wiarygodność Twojej restauracji, prezentując profesjonalne zdjęcia, które zachęcają do pozostawienia pozytywnych opinii.</span>
+                  </li>
                 </ul>
-              </div>
-
-              {/* Creation Feature */}
-              <div>
-                <h4 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Check size={16} className="text-primary" />
-                  </span>
-                  Tworzenie zdjęć od zera
-                </h4>
-                <p className="text-sm text-muted-foreground ml-8">
-                  Potrzebujesz inspiracji lub wizualizacji nowych pozycji w menu? Nasze AI stworzy dla Ciebie unikalne i profesjonalne zdjęcia, które zachwycą Twoich gości.
-                </p>
               </div>
             </div>
           </div>
@@ -124,7 +119,7 @@ export function ProblemSolutionSection() {
             Efekt? Zdjęcia, które sprzedają. Dania, które smakują tak, jak wyglądają.
           </h3>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Zapomnij o drogich sesjach zdjęciowych i tygodniach oczekiwania. Z Chef Vision masz profesjonalne zdjęcia w kilka minut, które w 100% oddają to, co serwujesz lub idealnie wizualizują Twoje pomysły. Bo w końcu, liczy się smak… i to, jak go pokażesz!
+            Zapomnij o drogich sesjach zdjęciowych i tygodniach oczekiwania. Z Chef Vision masz profesjonalne zdjęcia w kilka minut, które w 100% oddają to, co serwujesz. Bo w końcu, liczy się smak… i to, jak go pokażesz!
           </p>
         </div>
       </div>
