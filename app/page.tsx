@@ -7,6 +7,7 @@ import { ComparisonSection } from "@/components/comparison-section"
 import { FeaturesSection } from "@/components/features-section"
 import { MenuLiveSection } from "@/components/menu-live-section"
 import { CtaSection } from "@/components/cta-section"
+import { AntiPlatformSection } from "@/components/anti-platform-section"
 import { AboutSection } from "@/components/about-section"
 import { Footer } from "@/components/footer"
 
@@ -19,6 +20,7 @@ export default function Home() {
       <StatsSection />
       <ProblemSolutionSection />
       <ComparisonSection />
+      <AntiPlatformSection />
       <FeaturesSection />
       <MenuLiveSection />
       <CtaSection />
