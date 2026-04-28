@@ -11,7 +11,7 @@ export function CtaSection() {
       period: "na zawsze",
       description: "Sprawdź moc AI na własnych daniach. Idealny start dla każdego lokalu.",
       features: [
-        "10 Kredytów AI (na nowe zdjęcia LUB rozmycie tła)",
+        "10 profesjonalnie ulepszonych zdjęć AI (na istniejące zdjęcia)",
         "Menu Live (do 10 pozycji)",
         "Domena w subdomenie chefvision.pl/twoja-restauracja",
         'Znak wodny "Powered by ChefVision"',
@@ -28,7 +28,7 @@ export function CtaSection() {
       period: "jednorazowo",
       description: "Profesjonalne menu bez abonamentu. 30 Kredytów AI i pełny branding do wykorzystania wtedy, gdy tego potrzebujesz.",
       features: [
-        "30 Kredytów AI (na nowe zdjęcia LUB rozmycie tła)",
+        "30 profesjonalnie ulepszonych zdjęć AI (na istniejące zdjęcia)",
         "Nielimitowane pozycje w menu",
         "Brak znaków wodnych",
         "Pełny Branding (Twoje logo, Twoje kolory)",
@@ -46,7 +46,7 @@ export function CtaSection() {
       period: "miesięcznie",
       description: "Twój cyfrowy menedżer menu. Nielimitowane możliwości, analityka i stałe wsparcie dla Twojego biznesu.",
       features: [
-        "100 Kredytów AI co miesiąc (na nowe zdjęcia LUB rozmycie tła)",
+        "100 profesjonalnie ulepszonych zdjęć AI co miesiąc (na istniejące zdjęcia)",
         "Nielimitowane pozycje w menu",
         "Brak znaków wodnych",
         "Pełny Branding i Analityka",
@@ -149,7 +149,7 @@ export function CtaSection() {
           {/* AI Credits Explanation */}
           <div className="mt-12 text-center">
             <p className="text-sm text-muted-foreground inline-block">
-              💡 <strong>1 Kredyt AI</strong> = 1 nowe zdjęcie LUB 1 rozmycie tła
+              💡 <strong>1 Kredyt AI</strong> = 1 profesjonalnie ulepszone zdjęcie
             </p>
           </div>
         </div>
@@ -181,9 +181,13 @@ export function CtaSection() {
 
           <ul className="space-y-4 max-w-xl mx-auto">
             {[
-              "30 zdjęć AI za darmo",
-              "Dostęp do menu online (QR + telefon)",
-              "Pomoc we wdrożeniu",
+              "30 profesjonalnie ulepszonych zdjęć AI za darmo: Zamiast drogich sesji zdjęciowych, otrzymasz 30 zdjęć Twoich dań, które zachwycą klientów i zwiększą apetyt.",
+              "Dostęp do menu online (QR + telefon): Nowoczesne, interaktywne menu dostępne na każdym smartfonie, zintegrowane z Twoimi nowymi, apetycznymi zdjęciami.",
+              "Pomoc we wdrożeniu i wsparcie eksperta: Jako kucharz z 16-letnim stażem, osobiście pomogę Ci w pełni wykorzystać potencjał ChefVision, aby Twoje menu sprzedawało się samo.",
+              "Dostęp do motywów sezonowych: Przygotuj swoje menu na najbliższe okazje (np. Święta, Walentynki, Halloween) z gotowymi, profesjonalnymi tłami, które przyciągną uwagę klientów.",
+              "Integracja z Google Maps: Zwiększ widoczność swojej restauracji i zachęć klientów do zostawiania pozytywnych opinii, prezentując im spójne i profesjonalne zdjęcia w Google Moja Firma.",
+              "Oszczędność czasu i pieniędzy: Zapomnij o godzinach spędzonych na edycji zdjęć lub wysokich kosztach fotografa. ChefVision to profesjonalne efekty w kilka minut.",
+              "Wzrost zaangażowania klientów: Apetyczne zdjęcia i nowoczesne menu online to klucz do zwiększenia rezerwacji i zamówień."
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <div className="w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5">
