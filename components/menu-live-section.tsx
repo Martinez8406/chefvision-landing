@@ -16,7 +16,7 @@ export function MenuLiveSection() {
               Twoje menu zawsze aktualne — w telefonie każdego gościa.
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
-              Bo wiem, jak szybko zmienia się karta w sezonie. ChefVision aktualizuje zdjęcia i ceny automatycznie. Gość skanuje kod i widzi danie tak, jakby właśnie stało przed nim na stole.
+              Bo wiem, jak szybko zmienia się karta w sezonie. LinguaChef aktualizuje zdjęcia i ceny automatycznie. Gość skanuje kod i widzi danie tak, jakby właśnie stało przed nim na stole.
             </p>
 
             <ul className="flex flex-col gap-3">
@@ -41,8 +41,8 @@ export function MenuLiveSection() {
                 className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-5 py-2.5 rounded-xl"
                 asChild
               >
-                <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
-                  Wypróbuj ChefVision
+                <a href="https://app.linguachef.com" target="_blank" rel="noopener noreferrer">
+                  Wypróbuj LinguaChef
                 </a>
               </Button>
             </div>
@@ -69,7 +69,7 @@ export function MenuLiveSection() {
                 <div style={{ position: 'relative', width: '100%', aspectRatio: '9 / 19.5', overflow: 'hidden' }}>
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sssd-JoWYxCAbOJp0hrdOaiZbECjCZ2X99z.png"
-                    alt="ChefVision Menu Live - Pizza Salsiccia e Pomodorini z ceną i przyciskami"
+                    alt="LinguaChef Menu Live - Pizza Salsiccia e Pomodorini z ceną i przyciskami"
                     fill
                     className="object-cover object-top"
                   />

@@ -12,14 +12,14 @@ export function Footer() {
             <div className="flex items-center gap-2.5">
               <Image
                 src="/images/logo.png"
-                alt="ChefVision logo"
+                alt="LinguaChef logo"
                 width={32}
                 height={32}
                 className="rounded-lg"
                 style={{ width: '32px', height: '32px' }}
               />
               <span className="font-semibold text-foreground">
-                Chef<span className="text-primary">Vision</span>
+                Lingua<span className="text-primary">Chef</span>
                 <span className="text-muted-foreground">.pl</span>
               </span>
             </div>
@@ -76,7 +76,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground">
-            © 2026 ChefVision.pl — Wszelkie prawa zastrzeżone.
+            © 2026 LinguaChef.pl — Wszelkie prawa zastrzeżone.
           </p>
           <p className="text-xs text-muted-foreground flex items-center gap-1.5">
             Stworzone z serca dla polskiej gastronomii

@@ -42,7 +42,7 @@ export function AntiPlatformSection() {
         {/* Headline */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance font-serif">
-            ChefVision ≠ UberEats, Glovo czy Wolt
+            LinguaChef ≠ UberEats, Glovo czy Wolt
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
             Jesteśmy narzędziem dla Twojej restauracji, a nie kolejnym pośrednikiem, który zabiera Twoją marżę i stawiania kolejny tablet na barze.
@@ -64,7 +64,7 @@ export function AntiPlatformSection() {
                 <th className="text-left px-6 py-4 font-semibold text-foreground bg-primary/5">
                   <span className="flex items-center gap-2">
                     <Check size={20} className="text-primary" />
-                    ChefVision
+                    LinguaChef
                   </span>
                 </th>
               </tr>
@@ -87,7 +87,7 @@ export function AntiPlatformSection() {
             Twoja Niezależność, Twoje Zyski
           </h3>
           <p className="text-lg text-foreground max-w-2xl mx-auto">
-            ChefVision to partner, który wspiera Twoje rzemiosło i pomaga budować bezpośrednie relacje z klientami. Bez ukrytych opłat, bez kolejnych tabletów, bez utraty kontroli nad swoją marką.
+            LinguaChef to partner, który wspiera Twoje rzemiosło i pomaga budować bezpośrednie relacje z klientami. Bez ukrytych opłat, bez kolejnych tabletów, bez utraty kontroli nad swoją marką.
           </p>
         </div>
       </div>

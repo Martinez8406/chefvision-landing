@@ -132,7 +132,7 @@ export function BeforeAfterSlider() {
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 shadow-md shadow-primary/20"
             asChild
           >
-            <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.linguachef.com" target="_blank" rel="noopener noreferrer">
               Wypróbuj za darmo
             </a>
           </Button>
