@@ -16,7 +16,7 @@ const steps = [
     icon: Link2,
     title: "Podpinasz link do dania",
     description:
-      "W panelu LinguaChef do każdej pozycji w menu dodajesz link do YouTube, TikToka lub Instagrama. Jeden klik — gotowe.",
+      "W panelu ChefVision do każdej pozycji w menu dodajesz link do YouTube, TikToka lub Instagrama. Jeden klik — gotowe.",
   },
   {
     number: "03",
@@ -54,7 +54,7 @@ export function DishStorySection() {
             Podziel się historią swojego dania
           </h2>
           <p className="text-muted-foreground max-w-2xl text-base leading-relaxed">
-            Goście nie kupują tylko jedzenia — kupują emocje i autentyczność. LinguaChef pozwala podpiąć do każdego dania w cyfrowym menu link do wideo z kuchni. Jeden skan kodu QR i gość widzi, jak jego potrawa powstaje.
+            Goście nie kupują tylko jedzenia — kupują emocje i autentyczność. ChefVision pozwala podpiąć do każdego dania w cyfrowym menu link do wideo z kuchni. Jeden skan kodu QR i gość widzi, jak jego potrawa powstaje.
           </p>
         </div>
 

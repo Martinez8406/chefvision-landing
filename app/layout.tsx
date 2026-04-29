@@ -8,7 +8,7 @@ const _montserrat = Montserrat({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'LinguaChef.pl – AI dla gastronomii',
+  title: 'ChefVision.pl – AI dla gastronomii',
   description: 'Ulepsz zdjęcia potraw i twórz profesjonalne menu cyfrowe z pomocą sztucznej inteligencji. Bez fotografa, w 5 minut.',
   generator: 'v0.app',
   icons: {

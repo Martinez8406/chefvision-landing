@@ -5,7 +5,7 @@ type ProductRow = {
   updated_at: Date | null
 }
 
-const BASE_URL = "https://www.linguachef.com"
+const BASE_URL = "https://www.chefvision.pl"
 
 export const revalidate = 3600
 

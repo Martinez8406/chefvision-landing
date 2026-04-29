@@ -29,7 +29,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2.5">
           <Image
             src="/images/logo.png"
-            alt="LinguaChef logo"
+            alt="ChefVision logo"
             width={36}
             height={36}
             className="rounded-lg"
@@ -38,7 +38,7 @@ export function Navbar() {
             loading="eager"
           />
           <span className="font-semibold text-lg text-foreground tracking-tight">
-            Lingua<span className="text-primary">Chef</span>
+            Chef<span className="text-primary">Vision</span>
           </span>
         </Link>
 
@@ -63,7 +63,7 @@ export function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center">
           <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-5" asChild>
-            <a href="https://app.linguachef.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
               Zacznij za darmo
             </a>
           </Button>
@@ -100,7 +100,7 @@ export function Navbar() {
           <hr className="border-border" />
           <Button size="sm" className="bg-primary text-primary-foreground w-full font-medium" asChild>
             <a
-              href="https://app.linguachef.com"
+              href="https://app.chefvision.pl"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}

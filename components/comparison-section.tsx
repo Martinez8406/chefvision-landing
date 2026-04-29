@@ -20,7 +20,7 @@ export function ComparisonSection() {
         {/* Headline */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance font-serif">
-            Dlaczego restauracje wybierają LinguaChef?
+            Dlaczego restauracje wybierają ChefVision?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
             Twórz zdjęcia, które sprzedają — szybciej, taniej i bez komplikacji

@@ -98,8 +98,8 @@ export function ProblemSolutionSection() {
           <h3 className="text-sm font-semibold text-primary uppercase tracking-wide mb-6 text-center">Po</h3>
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {[
-              { img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/na%20stronke%20burger-YY6EYTVfsoTEuhJebjW3nLRA8fU0Jz.png", alt: "Burger po obróbce LinguaChef" },
-              { img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/na%20stronke%20stek-mlJLQ2hIBckrK1xdDMCUWgqsBEJaJq.png", alt: "Stek po obróbce LinguaChef" },
+              { img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/na%20stronke%20burger-YY6EYTVfsoTEuhJebjW3nLRA8fU0Jz.png", alt: "Burger po obróbce ChefVision" },
+              { img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/na%20stronke%20stek-mlJLQ2hIBckrK1xdDMCUWgqsBEJaJq.png", alt: "Stek po obróbce ChefVision" },
             ].map((photo, i) => (
               <div key={i} style={{ position: 'relative', aspectRatio: '2 / 3', borderRadius: '0.5rem', overflow: 'hidden', border: '1px solid var(--primary)', backgroundImage: 'linear-gradient(to bottom right, rgba(247, 188, 51, 0.1), transparent)' }}>
                 <Image
