@@ -39,10 +39,10 @@ export function HeroSection() {
             <div className="relative w-full max-w-lg">
               <div className="relative rounded-2xl overflow-hidden border border-border shadow-xl">
                 <Image
-                  src="/images/chef-hero.png"
-                  alt="Profesjonalnie przygotowany burger z frytkami - przykład zdjęcia ChefVision"
+                  src="/images/ulotka.png"
+                  alt="ChefVision ulotka na stole — menu w 12 językach i opinie Google"
                   width={600}
-                  height={800}
+                  height={400}
                   className="w-full object-cover"
                   priority
                 />
