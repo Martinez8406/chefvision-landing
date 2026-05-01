@@ -41,8 +41,9 @@ export function CtaSection() {
                 {[
                   "Cyfrowe menu z kodem QR — aktywne 24/7, bez znaku wodnego",
                   "50 tokenów AI na ulepszanie zdjęć dań (światło, tło, kolory)",
-                  "Automatyczne tłumaczenie menu na 3 języki (angielski, niemiecki, ukraiński)",
-                  "Integracja z opiniami Google — system zachęca gości do wystawienia recenzji",
+                  "Menu w 12 językach — automatyczne tłumaczenie dla gości zagranicznych",
+                  "System ChefStars: kawa za opinię w Google (konfiguracja bonusu w panelu)",
+                  "Inteligentne rekomendacje — ustawiasz sam wino, napoje, dodatki do upsellu",
                   "Pomoc we wdrożeniu — osobiście przeprowadzę Cię przez cały proces",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -154,7 +155,7 @@ export function CtaSection() {
                   size="lg"
                   className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold text-base px-8 shadow-md shadow-primary/20"
                 >
-                  Zgłoś restaurację do testów
+                  Zacznij oszczędzać czas kelnerów
                   <ArrowRight size={16} className="ml-2" />
                 </Button>
               </a>

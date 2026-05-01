@@ -9,6 +9,7 @@ import { MenuLiveSection } from "@/components/menu-live-section"
 import { DishStorySection } from "@/components/dish-story-section"
 import { CtaSection } from "@/components/cta-section"
 import { AntiPlatformSection } from "@/components/anti-platform-section"
+import { ProfitMathSection } from "@/components/profit-math-section"
 import { AboutSection } from "@/components/about-section"
 import { Footer } from "@/components/footer"
 
@@ -22,6 +23,7 @@ export default function Home() {
       <ProblemSolutionSection />
       <ComparisonSection />
       <AntiPlatformSection />
+      <ProfitMathSection />
       <FeaturesSection />
       <MenuLiveSection />
       <DishStorySection />

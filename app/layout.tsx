@@ -8,8 +8,8 @@ const _montserrat = Montserrat({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'ChefVision.pl – AI dla gastronomii',
-  description: 'Ulepsz zdjęcia potraw i twórz profesjonalne menu cyfrowe z pomocą sztucznej inteligencji. Bez fotografa, w 5 minut.',
+  title: 'ChefVision.pl – Asystent sprzedaży dla restauracji',
+  description: 'Menu w 12 językach, opinie Google za 1,50 zł i zdjęcia AI. Inteligentny asystent sprzedaży dla restauracji — 99 zł/msc, bez prowizji.',
   generator: 'v0.app',
   icons: {
     icon: '/logo.png',

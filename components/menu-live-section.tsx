@@ -10,21 +10,21 @@ export function MenuLiveSection() {
           {/* Left: Text */}
           <div className="flex flex-col gap-6">
             <span className="text-xs font-semibold uppercase tracking-widest text-primary font-serif">
-              Menu Live & QR
+              Menu Live & QR — 12 języków
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance leading-tight font-serif">
-              Twoje menu zawsze aktualne — w telefonie każdego gościa.
+              Twój cichy sprzedawca — w telefonie każdego gościa, w jego języku.
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
-              Bo wiem, jak szybko zmienia się karta w sezonie. ChefVision aktualizuje zdjęcia i ceny automatycznie. Gość skanuje kod i widzi danie tak, jakby właśnie stało przed nim na stole.
+              Kelner ma dużo pracy i nie ma czasu polecać wina? ChefVision robi to za niego — w 12 językach, 24/7. Gość skanuje kod, widzi menu w swoim języku, ogląda wideo z kuchni i dostaje rekomendację do dania. Wszystko bez słowa od kelnera.
             </p>
 
             <ul className="flex flex-col gap-3">
               {[
-                "Automatyczne generowanie kodu QR",
-                "Wideo-kulisy przygotowania dań (YouTube/TikTok/Instagram)",
-                "Aktualizacja cen bez drukowania",
-                "Spersonalizowane logo i kolory marki",
+                "Menu w 12 językach — automatyczne tłumaczenie dla gości",
+                "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
+                "Inteligentne rekomendacje — ustawiasz sam z telefonu w 30 sekund",
+                "System ChefStars: kawa za opinię w Google",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-sm text-foreground">
                   <span className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0">

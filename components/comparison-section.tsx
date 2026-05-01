@@ -4,14 +4,14 @@ import { Check } from "lucide-react"
 
 export function ComparisonSection() {
   const benefits = [
-    "Idealne pod social media i delivery (Glovo, Uber Eats)",
-    "Spójny wygląd całego menu (branding)",
-    "Testowanie nowych dań bez kosztów",
-    "Więcej zamówień dzięki lepszej prezentacji",
-    "Brak chaosu w restauracji (zero sesji zdjęciowych)",
-    "Możliwość zmiany zdjęć w każdej chwili",
-    "Zdjęcia gotowe do publikacji od razu",
-    "Kontrola nad tym, co widzi klient",
+    "Obsługa gości zagranicznych bez bariery językowej (12 języków)",
+    "Inteligentne rekomendacje wina, napójów i dodatków — ustawiasz sam z telefonu",
+    "System ChefStars: zamień koszt kawy w 5 gwiazdek w Google",
+    "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
+    "Brak prowizji — stałe 99 zł/msc, zero ukrytych opłat",
+    "Aktualizacja cen i menu bez drukowania i informatyka",
+    "Zdjęcia, które sprzedają — profesjonalne efekty bez fotografa",
+    "Pełna kontrola managera z poziomu telefonu",
   ]
 
   return (
@@ -23,7 +23,7 @@ export function ComparisonSection() {
             Dlaczego restauracje wybierają ChefVision?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
-            Twórz zdjęcia, które sprzedają — szybciej, taniej i bez komplikacji
+            Asystent sprzedaży, który nigdy nie idzie na chorobowe i kosztuje tylko 3,30 zł dziennie
           </p>
         </div>
 

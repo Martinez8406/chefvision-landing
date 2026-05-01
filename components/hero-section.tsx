@@ -10,11 +10,11 @@ export function HeroSection() {
           {/* Left: Text */}
           <div className="flex flex-col gap-6">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] text-foreground text-balance font-serif">
-              ChefVision: Zmień swoje zdjęcie w kulinarne arcydzieło — bez fotografa, w kilka sekund
+              Przestań tracić czas kelnerów i zacznij zarabiać na opiniach w Google.
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Wgraj zdjęcie z telefonu i zamień je w profesjonalne zdjęcie do menu. Dodatkowo twórz automatyczne menu online z kodem QR.
+              ChefVision to inteligentny asystent sprzedaży, który wyręcza Twój personel, tłumaczy menu na <strong className="text-foreground">12 języków</strong> i automatycznie zamienia koszt jednej kawy w 5 gwiazdek w internecie.
             </p>
 
             <div className="pt-2 flex justify-center">
@@ -23,14 +23,14 @@ export function HeroSection() {
                   size="default"
                   className="bg-primary text-primary-foreground hover:bg-primary/75 font-semibold px-6 gap-2 text-sm sm:text-base shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/35 w-fit"
                 >
-                  Wypróbuj za darmo
+                  Sprawdź, jak ChefVision zarobi na siebie w 3 dni
                   <ArrowRight size={16} />
                 </Button>
               </a>
             </div>
 
             <p className="text-xs text-muted-foreground text-center w-full">
-              10 zdjęć za darmo • Menu live w pakiecie
+              Bez prowizji • Stałe 99 zł/msc • Anuluj w dowolnym momencie
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export function HeroSection() {
                 />
               </div>
               <p className="text-center text-sm mt-4 text-muted-foreground">
-                Dołącz do pierwszych kucharzy, którzy testują{" "}
+                Dołącz do pierwszych restauracji, które testują{" "}
                 <span className="font-bold text-foreground">ChefVision</span>
               </p>
             </div>

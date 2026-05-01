@@ -33,6 +33,16 @@ export function AntiPlatformSection() {
       feature: "Skupienie na",
       ubereats: "Logistyce i dostawach",
       chefvision: "Jakości i wizerunku Twojego jedzenia"
+    },
+    {
+      feature: "Języki menu",
+      ubereats: "Zazwyczaj podstawowe",
+      chefvision: "12 języków + wideo z kuchni"
+    },
+    {
+      feature: "Koszt pozyskania opinii Google",
+      ubereats: "Brak funkcji",
+      chefvision: "~1,50 zł (koszt kawy) zamiast 30 zł w Google Ads"
     }
   ]
 
@@ -45,7 +55,7 @@ export function AntiPlatformSection() {
             ChefVision ≠ UberEats, Glovo czy Wolt
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
-            Jesteśmy narzędziem dla Twojej restauracji, a nie kolejnym pośrednikiem, który zabiera Twoją marżę i stawiania kolejny tablet na barze.
+            Nie jesteśmy platformą jak Pyszne.pl. Nie zabieramy Twojej marży. ChefVision to Twój pracownik, który kosztuje tylko 3,30 zł dziennie i nigdy nie idzie na chorobowe.
           </p>
         </div>
 
@@ -84,10 +94,10 @@ export function AntiPlatformSection() {
         {/* Key Message */}
         <div className="mt-16 bg-primary/10 border border-primary/30 rounded-xl p-8 text-center">
           <h3 className="text-2xl font-bold text-foreground mb-3">
-            Twoja Niezależność, Twoje Zyski
+            Inwestujesz 99 zł, odzyskujesz ponad 2 500 zł miesięcznie
           </h3>
           <p className="text-lg text-foreground max-w-2xl mx-auto">
-            ChefVision to partner, który wspiera Twoje rzemiosło i pomaga budować bezpośrednie relacje z klientami. Bez ukrytych opłat, bez kolejnych tabletów, bez utraty kontroli nad swoją marką.
+            Przy rachunku 200 zł platforma dostawcza zabiera Ci 40–60 zł prowizji. ChefVision bierze 99 zł miesięcznie — bez prowizji, bez tabletów, bez utraty klientów. Kelnerzy odzyskują czas, goście zamawiają śmielej, a Ty zbierasz opinie w Google za 1,50 zł.
           </p>
         </div>
       </div>

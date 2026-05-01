@@ -38,10 +38,10 @@ const features = [
   {
     icon: QrCode,
     badge: "Live",
-    title: "Menu Live",
+    title: "Menu Live + 12 języków",
     description:
-      "Cyfrowe menu z Twoim logo, kolorami i typografią. Publikuj je za pomocą kodu QR lub linka. Wszystkie zmiany są dostępne natychmiast dla gości - bez ponownego drukowania czy wdrażania.",
-    bullets: ["Kod QR w sekundy", "Logowanie klientów", "Linki do mediów"],
+      "Cyfrowe menu z Twoim logo i kolorami w 12 językach. Gość z Niemiec, Chin czy Korei widzi kartę w swoim języku automatycznie. Zero bariery językowej, zero stresu przy zamawianiu.",
+    bullets: ["12 języków automatycznie", "Kod QR w sekundy", "Linki do wideo z kuchni"],
     tag: "Dostępny w planie FREE",
     highlight: false,
     previewImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Zrzut%20ekranu%202026-03-31%20003446-qXeKohDVpXA3e8Puod6QLKbgz75UPE.png",
@@ -61,7 +61,7 @@ export function FeaturesSection() {
             Wszystko, czego potrzebuje nowoczesna restauracja
           </h2>
           <p className="text-muted-foreground max-w-2xl text-base leading-relaxed">
-            Koniec z czekaniem na informatyka czy drukarnię. Zmieniaj ceny, dodawaj dania i aktualizuj menu samodzielnie w 10 sekund. Twoje menu jest zawsze aktualne, bez dodatkowych kosztów za każdą drobną poprawkę.
+            Zarządzaj sprzedażą tak łatwo, jak odpisujesz na SMS. Zmieniaj ceny, dodawaj rekomendacje i aktualizuj menu z telefonu w 30 sekund — bez informatyka, bez drukarni.
           </p>
         </div>
 

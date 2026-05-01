@@ -24,7 +24,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Platforma AI dla nowoczesnej gastronomii. Profesjonalne zdjęcia i cyfrowe menu — bez fotografa.
+              Inteligentny asystent sprzedaży dla restauracji. Menu w 12 językach, opinie Google i zdjęcia AI — za 3,30 zł dziennie.
             </p>
             <div className="flex items-center gap-3 pt-1">
               {[Instagram, Twitter, Facebook].map((Icon, i) => (
