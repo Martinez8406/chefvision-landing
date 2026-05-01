@@ -36,7 +36,7 @@ export function HeroSection() {
 
           {/* Right: Hero image */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-lg">
+            <div className="relative w-full max-w-2xl">
               <div className="relative rounded-2xl overflow-hidden border border-border shadow-xl">
                 <Image
                   src="/images/ulotka.png"
