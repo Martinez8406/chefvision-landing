@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
@@ -26,16 +25,10 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
-          <Image
-            src="/images/logo.png"
-            alt="ChefVision logo"
-            width={36}
-            height={36}
-            className="rounded-lg"
-            style={{ width: '36px', height: '36px' }}
-            priority
-            loading="eager"
+        <Link href="/" className="flex items-center gap-2.5" aria-label="ChefVision — strona główna">
+          <span
+            className="brand-logo-mark h-9 w-9 shrink-0 rounded-lg"
+            aria-hidden
           />
           <span className="font-semibold text-lg text-foreground tracking-tight">
             Chef<span className="text-primary">Vision</span>

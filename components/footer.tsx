@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Instagram, Twitter, Facebook } from "lucide-react"
 
@@ -10,13 +9,9 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-4 md:col-span-1">
             <div className="flex items-center gap-2.5">
-              <Image
-                src="/images/logo.png"
-                alt="ChefVision logo"
-                width={32}
-                height={32}
-                className="rounded-lg"
-                style={{ width: '32px', height: '32px' }}
+              <span
+                className="brand-logo-mark h-8 w-8 shrink-0 rounded-lg"
+                aria-hidden
               />
               <span className="font-semibold text-foreground">
                 Chef<span className="text-primary">Vision</span>
