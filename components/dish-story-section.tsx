@@ -1,7 +1,6 @@
 "use client"
 
-import { Play, Instagram, Youtube, Link2, ChefHat, Heart, Eye } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Link2, ChefHat, Heart, Eye } from "lucide-react"
 
 const steps = [
   {
@@ -34,12 +33,6 @@ const steps = [
   },
 ]
 
-const platforms = [
-  { icon: Youtube, label: "YouTube", color: "text-red-500" },
-  { icon: Instagram, label: "Instagram", color: "text-pink-500" },
-  { icon: Play, label: "TikTok", color: "text-foreground" },
-]
-
 export function DishStorySection() {
   return (
     <section className="py-28 bg-background overflow-hidden" id="historia-dania">
@@ -58,10 +51,9 @@ export function DishStorySection() {
           </p>
         </div>
 
-        {/* Main content: steps + visual */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        {/* Main content: steps */}
+        <div className="max-w-xl mx-auto mb-20">
 
-          {/* Left: Steps */}
           <div className="flex flex-col gap-8">
             {steps.map((step, index) => {
               const Icon = step.icon
@@ -91,105 +83,6 @@ export function DishStorySection() {
                 </div>
               )
             })}
-          </div>
-
-          {/* Right: Visual card mockup */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-sm">
-
-              {/* Glow */}
-              <div
-                className="absolute -inset-8 pointer-events-none"
-                style={{
-                  background:
-                    "radial-gradient(ellipse 60% 60% at 50% 50%, oklch(0.78 0.15 75 / 0.10) 0%, transparent 70%)",
-                }}
-              />
-
-              {/* Card: menu item with video link */}
-              <div className="relative rounded-2xl border border-border bg-card shadow-xl overflow-hidden">
-
-                {/* Dish image placeholder */}
-                <div className="relative w-full aspect-video bg-secondary flex items-center justify-center overflow-hidden">
-                  {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent z-10" />
-
-                  {/* Dish name overlay */}
-                  <div className="absolute bottom-4 left-4 z-20">
-                    <p className="text-white font-semibold text-lg font-serif">Risotto z truflami</p>
-                    <p className="text-white/70 text-sm">Kuchnia włoska • 28 zł</p>
-                  </div>
-
-                  {/* Play button overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center z-20">
-                    <div className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
-                      <Play size={22} className="text-white fill-white ml-1" />
-                    </div>
-                  </div>
-
-                  {/* Background pattern to simulate dish photo */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 via-amber-700/30 to-amber-950/50" />
-                  <div className="absolute inset-0 opacity-20"
-                    style={{
-                      backgroundImage: "radial-gradient(circle at 30% 40%, oklch(0.7 0.15 60) 0%, transparent 50%), radial-gradient(circle at 70% 60%, oklch(0.5 0.1 40) 0%, transparent 50%)"
-                    }}
-                  />
-                </div>
-
-                {/* Card body */}
-                <div className="p-5 flex flex-col gap-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex flex-col gap-0.5">
-                      <span className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">
-                        Historia dania
-                      </span>
-                      <p className="text-sm text-foreground font-medium">
-                        Obejrzyj, jak powstaje Twoje danie
-                      </p>
-                    </div>
-                    <span className="text-xs bg-primary/10 text-primary font-semibold px-2.5 py-1 rounded-full border border-primary/20">
-                      Live
-                    </span>
-                  </div>
-
-                  {/* Platform icons */}
-                  <div className="flex items-center gap-3 pt-1">
-                    <span className="text-xs text-muted-foreground">Dostępne na:</span>
-                    <div className="flex items-center gap-2">
-                      {platforms.map((p) => {
-                        const PIcon = p.icon
-                        return (
-                          <div
-                            key={p.label}
-                            className="w-7 h-7 rounded-lg bg-secondary flex items-center justify-center"
-                            title={p.label}
-                          >
-                            <PIcon size={14} className={p.color} />
-                          </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-
-                  {/* CTA */}
-                  <div className="pt-1">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="w-full text-xs font-semibold border-primary/30 text-primary hover:bg-primary/5"
-                    >
-                      <Play size={12} className="mr-1.5 fill-primary text-primary" />
-                      Zaglądam za kulisy
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating badge */}
-              <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground text-xs font-bold px-3 py-1.5 rounded-full shadow-lg shadow-primary/30">
-                Nowe
-              </div>
-            </div>
           </div>
         </div>
 

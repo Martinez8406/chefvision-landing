@@ -5,7 +5,7 @@ import { Check } from "lucide-react"
 export function ComparisonSection() {
   const benefits = [
     "Obsługa gości zagranicznych bez bariery językowej (12 języków)",
-    "Inteligentne rekomendacje wina, napójów i dodatków — ustawiasz sam z telefonu",
+    "Rekomendacje wina, napojów i dodatków — ustawiasz sam z telefonu",
     "System ChefStars: zamień koszt kawy w 5 gwiazdek w Google",
     "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
     "Brak prowizji — stałe 99 zł/msc, zero ukrytych opłat",

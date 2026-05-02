@@ -18,7 +18,7 @@ const features = [
     badge: "Pro",
     title: "Chef's Studio",
     description:
-      "Profesjonalny retusz Twoich dań. Wgraj zdjęcie z kuchni, a nasze AI zadba o idealne oświetlenie, wydobędzie tekstury i nada potrawom wygląd, na jaki zasługują. Wszystko z szacunkiem dla Twojego rzemiosła.",
+      "Profesjonalny retusz Twoich dań. Wgraj zdjęcie z kuchni, a system zadba o idealne oświetlenie, wydobędzie tekstury i nada potrawom wygląd, na jaki zasługują. Wszystko z szacunkiem dla Twojego rzemiosła.",
     bullets: ["Profesjonalne oświetlenie", "Korekta tekstur", "Stylizacja tła"],
     tag: "Plan Professional",
     highlight: true,

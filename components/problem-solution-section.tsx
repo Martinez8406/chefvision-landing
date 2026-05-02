@@ -15,7 +15,7 @@ export function ProblemSolutionSection() {
         {/* Sub-headline and Problem */}
         <div className="max-w-3xl mx-auto mb-12 text-center">
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Wiesz, jak to jest. Godziny pracy, pasja, najlepsze składniki… a potem pstryk – i na zdjęciu wygląda to jak… no cóż, jak jedzenie. Ale czy oddaje magię Twojej kuchni? Często nie. I tu wkracza Chef Vision, z AI, która rozumie Twoje potrzeby.
+            Wiesz, jak to jest. Godziny pracy, pasja, najlepsze składniki… a potem pstryk – i na zdjęciu wygląda to jak… no cóż, jak jedzenie. Ale czy oddaje magię Twojej kuchni? Często nie. I tu wkracza Chef Vision, który pomaga pokazać Twoje dania tak, jak na to zasługują.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export function ProblemSolutionSection() {
                 Tworzymy. Ulepszamy. Zawsze z szacunkiem dla Twojego rzemiosła.
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed mb-6">
-                {`W Chef Vision rozumiemy, że autentyczność i elastyczność to podstawa. Nasze AI jest do Twojej dyspozycji, aby Twoje `}<strong>{`istniejące dania zabłysły pełnym blaskiem`}</strong>{`, zachowując ich prawdziwy charakter. To nie tylko narzędzie do tworzenia – to `}<strong>{`mistrz oświetlenia, stylista i retuszer w jednym`}</strong>{`, który pracuje na Twoich prawdziwych zdjęciach, tworząc wizualizacje, które idealnie oddają ducha Twojej kuchni. Dodatkowo, dzięki `}<strong>{`sezonowym motywom`}</strong>{` oraz `}<strong>{`integracji z Google Maps`}</strong>{`, Twoje menu będzie zawsze aktualne i przyciągnie więcej klientów.`}
+                {`W Chef Vision rozumiemy, że autentyczność i elastyczność to podstawa. Narzędzia w panelu pomagają, aby Twoje `}<strong>{`istniejące dania zabłysły pełnym blaskiem`}</strong>{`, zachowując ich prawdziwy charakter. To praktyczne wsparcie w codziennej pracy — `}<strong>{`oświetlenie, stylizacja i retusz w jednym miejscu`}</strong>{`, które działa na Twoich prawdziwych zdjęciach i oddaje ducha Twojej kuchni. Dodatkowo, dzięki `}<strong>{`sezonowym motywom`}</strong>{` oraz `}<strong>{`integracji z Google Maps`}</strong>{`, Twoje menu będzie zawsze aktualne i przyciągnie więcej klientów.`}
               </p>
             </div>
 
@@ -64,7 +64,7 @@ export function ProblemSolutionSection() {
                   Ulepszanie istniejących zdjęć – z zachowaniem struktury dania
                 </h4>
                 <p className="text-sm text-muted-foreground mb-3 ml-8">
-                  To kluczowe! Kucharze i goście widzą, że to WCIĄŻ Twoje, prawdziwe dzieło. Bez sztucznych dodatków, bez udziwnień. Nasze AI:
+                  To kluczowe! Kucharze i goście widzą, że to WCIĄŻ Twoje, prawdziwe dzieło. Bez przesady i bez udziwnień. W praktyce:
                 </p>
                 <ul className="ml-8 space-y-2">
                   <li className="flex items-start gap-2 text-sm text-muted-foreground">

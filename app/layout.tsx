@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'ChefVision.pl – Asystent sprzedaży dla restauracji',
-  description: 'Menu w 12 językach, opinie Google za 1,50 zł i zdjęcia AI. Inteligentny asystent sprzedaży dla restauracji — 99 zł/msc, bez prowizji.',
+  description: 'Menu w 12 językach, opinie Google za 1,50 zł i zdjęcia dań. Cyfrowy asystent sprzedaży dla restauracji — 99 zł/msc, bez prowizji.',
   generator: 'v0.app',
   icons: {
     icon: '/logo.png',

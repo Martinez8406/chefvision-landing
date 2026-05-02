@@ -40,10 +40,10 @@ export function CtaSection() {
               <ul className="space-y-3">
                 {[
                   "Cyfrowe menu z kodem QR — aktywne 24/7, bez znaku wodnego",
-                  "50 tokenów AI na ulepszanie zdjęć dań (światło, tło, kolory)",
+                  "50 tokenów na ulepszanie zdjęć dań (światło, tło, kolory)",
                   "Menu w 12 językach — automatyczne tłumaczenie dla gości zagranicznych",
                   "System ChefStars: kawa za opinię w Google (konfiguracja bonusu w panelu)",
-                  "Inteligentne rekomendacje — ustawiasz sam wino, napoje, dodatki do upsellu",
+                  "Rekomendacje sprzedażowe — ustawiasz sam wino, napoje, dodatki do upsellu",
                   "Pomoc we wdrożeniu — osobiście przeprowadzę Cię przez cały proces",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -79,7 +79,7 @@ export function CtaSection() {
                   </p>
                   <ul className="flex flex-col gap-1.5 mt-2">
                     {[
-                      "50 tokenów AI / miesiąc",
+                      "50 tokenów / miesiąc",
                       "Menu bez znaku wodnego",
                       "Tłumaczenia + Google Reviews",
                     ].map((f) => (
@@ -103,7 +103,7 @@ export function CtaSection() {
                   </p>
                   <ul className="flex flex-col gap-1.5 mt-2">
                     {[
-                      "50 tokenów AI / miesiąc",
+                      "50 tokenów / miesiąc",
                       "Menu bez znaku wodnego",
                       "Tłumaczenia + Google Reviews",
                     ].map((f) => (

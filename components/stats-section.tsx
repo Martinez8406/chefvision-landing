@@ -1,20 +1,48 @@
 const stats = [
-  { value: "+25%", label: "Wyższy rachunek", sub: "Goście kupują oczami — zdjęcia i wideo podnoszą średnią wartość zamówienia" },
-  { value: "84 zł", label: "Oszczędności dziennie", sub: "Kelner odzyskuje ~1h dziennie, którą tracił na tłumaczenie karty obcokrajowcom" },
-  { value: "1,50 zł", label: "Koszt jednej opinii Google", sub: "Tyle kosztuje Cię zdobycie recenzji — zamiast 30 zł w Google Ads" },
-  { value: "12", label: "Języków w menu", sub: "80% turystów odczuwa stres przy zamawianiu w obcym języku — ChefVision to eliminuje" },
+  {
+    value: "+25%",
+    label: "Wyższa wartość zamówienia",
+    sub: "Zdjęcia i rekomendacje w menu podnoszą średni rachunek bez dodatkowej pracy kelnera.",
+  },
+  {
+    value: "84 zł",
+    label: "Odzyskane dziennie",
+    sub: "Zespół oszczędza około godzinę dziennie, bo menu tłumaczy się automatycznie.",
+  },
+  {
+    value: "1,50 zł",
+    label: "Koszt pozyskania opinii",
+    sub: "ChefStars daje recenzję dużo taniej niż standardowy lead z Google Ads.",
+  },
+  {
+    value: "12",
+    label: "Języków menu live",
+    sub: "Gość od razu czyta kartę w swoim języku i zamawia pewniej.",
+  },
 ]
 
 export function StatsSection() {
   return (
-    <section className="py-16 bg-secondary border-y border-border">
+    <section className="border-y border-border bg-gradient-to-b from-background to-secondary/40 py-20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mb-10 flex flex-col items-center gap-3 text-center">
+          <span className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+            Wyniki wdrożenia
+          </span>
+          <h2 className="max-w-3xl text-3xl font-bold text-foreground text-balance font-serif sm:text-4xl">
+            Dane, które widzi właściciel po starcie z ChefVision
+          </h2>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
-            <div key={stat.value} className="flex flex-col items-center gap-1 text-center">
-              <span className="text-3xl sm:text-4xl font-bold text-primary font-serif">{stat.value}</span>
-              <span className="text-sm font-semibold text-foreground">{stat.label}</span>
-              <span className="text-xs text-muted-foreground leading-relaxed">{stat.sub}</span>
+            <div
+              key={stat.label}
+              className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-colors hover:border-primary/35"
+            >
+              <span className="text-3xl font-bold text-primary font-serif sm:text-4xl">{stat.value}</span>
+              <p className="mt-2 text-sm font-semibold text-foreground">{stat.label}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{stat.sub}</p>
             </div>
           ))}
         </div>

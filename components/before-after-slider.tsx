@@ -77,7 +77,7 @@ export function BeforeAfterSlider() {
             {/* After (full width, behind) - restaurant setting */}
             <Image
               src="/images/lody-after.png"
-              alt="Zdjęcie po ulepszeniu przez AI - lody w eleganckim wnętrzu restauracji"
+              alt="Zdjęcie po ulepszeniu - lody w eleganckim wnętrzu restauracji"
               fill
               className="object-cover"
             />

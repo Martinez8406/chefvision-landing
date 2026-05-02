@@ -27,7 +27,7 @@ export function AboutSection() {
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              {`Po latach spędzonych wśród garnków i patelni poczułem, że czas na nowy przepis — tym razem na innowację. Zafascynowany sztuczną inteligencją, postanowiłem połączyć kulinarną wiedzę z nowoczesną technologią. Tak narodził się Chef Vision — aplikacja dla restauratorów, która ułatwia tworzenie eleganckich menu, oszczędza czas i dodaje szczyptę magii AI do każdego dania.`}
+              {`Po latach spędzonych wśród garnków i patelni poczułem, że czas na nowy przepis — tym razem na innowację. Postanowiłem połączyć kulinarną wiedzę z nowoczesną technologią. Tak narodził się Chef Vision — aplikacja dla restauratorów, która ułatwia tworzenie eleganckich menu, oszczędza czas i pomaga lepiej prezentować każde danie.`}
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">

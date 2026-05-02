@@ -1,6 +1,14 @@
 import Image from "next/image"
-import { Star } from "lucide-react"
+import { Play, Instagram, Youtube, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
+
+const DISH_STORY_VIDEO_URL = "https://www.youtube.com/shorts/34WoLlp3ZsA"
+
+const platforms = [
+  { icon: Youtube, label: "YouTube", color: "text-red-500" },
+  { icon: Instagram, label: "Instagram", color: "text-pink-500" },
+  { icon: Play, label: "TikTok", color: "text-foreground" },
+]
 
 export function MenuLiveSection() {
   return (
@@ -23,7 +31,7 @@ export function MenuLiveSection() {
               {[
                 "Menu w 12 językach — automatyczne tłumaczenie dla gości",
                 "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
-                "Inteligentne rekomendacje — ustawiasz sam z telefonu w 30 sekund",
+                "Rekomendacje sprzedażowe — ustawiasz sam z telefonu w 30 sekund",
                 "System ChefStars: kawa za opinię w Google",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-sm text-foreground">
@@ -49,7 +57,7 @@ export function MenuLiveSection() {
           </div>
 
           {/* Right: iPhone mockup with real screenshot */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex flex-col items-center lg:items-end">
             <div className="relative">
               {/* Glow */}
               <div
@@ -73,6 +81,62 @@ export function MenuLiveSection() {
                     fill
                     className="object-cover object-top"
                   />
+                </div>
+              </div>
+            </div>
+
+            {/* Historia dania — pod mockupem telefonu */}
+            <div className="relative z-10 mt-8 w-full max-w-sm">
+              <div className="rounded-2xl border border-border bg-card p-5 shadow-xl">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex flex-col gap-0.5 min-w-0">
+                      <span className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">
+                        Historia dania
+                      </span>
+                      <a
+                        href={DISH_STORY_VIDEO_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                      >
+                        Obejrzyj, jak powstaje Twoje danie
+                      </a>
+                    </div>
+                    <span className="text-xs shrink-0 bg-primary/10 text-primary font-semibold px-2.5 py-1 rounded-full border border-primary/20">
+                      Live
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-3 pt-1">
+                    <span className="text-xs text-muted-foreground">Dostępne na:</span>
+                    <div className="flex items-center gap-2">
+                      {platforms.map((p) => {
+                        const PIcon = p.icon
+                        return (
+                          <div
+                            key={p.label}
+                            className="w-7 h-7 rounded-lg bg-secondary flex items-center justify-center"
+                            title={p.label}
+                          >
+                            <PIcon size={14} className={p.color} />
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="w-full text-xs font-semibold border-primary/30 text-primary hover:bg-primary/5"
+                    asChild
+                  >
+                    <a href={DISH_STORY_VIDEO_URL} target="_blank" rel="noopener noreferrer">
+                      <Play size={12} className="mr-1.5 fill-primary text-primary" />
+                      Zaglądam za kulisy
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
