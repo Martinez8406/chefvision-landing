@@ -5,9 +5,9 @@ const stats = [
     sub: "Zdjęcia i rekomendacje w menu podnoszą średni rachunek bez dodatkowej pracy kelnera.",
   },
   {
-    value: "84 zł",
-    label: "Odzyskane dziennie",
-    sub: "Zespół oszczędza około godzinę dziennie, bo menu tłumaczy się automatycznie.",
+    value: "1680 zł",
+    label: "Odzyskane miesięcznie",
+    sub: "Bariera językowa i powtarzalne pytania o składniki zabierają personelowi cenne godziny. W lokalu z 2 kelnerami tracisz codziennie co najmniej 2 godziny ich pracy na zadania, które ChefVision wykonuje automatycznie.",
   },
   {
     value: "1,50 zł",
