@@ -18,14 +18,14 @@ export default function Home() {
     <main className="bg-background min-h-screen">
       <Navbar />
       <HeroSection />
-      <BeforeAfterSlider />
       <StatsSection />
       <ProblemSolutionSection />
-      <ComparisonSection />
-      <AntiPlatformSection />
       <ProfitMathSection />
+      <AntiPlatformSection />
+      <ComparisonSection />
       <FeaturesSection />
       <MenuLiveSection />
+      <BeforeAfterSlider />
       <DishStorySection />
       <CtaSection />
       <AboutSection />
