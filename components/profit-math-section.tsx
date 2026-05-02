@@ -30,7 +30,7 @@ const items = [
     title: "Maszyna do opinii Google — ChefStars",
     points: [
       "Gość skanuje menu → zachwyca się wideo z kuchni → dostaje darmową kawę za opinię",
-      "Koszt kawy dla restauracji: ~1,50 zł. Koszt leada w Google Ads: ~30 zł",
+      "Koszt kawy/napoju dla restauracji: ~1,50 zł. Koszt leada w Google Ads: ~30 zł",
       "Każda nowa opinia winduje restaurację w rankingach Google Maps",
       "Opinia od obcokrajowca w jego języku przyciąga dziesiątki kolejnych turystów",
     ],
