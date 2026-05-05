@@ -3,11 +3,33 @@
 import { useState, useRef, useCallback, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/lib/language-context"
+
+const content = {
+  pl: {
+    headline: "Zobacz Różnice Przed i Po",
+    sub: "Przeciągnij i porównaj efekt przed i po.",
+    before: "PRZED",
+    after: "PO",
+    cta: "Wypróbuj za darmo",
+    trust: "Bez fotografa • Bez studia • Efekt w kilka sekund",
+  },
+  en: {
+    headline: "See the Before & After Difference",
+    sub: "Drag and compare the before and after result.",
+    before: "BEFORE",
+    after: "AFTER",
+    cta: "Try for free",
+    trust: "No photographer • No studio • Result in seconds",
+  },
+}
 
 export function BeforeAfterSlider() {
   const [position, setPosition] = useState(50)
   const [dragging, setDragging] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
+  const { locale } = useLanguage()
+  const c = content[locale] || content.pl
 
   const updatePosition = useCallback(
     (clientX: number) => {
@@ -53,10 +75,10 @@ export function BeforeAfterSlider() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 flex flex-col items-center gap-3">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance font-serif">
-            Zobacz Różnice Przed i Po
+            {c.headline}
           </h2>
           <p className="text-muted-foreground max-w-xl text-lg">
-            Przeciągnij i porównaj efekt przed i po.
+            {c.sub}
           </p>
         </div>
 
@@ -74,24 +96,23 @@ export function BeforeAfterSlider() {
               updatePosition(e.touches[0].clientX)
             }}
           >
-            {/* After (full width, behind) - restaurant setting */}
+            {/* After (full width, behind) */}
             <Image
               src="/images/lody-after.png"
-              alt="Zdjęcie po ulepszeniu - lody w eleganckim wnętrzu restauracji"
+              alt="Dish photo after enhancement"
               fill
               className="object-cover"
             />
 
-            {/* Before (clipped to left side) - kitchen setting */}
+            {/* Before (clipped to left side) */}
             <div
               className="absolute inset-y-0 left-0 overflow-hidden"
               style={{ width: `${position}%` }}
             >
-              {/* Inner div matches the full container width so fill renders correctly */}
               <div className="absolute inset-0 w-[100vw] max-w-3xl">
                 <Image
                   src="/images/lody-before.jpeg"
-                  alt="Zdjęcie przed ulepszeniem - lody w kuchni"
+                  alt="Dish photo before enhancement"
                   fill
                   className="object-cover"
                 />
@@ -117,10 +138,10 @@ export function BeforeAfterSlider() {
 
             {/* Labels */}
             <div className="absolute bottom-4 left-4 bg-background/80 backdrop-blur-sm text-foreground text-xs font-semibold px-3 py-1.5 rounded-lg border border-border">
-              PRZED
+              {c.before}
             </div>
             <div className="absolute bottom-4 right-4 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1.5 rounded-lg">
-              PO
+              {c.after}
             </div>
           </div>
         </div>
@@ -133,11 +154,11 @@ export function BeforeAfterSlider() {
             asChild
           >
             <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
-              Wypróbuj za darmo
+              {c.cta}
             </a>
           </Button>
           <p className="text-xs text-muted-foreground">
-            Bez fotografa • Bez studia • Efekt w kilka sekund
+            {c.trust}
           </p>
         </div>
       </div>
