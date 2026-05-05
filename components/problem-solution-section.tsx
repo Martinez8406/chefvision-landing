@@ -6,7 +6,7 @@ import { useLanguage } from "@/lib/language-context"
 
 const content = {
   pl: {
-    headline: "Twoje dania zasługują na więcej niż tylko „dobre" zdjęcie. Zasługują na Chef Vision.",
+    headline: "Twoje dania zasługują na więcej niż tylko 'dobre' zdjęcie. Zasługują na Chef Vision.",
     intro: "Wiesz, jak to jest. Godziny pracy, pasja, najlepsze składniki… a potem pstryk – i na zdjęciu wygląda to jak… no cóż, jak jedzenie. Ale czy oddaje magię Twojej kuchni? Często nie. I tu wkracza Chef Vision, który pomaga pokazać Twoje dania tak, jak na to zasługują.",
     beforeLabel: "Przed",
     afterLabel: "Po",
@@ -25,7 +25,7 @@ const content = {
     conclusionText: "Zapomnij o drogich sesjach zdjęciowych i tygodniach oczekiwania. Z Chef Vision masz profesjonalne zdjęcia w kilka minut, które w 100% oddają to, co serwujesz. Bo w końcu, liczy się smak… i to, jak go pokażesz!",
   },
   en: {
-    headline: "Your dishes deserve more than just a \"good\" photo. They deserve Chef Vision.",
+    headline: "Your dishes deserve more than just a 'good' photo. They deserve Chef Vision.",
     intro: "You know how it is. Hours of work, passion, the finest ingredients… then snap — and in the photo it looks like… well, food. But does it capture the magic of your kitchen? Often not. That's where Chef Vision steps in, helping you show your dishes the way they deserve to be seen.",
     beforeLabel: "Before",
     afterLabel: "After",
