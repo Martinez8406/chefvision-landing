@@ -28,32 +28,23 @@ export function BeforeAfterSlider() {
   const [position, setPosition] = useState(50)
   const [dragging, setDragging] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
-  const { locale } = useLanguage()
-  const c = content[locale] || content.pl
+  const { locale, mounted } = useLanguage()
+  const c = content[mounted ? locale : "pl"]
 
-  const updatePosition = useCallback(
-    (clientX: number) => {
-      if (!containerRef.current) return
-      const rect = containerRef.current.getBoundingClientRect()
-      const x = Math.max(0, Math.min(clientX - rect.left, rect.width))
-      setPosition((x / rect.width) * 100)
-    },
-    []
-  )
+  const updatePosition = useCallback((clientX: number) => {
+    if (!containerRef.current) return
+    const rect = containerRef.current.getBoundingClientRect()
+    const x = Math.max(0, Math.min(clientX - rect.left, rect.width))
+    setPosition((x / rect.width) * 100)
+  }, [])
 
-  const onMouseMove = useCallback(
-    (e: MouseEvent) => {
-      if (dragging) updatePosition(e.clientX)
-    },
-    [dragging, updatePosition]
-  )
+  const onMouseMove = useCallback((e: MouseEvent) => {
+    if (dragging) updatePosition(e.clientX)
+  }, [dragging, updatePosition])
 
-  const onTouchMove = useCallback(
-    (e: TouchEvent) => {
-      if (dragging) updatePosition(e.touches[0].clientX)
-    },
-    [dragging, updatePosition]
-  )
+  const onTouchMove = useCallback((e: TouchEvent) => {
+    if (dragging) updatePosition(e.touches[0].clientX)
+  }, [dragging, updatePosition])
 
   const stopDrag = useCallback(() => setDragging(false), [])
 
@@ -77,55 +68,23 @@ export function BeforeAfterSlider() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance font-serif">
             {c.headline}
           </h2>
-          <p className="text-muted-foreground max-w-xl text-lg">
-            {c.sub}
-          </p>
+          <p className="text-muted-foreground max-w-xl text-lg">{c.sub}</p>
         </div>
 
-        {/* Slider */}
         <div className="max-w-3xl mx-auto">
           <div
             ref={containerRef}
             className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden cursor-ew-resize border border-border select-none shadow-2xl"
-            onMouseDown={(e) => {
-              setDragging(true)
-              updatePosition(e.clientX)
-            }}
-            onTouchStart={(e) => {
-              setDragging(true)
-              updatePosition(e.touches[0].clientX)
-            }}
+            onMouseDown={(e) => { setDragging(true); updatePosition(e.clientX) }}
+            onTouchStart={(e) => { setDragging(true); updatePosition(e.touches[0].clientX) }}
           >
-            {/* After (full width, behind) */}
-            <Image
-              src="/images/lody-after.png"
-              alt="Dish photo after enhancement"
-              fill
-              className="object-cover"
-            />
-
-            {/* Before (clipped to left side) */}
-            <div
-              className="absolute inset-y-0 left-0 overflow-hidden"
-              style={{ width: `${position}%` }}
-            >
+            <Image src="/images/lody-after.png" alt="Dish photo after enhancement" fill className="object-cover" />
+            <div className="absolute inset-y-0 left-0 overflow-hidden" style={{ width: `${position}%` }}>
               <div className="absolute inset-0 w-[100vw] max-w-3xl">
-                <Image
-                  src="/images/lody-before.jpeg"
-                  alt="Dish photo before enhancement"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/lody-before.jpeg" alt="Dish photo before enhancement" fill className="object-cover" />
               </div>
             </div>
-
-            {/* Divider line */}
-            <div
-              className="absolute top-0 bottom-0 w-0.5 bg-white/80 shadow-lg"
-              style={{ left: `${position}%` }}
-            />
-
-            {/* Handle */}
+            <div className="absolute top-0 bottom-0 w-0.5 bg-white/80 shadow-lg" style={{ left: `${position}%` }} />
             <div
               className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-white shadow-xl flex items-center justify-center cursor-ew-resize z-10 border-2 border-primary"
               style={{ left: `${position}%` }}
@@ -135,8 +94,6 @@ export function BeforeAfterSlider() {
                 <path d="M12 4L16 9L12 14" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-
-            {/* Labels */}
             <div className="absolute bottom-4 left-4 bg-background/80 backdrop-blur-sm text-foreground text-xs font-semibold px-3 py-1.5 rounded-lg border border-border">
               {c.before}
             </div>
@@ -146,20 +103,11 @@ export function BeforeAfterSlider() {
           </div>
         </div>
 
-        {/* CTA and Trust Text */}
         <div className="flex flex-col items-center gap-4 mt-10">
-          <Button
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 shadow-md shadow-primary/20"
-            asChild
-          >
-            <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
-              {c.cta}
-            </a>
+          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 shadow-md shadow-primary/20" asChild>
+            <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">{c.cta}</a>
           </Button>
-          <p className="text-xs text-muted-foreground">
-            {c.trust}
-          </p>
+          <p className="text-xs text-muted-foreground">{c.trust}</p>
         </div>
       </div>
     </section>

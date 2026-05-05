@@ -4,9 +4,9 @@ import Image from "next/image"
 import { useLanguage } from "@/lib/language-context"
 
 const aboutImages = [
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0091-RVUddaoBC2IEHmgK5Mndc134DhCYjW.jpg", alt: "Marcin Koniuszko - finalizing elegant dishes with lemon" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0093-buYdf0M4tNQvr4JUOhrI4chBVb5fDT.jpg", alt: "Marcin Koniuszko - preparing fresh vegetables" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0013-h73OEgqYilP7yeDIRZRbETLGrIYcEZ.jpg", alt: "Marcin Koniuszko - taking bread out of the oven" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0091-RVUddaoBC2IEHmgK5Mndc134DhCYjW.jpg", alt: "Marcin Koniuszko in the kitchen" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0093-buYdf0M4tNQvr4JUOhrI4chBVb5fDT.jpg", alt: "Marcin Koniuszko preparing fresh vegetables" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0013-h73OEgqYilP7yeDIRZRbETLGrIYcEZ.jpg", alt: "Marcin Koniuszko taking bread out of the oven" },
 ]
 
 const content = {
@@ -25,13 +25,12 @@ const content = {
 }
 
 export function AboutSection() {
-  const { locale } = useLanguage()
-  const c = content[locale] || content.pl
+  const { locale, mounted } = useLanguage()
+  const c = content[mounted ? locale : "pl"]
 
   return (
     <section id="omnie" className="py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-foreground mb-4 text-balance font-serif">
             {c.headline}
@@ -39,28 +38,20 @@ export function AboutSection() {
           <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
-          {/* Text Content */}
           <div className="space-y-6 order-2 lg:order-1">
             <p className="text-lg text-muted-foreground leading-relaxed">{c.p1}</p>
             <p className="text-lg text-muted-foreground leading-relaxed">{c.p2}</p>
             <p className="text-lg text-muted-foreground leading-relaxed">{c.p3}</p>
           </div>
 
-          {/* Images Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 order-1 lg:order-2">
             {aboutImages.map((image, index) => (
               <div
                 key={index}
                 className="relative aspect-square rounded-xl overflow-hidden shadow-lg border border-border hover:shadow-xl transition-shadow duration-300"
               >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover"
-                />
+                <Image src={image.src} alt={image.alt} fill className="object-cover" />
               </div>
             ))}
           </div>
