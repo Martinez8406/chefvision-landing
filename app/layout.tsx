@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Montserrat, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { LanguageProvider } from '@/lib/language-context'
 import './globals.css'
 
 const _inter = Inter({ subsets: ["latin"] });
@@ -8,8 +9,8 @@ const _montserrat = Montserrat({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'ChefVision.pl – Asystent sprzedaży dla restauracji',
-  description: 'Menu w 12 językach, opinie Google za 1,50 zł i zdjęcia dań. Cyfrowy asystent sprzedaży dla restauracji — 99 zł/msc, bez prowizji.',
+  title: 'ChefVision.pl – Digital Sales Assistant for Restaurants',
+  description: 'Menu in 12 languages, Google reviews for €0.35 and dish photos. Digital sales assistant for restaurants — €23/mo, no commissions.',
   generator: 'v0.app',
   manifest: '/images/favicon_io22/site.webmanifest',
   icons: {
@@ -30,7 +31,9 @@ export default function RootLayout({
   return (
     <html lang="pl" className="scroll-smooth">
       <body className="font-sans antialiased">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
         <Analytics />
       </body>
     </html>

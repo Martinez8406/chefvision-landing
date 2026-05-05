@@ -1,7 +1,13 @@
+"use client"
+
 import Link from "next/link"
 import { Instagram, Twitter, Facebook } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
 export function Footer() {
+  const { t } = useLanguage()
+  const f = t.footer
+
   return (
     <footer className="border-t border-border bg-card">
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -19,7 +25,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Cyfrowy asystent sprzedaży dla restauracji. Menu w 12 językach, opinie Google i zdjęcia dań — za 3,30 zł dziennie.
+              {f.tagline}
             </p>
             <div className="flex items-center gap-3 pt-1">
               {[Instagram, Twitter, Facebook].map((Icon, i) => (
@@ -35,15 +41,11 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Produkt */}
+          {/* Product */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold text-foreground">Produkt</h4>
+            <h4 className="text-sm font-semibold text-foreground">{f.product}</h4>
             <ul className="flex flex-col gap-2.5">
-              {[
-                { label: "Funkcje", href: "#funkcje" },
-                { label: "Testy beta", href: "#beta-testing" },
-                { label: "Przykłady", href: "#przyklady" },
-              ].map((item) => (
+              {f.productLinks.map((item: { label: string; href: string }) => (
                 <li key={item.label}>
                   <Link href={item.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {item.label}
@@ -53,11 +55,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Wsparcie */}
+          {/* Support */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold text-foreground">Wsparcie</h4>
+            <h4 className="text-sm font-semibold text-foreground">{f.support}</h4>
             <ul className="flex flex-col gap-2.5">
-              {["Centrum pomocy", "Kontakt", "Polityka prywatności", "Regulamin", "RODO"].map((item) => (
+              {f.supportLinks.map((item: string) => (
                 <li key={item}>
                   <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {item}
@@ -71,10 +73,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground">
-            © 2026 ChefVision.pl — Wszelkie prawa zastrzeżone.
+            {f.copy}
           </p>
           <p className="text-xs text-muted-foreground flex items-center gap-1.5">
-            Stworzone z serca dla polskiej gastronomii
+            {f.madeWith}
             <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-label="Flaga Polski">
               <rect width="16" height="6" fill="#fff"/>
               <rect y="6" width="16" height="6" fill="#DC143C"/>
