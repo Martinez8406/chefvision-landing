@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import { StatsSection } from "@/components/stats-section"
+import { AppPreviewSection } from "@/components/app-preview-section"
+import { HowItWorksSection } from "@/components/how-it-works-section"
 import { BeforeAfterSlider } from "@/components/before-after-slider"
 import { ProblemSolutionSection } from "@/components/problem-solution-section"
 import { ComparisonSection } from "@/components/comparison-section"
@@ -19,6 +21,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <StatsSection />
+      <AppPreviewSection />
+      <HowItWorksSection />
       <ProblemSolutionSection />
       <ProfitMathSection />
       <AntiPlatformSection />
