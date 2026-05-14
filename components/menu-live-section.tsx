@@ -18,7 +18,7 @@ export function MenuLiveSection() {
   const ml = t.menuLive
 
   return (
-    <section className="py-28 bg-secondary overflow-hidden" id="menu-live">
+    <section className="py-28 bg-secondary overflow-hidden scroll-mt-16" id="menu-live">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Text */}

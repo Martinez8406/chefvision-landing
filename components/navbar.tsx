@@ -19,7 +19,7 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { label: t.nav.features, href: "#funkcje" },
+    { label: t.nav.features, href: "#menu-live" },
     { label: t.nav.beta, href: "#beta-testing" },
     { label: t.nav.examples, href: "#przyklady" },
     { label: t.nav.about, href: "#omnie" },

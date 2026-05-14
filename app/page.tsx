@@ -3,9 +3,7 @@ import { HeroSection } from "@/components/hero-section"
 import { StatsSection } from "@/components/stats-section"
 import { AppPreviewSection } from "@/components/app-preview-section"
 import { HowItWorksSection } from "@/components/how-it-works-section"
-import { BeforeAfterSlider } from "@/components/before-after-slider"
 import { ComparisonSection } from "@/components/comparison-section"
-import { FeaturesSection } from "@/components/features-section"
 import { MenuLiveSection } from "@/components/menu-live-section"
 import { DishStorySection } from "@/components/dish-story-section"
 import { CtaSection } from "@/components/cta-section"
@@ -25,9 +23,7 @@ export default function Home() {
       <ProfitMathSection />
       <AntiPlatformSection />
       <ComparisonSection />
-      <FeaturesSection />
       <MenuLiveSection />
-      <BeforeAfterSlider />
       <DishStorySection />
       <CtaSection />
       <AboutSection />

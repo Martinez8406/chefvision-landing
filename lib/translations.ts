@@ -169,7 +169,7 @@ export const translations = {
       product: "Produkt",
       support: "Wsparcie",
       productLinks: [
-        { label: "Funkcje", href: "#funkcje" },
+        { label: "Funkcje", href: "#menu-live" },
         { label: "Testy beta", href: "#beta-testing" },
         { label: "Przykłady", href: "#przyklady" },
       ],
@@ -347,7 +347,7 @@ export const translations = {
       product: "Product",
       support: "Support",
       productLinks: [
-        { label: "Features", href: "#funkcje" },
+        { label: "Features", href: "#menu-live" },
         { label: "Beta Testing", href: "#beta-testing" },
         { label: "Examples", href: "#przyklady" },
       ],

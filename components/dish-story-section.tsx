@@ -49,7 +49,7 @@ export function DishStorySection() {
   const c = content[mounted ? locale : "pl"]
 
   return (
-    <section className="py-28 bg-background overflow-hidden" id="historia-dania">
+    <section id="przyklady" className="py-28 bg-background overflow-hidden scroll-mt-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20 flex flex-col items-center gap-4">
           <span className="text-xs font-semibold uppercase tracking-widest text-primary font-serif">{c.badge}</span>
