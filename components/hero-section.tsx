@@ -37,7 +37,7 @@ export function HeroSection() {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="h-11 px-7 text-sm font-semibold" asChild>
-              <a href="#przyklady">
+              <a href="#menu-live">
                 <Play size={16} />
                 {h.cta2}
               </a>
