@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       badge: "Asystent Kelnera",
       headline: "Asystent Kelnera, który zwiększa sprzedaż w Twojej restauracji",
-      sub: "ChefVision rekomenduje dania, napoje i dodatki gościom, tworzy promocje i wspiera Twój zespół w sprzedaży. Mniej chaosu. Zadowoleni goście.",
+      sub: "Restauracje tracą tysiące złotych miesięcznie przez brak rekomendacji i upsellingu. ChefVision pomaga zwiększać wartość zamówień dzięki inteligentnym sugestiom i dynamicznym promocjom.",
       cta1: "Wypróbuj za darmo",
       cta2: "Zobacz jak to działa",
       trust: ["Większe rachunki nawet o 15–30%", "Dynamiczne promocje w kilka sekund", "Mniej pytań do obsługi", "Zarządzaj z telefonu lub komputera"],
@@ -190,7 +190,7 @@ export const translations = {
     hero: {
       badge: "For restaurants",
       headline: "Sell more from every table, without adding work for your team.",
-      sub: "ChefVision automates dish recommendations, translates your menu into 12 languages and turns the cost of a drink into a steady stream of Google reviews.",
+      sub: "Restaurants lose thousands of euros every month due to lack of recommendations and upselling. ChefVision helps increase order value through intelligent suggestions and dynamic promotions.",
       cta1: "See live demo",
       cta2: "See implementation examples",
       trust: ["1-day setup", "Fixed €23/mo", "No order commissions"],
