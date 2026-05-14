@@ -4,7 +4,6 @@ import { StatsSection } from "@/components/stats-section"
 import { AppPreviewSection } from "@/components/app-preview-section"
 import { HowItWorksSection } from "@/components/how-it-works-section"
 import { BeforeAfterSlider } from "@/components/before-after-slider"
-import { ProblemSolutionSection } from "@/components/problem-solution-section"
 import { ComparisonSection } from "@/components/comparison-section"
 import { FeaturesSection } from "@/components/features-section"
 import { MenuLiveSection } from "@/components/menu-live-section"
@@ -23,7 +22,6 @@ export default function Home() {
       <StatsSection />
       <AppPreviewSection />
       <HowItWorksSection />
-      <ProblemSolutionSection />
       <ProfitMathSection />
       <AntiPlatformSection />
       <ComparisonSection />

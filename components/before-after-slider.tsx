@@ -62,7 +62,7 @@ export function BeforeAfterSlider() {
   }, [onMouseMove, onTouchMove, stopDrag])
 
   return (
-    <section className="py-20 bg-background">
+    <section id="przyklady" className="py-20 bg-background scroll-mt-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 flex flex-col items-center gap-3">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance font-serif">
