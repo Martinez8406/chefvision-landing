@@ -17,6 +17,9 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 lg:grid-cols-2 lg:items-center">
         <div className="flex flex-col gap-7">
           <div className="space-y-4">
+            <span className="inline-flex w-fit rounded-full border-2 border-primary bg-background px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
+              {h.badge}
+            </span>
             <h1 className="max-w-xl text-4xl font-bold leading-[1.05] text-foreground text-balance font-serif sm:text-5xl lg:text-6xl">
               {h.headline}
             </h1>
@@ -24,6 +27,15 @@ export function HeroSection() {
               {h.sub}
             </p>
           </div>
+
+          <ul className="flex max-w-xl flex-col gap-3">
+            {h.trust.map((item: string) => (
+              <li key={item} className="flex items-start gap-3 text-sm text-foreground sm:text-base">
+                <CircleCheck size={18} className="mt-0.5 shrink-0 text-primary" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button
@@ -43,26 +55,17 @@ export function HeroSection() {
               </a>
             </Button>
           </div>
-
-          <div className="flex flex-wrap gap-3 pt-1 text-sm text-muted-foreground">
-            {h.trust.map((item: string) => (
-              <div key={item} className="flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2">
-                <CircleCheck size={15} className="text-primary" />
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="relative flex flex-col gap-3">
           <div className="relative rounded-2xl border border-border/70 bg-card p-2 shadow-xl shadow-black/10 sm:rounded-3xl sm:p-4">
             <div className="relative overflow-hidden rounded-xl border border-border sm:rounded-2xl">
               <Image
-                src="/images/ulotka.png"
-                alt="ChefVision panel i karta menu restauracji"
-                width={820}
-                height={560}
-                className="w-full object-cover"
+                src="/images/ChatGPT Image 15 maj 2026, 22_07_19.png"
+                alt="ChefVision — menu gościa na telefonie i panel managera na tablecie"
+                width={1424}
+                height={1105}
+                className="w-full object-contain"
                 priority
               />
             </div>
