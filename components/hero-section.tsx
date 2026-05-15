@@ -21,7 +21,9 @@ export function HeroSection() {
               {h.badge}
             </span>
             <h1 className="max-w-xl text-4xl font-bold leading-[1.05] text-foreground text-balance font-serif sm:text-5xl lg:text-6xl">
-              {h.headline}
+              {h.headlineBefore}
+              <span className="text-primary">{h.headlineHighlight}</span>
+              {h.headlineAfter}
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               {h.sub}

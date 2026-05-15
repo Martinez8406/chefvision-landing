@@ -11,7 +11,9 @@ export const translations = {
     },
     hero: {
       badge: "Asystent Kelnera",
-      headline: "Asystent Kelnera, który zwiększa sprzedaż w Twojej restauracji",
+      headlineBefore: "Asystent Kelnera, ",
+      headlineHighlight: "który zwiększa sprzedaż",
+      headlineAfter: " w Twojej restauracji",
       sub: "ChefVision rekomenduje dania, napoje i dodatki gościom, tworzy promocje i wspiera Twój zespół w sprzedaży. Mniej chaosu. Większe rachunki. Zadowoleni goście.",
       cta1: "Wypróbuj za darmo",
       cta2: "Zobacz jak to działa",
@@ -194,7 +196,9 @@ export const translations = {
     },
     hero: {
       badge: "Waiter Assistant",
-      headline: "A Waiter Assistant that grows sales in your restaurant",
+      headlineBefore: "A Waiter Assistant ",
+      headlineHighlight: "that grows sales",
+      headlineAfter: " in your restaurant",
       sub: "ChefVision recommends dishes, drinks and add-ons to guests, creates promotions and supports your team in selling. Less chaos. Bigger bills. Happy guests.",
       cta1: "Try for free",
       cta2: "See how it works",
