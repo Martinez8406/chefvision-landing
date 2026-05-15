@@ -40,10 +40,10 @@ export function AppPreviewSection() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-xs sm:max-w-sm">
               <Image
-                src="/images/telefon.png"
+                src="/images/hjkllll.png"
                 alt="Menu gościa z rekomendacjami pairingów w aplikacji ChefVision"
-                width={1024}
-                height={1536}
+                width={876}
+                height={1796}
                 className="w-full h-auto object-contain drop-shadow-2xl"
               />
               <div className="absolute -top-4 -right-4 rounded-xl border border-border bg-card px-4 py-3 shadow-lg">
