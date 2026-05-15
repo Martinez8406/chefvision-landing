@@ -64,13 +64,13 @@ export function DishStorySection() {
               return (
                 <div key={step.number} className="flex gap-5 group">
                   <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <div className="w-10 h-10 rounded-full bg-muted border border-border flex items-center justify-center shrink-0 group-hover:bg-secondary transition-colors">
                       <Icon size={18} className="text-primary" />
                     </div>
                     {index < c.steps.length - 1 && <div className="w-px flex-1 bg-border mt-3" />}
                   </div>
                   <div className="pb-8 flex flex-col gap-1.5">
-                    <span className="text-xs font-semibold text-primary/60 uppercase tracking-widest">{c.stepLabel} {step.number}</span>
+                    <span className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">{c.stepLabel} {step.number}</span>
                     <h3 className="text-base font-semibold text-foreground font-serif">{step.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
                   </div>
@@ -84,7 +84,7 @@ export function DishStorySection() {
           <p className="text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-10">{c.whyTitle}</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {c.stats.map((item) => (
-              <div key={item.stat} className="rounded-2xl border border-border bg-card p-6 flex flex-col gap-2 hover:border-primary/30 transition-colors">
+              <div key={item.stat} className="rounded-2xl border border-border bg-card p-6 flex flex-col gap-2 hover:border-primary transition-colors">
                 <span className="text-3xl font-bold text-primary font-serif">{item.stat}</span>
                 <span className="text-sm font-semibold text-foreground">{item.label}</span>
                 <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>

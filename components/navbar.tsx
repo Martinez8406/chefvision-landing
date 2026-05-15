@@ -68,7 +68,7 @@ export function Navbar() {
           {/* Language toggle */}
           <button
             onClick={toggleLocale}
-            className="flex items-center gap-1 text-xs font-semibold border border-border rounded-full px-3 py-1.5 text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors"
+            className="flex items-center gap-1 text-xs font-semibold border border-border rounded-full px-3 py-1.5 text-muted-foreground hover:text-foreground hover:border-primary transition-colors"
             aria-label="Switch language"
           >
             <span className={locale === "pl" ? "text-foreground font-bold" : "text-muted-foreground"}>PL</span>
@@ -76,7 +76,7 @@ export function Navbar() {
             <span className={locale === "en" ? "text-foreground font-bold" : "text-muted-foreground"}>EN</span>
           </button>
 
-          <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-5" asChild>
+          <Button size="sm" className="bg-primary text-primary-foreground hover:brightness-[0.93] font-medium px-5" asChild>
             <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
               {t.nav.cta}
             </a>

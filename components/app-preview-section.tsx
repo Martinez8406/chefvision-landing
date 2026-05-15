@@ -8,7 +8,7 @@ export function AppPreviewSection() {
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           {/* Left: copy */}
           <div className="flex flex-col gap-6">
-            <span className="w-fit rounded-full border border-primary/25 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+            <span className="w-fit rounded-full border-2 border-primary bg-background px-4 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
               Inteligentne rekomendacje
             </span>
             <h2 className="text-3xl font-bold text-foreground font-serif sm:text-4xl text-balance">
@@ -25,7 +25,7 @@ export function AppPreviewSection() {
                 "Promuj wysokomarżowe produkty",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/15">
+                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-muted">
                     <CircleCheck size={13} className="text-primary" />
                   </div>
                   <span className="text-sm text-foreground leading-relaxed">{item}</span>
@@ -36,13 +36,13 @@ export function AppPreviewSection() {
 
           {/* Right: app mockup */}
           <div className="relative flex justify-center">
-            <div className="w-full max-w-sm rounded-3xl border border-border bg-card shadow-2xl shadow-primary/10 overflow-hidden">
+            <div className="w-full max-w-sm rounded-3xl border border-border bg-card shadow-2xl shadow-black/10 overflow-hidden">
               {/* Header */}
-              <div className="bg-primary/5 border-b border-border px-5 py-4 flex items-center gap-3">
+              <div className="bg-muted/50 border-b border-border px-5 py-4 flex items-center gap-3">
                 <div className="flex gap-1.5">
                   <div className="h-3 w-3 rounded-full bg-red-400/60" />
                   <div className="h-3 w-3 rounded-full bg-yellow-400/60" />
-                  <div className="h-3 w-3 rounded-full bg-green-400/60" />
+                  <div className="h-3 w-3 rounded-full bg-primary" />
                 </div>
                 <span className="text-xs font-semibold text-muted-foreground">Menu gościa</span>
               </div>
@@ -50,7 +50,7 @@ export function AppPreviewSection() {
               {/* Dish card */}
               <div className="p-5">
                 {/* Badge */}
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 border border-primary/20 px-3 py-1 text-xs font-semibold text-primary mb-4">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-background border-2 border-primary px-3 py-1 text-xs font-semibold text-primary mb-4">
                   <CircleCheck size={12} />
                   Goście często wybierają
                 </div>
@@ -73,7 +73,7 @@ export function AppPreviewSection() {
                 </div>
 
                 {/* Pairing recommendation */}
-                <div className="rounded-xl border border-primary/20 bg-primary/5 p-4">
+                <div className="rounded-xl border border-border bg-muted/40 p-4">
                   <p className="text-xs font-semibold text-primary mb-3">Polecane do tego dania</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -86,22 +86,22 @@ export function AppPreviewSection() {
                         <p className="text-xs font-bold text-primary mt-0.5">22,00 zł</p>
                       </div>
                     </div>
-                    <button className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
+                    <button className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground hover:brightness-[0.93] transition-all">
                       <Plus size={16} />
                     </button>
                   </div>
                 </div>
 
                 {/* CTA button */}
-                <button className="mt-4 w-full rounded-xl bg-primary py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors">
+                <button className="mt-4 w-full rounded-xl bg-primary py-3 text-sm font-semibold text-primary-foreground hover:brightness-[0.93] transition-all">
                   Dodaj do zamówienia
                 </button>
               </div>
             </div>
 
             {/* Floating badge */}
-            <div className="absolute -top-4 -right-4 rounded-xl border border-primary/25 bg-primary/10 px-4 py-3 shadow-lg">
-              <p className="text-xs font-medium text-primary/80">Wzrost rachunku</p>
+            <div className="absolute -top-4 -right-4 rounded-xl border border-border bg-card px-4 py-3 shadow-lg">
+              <p className="text-xs font-medium text-muted-foreground">Wzrost rachunku</p>
               <p className="text-xl font-bold text-foreground">+25%</p>
             </div>
           </div>

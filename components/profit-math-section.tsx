@@ -31,13 +31,13 @@ export function ProfitMathSection() {
                 key={item.title}
                 className={`rounded-2xl border p-7 flex flex-col gap-4 ${
                   highlight
-                    ? "bg-primary/5 border-primary/40 shadow-md shadow-primary/10"
+                    ? "bg-muted border-2 border-primary shadow-md shadow-black/5"
                     : "bg-card border-border"
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${highlight ? "bg-primary/20" : "bg-secondary"}`}>
-                    <Icon size={20} className={highlight ? "text-primary" : "text-muted-foreground"} />
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${highlight ? "bg-primary text-primary-foreground" : "bg-secondary"}`}>
+                    <Icon size={20} className={highlight ? "text-primary-foreground" : "text-muted-foreground"} />
                   </div>
                   <h3 className="text-base font-semibold text-foreground font-serif">{item.title}</h3>
                 </div>

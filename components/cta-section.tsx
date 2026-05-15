@@ -14,7 +14,7 @@ export function CtaSection() {
 
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary mb-4">
+          <span className="inline-flex items-center rounded-full border-2 border-primary bg-background px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary mb-4">
             {c.badge}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-foreground mb-4 text-balance font-serif">
@@ -26,7 +26,7 @@ export function CtaSection() {
         </div>
 
         {/* Main card */}
-        <div className="max-w-4xl mx-auto mt-10 rounded-2xl border border-primary/30 bg-background shadow-lg shadow-primary/10 overflow-hidden">
+        <div className="max-w-4xl mx-auto mt-10 rounded-2xl border border-border bg-background shadow-lg shadow-black/5 overflow-hidden">
 
           {/* Free month banner */}
           <div className="bg-primary px-6 py-4 flex items-center justify-center gap-3">
@@ -46,7 +46,7 @@ export function CtaSection() {
               <ul className="space-y-3">
                 {c.items.map((item: string) => (
                   <li key={item} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-5 h-5 rounded-full bg-muted flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check size={12} className="text-primary" />
                     </div>
                     <span className="text-sm text-foreground leading-relaxed">{item}</span>
@@ -64,7 +64,7 @@ export function CtaSection() {
               <div className="grid sm:grid-cols-3 gap-4">
 
                 {/* Phase 1: 3 months promo */}
-                <div className="rounded-xl border border-primary/40 bg-primary/5 p-5 flex flex-col gap-2 relative">
+                <div className="rounded-xl border-2 border-primary bg-muted p-5 flex flex-col gap-2 relative">
                   <span className="absolute -top-3 left-4 bg-primary text-primary-foreground text-xs font-bold px-2.5 py-0.5 rounded-full">
                     {c.promo.badge}
                   </span>
@@ -135,7 +135,7 @@ export function CtaSection() {
               <a href="tel:+48570230684" className="inline-flex">
                 <Button
                   size="lg"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold text-base px-8 shadow-md shadow-primary/20"
+                  className="bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold text-base px-8 shadow-md shadow-black/10"
                 >
                   {c.ctaBtn}
                   <ArrowRight size={16} className="ml-2" />

@@ -22,7 +22,7 @@ export function StatsSection() {
           {s.items.map((stat: { value: string; label: string; sub: string }) => (
             <div
               key={stat.label}
-              className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-colors hover:border-primary/35"
+              className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-colors hover:border-primary"
             >
               <span className="text-3xl font-bold text-primary font-serif sm:text-4xl">{stat.value}</span>
               <p className="mt-2 text-sm font-semibold text-foreground">{stat.label}</p>

@@ -30,7 +30,7 @@ export function AntiPlatformSection() {
                     {ap.themCol}
                   </span>
                 </th>
-                <th className="text-left px-6 py-4 font-semibold text-foreground bg-primary/5">
+                <th className="text-left px-6 py-4 font-semibold text-foreground bg-muted border-l-2 border-l-primary">
                   <span className="flex items-center gap-2">
                     <Check size={20} className="text-primary" />
                     {ap.usCol}
@@ -43,14 +43,14 @@ export function AntiPlatformSection() {
                 <tr key={i} className={`border-b border-border ${i % 2 === 0 ? 'bg-card' : 'bg-background'}`}>
                   <td className="px-6 py-4 font-medium text-foreground">{row.feature}</td>
                   <td className="px-6 py-4 text-muted-foreground">{row.them}</td>
-                  <td className="px-6 py-4 text-foreground font-medium bg-primary/5">{row.us}</td>
+                  <td className="px-6 py-4 text-foreground font-medium bg-muted/50 border-l-2 border-l-primary">{row.us}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        <div className="mt-16 bg-primary/10 border border-primary/30 rounded-xl p-8 text-center">
+        <div className="mt-16 bg-muted border border-border rounded-xl p-8 text-center">
           <h3 className="text-2xl font-bold text-foreground mb-3">
             {ap.keyHeadline}
           </h3>

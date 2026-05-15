@@ -11,8 +11,8 @@ export function HeroSection() {
 
   return (
     <section className="relative overflow-hidden bg-background pt-24 lg:pt-32">
-      <div className="absolute -left-44 top-16 h-80 w-80 rounded-full bg-primary/8 blur-3xl" />
-      <div className="absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
+      <div className="absolute -left-44 top-16 h-80 w-80 rounded-full bg-muted blur-3xl" />
+      <div className="absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-muted blur-3xl" />
 
       <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 lg:grid-cols-2 lg:items-center">
         <div className="flex flex-col gap-7">
@@ -28,7 +28,7 @@ export function HeroSection() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button
               size="lg"
-              className="h-11 px-7 text-sm font-semibold shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30"
+              className="h-11 px-7 text-sm font-semibold shadow-md shadow-black/10 hover:shadow-lg hover:shadow-black/15"
               asChild
             >
               <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
@@ -55,7 +55,7 @@ export function HeroSection() {
         </div>
 
         <div className="relative">
-          <div className="relative rounded-3xl border border-border/70 bg-card p-4 shadow-2xl shadow-primary/10">
+          <div className="relative rounded-3xl border border-border/70 bg-card p-4 shadow-2xl shadow-black/10">
             <div className="relative overflow-hidden rounded-2xl border border-border">
               <Image
                 src="/images/ulotka.png"
@@ -73,8 +73,8 @@ export function HeroSection() {
             <p className="text-lg font-semibold text-foreground">{h.floatVal1}</p>
           </div>
 
-          <div className="absolute -bottom-4 right-5 rounded-xl border border-primary/25 bg-primary/10 px-4 py-3 shadow-lg">
-            <p className="text-xs font-medium text-primary/80">{h.floatLabel2}</p>
+          <div className="absolute -bottom-4 right-5 rounded-xl border border-border bg-card px-4 py-3 shadow-lg">
+            <p className="text-xs font-medium text-muted-foreground">{h.floatLabel2}</p>
             <p className="text-lg font-semibold text-foreground">{h.floatVal2}</p>
           </div>
         </div>

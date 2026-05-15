@@ -23,9 +23,9 @@ export function ComparisonSection() {
           {c.benefits.map((benefit: string, i: number) => (
             <div
               key={i}
-              className="flex items-start gap-3 bg-card border border-border rounded-xl p-4 shadow-sm hover:border-primary/30 transition-colors"
+              className="flex items-start gap-3 bg-card border border-border rounded-xl p-4 shadow-sm hover:border-primary transition-colors"
             >
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check size={20} className="text-primary" />
               </div>
               <span className="text-foreground font-medium">{benefit}</span>

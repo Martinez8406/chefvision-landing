@@ -44,7 +44,7 @@ export function HowItWorksSection() {
               {i < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-8 left-[calc(50%+2.5rem)] w-[calc(100%-5rem)] h-px bg-border z-0" />
               )}
-              <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 border border-primary/20">
+              <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-2xl bg-muted border border-border">
                 <step.icon size={28} className="text-primary" />
               </div>
               <div>

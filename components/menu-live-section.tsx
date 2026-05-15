@@ -36,7 +36,7 @@ export function MenuLiveSection() {
             <ul className="flex flex-col gap-3">
               {ml.bullets.map((item: string) => (
                 <li key={item} className="flex items-center gap-3 text-sm text-foreground">
-                  <span className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                  <span className="w-5 h-5 rounded-full bg-muted flex items-center justify-center shrink-0">
                     <Star size={10} className="text-primary fill-primary" />
                   </span>
                   {item}
@@ -47,7 +47,7 @@ export function MenuLiveSection() {
             <div className="pt-2">
               <Button
                 size="sm"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-5 py-2.5 rounded-xl"
+                className="bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold px-5 py-2.5 rounded-xl"
                 asChild
               >
                 <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
@@ -64,7 +64,7 @@ export function MenuLiveSection() {
                 className="absolute -inset-8"
                 style={{
                   background:
-                    "radial-gradient(ellipse 60% 60% at 50% 50%, oklch(0.78 0.15 75 / 0.12) 0%, transparent 70%)",
+                    "radial-gradient(ellipse 60% 60% at 50% 50%, rgba(15, 23, 32, 0.06) 0%, transparent 70%)",
                 }}
               />
               <div className="relative w-[280px] rounded-[3rem] bg-[#f0ebe4] border-[8px] border-[#e2dbd2] shadow-xl overflow-hidden">
@@ -98,7 +98,7 @@ export function MenuLiveSection() {
                         {ml.storyText}
                       </a>
                     </div>
-                    <span className="text-xs shrink-0 bg-primary/10 text-primary font-semibold px-2.5 py-1 rounded-full border border-primary/20">
+                    <span className="text-xs shrink-0 bg-background text-primary font-semibold px-2.5 py-1 rounded-full border-2 border-primary">
                       {ml.liveBadge}
                     </span>
                   </div>
@@ -124,7 +124,7 @@ export function MenuLiveSection() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="w-full text-xs font-semibold border-primary/30 text-primary hover:bg-primary/5"
+                    className="w-full text-xs font-semibold border-primary text-primary hover:bg-muted"
                     asChild
                   >
                     <a href={DISH_STORY_VIDEO_URL} target="_blank" rel="noopener noreferrer">
