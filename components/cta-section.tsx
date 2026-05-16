@@ -132,18 +132,16 @@ export function CtaSection() {
 
             {/* CTA button */}
             <div className="text-center">
-              <a href="tel:+48570230684" className="inline-flex">
-                <Button
-                  size="lg"
-                  className="bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold text-base px-8 shadow-md shadow-black/10"
-                >
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold text-base px-8 shadow-md shadow-black/10"
+                asChild
+              >
+                <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
                   {c.ctaBtn}
                   <ArrowRight size={16} className="ml-2" />
-                </Button>
-              </a>
-              <p className="text-sm text-muted-foreground mt-4">
-                {c.trust}
-              </p>
+                </a>
+              </Button>
             </div>
 
           </div>

@@ -33,16 +33,51 @@ export const translations = {
       headline: "Co może zmienić ChefVision w Twojej restauracji",
       items: [
         { value: "+25%", label: "Szacowany wzrost rachunku", sub: "Na podstawie danych branżowych z restauracji stosujących upselling cyfrowy — pairingi i rekomendacje przy daniu zwiększają wartość zamówienia." },
-        { value: "-30%", label: "Mniej pytań o składniki i tłumaczenia", sub: "Menu w 12 językach odpowiada zanim kelner zdąży podejść do stolika — gość sam czyta i rozumie kartę." },
+        { value: "-30%", label: "Mniej pytań o składniki i tłumaczenia", sub: "Menu w 14 językach odpowiada zanim kelner zdąży podejść do stolika — gość sam czyta i rozumie kartę." },
         { value: "+40%", label: "Więcej napojów i dodatków", sub: "Gdy gość widzi sugestie „Polecane do tego dania” bezpośrednio przy daniu — chętniej dodaje je do zamówienia." },
         { value: "4.9/5", label: "Cel systemu ChefStars", sub: "Automatyczne zbieranie opinii po każdej wizycie — zanim gość wyjście z restauracji, system prosi o ocenę w Google." },
+      ],
+    },
+    appPreview: {
+      badge: "Inteligentne rekomendacje",
+      headline: "Sprzedawaj więcej dzięki inteligentnym sugestiom",
+      text: "Dodawaj pairingi, zestawy i sugestie, które widzi gość w menu. Pokaż, co warto dobrać do dania i zwiększ jego satysfakcję — oraz wartość zamówienia.",
+      bullets: [
+        "Pairingi dań z winami, napojami i dodatkami",
+        "Zestawy promocyjne (np. Burger + Cola + Frytki -15%)",
+        "Informacje „Inni goście wybrali to danie z…”",
+        "Promuj wysokomarżowe produkty",
+      ],
+      imageAlt: "Menu gościa z rekomendacjami pairingów w aplikacji ChefVision",
+      floatLabel: "Wzrost rachunku",
+      floatValue: "+25%",
+    },
+    howItWorks: {
+      headline: "Jak to działa?",
+      steps: [
+        {
+          title: "Gość skanuje QR",
+          desc: "Otwiera menu w swoim języku na telefonie.",
+        },
+        {
+          title: "Otrzymuje rekomendacje",
+          desc: "Asystent podpowiada dodatki, napoje, wina i zestawy.",
+        },
+        {
+          title: "Składa większe zamówienie",
+          desc: "Pokazuje kelnerowi co chce zamówić — w tym polecane dodatki i napoje.",
+        },
+        {
+          title: "Ty zwiększasz zyski",
+          desc: "Większy rachunek, zadowolony gość, mniej pracy dla obsługi.",
+        },
       ],
     },
     comparison: {
       headline: "Co zyskujesz od pierwszego dnia",
       sub: "Bez umów, bez sprzętu, bez informatyka. Uruchamiasz w 15 minut.",
       benefits: [
-        "Cyfrowe menu w 12 językach — gość skanuje QR i widzi kartę w swoim języku",
+        "Cyfrowe menu w 14 językach — gość skanuje QR i widzi kartę w swoim języku",
         "Pairingi i rekomendacje — ustawiasz sam z telefonu, bez programisty",
         "Zestawy promocyjne — Burger + Cola + Frytki -15% jednym kliknięciem",
         "Zmiana cen i menu bez drukowania nowych kart",
@@ -65,7 +100,7 @@ export const translations = {
         { feature: "Wsparcie dla Twojej marki", them: "Branding platformy na pierwszym planie", us: "Twoja marka na pierwszym planie" },
         { feature: "Ukryte opłaty", them: "Opłaty za rejestrację, usługę, itp.", us: "Przejrzyste ceny, bez niespodzianek" },
         { feature: "Skupienie na", them: "Logistyce i dostawach", us: "Jakości i wizerunku Twojego jedzenia" },
-        { feature: "Języki menu", them: "Zazwyczaj podstawowe", us: "12 języków + wideo z kuchni" },
+        { feature: "Języki menu", them: "Zazwyczaj podstawowe", us: "14 języków + wideo z kuchni" },
         { feature: "Koszt pozyskania opinii Google", them: "Brak funkcji", us: "~1,50 zł (koszt kawy) zamiast 30 zł w Google Ads" },
       ],
       keyHeadline: "Inwestujesz 99 zł, odzyskujesz ponad 2 500 zł miesięcznie",
@@ -114,11 +149,11 @@ export const translations = {
       ],
     },
     menuLive: {
-      badge: "Menu Live & QR — 12 języków",
+      badge: "Menu Live & QR — 14 języków",
       headline: "Twój cichy sprzedawca — w telefonie każdego gościa, w jego języku.",
-      text: "Kelner ma dużo pracy i nie ma czasu polecać wina? ChefVision robi to za niego — w 12 językach, 24/7. Gość skanuje kod, widzi menu w swoim języku, ogląda wideo z kuchni i dostaje rekomendację do dania. Wszystko bez słowa od kelnera.",
+      text: "Kelner ma dużo pracy i nie ma czasu polecać wina? ChefVision robi to za niego — w 14 językach, 24/7. Gość skanuje kod, widzi menu w swoim języku, ogląda wideo z kuchni i dostaje rekomendację do dania. Wszystko bez słowa od kelnera.",
       bullets: [
-        "Menu w 12 językach — automatyczne tłumaczenie dla gości",
+        "Menu w 14 językach — automatyczne tłumaczenie dla gości",
         "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
         "Rekomendacje sprzedażowe — ustawiasz sam z telefonu w 30 sekund",
         "System ChefStars: kawa za opinię w Google",
@@ -139,8 +174,8 @@ export const translations = {
       items: [
         "Cyfrowe menu z kodem QR — aktywne 24/7, bez znaku wodnego",
         "50 tokenów na ulepszanie zdjęć dań (światło, tło, kolory)",
-        "Menu w 12 językach — automatyczne tłumaczenie dla gości zagranicznych",
-        "System ChefStars: kawa za opinię w Google (konfiguracja bonusu w panelu)",
+        "Menu w 14 językach — automatyczne tłumaczenie dla gości zagranicznych",
+        "System ChefStars: kawa/napój za opinię w Google (konfiguracja bonusu w panelu)",
         "Rekomendacje sprzedażowe — ustawiasz sam wino, napoje, dodatki do upsellu",
         "Pomoc we wdrożeniu — osobiście przeprowadzę Cię przez cały proces",
       ],
@@ -169,10 +204,9 @@ export const translations = {
       },
       tokenNote: "💡 Tokeny abonamentowe resetują się 1. dnia każdego miesiąca i nie przechodzą na kolejny okres. Tokeny z paczki są bezterminowe.",
       ctaBtn: "Zatrudnij cyfrowego asystenta za 3,30 zł dziennie",
-      trust: "Pracuję bezpośrednio z właścicielami restauracji i managerami. Pierwsze 20 miejsc — bez kolejki.",
     },
     footer: {
-      tagline: "Cyfrowy asystent sprzedaży dla restauracji. Menu w 12 językach, opinie Google i zdjęcia dań — za 3,30 zł dziennie.",
+      tagline: "Cyfrowy asystent sprzedaży dla restauracji. Menu w 14 językach, opinie Google i zdjęcia dań — za 3,30 zł dziennie.",
       product: "Produkt",
       support: "Wsparcie",
       productLinks: [
@@ -218,16 +252,51 @@ export const translations = {
       headline: "What ChefVision can change in your restaurant",
       items: [
         { value: "+25%", label: "Estimated order value increase", sub: "Based on industry data from restaurants using digital upselling — pairings and recommendations at the dish level increase order value." },
-        { value: "-30%", label: "Fewer ingredient and translation questions", sub: "Menu in 12 languages answers before the waiter reaches the table — guests read and understand the menu on their own." },
+        { value: "-30%", label: "Fewer ingredient and translation questions", sub: "Menu in 14 languages answers before the waiter reaches the table — guests read and understand the menu on their own." },
         { value: "+40%", label: "More drinks and extras ordered", sub: "When guests see 'Recommended with this dish' suggestions directly next to the dish — they are more likely to add them to their order." },
         { value: "4.9/5", label: "ChefStars system goal", sub: "Automatic review collection after every visit — before the guest leaves, the system asks for a Google rating." },
+      ],
+    },
+    appPreview: {
+      badge: "Smart recommendations",
+      headline: "Sell more with intelligent suggestions",
+      text: "Add pairings, bundles and suggestions that guests see in the menu. Show what goes well with each dish and increase satisfaction — and order value.",
+      bullets: [
+        "Dish pairings with wines, drinks and extras",
+        "Promotional bundles (e.g. Burger + Cola + Fries -15%)",
+        "“Other guests chose this dish with…” insights",
+        "Promote high-margin products",
+      ],
+      imageAlt: "Guest menu with pairing recommendations in the ChefVision app",
+      floatLabel: "Higher bill size",
+      floatValue: "+25%",
+    },
+    howItWorks: {
+      headline: "How it works",
+      steps: [
+        {
+          title: "Guest scans the QR code",
+          desc: "Opens the menu in their language on their phone.",
+        },
+        {
+          title: "Gets recommendations",
+          desc: "The assistant suggests extras, drinks, wines and bundles.",
+        },
+        {
+          title: "Places a bigger order",
+          desc: "Shows the waiter what they want — including recommended add-ons and drinks.",
+        },
+        {
+          title: "You grow your profits",
+          desc: "Bigger bill, happy guest, less work for your staff.",
+        },
       ],
     },
     comparison: {
       headline: "What you get from day one",
       sub: "No contracts, no hardware, no IT. Up and running in 15 minutes.",
       benefits: [
-        "Digital menu in 12 languages — guests scan QR and see the menu in their language",
+        "Digital menu in 14 languages — guests scan QR and see the menu in their language",
         "Pairings and recommendations — set from your phone, no developer needed",
         "Promotional bundles — Burger + Cola + Fries -15% in one click",
         "Update prices and menu without printing new cards",
@@ -250,7 +319,7 @@ export const translations = {
         { feature: "Brand support", them: "Platform branding takes priority", us: "Your brand takes priority" },
         { feature: "Hidden fees", them: "Registration, service fees, etc.", us: "Transparent pricing, no surprises" },
         { feature: "Focus on", them: "Logistics and delivery", us: "Quality and image of your food" },
-        { feature: "Menu languages", them: "Usually basic", us: "12 languages + kitchen video" },
+        { feature: "Menu languages", them: "Usually basic", us: "14 languages + kitchen video" },
         { feature: "Cost of a Google review", them: "No feature", us: "~€0.35 (cost of a coffee) vs €7 in Google Ads" },
       ],
       keyHeadline: "Invest €23, recover over €580/month",
@@ -299,11 +368,11 @@ export const translations = {
       ],
     },
     menuLive: {
-      badge: "Live Menu & QR — 12 languages",
+      badge: "Live Menu & QR — 14 languages",
       headline: "Your silent salesperson — in every guest's phone, in their language.",
-      text: "Waiters too busy to recommend wine? ChefVision does it for them — in 12 languages, 24/7. Guests scan the code, see the menu in their language, watch kitchen video and get a dish recommendation. All without a word from the waiter.",
+      text: "Waiters too busy to recommend wine? ChefVision does it for them — in 14 languages, 24/7. Guests scan the code, see the menu in their language, watch kitchen video and get a dish recommendation. All without a word from the waiter.",
       bullets: [
-        "Menu in 12 languages — automatic translation for guests",
+        "Menu in 14 languages — automatic translation for guests",
         "Kitchen video on every dish — guests buy with their eyes",
         "Sales recommendations — set from your phone in 30 seconds",
         "ChefStars system: coffee for a Google review",
@@ -324,8 +393,8 @@ export const translations = {
       items: [
         "Digital menu with QR code — active 24/7, no watermark",
         "50 tokens for enhancing dish photos (lighting, background, colors)",
-        "Menu in 12 languages — automatic translation for foreign guests",
-        "ChefStars system: coffee for a Google review (configure bonus in panel)",
+        "Menu in 14 languages — automatic translation for foreign guests",
+        "ChefStars system: coffee/drink for a Google review (configure bonus in panel)",
         "Sales recommendations — set wine, drinks, extras for upsell yourself",
         "Onboarding support — I'll personally guide you through the whole process",
       ],
@@ -354,10 +423,9 @@ export const translations = {
       },
       tokenNote: "💡 Subscription tokens reset on the 1st of each month and don't carry over. Pack tokens never expire.",
       ctaBtn: "Start saving your waiters' time",
-      trust: "I work directly with restaurant owners and managers. First 20 spots — no waiting list.",
     },
     footer: {
-      tagline: "Digital sales assistant for restaurants. Menu in 12 languages, Google reviews and dish photos — for €0.77/day.",
+      tagline: "Digital sales assistant for restaurants. Menu in 14 languages, Google reviews and dish photos — for €0.77/day.",
       product: "Product",
       support: "Support",
       productLinks: [

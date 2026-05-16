@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'ChefVision.pl – Digital Sales Assistant for Restaurants',
-  description: 'Menu in 12 languages, Google reviews for €0.35 and dish photos. Digital sales assistant for restaurants — €23/mo, no commissions.',
+  description: 'Menu in 14 languages, Google reviews for €0.35 and dish photos. Digital sales assistant for restaurants — €23/mo, no commissions.',
   generator: 'v0.app',
   manifest: '/images/favicon_io22/site.webmanifest',
   icons: {
