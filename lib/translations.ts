@@ -83,7 +83,7 @@ export const translations = {
         "Zestawy promocyjne — Burger + Cola + Frytki -15% jednym kliknięciem",
         "Zmiana cen i menu bez drukowania nowych kart",
         "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
-        "Stała cena 99 zł/msc — zero prowizji, zero ukrytych opłat",
+        "Stała cena 97 zł/msc — zero prowizji, zero ukrytych opłat",
         "Pełna kontrola z telefonu — zmieniasz wszystko z dowolnego miejsca",
         "Profesjonalne zdjęcia dań — efekt bez fotografa i sesji zdjęciowej",
       ],
@@ -104,8 +104,8 @@ export const translations = {
         { feature: "Języki menu", them: "Zazwyczaj podstawowe", us: "14 języków + wideo z kuchni" },
         { feature: "Koszt pozyskania opinii Google", them: "Brak funkcji", us: "~1,50 zł (koszt kawy) zamiast 30 zł w Google Ads" },
       ],
-      keyHeadline: "Inwestujesz 99 zł, odzyskujesz ponad 2 500 zł miesięcznie",
-      keyText: "Przy rachunku 200 zł platforma dostawcza zabiera Ci 40–60 zł prowizji. ChefVision bierze 99 zł miesięcznie — bez prowizji, bez tabletów, bez utraty klientów. Kelnerzy odzyskują czas, goście zamawiają śmielej, a Ty zbierasz opinie w Google za 1,50 zł.",
+      keyHeadline: "Inwestujesz 97 zł, odzyskujesz ponad 2 500 zł miesięcznie",
+      keyText: "Przy rachunku 200 zł platforma dostawcza zabiera Ci 40–60 zł prowizji. ChefVision kosztuje 97 zł miesięcznie — bez prowizji, bez tabletów, bez utraty klientów. Kelnerzy odzyskują czas, goście zamawiają śmielej, a Ty zbierasz opinie w Google za 1,50 zł.",
     },
     profitMath: {
       headline: "Matematyka, która się opłaca",
@@ -125,7 +125,7 @@ export const translations = {
           points: [
             "Kelner traci średnio 5–7 minut na stolik na tłumaczenie karty (Cornell University)",
             "Przy 3 kelnerach to ~84 zł oszczędności dziennie = 2 500 zł miesięcznie",
-            "Koszt ChefVision: 99 zł/msc = 3,30 zł dziennie",
+            "Koszt ChefVision: 97 zł/msc = 3,23 zł dziennie",
             "Zwrot z inwestycji już po 3–4 dniach",
           ],
         },
@@ -220,10 +220,10 @@ export const translations = {
         features: ["Bezterminowe", "Dostępne niezależnie od planu", "Idealne na zmianę karty sezonowej"],
       },
       tokenNote: "💡 Tokeny abonamentowe resetują się 1. dnia każdego miesiąca i nie przechodzą na kolejny okres. Tokeny z paczki są bezterminowe.",
-      ctaBtn: "Zatrudnij cyfrowego asystenta za 3,30 zł dziennie",
+      ctaBtn: "Zatrudnij cyfrowego asystenta za 3,23 zł dziennie",
     },
     footer: {
-      tagline: "Cyfrowy asystent sprzedaży dla restauracji. Menu w 14 językach, opinie Google i zdjęcia dań — za 3,30 zł dziennie.",
+      tagline: "Cyfrowy asystent sprzedaży dla restauracji. Menu w 14 językach, opinie Google i zdjęcia dań — za 3,23 zł dziennie.",
       product: "Produkt",
       support: "Wsparcie",
       productLinks: [
