@@ -131,7 +131,7 @@ export const translations = {
         {
           title: "Maszyna do opinii Google — ChefStars",
           points: [
-            "Gość skanuje menu → zachwyca się wideo z kuchni → dostaje darmową kawę za opinię",
+            "Gość skanuje menu → zachwyca się wideo z kuchni → dostaje darmową kawę/napój za opinię",
             "Koszt kawy/napoju dla restauracji: ~1,50 zł. Koszt leada w Google Ads: ~30 zł",
             "Każda nowa opinia winduje restaurację w rankingach Google Maps",
             "Opinia od obcokrajowca w jego języku przyciąga dziesiątki kolejnych turystów",
@@ -156,7 +156,7 @@ export const translations = {
         "Menu w 14 językach — automatyczne tłumaczenie dla gości",
         "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
         "Rekomendacje sprzedażowe — ustawiasz sam z telefonu w 30 sekund",
-        "System ChefStars: kawa za opinię w Google",
+        "System ChefStars: kawa/napój za opinię w Google",
       ],
       cta: "Wypróbuj ChefVision",
       storyLabel: "Historia dania",
@@ -350,7 +350,7 @@ export const translations = {
         {
           title: "Google review machine — ChefStars",
           points: [
-            "Guest scans menu → loves the kitchen video → gets a free coffee for a review",
+            "Guest scans menu → loves the kitchen video → gets a free coffee/drink for a review",
             "Cost of coffee/drink for the restaurant: ~€0.35. Cost of a lead in Google Ads: ~€7",
             "Every new review boosts your restaurant in Google Maps rankings",
             "A review from a foreign guest in their language attracts dozens more tourists",
@@ -375,7 +375,7 @@ export const translations = {
         "Menu in 14 languages — automatic translation for guests",
         "Kitchen video on every dish — guests buy with their eyes",
         "Sales recommendations — set from your phone in 30 seconds",
-        "ChefStars system: coffee for a Google review",
+        "ChefStars system: coffee/drink for a Google review",
       ],
       cta: "Try ChefVision",
       storyLabel: "Dish Story",
