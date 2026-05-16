@@ -2,6 +2,7 @@
 
 import { ArrowRight, Check, Gift, Star, Package } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { useLanguage } from "@/lib/language-context"
 
 export function CtaSection() {
@@ -12,7 +13,6 @@ export function CtaSection() {
     <section id="beta-testing" className="py-20 bg-secondary scroll-mt-16">
       <div className="container mx-auto px-4 md:px-6">
 
-        {/* Header */}
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-flex items-center rounded-full border-2 border-primary bg-background px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary mb-4">
             {c.badge}
@@ -25,10 +25,7 @@ export function CtaSection() {
           </p>
         </div>
 
-        {/* Main card */}
-        <div className="max-w-4xl mx-auto mt-10 rounded-2xl border border-border bg-background shadow-lg shadow-black/5 overflow-hidden">
-
-          {/* Free month banner */}
+        <div className="max-w-6xl mx-auto mt-10 rounded-2xl border border-border bg-background shadow-lg shadow-black/5 overflow-hidden">
           <div className="bg-primary px-6 py-4 flex items-center justify-center gap-3">
             <Gift size={18} className="text-primary-foreground shrink-0" />
             <p className="text-sm font-semibold text-primary-foreground text-center">
@@ -37,8 +34,6 @@ export function CtaSection() {
           </div>
 
           <div className="p-6 sm:p-8">
-
-            {/* What you get */}
             <div className="mb-8">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">
                 {c.includes}
@@ -55,55 +50,50 @@ export function CtaSection() {
               </ul>
             </div>
 
-            {/* Pricing after trial */}
             <div className="border-t border-border pt-8 mb-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-5">
+              <p className="text-sm font-semibold text-foreground leading-relaxed mb-5 max-w-3xl">
                 {c.pricingTitle}
               </p>
 
-              <div className="grid sm:grid-cols-3 gap-4">
-
-                {/* Phase 1: 3 months promo */}
-                <div className="rounded-xl border-2 border-primary bg-muted p-5 flex flex-col gap-2 relative">
-                  <span className="absolute -top-3 left-4 bg-primary text-primary-foreground text-xs font-bold px-2.5 py-0.5 rounded-full">
-                    {c.promo.badge}
-                  </span>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 items-stretch lg:items-center pt-4">
+                <div className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
                   <div className="flex items-end gap-1 mt-2">
-                    <span className="text-3xl font-bold text-primary font-serif">{c.promo.price}</span>
-                    <span className="text-sm text-muted-foreground mb-1">{c.promo.currency}</span>
+                    <span className="text-3xl font-bold text-foreground font-serif">{c.freePlan.price}</span>
+                    <span className="text-sm text-muted-foreground mb-1">{c.freePlan.currency}</span>
                   </div>
-                  <p className="text-xs font-semibold text-foreground">{c.promo.label}</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{c.promo.desc}</p>
+                  <p className="text-xs font-semibold text-foreground">{c.freePlan.label}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{c.freePlan.desc}</p>
                   <ul className="flex flex-col gap-1.5 mt-2">
-                    {c.promo.features.map((f: string) => (
-                      <li key={f} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                        <Star size={9} className="text-primary fill-primary shrink-0" />
+                    {c.freePlan.features.map((f: string) => (
+                      <li key={f} className="flex items-start gap-2 text-xs text-foreground">
+                        <Check size={14} className="text-primary shrink-0 mt-0.5" />
                         {f}
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                {/* Phase 2: Regular price */}
-                <div className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
-                  <div className="flex items-end gap-1 mt-2">
-                    <span className="text-3xl font-bold text-foreground font-serif">{c.regular.price}</span>
+                <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 lg:p-8 lg:scale-[1.06] lg:z-10 shadow-[0_0_0_1px_hsl(var(--primary)),0_0_28px_-4px_hsl(var(--primary)/0.45),0_12px_40px_-12px_hsl(var(--primary)/0.35)] ring-2 ring-primary/25 sm:col-span-2 lg:col-span-1">
+                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide shadow-md whitespace-nowrap">
+                    {c.regular.badge}
+                  </Badge>
+                  <div className="flex items-end gap-1 mt-3">
+                    <span className="text-4xl lg:text-[2.75rem] font-bold text-primary font-serif leading-none">{c.regular.price}</span>
                     <span className="text-sm text-muted-foreground mb-1">{c.regular.currency}</span>
                   </div>
-                  <p className="text-xs font-semibold text-foreground">{c.regular.label}</p>
+                  <p className="text-sm font-semibold text-foreground">{c.regular.label}</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">{c.regular.desc}</p>
-                  <ul className="flex flex-col gap-1.5 mt-2">
+                  <ul className="flex flex-col gap-2 mt-1">
                     {c.regular.features.map((f: string) => (
-                      <li key={f} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                        <Star size={9} className="text-primary fill-primary shrink-0" />
+                      <li key={f} className="flex items-start gap-2 text-xs sm:text-sm text-foreground">
+                        <Check size={15} className="text-primary shrink-0 mt-0.5" />
                         {f}
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                {/* Token pack */}
-                <div className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
+                <div className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2 sm:col-span-2 lg:col-span-1">
                   <div className="flex items-center gap-2 mt-2">
                     <Package size={18} className="text-primary" />
                     <span className="text-3xl font-bold text-foreground font-serif">{c.tokenPack.price}</span>
@@ -122,7 +112,6 @@ export function CtaSection() {
                     ))}
                   </ul>
                 </div>
-
               </div>
 
               <p className="text-xs text-muted-foreground mt-4 text-center">
@@ -130,7 +119,6 @@ export function CtaSection() {
               </p>
             </div>
 
-            {/* CTA button */}
             <div className="text-center">
               <Button
                 size="lg"
@@ -143,10 +131,8 @@ export function CtaSection() {
                 </a>
               </Button>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   )
