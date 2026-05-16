@@ -32,8 +32,8 @@ export function AppPreviewSection() {
             </ul>
           </div>
 
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-xs sm:max-w-sm">
+          <div className="relative flex justify-center overflow-visible pl-10 sm:pl-14 lg:justify-end lg:pl-0">
+            <div className="relative w-full max-w-xs sm:max-w-sm overflow-visible">
               <Image
                 src="/images/hjkllll.png"
                 alt={ap.imageAlt}
@@ -41,6 +41,22 @@ export function AppPreviewSection() {
                 height={1796}
                 className="w-full h-auto object-contain drop-shadow-2xl"
               />
+
+              <div
+                className="absolute z-10 top-[38%] -translate-y-1/2 max-w-[9.5rem] sm:max-w-[11rem] -left-1 sm:-left-6 lg:-left-14"
+                role="note"
+              >
+                <div className="relative rounded-2xl border-2 border-primary bg-card px-3 py-2.5 shadow-lg">
+                  <p className="text-xs sm:text-sm font-medium text-foreground leading-snug text-center">
+                    {ap.bubbleText}
+                  </p>
+                  <span
+                    className="pointer-events-none absolute -right-[7px] top-1/2 h-3.5 w-3.5 -translate-y-1/2 rotate-45 border-r-2 border-t-2 border-primary bg-card"
+                    aria-hidden
+                  />
+                </div>
+              </div>
+
               <div className="absolute -top-4 -right-4 rounded-xl border border-border bg-card px-4 py-3 shadow-lg">
                 <p className="text-xs font-medium text-muted-foreground">{ap.floatLabel}</p>
                 <p className="text-xl font-bold text-foreground">{ap.floatValue}</p>
