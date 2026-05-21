@@ -234,7 +234,7 @@ export const translations = {
       supportLinks: [
         { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
         { label: "Polityka prywatności", href: "/polityka-prywatnosci" },
-        { label: "Regulamin", href: "#" },
+        { label: "Regulamin / Terms of Service", href: "/regulamin" },
       ],
       copy: "© 2026 ChefVision.pl — Wszelkie prawa zastrzeżone.",
       madeWith: "Stworzone z serca dla polskiej gastronomii",
@@ -474,7 +474,7 @@ export const translations = {
       supportLinks: [
         { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
         { label: "Privacy Policy", href: "/polityka-prywatnosci" },
-        { label: "Terms of Service", href: "#" },
+        { label: "Regulamin / Terms of Service", href: "/regulamin" },
       ],
       copy: "© 2026 ChefVision.pl — All rights reserved.",
       madeWith: "Made with heart for the restaurant industry",
