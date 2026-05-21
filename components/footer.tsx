@@ -59,10 +59,13 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h4 className="text-sm font-semibold text-foreground">{f.support}</h4>
             <ul className="flex flex-col gap-2.5">
-              {f.supportLinks.map((item: string) => (
-                <li key={item}>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    {item}
+              {f.supportLinks.map((item: { label: string; href: string }) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {item.label}
                   </Link>
                 </li>
               ))}
