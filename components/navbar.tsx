@@ -22,7 +22,7 @@ export function Navbar() {
     { label: t.nav.features, href: "#menu-live" },
     { label: t.nav.beta, href: "#beta-testing" },
     { label: t.nav.examples, href: "#przyklady" },
-    { label: t.nav.about, href: "#omnie" },
+    { label: t.nav.about, href: "#onas" },
   ]
 
   const toggleLocale = () => {

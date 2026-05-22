@@ -6,7 +6,7 @@ export const translations = {
       features: "Funkcje",
       beta: "Testy beta",
       examples: "Przykłady",
-      about: "O mnie",
+      about: "O nas",
       cta: "Zacznij za darmo",
     },
     hero: {
@@ -246,7 +246,7 @@ export const translations = {
       features: "Features",
       beta: "Beta Testing",
       examples: "Examples",
-      about: "About",
+      about: "About us",
       cta: "Get Started Free",
     },
     hero: {

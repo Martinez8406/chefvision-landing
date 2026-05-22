@@ -11,16 +11,34 @@ const aboutImages = [
 
 const content = {
   pl: {
-    headline: "O mnie",
-    p1: "Cześć! Nazywam się Marcin Koniuszko — od ponad 16 lat smak i precyzja są moim codziennym językiem, w kuchniach od Wrocławia po szkockie Aberdeen. Pracując w renomowanych miejscach, takich jak AC Marriott czy Platinum Palace, nauczyłem się, że perfekcja tkwi w szczegółach, a smak to nie tylko składniki, ale i emocje. Jako Chef de partie i Szef Kuchni organizowałem bankiety na setki osób, tworzyłem innowacyjne menu i zarządzałem zespołami z naciskiem na jakość i optymalizację.",
-    p2: "Po latach spędzonych wśród garnków i patelni poczułem, że czas na nowy przepis — tym razem na innowację. Postanowiłem połączyć kulinarną wiedzę z nowoczesną technologią. Tak narodził się Chef Vision — aplikacja dla restauratorów, która ułatwia tworzenie eleganckich menu, oszczędza czas i pomaga lepiej prezentować każde danie.",
-    p3: "Moje doświadczenie w kuchni, połączone z pasją do technologii, pozwala mi budować narzędzie, które naprawdę rozumie branżę gastronomiczną. Wierzę, że nawet w tak tradycyjnej dziedzinie innowacja może być przyprawą, która odmieni wszystko. Zapraszam do odkrywania Chef Vision — bo nawet najlepszy kucharz potrzebuje dobrego cyfrowego asystenta!",
+    headline: "O nas",
+    p1: "Cześć! Jesteśmy Marcin i Anna Koniuszko — połączyliśmy doświadczenie gastronomiczne, finansowe i technologiczne, aby stworzyć ChefVision — nowoczesne narzędzie wspierające restauracje i hotele w codziennej pracy.",
+    p2: "Marcin od ponad 18 lat pracuje w gastronomii — od Wrocławia po szkockie Aberdeen. Pracując w renomowanych miejscach, takich jak AC Marriott czy Hilton, zdobywał doświadczenie jako Chef de Partie i Szef Kuchni, organizując bankiety na setki osób, tworząc menu i zarządzając zespołami z naciskiem na jakość, estetykę i optymalizację pracy. To właśnie wieloletnia praktyka w gastronomii pozwoliła mu zrozumieć realne problemy restauracji i potrzeby obsługi.",
+    p3: "Ania od lat związana jest z branżą finansową i bankowością. Jej doświadczenie w organizacji, analizie i pracy z klientem pomaga budować ChefVision jako profesjonalny i uporządkowany projekt biznesowy. Wspiera rozwój aplikacji od strony operacyjnej, finansowej i organizacyjnej, dbając o to, aby rozwiązanie było nie tylko nowoczesne, ale również praktyczne i wiarygodne dla biznesu.",
+    p4: "ChefVision powstał z połączenia kulinarnej praktyki i nowoczesnej technologii. Naszym celem jest tworzenie narzędzi, które pomagają restauracjom i hotelom:",
+    goals: [
+      "lepiej prezentować menu,",
+      "zwiększać sprzedaż,",
+      "oszczędzać czas obsługi,",
+      "oraz poprawiać doświadczenie gości.",
+    ],
+    p5: "Wierzymy, że nawet w tak tradycyjnej branży jak gastronomia technologia może stać się realnym wsparciem codziennej pracy — prostym, eleganckim i skutecznym.",
+    p6: "Zapraszamy do odkrywania ChefVision.",
   },
   en: {
-    headline: "About me",
-    p1: "Hi! My name is Marcin Koniuszko — for over 16 years, taste and precision have been my everyday language, in kitchens from Wrocław to Aberdeen, Scotland. Working in renowned venues such as AC Marriott and Platinum Palace, I learned that perfection lies in the details, and that flavour is not just about ingredients — it's about emotions. As Chef de Partie and Head Chef, I organised banquets for hundreds of guests, created innovative menus and managed teams with a focus on quality and efficiency.",
-    p2: "After years spent among pots and pans, I felt it was time for a new recipe — this time for innovation. I decided to combine my culinary knowledge with modern technology. That's how Chef Vision was born — an app for restaurateurs that makes it easy to create elegant menus, saves time and helps present every dish at its best.",
-    p3: "My kitchen experience, combined with a passion for technology, allows me to build a tool that truly understands the restaurant industry. I believe that even in such a traditional field, innovation can be the spice that changes everything. I invite you to discover Chef Vision — because even the best chef needs a great digital assistant!",
+    headline: "About us",
+    p1: "Hi! We're Marcin and Anna Koniuszko — we combined culinary, financial and technological experience to create ChefVision, a modern tool supporting restaurants and hotels in their daily work.",
+    p2: "Marcin has worked in gastronomy for over 18 years — from Wrocław to Aberdeen, Scotland. At renowned venues such as AC Marriott and Hilton, he gained experience as Chef de Partie and Head Chef, organising banquets for hundreds of guests, creating menus and leading teams with a focus on quality, aesthetics and workflow optimisation. Years of hands-on practice in hospitality helped him understand the real challenges restaurants face and what service teams need.",
+    p3: "Anna has long been connected to finance and banking. Her experience in organisation, analysis and client work helps build ChefVision as a professional, well-structured business project. She supports the app's development on the operational, financial and organisational side, ensuring the solution is not only modern but also practical and credible for businesses.",
+    p4: "ChefVision was born from combining culinary practice and modern technology. Our goal is to create tools that help restaurants and hotels:",
+    goals: [
+      "present menus more effectively,",
+      "increase sales,",
+      "save service time,",
+      "and improve the guest experience.",
+    ],
+    p5: "We believe that even in as traditional an industry as hospitality, technology can become real everyday support — simple, elegant and effective.",
+    p6: "We invite you to discover ChefVision.",
   },
 }
 
@@ -29,7 +47,7 @@ export function AboutSection() {
   const c = content[mounted ? locale : "pl"]
 
   return (
-    <section id="omnie" className="py-20 bg-background">
+    <section id="onas" className="py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-foreground mb-4 text-balance font-serif">
@@ -43,6 +61,14 @@ export function AboutSection() {
             <p className="text-lg text-muted-foreground leading-relaxed">{c.p1}</p>
             <p className="text-lg text-muted-foreground leading-relaxed">{c.p2}</p>
             <p className="text-lg text-muted-foreground leading-relaxed">{c.p3}</p>
+            <p className="text-lg text-muted-foreground leading-relaxed">{c.p4}</p>
+            <ul className="text-lg text-muted-foreground leading-relaxed list-disc list-inside space-y-1 pl-1">
+              {c.goals.map((goal) => (
+                <li key={goal}>{goal}</li>
+              ))}
+            </ul>
+            <p className="text-lg text-muted-foreground leading-relaxed">{c.p5}</p>
+            <p className="text-lg text-muted-foreground leading-relaxed">{c.p6}</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 order-1 lg:order-2">
