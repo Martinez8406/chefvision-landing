@@ -54,25 +54,37 @@ export const translations = {
       floatValue: "+25%",
     },
     howItWorks: {
-      headline: "Jak to działa?",
-      steps: [
+      badge: "Prawdziwe doświadczenie w restauracji",
+      headline: "Każdy gość zasługuje na zrozumienie menu.",
+      subheadline: "Od dezorientacji do pewności w kilka sekund.",
+      scenes: [
         {
-          title: "Gość skanuje QR",
-          desc: "Otwiera menu w swoim języku na telefonie.",
+          heading: "1. Gość czuje się zagubiony",
+          description:
+            "Zagraniczni goście często mają trudność ze zrozumieniem lokalnych dań, składników i tradycyjnych kart menu.",
+          imageAlt: "Zdezorientowany gość czyta polskie menu w restauracji",
         },
         {
-          title: "Otrzymuje rekomendacje",
-          desc: "Asystent podpowiada dodatki, napoje, wina i zestawy.",
+          heading: "2. ChefVision wszystko wyjaśnia natychmiast",
+          description:
+            "Gość skanuje kod QR i od razu widzi menu w swoim języku — ze zdjęciami i opisami dań.",
+          imageAlt: "Gość skanuje QR i widzi menu w swoim języku na telefonie",
         },
         {
-          title: "Składa większe zamówienie",
-          desc: "Pokazuje kelnerowi co chce zamówić — w tym polecane dodatki i napoje.",
-        },
-        {
-          title: "Ty zwiększasz zyski",
-          desc: "Większy rachunek, zadowolony gość, mniej pracy dla obsługi.",
+          heading: "3. Inteligentne rekomendacje zwiększają zamówienia",
+          description:
+            "ChefVision pomaga gościom wybierać z pewnością dzięki rekomendacjom, pairingom i popularnym kombinacjom.",
+          imageAlt: "Kelner i gość oglądają rekomendacje w aplikacji ChefVision",
         },
       ],
+      floatingBadges: ["Popularne", "Polecane", "Najlepsze combo"],
+      finale: {
+        heading: "Lepsze doświadczenie gościa.\nLepsze przychody restauracji.",
+        subheading: "ChefVision pomaga międzynarodowym gościom czuć się jak u siebie.",
+        ctaDemo: "Umów demo",
+        ctaTry: "Wypróbuj ChefVision",
+        imageAlt: "Zadowolony gość z tradycyjnym daniem w restauracji",
+      },
     },
     comparison: {
       headline: "Co zyskujesz od pierwszego dnia",
@@ -294,25 +306,37 @@ export const translations = {
       floatValue: "+25%",
     },
     howItWorks: {
-      headline: "How it works",
-      steps: [
+      badge: "Real restaurant experience",
+      headline: "Every guest deserves to understand the menu.",
+      subheadline: "From confusion to confidence in seconds.",
+      scenes: [
         {
-          title: "Guest scans the QR code",
-          desc: "Opens the menu in their language on their phone.",
+          heading: "1. The guest feels lost",
+          description:
+            "Foreign guests often struggle to understand local dishes, ingredients and traditional menus.",
+          imageAlt: "Confused guest reading a Polish menu in a restaurant",
         },
         {
-          title: "Gets recommendations",
-          desc: "The assistant suggests extras, drinks, wines and bundles.",
+          heading: "2. ChefVision explains everything instantly",
+          description:
+            "The guest scans the QR code and instantly sees the menu in their own language with photos and dish explanations.",
+          imageAlt: "Guest scans QR and views the menu in their language on a phone",
         },
         {
-          title: "Places a bigger order",
-          desc: "Shows the waiter what they want — including recommended add-ons and drinks.",
-        },
-        {
-          title: "You grow your profits",
-          desc: "Bigger bill, happy guest, less work for your staff.",
+          heading: "3. Smart recommendations increase orders",
+          description:
+            "ChefVision helps guests choose confidently with recommendations, pairings and popular combinations.",
+          imageAlt: "Waiter and guest viewing ChefVision recommendations on a phone",
         },
       ],
+      floatingBadges: ["Popular", "Recommended", "Best combo"],
+      finale: {
+        heading: "Better guest experience.\nBetter restaurant revenue.",
+        subheading: "ChefVision helps international guests feel at home.",
+        ctaDemo: "Book demo",
+        ctaTry: "Try ChefVision",
+        imageAlt: "Happy guest enjoying a traditional dish in a restaurant",
+      },
     },
     comparison: {
       headline: "What you get from day one",
