@@ -248,10 +248,10 @@ export const translations = {
       },
       videos: [
         {
-          youtubeId: "34WoLlp3ZsA",
-          title: "Pierwsze kroki w panelu ChefVision",
-          description: "Jak zalogować się do aplikacji i przejść przez podstawową konfigurację restauracji.",
-          category: "introduction",
+          youtubeId: "crvc2gk71D4",
+          title: "Jak dodać logo i zdjęcie główne do swojego menu",
+          description: "Jak dodać logo restauracji i zdjęcie główne widoczne na początku menu gościa.",
+          category: "menu",
         },
         {
           youtubeId: "34WoLlp3ZsA",
@@ -552,10 +552,10 @@ export const translations = {
       },
       videos: [
         {
-          youtubeId: "34WoLlp3ZsA",
-          title: "First steps in the ChefVision panel",
-          description: "How to log in and complete the basic restaurant setup.",
-          category: "introduction",
+          youtubeId: "crvc2gk71D4",
+          title: "How to add a logo and hero image to your menu",
+          description: "How to add your restaurant logo and hero image visible at the top of the guest menu.",
+          category: "menu",
         },
         {
           youtubeId: "34WoLlp3ZsA",
