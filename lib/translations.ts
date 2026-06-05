@@ -7,6 +7,7 @@ export const translations = {
       beta: "Testy beta",
       examples: "Przykłady",
       about: "O nas",
+      helpCenter: "Centrum pomocy",
       cta: "Zacznij za darmo",
     },
     hero: {
@@ -234,6 +235,56 @@ export const translations = {
       tokenNote: "💡 Tokeny abonamentowe resetują się 1. dnia każdego miesiąca i nie przechodzą na kolejny okres. Tokeny z paczki są bezterminowe.",
       ctaBtn: "Zatrudnij cyfrowego asystenta za 3,23 zł dziennie",
     },
+    helpCenter: {
+      badge: "Poradniki wideo",
+      headline: "Centrum pomocy",
+      sub: "Krótkie filmy pokazują krok po kroku, jak korzystać z panelu ChefVision — od pierwszego logowania po promocje i zarządzanie menu.",
+      categories: {
+        all: "Wszystkie",
+        introduction: "Wprowadzenie",
+        menu: "Menu",
+        promotions: "Promocje",
+        account: "Konto",
+      },
+      videos: [
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Pierwsze kroki w panelu ChefVision",
+          description: "Jak zalogować się do aplikacji i przejść przez podstawową konfigurację restauracji.",
+          category: "introduction",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Jak dodać danie do menu",
+          description: "Dodawanie nowej pozycji, ustawianie ceny, kategorii i widoczności w menu gościa.",
+          category: "menu",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Zdjęcia, opisy i wideo przy daniu",
+          description: "Jak dodać zdjęcie, opis oraz podpiąć link do YouTube, TikToka lub Instagrama.",
+          category: "menu",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Tworzenie promocji i zestawów",
+          description: "Konfiguracja zestawów promocyjnych i rekomendacji, które widzi gość przy zamówieniu.",
+          category: "promotions",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Pairingi i rekomendacje sprzedażowe",
+          description: "Jak ustawić sugestie napojów, dodatków i kombinacji zwiększających wartość rachunku.",
+          category: "promotions",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Języki menu i ustawienia konta",
+          description: "Zarządzanie tłumaczeniami menu oraz podstawowymi ustawieniami profilu restauracji.",
+          category: "account",
+        },
+      ],
+    },
     footer: {
       tagline: "Cyfrowy asystent sprzedaży dla restauracji. Menu w 14 językach, opinie Google i zdjęcia dań — za 3,23 zł dziennie.",
       product: "Produkt",
@@ -244,6 +295,7 @@ export const translations = {
         { label: "Przykłady", href: "#przyklady" },
       ],
       supportLinks: [
+        { label: "Centrum pomocy", href: "/centrum-pomocy" },
         { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
         { label: "Polityka prywatności", href: "/polityka-prywatnosci" },
         { label: "Regulamin / Terms of Service", href: "/regulamin" },
@@ -259,6 +311,7 @@ export const translations = {
       beta: "Beta Testing",
       examples: "Examples",
       about: "About us",
+      helpCenter: "Help Center",
       cta: "Get Started Free",
     },
     hero: {
@@ -486,6 +539,56 @@ export const translations = {
       tokenNote: "💡 Subscription tokens reset on the 1st of each month and don't carry over. Pack tokens never expire.",
       ctaBtn: "Start saving your waiters' time",
     },
+    helpCenter: {
+      badge: "Video guides",
+      headline: "Help Center",
+      sub: "Short videos walk you through the ChefVision panel step by step — from your first login to promotions and menu management.",
+      categories: {
+        all: "All",
+        introduction: "Getting started",
+        menu: "Menu",
+        promotions: "Promotions",
+        account: "Account",
+      },
+      videos: [
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "First steps in the ChefVision panel",
+          description: "How to log in and complete the basic restaurant setup.",
+          category: "introduction",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "How to add a dish to the menu",
+          description: "Adding a new item, setting price, category and guest menu visibility.",
+          category: "menu",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Photos, descriptions and dish videos",
+          description: "How to add a photo, description and link a YouTube, TikTok or Instagram video.",
+          category: "menu",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Creating promotions and bundles",
+          description: "Setting up promotional bundles and recommendations guests see when ordering.",
+          category: "promotions",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Pairings and sales recommendations",
+          description: "How to set up drink, add-on and combo suggestions that increase bill value.",
+          category: "promotions",
+        },
+        {
+          youtubeId: "34WoLlp3ZsA",
+          title: "Menu languages and account settings",
+          description: "Managing menu translations and basic restaurant profile settings.",
+          category: "account",
+        },
+      ],
+    },
     footer: {
       tagline: "Digital sales assistant for restaurants. Menu in 14 languages, Google reviews and dish photos — for €0.77/day.",
       product: "Product",
@@ -496,6 +599,7 @@ export const translations = {
         { label: "Examples", href: "#przyklady" },
       ],
       supportLinks: [
+        { label: "Help Center", href: "/centrum-pomocy" },
         { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
         { label: "Privacy Policy", href: "/polityka-prywatnosci" },
         { label: "Regulamin / Terms of Service", href: "/regulamin" },

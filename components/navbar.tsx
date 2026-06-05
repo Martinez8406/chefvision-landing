@@ -23,6 +23,7 @@ export function Navbar() {
     { label: t.nav.beta, href: "#beta-testing" },
     { label: t.nav.examples, href: "#przyklady" },
     { label: t.nav.about, href: "#onas" },
+    { label: t.nav.helpCenter, href: "/centrum-pomocy" },
   ]
 
   const toggleLocale = () => {
