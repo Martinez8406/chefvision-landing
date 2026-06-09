@@ -254,7 +254,7 @@ export const translations = {
           category: "menu",
         },
         {
-          youtubeId: "34WoLlp3ZsA",
+          youtubeId: "PGdYRjBOvCI",
           title: "Jak dodać danie do menu",
           description: "Dodawanie nowej pozycji, ustawianie ceny, kategorii i widoczności w menu gościa.",
           category: "menu",
@@ -558,7 +558,7 @@ export const translations = {
           category: "menu",
         },
         {
-          youtubeId: "34WoLlp3ZsA",
+          youtubeId: "PGdYRjBOvCI",
           title: "How to add a dish to the menu",
           description: "Adding a new item, setting price, category and guest menu visibility.",
           category: "menu",
