@@ -239,6 +239,7 @@ export const translations = {
       badge: "Poradniki wideo",
       headline: "Centrum pomocy",
       sub: "Krótkie filmy pokazują krok po kroku, jak korzystać z panelu ChefVision — od pierwszego logowania po promocje i zarządzanie menu.",
+      watchOnYoutube: "Obejrzyj na YouTube",
       categories: {
         all: "Wszystkie",
         introduction: "Wprowadzenie",
@@ -255,6 +256,7 @@ export const translations = {
         },
         {
           youtubeId: "PGdYRjBOvCI",
+          youtubeUrl: "https://youtube.com/shorts/PGdYRjBOvCI?feature=share",
           title: "Jak dodać danie do menu",
           description: "Dodawanie nowej pozycji, ustawianie ceny, kategorii i widoczności w menu gościa.",
           category: "menu",
@@ -543,6 +545,7 @@ export const translations = {
       badge: "Video guides",
       headline: "Help Center",
       sub: "Short videos walk you through the ChefVision panel step by step — from your first login to promotions and menu management.",
+      watchOnYoutube: "Watch on YouTube",
       categories: {
         all: "All",
         introduction: "Getting started",
@@ -559,6 +562,7 @@ export const translations = {
         },
         {
           youtubeId: "PGdYRjBOvCI",
+          youtubeUrl: "https://youtube.com/shorts/PGdYRjBOvCI?feature=share",
           title: "How to add a dish to the menu",
           description: "Adding a new item, setting price, category and guest menu visibility.",
           category: "menu",

@@ -16,9 +16,18 @@ import {
 
 type HelpVideo = {
   youtubeId: string
+  youtubeUrl?: string
   title: string
   description: string
   category: string
+}
+
+function getYoutubeUrl(video: HelpVideo) {
+  return video.youtubeUrl ?? `https://www.youtube.com/watch?v=${video.youtubeId}`
+}
+
+function isShort(video: HelpVideo) {
+  return video.youtubeUrl?.includes("/shorts/") ?? false
 }
 
 export function HelpCenterSection() {
@@ -96,9 +105,18 @@ export function HelpCenterSection() {
                           <h3 className="font-semibold text-foreground leading-snug mb-2">
                             {video.title}
                           </h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
+                          <p className="text-sm text-muted-foreground leading-relaxed mb-3">
                             {video.description}
                           </p>
+                          <a
+                            href={getYoutubeUrl(video)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-sm font-medium text-primary hover:underline"
+                          >
+                            {hc.watchOnYoutube} →
+                          </a>
                         </div>
                       </CardContent>
                     </Card>
@@ -119,7 +137,7 @@ export function HelpCenterSection() {
                   {activeVideo.title}
                 </DialogTitle>
               </DialogHeader>
-              <AspectRatio ratio={16 / 9}>
+              <AspectRatio ratio={isShort(activeVideo) ? 9 / 16 : 16 / 9}>
                 <iframe
                   src={`https://www.youtube-nocookie.com/embed/${activeVideo.youtubeId}?autoplay=1`}
                   title={activeVideo.title}
@@ -128,6 +146,16 @@ export function HelpCenterSection() {
                   className="w-full h-full border-0"
                 />
               </AspectRatio>
+              <div className="px-6 py-4 border-t border-border">
+                <a
+                  href={getYoutubeUrl(activeVideo)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary hover:underline"
+                >
+                  {hc.watchOnYoutube} →
+                </a>
+              </div>
             </>
           )}
         </DialogContent>
