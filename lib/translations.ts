@@ -11,10 +11,13 @@ export const translations = {
       cta: "Zacznij za darmo",
     },
     hero: {
+      freeQrBadge: "Darmowe QR Menu dla restauracji i hoteli",
       badge: "Asystent Kelnera",
-      headlineBefore: "Asystent Kelnera, ",
-      headlineHighlight: "który zwiększa sprzedaż",
-      headlineAfter: " w Twojej restauracji",
+      headlineBefore: "Darmowe QR Menu dla restauracji i hoteli, które ",
+      headlineHighlight: "zwiększa sprzedaż",
+      headlineAfter: "",
+      freeQrSub:
+        "Stwórz własne QR Menu za darmo. 14 dni pełnej wersji Premium bez karty kredytowej. Po okresie próbnym możesz pozostać na darmowym planie.",
       sub: "ChefVision rekomenduje dania, napoje i dodatki gościom, tworzy promocje i wspiera Twój zespół w sprzedaży. Mniej chaosu. Większe rachunki. Zadowoleni goście.",
       cta1: "Wypróbuj za darmo",
       cta2: "Zobacz jak to działa",
@@ -24,10 +27,67 @@ export const translations = {
         "Mniej pytań do obsługi – aplikacja rekomenduje",
         "Tłumaczenie menu na 14 języków",
       ],
+      ctaTrust: [
+        "Darmowy plan",
+        "Bez karty kredytowej",
+        "14 dni Premium",
+        "14 języków",
+      ],
       floatLabel1: "Średnia wartość zamówienia",
       floatVal1: "+25%",
       floatLabel2: "Koszt leada vs. ChefStars",
       floatVal2: "30 zł vs 1,50 zł",
+    },
+    freeQrMenu: {
+      headline: "Darmowe QR Menu dla restauracji",
+      description:
+        "ChefVision pozwala stworzyć nowoczesne QR Menu całkowicie za darmo. Dodaj dania, wygeneruj kod QR i udostępnij menu swoim gościom w kilka minut.",
+      cards: [
+        "Darmowe QR Menu",
+        "Kod QR generowany automatycznie",
+        "Edycja menu online",
+        "Darmowy plan bez limitu czasu",
+      ],
+    },
+    qrMenuSeo: {
+      whatIs: {
+        headline: "Czym jest QR Menu?",
+        text: "QR Menu to cyfrowa karta menu dostępna po zeskanowaniu kodu QR telefonem. Dzięki ChefVision restauracje i hotele mogą aktualizować menu online bez drukowania nowych kart oraz udostępniać je gościom w wielu językach.",
+      },
+      whyUse: {
+        headline: "Dlaczego warto korzystać z QR Menu?",
+        bullets: [
+          "Brak kosztów druku",
+          "Natychmiastowe aktualizacje",
+          "Menu dostępne na telefonie",
+          "Wsparcie dla zagranicznych gości",
+          "Większa sprzedaż dzięki rekomendacjom",
+        ],
+      },
+    },
+    faq: {
+      badge: "Najczęstsze pytania",
+      headline: "Pytania o darmowe QR Menu",
+      items: [
+        {
+          question: "Czy QR Menu jest darmowe?",
+          answer:
+            "Tak. ChefVision oferuje darmowy plan pozwalający stworzyć i udostępnić własne QR Menu bez opłat.",
+        },
+        {
+          question: "Czy potrzebuję karty kredytowej?",
+          answer: "Nie. Możesz rozpocząć korzystanie bez podawania danych karty.",
+        },
+        {
+          question: "Co dzieje się po 14 dniach?",
+          answer:
+            "Po zakończeniu okresu próbnego możesz przejść na plan Premium lub pozostać przy darmowym planie.",
+        },
+        {
+          question: "Czy darmowy plan ma limit czasu?",
+          answer: "Nie. Darmowy plan działa bez ograniczenia czasowego.",
+        },
+      ],
     },
     stats: {
       badge: "Potencjał narzędzia",
@@ -193,13 +253,24 @@ export const translations = {
         "Rekomendacje sprzedażowe — ustawiasz sam wino, napoje, dodatki do upsellu",
         "Pomagam uruchomić ChefVision krok po kroku — od menu po rekomendacje sprzedażowe",
       ],
+      pricingRibbon: "Zacznij za darmo — bez karty kredytowej",
+      pricingIntro1:
+        "Darmowy plan pozwala stworzyć własne QR Menu i udostępnić je gościom bez żadnych opłat.",
+      pricingIntro2:
+        "Plan Premium odblokowuje dodatkowe funkcje zwiększające sprzedaż, tłumaczenia AI i zaawansowane rekomendacje.",
       pricingTitle:
         "Po okresie testowym możesz przejść na pełny plan Premium lub pozostać przy darmowym menu podstawowym.",
       freePlan: {
+        badge: "Najlepszy na start",
         price: "0",
         currency: "zł / miesiąc",
         label: "Plan darmowy",
         desc: "Wciąż masz dostęp do swojego cyfrowego menu w wersji podstawowej.",
+        highlights: [
+          "Darmowe QR Menu",
+          "Bez limitu czasu",
+          "Bez karty kredytowej",
+        ],
         features: [
           "Cyfrowe menu QR",
           "Podstawowe tłumaczenie (EN)",
@@ -317,10 +388,13 @@ export const translations = {
       cta: "Get Started Free",
     },
     hero: {
+      freeQrBadge: "Free QR Menu for restaurants and hotels",
       badge: "Waiter Assistant",
-      headlineBefore: "A Waiter Assistant ",
-      headlineHighlight: "that grows sales",
-      headlineAfter: " in your restaurant",
+      headlineBefore: "Free QR Menu for restaurants and hotels that ",
+      headlineHighlight: "grows sales",
+      headlineAfter: "",
+      freeQrSub:
+        "Create your own QR Menu for free. 14 days of full Premium with no credit card. After the trial, you can stay on the free plan.",
       sub: "ChefVision recommends dishes, drinks and add-ons to guests, creates promotions and supports your team in selling. Less chaos. Bigger bills. Happy guests.",
       cta1: "Try for free",
       cta2: "See how it works",
@@ -330,10 +404,67 @@ export const translations = {
         "Fewer questions for staff — the app recommends",
         "Menu translated into 14 languages",
       ],
+      ctaTrust: [
+        "Free plan",
+        "No credit card",
+        "14 days Premium",
+        "14 languages",
+      ],
       floatLabel1: "Average order value",
       floatVal1: "+25%",
       floatLabel2: "Lead cost vs. ChefStars",
       floatVal2: "€7 vs €0.35",
+    },
+    freeQrMenu: {
+      headline: "Free QR Menu for restaurants",
+      description:
+        "ChefVision lets you create a modern QR Menu completely free. Add dishes, generate a QR code and share your menu with guests in minutes.",
+      cards: [
+        "Free QR Menu",
+        "QR code generated automatically",
+        "Edit menu online",
+        "Free plan with no time limit",
+      ],
+    },
+    qrMenuSeo: {
+      whatIs: {
+        headline: "What is a QR Menu?",
+        text: "A QR Menu is a digital menu card accessible by scanning a QR code with a phone. With ChefVision, restaurants and hotels can update their online menu without printing new cards and share it with guests in multiple languages.",
+      },
+      whyUse: {
+        headline: "Why use a QR Menu?",
+        bullets: [
+          "No printing costs",
+          "Instant updates",
+          "Menu available on phone",
+          "Support for foreign guests",
+          "Higher sales through recommendations",
+        ],
+      },
+    },
+    faq: {
+      badge: "Common questions",
+      headline: "Questions about the free QR Menu",
+      items: [
+        {
+          question: "Is the QR Menu free?",
+          answer:
+            "Yes. ChefVision offers a free plan that lets you create and share your own QR Menu at no cost.",
+        },
+        {
+          question: "Do I need a credit card?",
+          answer: "No. You can get started without providing card details.",
+        },
+        {
+          question: "What happens after 14 days?",
+          answer:
+            "After the trial period, you can switch to Premium or stay on the free plan.",
+        },
+        {
+          question: "Does the free plan have a time limit?",
+          answer: "No. The free plan works without any time restriction.",
+        },
+      ],
     },
     stats: {
       badge: "Tool potential",
@@ -499,13 +630,24 @@ export const translations = {
         "Sales recommendations — set wine, drinks, extras for upsell yourself",
         "I help you launch ChefVision step by step — from menu setup to sales recommendations",
       ],
+      pricingRibbon: "Start for free — no credit card required",
+      pricingIntro1:
+        "The free plan lets you create your own QR Menu and share it with guests at no cost.",
+      pricingIntro2:
+        "Premium unlocks additional sales features, AI translations and advanced recommendations.",
       pricingTitle:
         "After the trial period, you can switch to the full Premium plan or stay on the free basic menu.",
       freePlan: {
+        badge: "Best to start",
         price: "0",
         currency: "/ month",
         label: "Free plan",
         desc: "You still have access to your digital menu in the basic version.",
+        highlights: [
+          "Free QR Menu",
+          "No time limit",
+          "No credit card",
+        ],
         features: [
           "Digital QR menu",
           "Basic translation (EN)",

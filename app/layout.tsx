@@ -9,8 +9,8 @@ const _montserrat = Montserrat({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'ChefVision.pl – Digital Sales Assistant for Restaurants',
-  description: 'Menu in 14 languages, Google reviews for €0.35 and dish photos. Digital sales assistant for restaurants — €23/mo, no commissions.',
+  title: 'Darmowe QR Menu dla Restauracji i Hoteli | ChefVision',
+  description: 'Stwórz darmowe QR Menu dla restauracji lub hotelu. 14 dni Premium bez karty kredytowej. Menu w 14 językach, zdjęcia dań i rekomendacje sprzedażowe.',
   generator: 'v0.app',
   manifest: '/images/favicon_io22/site.webmanifest',
   icons: {
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pl" className="scroll-smooth">
+    <html lang="pl" className="scroll-smooth" data-scroll-behavior="smooth">
       <body className="font-sans antialiased">
         <LanguageProvider>
           {children}

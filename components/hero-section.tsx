@@ -17,14 +17,18 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 lg:grid-cols-2 lg:items-center">
         <div className="flex flex-col gap-7">
           <div className="space-y-4">
-            <span className="inline-flex w-fit rounded-full border-2 border-primary bg-background px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
-              {h.badge}
+            <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+              <span className="h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden />
+              {h.freeQrBadge}
             </span>
             <h1 className="max-w-xl text-4xl font-bold leading-[1.05] text-foreground text-balance font-serif sm:text-5xl lg:text-6xl">
               {h.headlineBefore}
               <span className="text-primary">{h.headlineHighlight}</span>
               {h.headlineAfter}
             </h1>
+            <p className="max-w-xl text-base font-medium leading-relaxed text-foreground sm:text-lg">
+              {h.freeQrSub}
+            </p>
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               {h.sub}
             </p>
@@ -56,6 +60,15 @@ export function HeroSection() {
                 {h.cta2}
               </a>
             </Button>
+          </div>
+
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            {h.ctaTrust.map((item: string) => (
+              <span key={item} className="inline-flex items-center gap-1.5 text-xs text-muted-foreground sm:text-sm">
+                <CircleCheck size={14} className="shrink-0 text-primary" />
+                {item}
+              </span>
+            ))}
           </div>
         </div>
 

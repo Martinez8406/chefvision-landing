@@ -51,12 +51,27 @@ export function CtaSection() {
             </div>
 
             <div className="border-t border-border pt-8 mb-8">
-              <p className="text-sm font-semibold text-foreground leading-relaxed mb-5 max-w-3xl">
-                {c.pricingTitle}
-              </p>
+              <div className="space-y-3 mb-6 max-w-3xl">
+                <p className="text-sm font-semibold text-foreground leading-relaxed">
+                  {c.pricingIntro1}
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {c.pricingIntro2}
+                </p>
+              </div>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 items-stretch lg:items-center pt-4">
-                <div className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
+              <div className="mb-5 flex items-center justify-center gap-2 rounded-xl border border-primary/30 bg-primary/10 px-4 py-3">
+                <span className="text-base" aria-hidden>🎉</span>
+                <p className="text-sm font-semibold text-primary text-center">
+                  {c.pricingRibbon}
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 items-stretch lg:items-center pt-2">
+                <div className="relative rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
+                  <span className="inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
+                    {c.freePlan.badge}
+                  </span>
                   <div className="flex items-end gap-1 mt-2">
                     <span className="text-3xl font-bold text-foreground font-serif">{c.freePlan.price}</span>
                     <span className="text-sm text-muted-foreground mb-1">{c.freePlan.currency}</span>
@@ -64,9 +79,17 @@ export function CtaSection() {
                   <p className="text-xs font-semibold text-foreground">{c.freePlan.label}</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">{c.freePlan.desc}</p>
                   <ul className="flex flex-col gap-1.5 mt-2">
-                    {c.freePlan.features.map((f: string) => (
-                      <li key={f} className="flex items-start gap-2 text-xs text-foreground">
+                    {c.freePlan.highlights.map((f: string) => (
+                      <li key={f} className="flex items-start gap-2 text-xs font-medium text-foreground">
                         <Check size={14} className="text-primary shrink-0 mt-0.5" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <ul className="flex flex-col gap-1.5 mt-2 pt-2 border-t border-border">
+                    {c.freePlan.features.map((f: string) => (
+                      <li key={f} className="flex items-start gap-2 text-xs text-muted-foreground">
+                        <Check size={14} className="text-primary/60 shrink-0 mt-0.5" />
                         {f}
                       </li>
                     ))}

@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { Play } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { Card, CardContent } from "@/components/ui/card"
@@ -87,12 +86,12 @@ export function HelpCenterSection() {
                       <CardContent className="p-0">
                         <AspectRatio ratio={16 / 9}>
                           <div className="relative w-full h-full">
-                            <Image
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
                               src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
                               alt={video.title}
-                              fill
-                              className="object-cover"
-                              unoptimized
+                              className="absolute inset-0 w-full h-full object-cover"
+                              loading="lazy"
                             />
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/35 transition-colors flex items-center justify-center">
                               <span className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
