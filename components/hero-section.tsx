@@ -17,8 +17,7 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 lg:grid-cols-2 lg:items-center">
         <div className="flex flex-col gap-7">
           <div className="space-y-4">
-            <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-              <span className="h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden />
+            <span className="inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
               {h.freeQrBadge}
             </span>
             <h1 className="max-w-xl text-4xl font-bold leading-[1.05] text-foreground text-balance font-serif sm:text-5xl lg:text-6xl">

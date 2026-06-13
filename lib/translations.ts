@@ -116,7 +116,7 @@ export const translations = {
     },
     howItWorks: {
       badge: "Prawdziwe doświadczenie w restauracji",
-      headline: "Każdy gość zasługuje na zrozumienie menu.",
+      headline: "Każdy gość zasługuje na zrozumienie menu",
       subheadline: "Od dezorientacji do pewności w kilka sekund.",
       scenes: [
         {
@@ -493,7 +493,7 @@ export const translations = {
     },
     howItWorks: {
       badge: "Real restaurant experience",
-      headline: "Every guest deserves to understand the menu.",
+      headline: "Every guest deserves to understand the menu",
       subheadline: "From confusion to confidence in seconds.",
       scenes: [
         {
