@@ -120,19 +120,19 @@ export const translations = {
       subheadline: "Od dezorientacji do pewności w kilka sekund.",
       scenes: [
         {
-          heading: "1. Gość czuje się zagubiony",
+          heading: "Gość czuje się zagubiony",
           description:
             "Zagraniczni goście często mają trudność ze zrozumieniem lokalnych dań, składników i tradycyjnych kart menu.",
           imageAlt: "Zdezorientowany gość czyta polskie menu w restauracji",
         },
         {
-          heading: "2. ChefVision wszystko wyjaśnia natychmiast",
+          heading: "ChefVision wszystko wyjaśnia natychmiast",
           description:
             "Gość skanuje kod QR i od razu widzi menu w swoim języku — ze zdjęciami i opisami dań.",
           imageAlt: "Gość skanuje QR i widzi menu w swoim języku na telefonie",
         },
         {
-          heading: "3. Inteligentne rekomendacje zwiększają zamówienia",
+          heading: "Inteligentne rekomendacje zwiększają zamówienia",
           description:
             "ChefVision pomaga gościom wybierać z pewnością dzięki rekomendacjom, pairingom i popularnym kombinacjom.",
           imageAlt: "Kelner i gość oglądają rekomendacje w aplikacji ChefVision",
@@ -140,7 +140,7 @@ export const translations = {
       ],
       floatingBadges: ["Popularne", "Polecane", "Najlepsze combo"],
       finale: {
-        heading: "Lepsze doświadczenie gościa.\nLepsze przychody restauracji.",
+        heading: "Lepsze doświadczenie gościa\nLepsze przychody restauracji",
         subheading: "ChefVision pomaga międzynarodowym gościom czuć się jak u siebie.",
         ctaDemo: "Umów demo",
         ctaTry: "Wypróbuj ChefVision",
@@ -497,19 +497,19 @@ export const translations = {
       subheadline: "From confusion to confidence in seconds.",
       scenes: [
         {
-          heading: "1. The guest feels lost",
+          heading: "The guest feels lost",
           description:
             "Foreign guests often struggle to understand local dishes, ingredients and traditional menus.",
           imageAlt: "Confused guest reading a Polish menu in a restaurant",
         },
         {
-          heading: "2. ChefVision explains everything instantly",
+          heading: "ChefVision explains everything instantly",
           description:
             "The guest scans the QR code and instantly sees the menu in their own language with photos and dish explanations.",
           imageAlt: "Guest scans QR and views the menu in their language on a phone",
         },
         {
-          heading: "3. Smart recommendations increase orders",
+          heading: "Smart recommendations increase orders",
           description:
             "ChefVision helps guests choose confidently with recommendations, pairings and popular combinations.",
           imageAlt: "Waiter and guest viewing ChefVision recommendations on a phone",
@@ -517,7 +517,7 @@ export const translations = {
       ],
       floatingBadges: ["Popular", "Recommended", "Best combo"],
       finale: {
-        heading: "Better guest experience.\nBetter restaurant revenue.",
+        heading: "Better guest experience\nBetter restaurant revenue",
         subheading: "ChefVision helps international guests feel at home.",
         ctaDemo: "Book demo",
         ctaTry: "Try ChefVision",

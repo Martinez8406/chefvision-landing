@@ -179,9 +179,6 @@ export function HowItWorksSection() {
 
                     <div className="flex flex-col justify-center gap-5 p-6 sm:p-8 lg:p-10">
                       <div className="flex items-center gap-3">
-                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">
-                          {index + 1}
-                        </span>
                         <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
                           {locale === "pl" ? "Krok" : "Step"} {index + 1}
                         </span>
