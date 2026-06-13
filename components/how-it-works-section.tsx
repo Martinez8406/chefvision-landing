@@ -6,12 +6,6 @@ import { useCallback, useEffect, useRef, useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { CHEFVISION_MENU_LANGUAGES } from "@/lib/chefvision-languages"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
-} from "@/components/ui/carousel"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -45,11 +39,12 @@ export function HowItWorksSection() {
   const { t, locale } = useLanguage()
   const hiw = t.howItWorks
   const headerRef = useRef<HTMLDivElement>(null)
+  const viewportRef = useRef<HTMLDivElement>(null)
   const headerInView = useInView(headerRef, { once: true, margin: "-10% 0px" })
+  const touchStartX = useRef<number | null>(null)
 
-  const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
-  const [count, setCount] = useState(0)
+  const [slideWidth, setSlideWidth] = useState(0)
 
   const [scene1, scene2, scene3] = hiw.scenes
   const badges = hiw.floatingBadges
@@ -85,23 +80,55 @@ export function HowItWorksSection() {
     },
   ]
 
-  const onSelect = useCallback(() => {
-    if (!api) return
-    setCurrent(api.selectedScrollSnap())
-  }, [api])
+  const goTo = useCallback((index: number) => {
+    setCurrent((index + slides.length) % slides.length)
+  }, [slides.length])
+
+  const goPrev = useCallback(() => {
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
+  }, [slides.length])
+
+  const goNext = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % slides.length)
+  }, [slides.length])
 
   useEffect(() => {
-    if (!api) return
-    setCount(api.scrollSnapList().length)
-    setCurrent(api.selectedScrollSnap())
-    api.on("select", onSelect)
-    api.on("reInit", onSelect)
+    const viewport = viewportRef.current
+    if (!viewport) return
+
+    const updateWidth = () => {
+      setSlideWidth(viewport.clientWidth)
+    }
+
+    updateWidth()
+
+    const observer = new ResizeObserver(updateWidth)
+    observer.observe(viewport)
+    window.addEventListener("resize", updateWidth)
 
     return () => {
-      api.off("select", onSelect)
-      api.off("reInit", onSelect)
+      observer.disconnect()
+      window.removeEventListener("resize", updateWidth)
     }
-  }, [api, onSelect])
+  }, [])
+
+  const handleTouchStart = (event: React.TouchEvent) => {
+    touchStartX.current = event.touches[0]?.clientX ?? null
+  }
+
+  const handleTouchEnd = (event: React.TouchEvent) => {
+    if (touchStartX.current === null) return
+    const touchEndX = event.changedTouches[0]?.clientX
+    if (touchEndX === undefined) return
+
+    const delta = touchStartX.current - touchEndX
+    if (Math.abs(delta) > 50) {
+      if (delta > 0) goNext()
+      else goPrev()
+    }
+    touchStartX.current = null
+  }
+
 
   return (
     <section
@@ -128,14 +155,29 @@ export function HowItWorksSection() {
 
       <div className="mx-auto max-w-6xl px-6">
         <div className="overflow-hidden rounded-3xl border border-border/70 bg-white shadow-[0_24px_60px_-24px_rgba(15,23,32,0.15)]">
-          <Carousel
-            setApi={setApi}
-            opts={{ loop: true, align: "start" }}
-            className="w-full"
+          <div
+            ref={viewportRef}
+            className="relative w-full overflow-hidden touch-pan-y"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
-            <CarouselContent className="ml-0">
+            <div
+              className="flex transition-transform duration-500 ease-out"
+              style={{
+                width: slideWidth > 0 ? slideWidth * slides.length : "100%",
+                transform:
+                  slideWidth > 0
+                    ? `translate3d(-${current * slideWidth}px, 0, 0)`
+                    : `translate3d(-${(current * 100) / slides.length}%, 0, 0)`,
+              }}
+            >
               {slides.map((slide, index) => (
-                <CarouselItem key={slide.image} className="pl-0">
+                <div
+                  key={slide.image}
+                  className="shrink-0 grow-0"
+                  style={{ width: slideWidth > 0 ? slideWidth : `${100 / slides.length}%` }}
+                  aria-hidden={current !== index}
+                >
                   <div className="grid lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch">
                     <div className="relative min-h-[220px] bg-muted/30 sm:min-h-[300px] lg:min-h-[420px]">
                       <Image
@@ -156,20 +198,20 @@ export function HowItWorksSection() {
                           variant="outline"
                           size="icon"
                           className="h-9 w-9 rounded-full border-white/40 bg-white/90 shadow-md backdrop-blur-sm"
-                          onClick={() => api?.scrollPrev()}
+                          onClick={goPrev}
                           aria-label={locale === "pl" ? "Poprzedni slajd" : "Previous slide"}
                         >
                           <ChevronLeft size={18} />
                         </Button>
                         <span className="rounded-full bg-black/50 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
-                          {index + 1} / {slides.length}
+                          {current + 1} / {slides.length}
                         </span>
                         <Button
                           type="button"
                           variant="outline"
                           size="icon"
                           className="h-9 w-9 rounded-full border-white/40 bg-white/90 shadow-md backdrop-blur-sm"
-                          onClick={() => api?.scrollNext()}
+                          onClick={goNext}
                           aria-label={locale === "pl" ? "Następny slajd" : "Next slide"}
                         >
                           <ChevronRight size={18} />
@@ -240,19 +282,19 @@ export function HowItWorksSection() {
                       )}
                     </div>
                   </div>
-                </CarouselItem>
+                </div>
               ))}
-            </CarouselContent>
-          </Carousel>
+            </div>
+          </div>
 
           <div className="flex items-center justify-between gap-4 border-t border-border/70 bg-muted/20 px-4 py-4 sm:px-6">
-            <div className="hidden items-center gap-2 lg:flex">
+            <div className="flex items-center gap-2">
               <Button
                 type="button"
                 variant="outline"
                 size="icon"
                 className="h-9 w-9 rounded-full"
-                onClick={() => api?.scrollPrev()}
+                onClick={goPrev}
                 aria-label={locale === "pl" ? "Poprzedni slajd" : "Previous slide"}
               >
                 <ChevronLeft size={18} />
@@ -262,7 +304,7 @@ export function HowItWorksSection() {
                 variant="outline"
                 size="icon"
                 className="h-9 w-9 rounded-full"
-                onClick={() => api?.scrollNext()}
+                onClick={goNext}
                 aria-label={locale === "pl" ? "Następny slajd" : "Next slide"}
               >
                 <ChevronRight size={18} />
@@ -270,11 +312,11 @@ export function HowItWorksSection() {
             </div>
 
             <div className="flex flex-1 items-center justify-center gap-2">
-              {Array.from({ length: count }).map((_, index) => (
+              {slides.map((slide, index) => (
                 <button
-                  key={index}
+                  key={slide.image}
                   type="button"
-                  onClick={() => api?.scrollTo(index)}
+                  onClick={() => goTo(index)}
                   aria-label={`${locale === "pl" ? "Przejdź do slajdu" : "Go to slide"} ${index + 1}`}
                   aria-current={current === index ? "true" : undefined}
                   className={cn(
@@ -288,7 +330,7 @@ export function HowItWorksSection() {
             </div>
 
             <span className="hidden text-sm font-medium text-muted-foreground sm:block">
-              {current + 1} / {count || slides.length}
+              {current + 1} / {slides.length}
             </span>
           </div>
         </div>
