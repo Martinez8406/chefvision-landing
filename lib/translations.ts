@@ -12,27 +12,53 @@ export const translations = {
     },
     hero: {
       freeQrBadge: "Darmowe QR Menu dla restauracji i hoteli",
-      badge: "Asystent Kelnera",
-      headlineBefore: "Lepsza komunikacja. Lepsze doświadczenie gościa",
-      headlineHighlight: "",
-      headlineAfter: "",
+      badge: "DLA HOTELI I RESTAURACJI",
+      headlineBefore: "Lepsza komunikacja. Lepsze ",
+      headlineHighlight: "doświadczenie",
+      headlineAfter: " gościa.",
       freeQrSub:
         "Stwórz własne QR Menu za darmo. 14 dni pełnej wersji Premium bez karty kredytowej. Po okresie próbnym możesz pozostać na darmowym planie.",
       sub: "ChefVision pomaga hotelom i restauracjom poprawić komunikację z gośćmi, ograniczyć liczbę powtarzalnych pytań i zapewnić szybki dostęp do najważniejszych informacji.",
       cta1: "Wypróbuj za darmo",
       cta2: "Zobacz jak to działa",
-      trust: [
-        "Menu restauracji dostępne od ręki",
-        "Informacje o hotelu zawsze pod ręką",
+      highlights: [
+        "Wszystkie informacje w jednym miejscu",
         "Mniej pytań do recepcji",
         "Lepsze doświadczenie gościa",
-        "Jeden kod QR do wszystkiego",
+        "Większa sprzedaż i zadowolenie",
       ],
       ctaTrust: [
         "Darmowy plan",
         "Bez karty kredytowej",
         "14 dni Premium",
         "14 języków",
+      ],
+    },
+    whyChefVision: {
+      badge: "DLACZEGO CHEFVISION?",
+      headline: "Jedna platforma. Wiele korzyści.",
+      cards: [
+        {
+          title: "Dla gości",
+          description:
+            "Szybki dostęp do menu, usług i informacji hotelowych po zeskanowaniu kodu QR.",
+        },
+        {
+          title: "Dla personelu",
+          description: "Mniej powtarzalnych pytań, więcej czasu na to, co naprawdę ważne.",
+        },
+        {
+          title: "Dla hotelu i restauracji",
+          description: "Lepsza komunikacja, większa sprzedaż usług i wyższe oceny gości.",
+        },
+        {
+          title: "Promocje i aktualności",
+          description: "Informuj gości o ofertach i wydarzeniach w kilka sekund.",
+        },
+        {
+          title: "Dane i statystyki",
+          description: "Zobacz, co interesuje gości i podejmuj lepsze decyzje.",
+        },
       ],
     },
     freeQrMenu: {
@@ -386,26 +412,53 @@ export const translations = {
     },
     hero: {
       freeQrBadge: "Free QR Menu for restaurants and hotels",
-      badge: "Waiter Assistant",
-      headlineBefore: "Better communication. Better guest experience",
-      headlineHighlight: "",
-      headlineAfter: "",
+      badge: "FOR HOTELS AND RESTAURANTS",
+      headlineBefore: "Better communication. Better ",
+      headlineHighlight: "guest experience",
+      headlineAfter: ".",
       freeQrSub:
         "Create your own QR Menu for free. 14 days of full Premium with no credit card. After the trial, you can stay on the free plan.",
       sub: "ChefVision helps hotels and restaurants improve guest communication, reduce repetitive questions, and provide quick access to the most important information.",
       cta1: "Try for free",
       cta2: "See how it works",
-      trust: [
-        "Bigger bills by up to 15–30%",
-        "Dynamic promotions in seconds",
-        "Fewer questions for staff — the app recommends",
-        "Menu translated into 14 languages",
+      highlights: [
+        "All information in one place",
+        "Fewer questions for reception",
+        "Better guest experience",
+        "Higher sales and satisfaction",
       ],
       ctaTrust: [
         "Free plan",
         "No credit card",
         "14 days Premium",
         "14 languages",
+      ],
+    },
+    whyChefVision: {
+      badge: "WHY CHEFVISION?",
+      headline: "One platform. Many benefits.",
+      cards: [
+        {
+          title: "For guests",
+          description:
+            "Quick access to menus, services and hotel information after scanning a QR code.",
+        },
+        {
+          title: "For staff",
+          description: "Fewer repetitive questions, more time for what really matters.",
+        },
+        {
+          title: "For hotels and restaurants",
+          description: "Better communication, higher service sales and better guest ratings.",
+        },
+        {
+          title: "Promotions and news",
+          description: "Inform guests about offers and events in seconds.",
+        },
+        {
+          title: "Data and analytics",
+          description: "See what interests guests and make better decisions.",
+        },
       ],
     },
     freeQrMenu: {
