@@ -17,17 +17,13 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 lg:grid-cols-2 lg:items-center">
         <div className="flex flex-col gap-7">
           <div className="space-y-4">
-            <span className="inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-              {h.freeQrBadge}
-            </span>
             <h1 className="max-w-xl text-4xl font-bold leading-[1.05] text-foreground text-balance font-serif sm:text-5xl lg:text-6xl">
               {h.headlineBefore}
-              <span className="text-primary">{h.headlineHighlight}</span>
+              {h.headlineHighlight ? (
+                <span className="text-primary">{h.headlineHighlight}</span>
+              ) : null}
               {h.headlineAfter}
             </h1>
-            <p className="max-w-xl text-base font-medium leading-relaxed text-foreground sm:text-lg">
-              {h.freeQrSub}
-            </p>
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               {h.sub}
             </p>
@@ -71,7 +67,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative flex flex-col gap-3">
+        <div>
           <div className="relative rounded-2xl border border-border/70 bg-card p-2 shadow-xl shadow-black/10 sm:rounded-3xl sm:p-4">
             <div className="relative overflow-hidden rounded-xl border border-border sm:rounded-2xl">
               <Image
@@ -83,33 +79,6 @@ export function HeroSection() {
                 priority
               />
             </div>
-          </div>
-
-          {/* Mobile: statystyki pod zdjęciem — bez zasłaniania */}
-          <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:hidden">
-            <div className="rounded-xl border border-border bg-card px-3 py-2.5 shadow-sm">
-              <p className="text-[10px] font-medium leading-tight text-muted-foreground sm:text-xs">
-                {h.floatLabel1}
-              </p>
-              <p className="mt-0.5 text-base font-semibold text-foreground sm:text-lg">{h.floatVal1}</p>
-            </div>
-            <div className="rounded-xl border border-border bg-card px-3 py-2.5 shadow-sm">
-              <p className="text-[10px] font-medium leading-tight text-muted-foreground sm:text-xs">
-                {h.floatLabel2}
-              </p>
-              <p className="mt-0.5 text-base font-semibold text-foreground sm:text-lg">{h.floatVal2}</p>
-            </div>
-          </div>
-
-          {/* Desktop: karty na rogach zdjęcia */}
-          <div className="absolute -left-3 top-6 hidden max-w-[11rem] rounded-xl border border-border bg-background/95 px-4 py-3 shadow-lg backdrop-blur lg:block">
-            <p className="text-xs font-medium text-muted-foreground">{h.floatLabel1}</p>
-            <p className="text-lg font-semibold text-foreground">{h.floatVal1}</p>
-          </div>
-
-          <div className="absolute -bottom-4 right-5 hidden max-w-[12rem] rounded-xl border border-border bg-card px-4 py-3 shadow-lg lg:block">
-            <p className="text-xs font-medium text-muted-foreground">{h.floatLabel2}</p>
-            <p className="text-lg font-semibold text-foreground">{h.floatVal2}</p>
           </div>
         </div>
       </div>
