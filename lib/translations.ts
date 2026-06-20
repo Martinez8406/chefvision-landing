@@ -61,15 +61,20 @@ export const translations = {
         },
       ],
     },
-    freeQrMenu: {
-      headline: "Darmowe QR Menu dla restauracji",
+    guestInfoHub: {
+      badge: "Doświadczenie gościa",
+      headline: "Jedno miejsce dla wszystkich informacji",
       description:
-        "ChefVision pozwala stworzyć nowoczesne QR Menu całkowicie za darmo. Dodaj dania, wygeneruj kod QR i udostępnij menu swoim gościom w kilka minut.",
-      cards: [
-        "Darmowe QR Menu",
-        "Kod QR generowany automatycznie",
-        "Edycja menu online",
-        "Darmowy plan bez limitu czasu",
+        "Hotel Hub zbiera menu, room service, bar, spa i wszystkie informacje o hotelu w jednej aplikacji. Gość skanuje kod QR — i ma wszystko pod ręką.",
+      hubLabel: "Hotel Hub",
+      hubTitle: "Wszystko, czego gość potrzebuje",
+      hubDescription:
+        "Zamiast szukać informacji w recepcji, na ulotkach czy w wielu aplikacjach — gość otwiera jeden panel z usługami hotelu.",
+      bullets: [
+        "Menu restauracji i barów w wielu językach",
+        "Room service i zamówienia bez dzwonienia do recepcji",
+        "Informacje o hotelu, spa i atrakcjach w okolicy",
+        "Godziny otwarcia i dostępność usług zawsze aktualne",
       ],
     },
     qrMenuSeo: {
@@ -114,12 +119,11 @@ export const translations = {
     },
     stats: {
       badge: "Potencjał narzędzia",
-      headline: "Co może zmienić ChefVision w Twojej restauracji",
+      headline: "Co może zmienić ChefVision w hotelu/ restauracji ?",
       items: [
         { value: "+25%", label: "Szacowany wzrost rachunku", sub: "Na podstawie danych branżowych z restauracji stosujących upselling cyfrowy — pairingi i rekomendacje przy daniu zwiększają wartość zamówienia." },
         { value: "-30%", label: "Mniej pytań o składniki i tłumaczenia", sub: "Menu w 14 językach odpowiada zanim kelner zdąży podejść do stolika — gość sam czyta i rozumie kartę." },
         { value: "+40%", label: "Więcej napojów i dodatków", sub: "Gdy gość widzi sugestie „Polecane do tego dania” bezpośrednio przy daniu — chętniej dodaje je do zamówienia." },
-        { value: "4.9/5", label: "Cel systemu ChefStars", sub: "Automatyczne zbieranie opinii po każdej wizycie — zanim gość wyjście z restauracji, system prosi o ocenę w Google." },
       ],
     },
     appPreview: {
@@ -175,6 +179,7 @@ export const translations = {
       sub: "Bez umów, bez sprzętu, bez informatyka. Uruchamiasz w 15 minut.",
       benefits: [
         "Cyfrowe menu w 14 językach — gość skanuje QR i widzi kartę w swoim języku",
+        "Hotel Hub — wszystkie informacje o hotelu w jednej aplikacji",
         "Pairingi i rekomendacje — ustawiasz sam z telefonu, bez programisty",
         "Zestawy promocyjne — Burger + Cola + Frytki -15% jednym kliknięciem",
         "Zmiana cen i menu bez drukowania nowych kart",
@@ -198,7 +203,6 @@ export const translations = {
         { feature: "Ukryte opłaty", them: "Opłaty za rejestrację, usługę, itp.", us: "Przejrzyste ceny, bez niespodzianek" },
         { feature: "Skupienie na", them: "Logistyce i dostawach", us: "Jakości i wizerunku Twojego jedzenia" },
         { feature: "Języki menu", them: "Zazwyczaj podstawowe", us: "14 języków + wideo z kuchni" },
-        { feature: "Koszt pozyskania opinii Google", them: "Brak funkcji", us: "~1,50 zł (koszt kawy) zamiast 30 zł w Google Ads" },
       ],
       keyHeadline: "Inwestujesz 97 zł, odzyskujesz ponad 2 500 zł miesięcznie",
       keyText: "Przy rachunku 200 zł platforma dostawcza zabiera Ci 40–60 zł prowizji. ChefVision kosztuje 97 zł miesięcznie — bez prowizji, bez tabletów, bez utraty klientów. Kelnerzy odzyskują czas, goście zamawiają śmielej, a Ty zbierasz opinie w Google za 1,50 zł.",
@@ -226,15 +230,6 @@ export const translations = {
           ],
         },
         {
-          title: "Maszyna do opinii Google — ChefStars",
-          points: [
-            "Gość skanuje menu → zachwyca się wideo z kuchni → dostaje darmową kawę/napój za opinię",
-            "Koszt kawy/napoju dla restauracji: ~1,50 zł. Koszt leada w Google Ads: ~30 zł",
-            "Każda nowa opinia winduje restaurację w rankingach Google Maps",
-            "Opinia od obcokrajowca w jego języku przyciąga dziesiątki kolejnych turystów",
-          ],
-        },
-        {
           title: "Pełna kontrola managera — z telefonu",
           points: [
             "Ustaw rekomendowane wino do dania dnia w 30 sekund",
@@ -253,7 +248,6 @@ export const translations = {
         "Menu w 14 językach — automatyczne tłumaczenie dla gości",
         "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
         "Rekomendacje sprzedażowe — ustawiasz sam z telefonu w 30 sekund",
-        "System ChefStars: kawa/napój za opinię w Google",
       ],
       cta: "Wypróbuj ChefVision",
       storyLabel: "Historia dania",
@@ -272,7 +266,6 @@ export const translations = {
         "Cyfrowe menu z kodem QR — aktywne 24/7, bez znaku wodnego",
         "50 tokenów na ulepszanie zdjęć dań (światło, tło, kolory)",
         "Menu w 14 językach — automatyczne tłumaczenie dla gości zagranicznych",
-        "System ChefStars: kawa/napój za opinię w Google (konfiguracja bonusu w panelu)",
         "Rekomendacje sprzedażowe — ustawiasz sam wino, napoje, dodatki do upsellu",
         "Pomagam uruchomić ChefVision krok po kroku — od menu po rekomendacje sprzedażowe",
       ],
@@ -311,7 +304,6 @@ export const translations = {
         features: [
           "Pairingi i upselling",
           "Tłumaczenia menu",
-          "ChefStars — opinie Google",
           "50 tokenów AI miesięcznie",
           "Menu bez znaku wodnego",
           "Rekomendacje i promocje",
@@ -461,15 +453,20 @@ export const translations = {
         },
       ],
     },
-    freeQrMenu: {
-      headline: "Free QR Menu for restaurants",
+    guestInfoHub: {
+      badge: "Guest experience",
+      headline: "One place for all information",
       description:
-        "ChefVision lets you create a modern QR Menu completely free. Add dishes, generate a QR code and share your menu with guests in minutes.",
-      cards: [
-        "Free QR Menu",
-        "QR code generated automatically",
-        "Edit menu online",
-        "Free plan with no time limit",
+        "Hotel Hub brings together menus, room service, the bar, spa and all hotel information in one app. Guests scan a QR code — and have everything at their fingertips.",
+      hubLabel: "Hotel Hub",
+      hubTitle: "Everything your guest needs",
+      hubDescription:
+        "Instead of searching at reception, on flyers or across multiple apps — guests open one panel with all hotel services.",
+      bullets: [
+        "Restaurant and bar menus in multiple languages",
+        "Room service and orders without calling reception",
+        "Hotel info, spa and local attractions in one place",
+        "Opening hours and service availability always up to date",
       ],
     },
     qrMenuSeo: {
@@ -519,7 +516,6 @@ export const translations = {
         { value: "+25%", label: "Estimated order value increase", sub: "Based on industry data from restaurants using digital upselling — pairings and recommendations at the dish level increase order value." },
         { value: "-30%", label: "Fewer ingredient and translation questions", sub: "Menu in 14 languages answers before the waiter reaches the table — guests read and understand the menu on their own." },
         { value: "+40%", label: "More drinks and extras ordered", sub: "When guests see 'Recommended with this dish' suggestions directly next to the dish — they are more likely to add them to their order." },
-        { value: "4.9/5", label: "ChefStars system goal", sub: "Automatic review collection after every visit — before the guest leaves, the system asks for a Google rating." },
       ],
     },
     appPreview: {
@@ -575,6 +571,7 @@ export const translations = {
       sub: "No contracts, no hardware, no IT. Up and running in 15 minutes.",
       benefits: [
         "Digital menu in 14 languages — guests scan QR and see the menu in their language",
+        "Hotel Hub — all hotel information in one app",
         "Pairings and recommendations — set from your phone, no developer needed",
         "Promotional bundles — Burger + Cola + Fries -15% in one click",
         "Update prices and menu without printing new cards",
@@ -598,7 +595,6 @@ export const translations = {
         { feature: "Hidden fees", them: "Registration, service fees, etc.", us: "Transparent pricing, no surprises" },
         { feature: "Focus on", them: "Logistics and delivery", us: "Quality and image of your food" },
         { feature: "Menu languages", them: "Usually basic", us: "14 languages + kitchen video" },
-        { feature: "Cost of a Google review", them: "No feature", us: "~€0.35 (cost of a coffee) vs €7 in Google Ads" },
       ],
       keyHeadline: "Invest €23, recover over €580/month",
       keyText: "On a €46 bill, a delivery platform takes €7–14 in commission. ChefVision charges €23/month — no commission, no tablets, no lost customers. Waiters reclaim time, guests order more confidently, and you collect Google reviews for €0.35.",
@@ -626,15 +622,6 @@ export const translations = {
           ],
         },
         {
-          title: "Google review machine — ChefStars",
-          points: [
-            "Guest scans menu → loves the kitchen video → gets a free coffee/drink for a review",
-            "Cost of coffee/drink for the restaurant: ~€0.35. Cost of a lead in Google Ads: ~€7",
-            "Every new review boosts your restaurant in Google Maps rankings",
-            "A review from a foreign guest in their language attracts dozens more tourists",
-          ],
-        },
-        {
           title: "Full manager control — from your phone",
           points: [
             "Set recommended wine for the dish of the day in 30 seconds",
@@ -653,7 +640,6 @@ export const translations = {
         "Menu in 14 languages — automatic translation for guests",
         "Kitchen video on every dish — guests buy with their eyes",
         "Sales recommendations — set from your phone in 30 seconds",
-        "ChefStars system: coffee/drink for a Google review",
       ],
       cta: "Try ChefVision",
       storyLabel: "Dish Story",
@@ -672,7 +658,6 @@ export const translations = {
         "Digital menu with QR code — active 24/7, no watermark",
         "50 tokens for enhancing dish photos (lighting, background, colors)",
         "Menu in 14 languages — automatic translation for foreign guests",
-        "ChefStars system: coffee/drink for a Google review (configure bonus in panel)",
         "Sales recommendations — set wine, drinks, extras for upsell yourself",
         "I help you launch ChefVision step by step — from menu setup to sales recommendations",
       ],
@@ -711,7 +696,6 @@ export const translations = {
         features: [
           "Pairings and upselling",
           "Menu translations",
-          "ChefStars — Google reviews",
           "50 AI tokens per month",
           "Menu without watermark",
           "Recommendations and promotions",

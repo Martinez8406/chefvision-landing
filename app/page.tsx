@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
-import { FreeQrMenuSection } from "@/components/free-qr-menu-section"
+import { GuestInfoHubSection } from "@/components/guest-info-hub-section"
 import { StatsSection } from "@/components/stats-section"
 import { AppPreviewSection } from "@/components/app-preview-section"
 import { HowItWorksSection } from "@/components/how-it-works-section"
@@ -20,7 +20,7 @@ export default function Home() {
     <main className="bg-background min-h-screen">
       <Navbar />
       <HeroSection />
-      <FreeQrMenuSection />
+      <GuestInfoHubSection />
       <StatsSection />
       <AppPreviewSection />
       <HowItWorksSection />
