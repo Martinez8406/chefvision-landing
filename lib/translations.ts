@@ -304,6 +304,7 @@ export const translations = {
         features: [
           "Pairingi i upselling",
           "Tłumaczenia menu",
+          "Hotel Hub",
           "50 tokenów AI miesięcznie",
           "Menu bez znaku wodnego",
           "Rekomendacje i promocje",
@@ -696,6 +697,7 @@ export const translations = {
         features: [
           "Pairings and upselling",
           "Menu translations",
+          "Hotel Hub",
           "50 AI tokens per month",
           "Menu without watermark",
           "Recommendations and promotions",
