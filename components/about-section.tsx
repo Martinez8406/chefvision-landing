@@ -4,6 +4,11 @@ import Image from "next/image"
 import { useLanguage } from "@/lib/language-context"
 
 const aboutImages = [
+  {
+    src: "/images/ChatGPT Image 21 cze 2026, 11_54_50.png",
+    alt: "Anna Burdzy-Koniuszko — współtwórczyni ChefVision",
+    imageClassName: "object-cover object-top",
+  },
   { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0091-RVUddaoBC2IEHmgK5Mndc134DhCYjW.jpg", alt: "Marcin Koniuszko in the kitchen" },
   { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0093-buYdf0M4tNQvr4JUOhrI4chBVb5fDT.jpg", alt: "Marcin Koniuszko preparing fresh vegetables" },
   { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0013-h73OEgqYilP7yeDIRZRbETLGrIYcEZ.jpg", alt: "Marcin Koniuszko taking bread out of the oven" },
@@ -107,9 +112,14 @@ export function AboutSection() {
             {aboutImages.map((image, index) => (
               <div
                 key={index}
-                className="relative aspect-square rounded-xl overflow-hidden shadow-lg border border-border hover:shadow-xl transition-shadow duration-300"
+                className={`relative rounded-xl overflow-hidden shadow-lg border border-border hover:shadow-xl transition-shadow duration-300 ${image.containerClassName ?? "aspect-square"}`}
               >
-                <Image src={image.src} alt={image.alt} fill className="object-cover" />
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className={image.imageClassName ?? "object-cover"}
+                />
               </div>
             ))}
           </div>
