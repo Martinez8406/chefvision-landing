@@ -110,7 +110,7 @@ export const translations = {
         {
           question: "Co dzieje się po 14 dniach?",
           answer:
-            "Po zakończeniu okresu próbnego możesz przejść na plan Premium lub pozostać przy darmowym planie.",
+            "Po zakończeniu okresu próbnego możesz przejść na wyższy plan lub pozostać przy darmowym.",
         },
         {
           question: "Czy darmowy plan ma limit czasu?",
@@ -570,7 +570,7 @@ export const translations = {
         {
           question: "What happens after 14 days?",
           answer:
-            "After the trial period, you can switch to Premium or stay on the free plan.",
+            "After the trial period, you can switch to a higher plan or stay on the free plan.",
         },
         {
           question: "Does the free plan have a time limit?",
