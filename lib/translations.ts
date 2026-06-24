@@ -397,10 +397,10 @@ export const translations = {
       items: [
         {
           id: "restaurant-stand-a6",
-          name: "Stand restauracyjny A6",
-          description: "Kompaktowy stojak na stolik — idealny do menu QR w małej restauracji lub kawiarni.",
-          href: "#",
-          thumbnail: "",
+          name: "Stand hotelowy A6",
+          description: "Kompaktowy stojak na stolik lub ladę — idealny do menu QR i informacji dla gości hotelowych.",
+          href: "https://canva.link/edporu0zjtovy54",
+          thumbnail: "/images/stand-hotelowy-a6-preview.png",
         },
         {
           id: "restaurant-stand-a5",
@@ -855,10 +855,10 @@ export const translations = {
       items: [
         {
           id: "restaurant-stand-a6",
-          name: "Restaurant stand A6",
-          description: "Compact table tent — perfect for a QR menu in a small restaurant or café.",
-          href: "#",
-          thumbnail: "",
+          name: "Hotel stand A6",
+          description: "Compact table or counter tent — perfect for QR menus and information for hotel guests.",
+          href: "https://canva.link/edporu0zjtovy54",
+          thumbnail: "/images/stand-hotelowy-a6-preview.png",
         },
         {
           id: "restaurant-stand-a5",
