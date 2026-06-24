@@ -67,12 +67,9 @@ export function CtaSection() {
                 </p>
               </div>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 items-stretch lg:items-center pt-2">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 items-stretch lg:items-center pt-2">
                 <div className="relative rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
-                  <span className="inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
-                    {c.freePlan.badge}
-                  </span>
-                  <div className="flex items-end gap-1 mt-2">
+                  <div className="flex items-end gap-1">
                     <span className="text-3xl font-bold text-foreground font-serif">{c.freePlan.price}</span>
                     <span className="text-sm text-muted-foreground mb-1">{c.freePlan.currency}</span>
                   </div>
@@ -96,7 +93,27 @@ export function CtaSection() {
                   </ul>
                 </div>
 
-                <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 lg:p-8 lg:scale-[1.06] lg:z-10 shadow-[0_0_0_1px_hsl(var(--primary)),0_0_28px_-4px_hsl(var(--primary)/0.45),0_12px_40px_-12px_hsl(var(--primary)/0.35)] ring-2 ring-primary/25 sm:col-span-2 lg:col-span-1">
+                <div className="relative rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
+                  <span className="inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
+                    {c.startPlan.badge}
+                  </span>
+                  <div className="flex items-end gap-1 mt-2">
+                    <span className="text-3xl font-bold text-foreground font-serif">{c.startPlan.price}</span>
+                    <span className="text-sm text-muted-foreground mb-1">{c.startPlan.currency}</span>
+                  </div>
+                  <p className="text-xs font-semibold text-foreground">{c.startPlan.label}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{c.startPlan.desc}</p>
+                  <ul className="flex flex-col gap-1.5 mt-2">
+                    {c.startPlan.features.map((f: string) => (
+                      <li key={f} className="flex items-start gap-2 text-xs text-foreground">
+                        <Check size={14} className="text-primary shrink-0 mt-0.5" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 lg:p-8 lg:scale-[1.06] lg:z-10 shadow-[0_0_0_1px_hsl(var(--primary)),0_0_28px_-4px_hsl(var(--primary)/0.45),0_12px_40px_-12px_hsl(var(--primary)/0.35)] ring-2 ring-primary/25 lg:col-span-1">
                   <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide shadow-md whitespace-nowrap">
                     {c.regular.badge}
                   </Badge>
@@ -116,7 +133,7 @@ export function CtaSection() {
                   </ul>
                 </div>
 
-                <div className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2 sm:col-span-2 lg:col-span-1">
+                <div className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2">
                   <div className="flex items-center gap-2 mt-2">
                     <Package size={18} className="text-primary" />
                     <span className="text-3xl font-bold text-foreground font-serif">{c.tokenPack.price}</span>

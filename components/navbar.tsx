@@ -22,6 +22,7 @@ export function Navbar() {
     { label: t.nav.features, href: "#menu-live" },
     { label: t.nav.beta, href: "#beta-testing" },
     { label: t.nav.examples, href: "#przyklady" },
+    { label: t.nav.materials, href: "/materialy" },
     { label: t.nav.about, href: "#onas" },
     { label: t.nav.helpCenter, href: "/centrum-pomocy" },
   ]
