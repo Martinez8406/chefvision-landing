@@ -24,9 +24,9 @@ export const translations = {
       cta2: "Zobacz jak to działa",
       highlights: [
         "Wszystkie informacje w jednym miejscu",
-        "Mniej pytań do recepcji",
+        "Wezwij kelnera i poproś o rachunek",
         "Lepsze doświadczenie gościa",
-        "Większa sprzedaż i zadowolenie",
+        "Automatyczne tłumaczenie menu na 14 języków",
       ],
       ctaTrust: [
         "Darmowy plan",
@@ -46,7 +46,8 @@ export const translations = {
         },
         {
           title: "Dla personelu",
-          description: "Mniej powtarzalnych pytań, więcej czasu na to, co naprawdę ważne.",
+          description:
+            "Gość wzywa kelnera, zamawia dodatki lub prosi o rachunek z telefonu — mniej zbędnych podejść do stolika.",
         },
         {
           title: "Dla hotelu i restauracji",
@@ -55,10 +56,6 @@ export const translations = {
         {
           title: "Promocje i aktualności",
           description: "Informuj gości o ofertach i wydarzeniach w kilka sekund.",
-        },
-        {
-          title: "Dane i statystyki",
-          description: "Zobacz, co interesuje gości i podejmuj lepsze decyzje.",
         },
       ],
     },
@@ -73,7 +70,7 @@ export const translations = {
         "Zamiast szukać informacji w recepcji, na ulotkach czy w wielu aplikacjach — gość otwiera jeden panel z usługami hotelu.",
       bullets: [
         "Menu restauracji i barów w wielu językach",
-        "Room service i zamówienia bez dzwonienia do recepcji",
+        "Wezwanie kelnera, dodatkowe zamówienie i prośba o rachunek z telefonu",
         "Informacje o hotelu, spa i atrakcjach w okolicy",
         "Godziny otwarcia i dostępność usług zawsze aktualne",
       ],
@@ -89,6 +86,7 @@ export const translations = {
           "Brak kosztów druku",
           "Natychmiastowe aktualizacje",
           "Menu dostępne na telefonie",
+          "Wezwanie kelnera i prośba o rachunek jednym kliknięciem",
           "Wsparcie dla zagranicznych gości",
           "Większa sprzedaż dzięki rekomendacjom",
         ],
@@ -180,6 +178,7 @@ export const translations = {
       sub: "Bez umów, bez sprzętu, bez informatyka. Uruchamiasz w 15 minut.",
       benefits: [
         "Cyfrowe menu w 14 językach — gość skanuje QR i widzi kartę w swoim języku",
+        "Wezwij kelnera, dodatkowe zamówienie i prośba o rachunek — bez machania ręką",
         "Hotel Hub — wszystkie informacje o hotelu w jednej aplikacji",
         "Pairingi i rekomendacje — ustawiasz sam z telefonu, bez programisty",
         "Zestawy promocyjne — Burger + Cola + Frytki -15% jednym kliknięciem",
@@ -244,9 +243,10 @@ export const translations = {
     menuLive: {
       badge: "Menu Live & QR — 14 języków",
       headline: "Twój cichy sprzedawca — w telefonie każdego gościa, w jego języku.",
-      text: "Kelner ma dużo pracy i nie ma czasu polecać wina? ChefVision robi to za niego — w 14 językach, 24/7. Gość skanuje kod, widzi menu w swoim języku, ogląda wideo z kuchni i dostaje rekomendację do dania. Wszystko bez słowa od kelnera.",
+      text: "Kelner ma dużo pracy i nie ma czasu polecać wina? ChefVision robi to za niego — w 14 językach, 24/7. Gość skanuje kod, widzi menu w swoim języku, ogląda wideo z kuchni i dostaje rekomendację do dania. Gdy potrzebuje obsługi — wzywa kelnera lub prosi o rachunek bezpośrednio z telefonu.",
       bullets: [
         "Menu w 14 językach — automatyczne tłumaczenie dla gości",
+        "Wezwij kelnera, dodatkowe zamówienie i prośba o rachunek z telefonu",
         "Wideo z kuchni przy każdym daniu — gość kupuje oczami",
         "Rekomendacje sprzedażowe — ustawiasz sam z telefonu w 30 sekund",
       ],
@@ -482,9 +482,9 @@ export const translations = {
       cta2: "See how it works",
       highlights: [
         "All information in one place",
-        "Fewer questions for reception",
+        "Call a waiter and request the bill",
         "Better guest experience",
-        "Higher sales and satisfaction",
+        "Automatic menu translation into 14 languages",
       ],
       ctaTrust: [
         "Free plan",
@@ -504,7 +504,8 @@ export const translations = {
         },
         {
           title: "For staff",
-          description: "Fewer repetitive questions, more time for what really matters.",
+          description:
+            "Guests call a waiter, place an extra order or request the bill from their phone — fewer unnecessary trips to the table.",
         },
         {
           title: "For hotels and restaurants",
@@ -513,10 +514,6 @@ export const translations = {
         {
           title: "Promotions and news",
           description: "Inform guests about offers and events in seconds.",
-        },
-        {
-          title: "Data and analytics",
-          description: "See what interests guests and make better decisions.",
         },
       ],
     },
@@ -531,7 +528,7 @@ export const translations = {
         "Instead of searching at reception, on flyers or across multiple apps — guests open one panel with all hotel services.",
       bullets: [
         "Restaurant and bar menus in multiple languages",
-        "Room service and orders without calling reception",
+        "Call a waiter, place an extra order or request the bill from the phone",
         "Hotel info, spa and local attractions in one place",
         "Opening hours and service availability always up to date",
       ],
@@ -547,6 +544,7 @@ export const translations = {
           "No printing costs",
           "Instant updates",
           "Menu available on phone",
+          "Call a waiter and request the bill in one tap",
           "Support for foreign guests",
           "Higher sales through recommendations",
         ],
@@ -638,6 +636,7 @@ export const translations = {
       sub: "No contracts, no hardware, no IT. Up and running in 15 minutes.",
       benefits: [
         "Digital menu in 14 languages — guests scan QR and see the menu in their language",
+        "Call a waiter, place an extra order or request the bill — no hand-waving",
         "Hotel Hub — all hotel information in one app",
         "Pairings and recommendations — set from your phone, no developer needed",
         "Promotional bundles — Burger + Cola + Fries -15% in one click",
@@ -702,9 +701,10 @@ export const translations = {
     menuLive: {
       badge: "Live Menu & QR — 14 languages",
       headline: "Your silent salesperson — in every guest's phone, in their language.",
-      text: "Waiters too busy to recommend wine? ChefVision does it for them — in 14 languages, 24/7. Guests scan the code, see the menu in their language, watch kitchen video and get a dish recommendation. All without a word from the waiter.",
+      text: "Waiters too busy to recommend wine? ChefVision does it for them — in 14 languages, 24/7. Guests scan the code, see the menu in their language, watch kitchen video and get a dish recommendation. When they need service, they call a waiter or request the bill straight from their phone.",
       bullets: [
         "Menu in 14 languages — automatic translation for guests",
+        "Call a waiter, place an extra order or request the bill from the phone",
         "Kitchen video on every dish — guests buy with their eyes",
         "Sales recommendations — set from your phone in 30 seconds",
       ],

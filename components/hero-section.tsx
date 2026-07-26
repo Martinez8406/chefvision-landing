@@ -4,19 +4,19 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
   ArrowRight,
+  Bell,
   CircleCheck,
+  Languages,
   LayoutGrid,
   Play,
   Plus,
   Smile,
-  TrendingUp,
-  Users,
   type LucideIcon,
 } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { WhyChefVisionSection } from "@/components/why-chefvision-section"
 
-const highlightIcons: LucideIcon[] = [LayoutGrid, Users, Smile, TrendingUp]
+const highlightIcons: LucideIcon[] = [LayoutGrid, Bell, Smile, Languages]
 
 export function HeroSection() {
   const { t } = useLanguage()

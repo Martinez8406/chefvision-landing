@@ -1,7 +1,6 @@
 "use client"
 
 import {
-  BarChart3,
   Bell,
   Building2,
   Megaphone,
@@ -10,7 +9,7 @@ import {
 } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
-const cardIcons: LucideIcon[] = [User, Bell, Building2, Megaphone, BarChart3]
+const cardIcons: LucideIcon[] = [User, Bell, Building2, Megaphone]
 
 export function WhyChefVisionSection() {
   const { t } = useLanguage()
@@ -28,7 +27,7 @@ export function WhyChefVisionSection() {
           </h2>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {s.cards.map((card: { title: string; description: string }, index: number) => {
             const Icon = cardIcons[index] ?? User
 
