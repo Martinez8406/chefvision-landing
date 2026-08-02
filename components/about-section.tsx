@@ -6,6 +6,7 @@ import { aboutContentEl } from "@/lib/translations-el"
 import { aboutContentIt } from "@/lib/translations-it"
 import { aboutContentTr } from "@/lib/translations-tr"
 import { aboutContentRu } from "@/lib/translations-ru"
+import { aboutContentHr } from "@/lib/translations-hr"
 
 const aboutImages = [
   {
@@ -139,6 +140,7 @@ const content = {
   it: aboutContentIt,
   tr: aboutContentTr,
   ru: aboutContentRu,
+  hr: aboutContentHr,
 }
 
 export function AboutSection() {

@@ -4,14 +4,16 @@ import { el } from "./translations-el"
 import { it } from "./translations-it"
 import { tr } from "./translations-tr"
 import { ru } from "./translations-ru"
+import { hr } from "./translations-hr"
 
-export type Locale = "pl" | "en" | "de" | "es" | "el" | "it" | "tr" | "ru"
+export type Locale = "pl" | "en" | "de" | "es" | "el" | "it" | "tr" | "ru" | "hr"
 
 export const LOCALES: { id: Locale; code: string; label: string }[] = [
   { id: "en", code: "GB", label: "English" },
   { id: "de", code: "DE", label: "Deutsch" },
   { id: "es", code: "ES", label: "Español" },
   { id: "it", code: "IT", label: "Italiano" },
+  { id: "hr", code: "HR", label: "Hrvatski" },
   { id: "tr", code: "TR", label: "Türkçe" },
   { id: "ru", code: "RU", label: "Русский" },
   { id: "el", code: "GR", label: "Ελληνικά" },
@@ -27,7 +29,8 @@ export function isLocale(value: string | null): value is Locale {
     value === "el" ||
     value === "it" ||
     value === "tr" ||
-    value === "ru"
+    value === "ru" ||
+    value === "hr"
   )
 }
 
@@ -963,4 +966,5 @@ export const translations = {
   it,
   tr,
   ru,
+  hr,
 } as const

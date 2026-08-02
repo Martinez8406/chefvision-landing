@@ -6,6 +6,7 @@ import { dishStoryContentEl } from "@/lib/translations-el"
 import { dishStoryContentIt } from "@/lib/translations-it"
 import { dishStoryContentTr } from "@/lib/translations-tr"
 import { dishStoryContentRu } from "@/lib/translations-ru"
+import { dishStoryContentHr } from "@/lib/translations-hr"
 
 const icons = [ChefHat, Link2, Eye, Heart]
 
@@ -86,6 +87,7 @@ const content = {
   it: dishStoryContentIt,
   tr: dishStoryContentTr,
   ru: dishStoryContentRu,
+  hr: dishStoryContentHr,
 }
 
 export function DishStorySection() {
