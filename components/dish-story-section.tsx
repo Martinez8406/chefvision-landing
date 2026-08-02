@@ -2,6 +2,10 @@
 
 import { Link2, ChefHat, Heart, Eye } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
+import { dishStoryContentEl } from "@/lib/translations-el"
+import { dishStoryContentIt } from "@/lib/translations-it"
+import { dishStoryContentTr } from "@/lib/translations-tr"
+import { dishStoryContentRu } from "@/lib/translations-ru"
 
 const icons = [ChefHat, Link2, Eye, Heart]
 
@@ -42,6 +46,46 @@ const content = {
       { stat: "€0", label: "extra cost", desc: "All you need is a phone and a YouTube, TikTok or Instagram account. You attach the link in the panel in seconds." },
     ],
   },
+  de: {
+    badge: "Hinter den Kulissen",
+    headline: "Teilen Sie die Geschichte Ihres Gerichts",
+    sub: "Gäste kaufen nicht nur Essen — sie kaufen Emotionen und Authentizität. Mit ChefVision können Sie jedem Gericht in Ihrer digitalen Speisekarte einen Link zu einem Küchenvideo hinzufügen. Ein QR-Scan — und der Gast sieht, wie sein Essen zubereitet wird.",
+    stepLabel: "Schritt",
+    steps: [
+      { number: "01", title: "Sie filmen in der Küche", description: "Ein kurzes Video der Gerichtzubereitung — nur mit dem Handy. Keine Ausrüstung, kein Studio. Authentizität ist hier der größte Wert." },
+      { number: "02", title: "Sie verknüpfen den Link mit dem Gericht", description: "Im ChefVision-Panel fügen Sie jedem Menüeintrag einen YouTube-, TikTok- oder Instagram-Link hinzu. Ein Klick — fertig." },
+      { number: "03", title: "Gast scannt QR und schaut hinter die Kulissen", description: "Beim Durchstöbern der Speisekarte sieht der Gast ein Video-Symbol beim Gericht. Er klickt und sieht sofort, wie sein Essen in Ihrer Küche zubereitet wird." },
+      { number: "04", title: "Sie bauen eine Bindung auf, die man nicht kaufen kann", description: "Ein Gast, der Ihre Hände bei der Arbeit gesehen hat, ist kein anonymer Kunde mehr. Er ist jemand, der Ihre Geschichte kennt." },
+    ],
+    whyTitle: "Warum das Kundenloyalität stärkt",
+    stats: [
+      { stat: "3×", label: "mehr Engagement", desc: "Video neben einem Gericht lässt Gäste dreimal länger in der Speisekarte stöbern." },
+      { stat: "100%", label: "Authentizität", desc: "Keine Lieferplattform zeigt Ihren Kunden Ihre Küche von innen. Nur Sie können das." },
+      { stat: "€0", label: "Zusatzkosten", desc: "Alles, was Sie brauchen, ist ein Handy und ein YouTube-, TikTok- oder Instagram-Konto. Den Link fügen Sie in Sekunden im Panel hinzu." },
+    ],
+  },
+  es: {
+    badge: "Entre bastidores",
+    headline: "Comparta la historia de su plato",
+    sub: "Los huéspedes no compran solo comida — compran emociones y autenticidad. ChefVision le permite vincular un vídeo de cocina a cada plato de su menú digital. Un escaneo QR y el huésped ve cómo se prepara su comida.",
+    stepLabel: "Paso",
+    steps: [
+      { number: "01", title: "Graba en la cocina", description: "Un vídeo breve de la preparación del plato — solo con el móvil. Sin equipamiento, sin estudio. La autenticidad es aquí el mayor valor." },
+      { number: "02", title: "Vincula el enlace al plato", description: "En el panel de ChefVision, añade un enlace de YouTube, TikTok o Instagram a cualquier plato del menú. Un clic — listo." },
+      { number: "03", title: "El huésped escanea QR y mira entre bastidores", description: "Al navegar por el menú, el huésped ve un icono de vídeo junto al plato. Hace clic y al instante ve cómo se prepara su comida en su cocina." },
+      { number: "04", title: "Construye un vínculo que el dinero no puede comprar", description: "Un huésped que ha visto sus manos trabajando ya no es un cliente anónimo. Es alguien que conoce su historia." },
+    ],
+    whyTitle: "Por qué esto fomenta la fidelidad del cliente",
+    stats: [
+      { stat: "3×", label: "más engagement", desc: "El vídeo junto a un plato hace que los huéspedes pasen 3 veces más tiempo navegando por el menú." },
+      { stat: "100%", label: "autenticidad", desc: "Ninguna plataforma de delivery mostrará a sus clientes el interior de su cocina. Solo usted puede hacerlo." },
+      { stat: "€0", label: "coste adicional", desc: "Solo necesita un móvil y una cuenta en YouTube, TikTok o Instagram. Vincula el enlace en el panel en segundos." },
+    ],
+  },
+  el: dishStoryContentEl,
+  it: dishStoryContentIt,
+  tr: dishStoryContentTr,
+  ru: dishStoryContentRu,
 }
 
 export function DishStorySection() {

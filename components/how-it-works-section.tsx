@@ -36,7 +36,7 @@ function RecommendationBadge({ label }: { label: string }) {
 }
 
 export function HowItWorksSection() {
-  const { t, locale } = useLanguage()
+  const { t } = useLanguage()
   const hiw = t.howItWorks
   const headerRef = useRef<HTMLDivElement>(null)
   const viewportRef = useRef<HTMLDivElement>(null)
@@ -199,7 +199,7 @@ export function HowItWorksSection() {
                           size="icon"
                           className="h-9 w-9 rounded-full border-white/40 bg-white/90 shadow-md backdrop-blur-sm"
                           onClick={goPrev}
-                          aria-label={locale === "pl" ? "Poprzedni slajd" : "Previous slide"}
+                          aria-label={t.howItWorks.prevSlide}
                         >
                           <ChevronLeft size={18} />
                         </Button>
@@ -212,7 +212,7 @@ export function HowItWorksSection() {
                           size="icon"
                           className="h-9 w-9 rounded-full border-white/40 bg-white/90 shadow-md backdrop-blur-sm"
                           onClick={goNext}
-                          aria-label={locale === "pl" ? "Następny slajd" : "Next slide"}
+                          aria-label={t.howItWorks.nextSlide}
                         >
                           <ChevronRight size={18} />
                         </Button>
@@ -222,7 +222,7 @@ export function HowItWorksSection() {
                     <div className="flex flex-col justify-center gap-5 p-6 sm:p-8 lg:p-10">
                       <div className="flex items-center gap-3">
                         <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                          {locale === "pl" ? "Krok" : "Step"} {index + 1}
+                          {t.howItWorks.stepLabel} {index + 1}
                         </span>
                       </div>
 
@@ -242,9 +242,10 @@ export function HowItWorksSection() {
                       {slide.type === "languages" && (
                         <div className="space-y-3">
                           <p className="text-sm font-medium text-muted-foreground">
-                            {locale === "pl"
-                              ? `${CHEFVISION_MENU_LANGUAGES.length} języków menu w ChefVision`
-                              : `${CHEFVISION_MENU_LANGUAGES.length} menu languages in ChefVision`}
+                            {t.howItWorks.languagesCount.replace(
+                              "{count}",
+                              String(CHEFVISION_MENU_LANGUAGES.length)
+                            )}
                           </p>
                           <div className="flex max-h-28 flex-wrap gap-1.5 overflow-y-auto sm:max-h-none sm:gap-2">
                             {CHEFVISION_MENU_LANGUAGES.map((lang) => (
@@ -295,7 +296,7 @@ export function HowItWorksSection() {
                 size="icon"
                 className="h-9 w-9 rounded-full"
                 onClick={goPrev}
-                aria-label={locale === "pl" ? "Poprzedni slajd" : "Previous slide"}
+                aria-label={t.howItWorks.prevSlide}
               >
                 <ChevronLeft size={18} />
               </Button>
@@ -305,7 +306,7 @@ export function HowItWorksSection() {
                 size="icon"
                 className="h-9 w-9 rounded-full"
                 onClick={goNext}
-                aria-label={locale === "pl" ? "Następny slajd" : "Next slide"}
+                aria-label={t.howItWorks.nextSlide}
               >
                 <ChevronRight size={18} />
               </Button>
@@ -317,7 +318,7 @@ export function HowItWorksSection() {
                   key={slide.image}
                   type="button"
                   onClick={() => goTo(index)}
-                  aria-label={`${locale === "pl" ? "Przejdź do slajdu" : "Go to slide"} ${index + 1}`}
+                  aria-label={`${t.howItWorks.goToSlide} ${index + 1}`}
                   aria-current={current === index ? "true" : undefined}
                   className={cn(
                     "h-2 rounded-full transition-all duration-300",

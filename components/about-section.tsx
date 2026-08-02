@@ -2,6 +2,10 @@
 
 import Image from "next/image"
 import { useLanguage } from "@/lib/language-context"
+import { aboutContentEl } from "@/lib/translations-el"
+import { aboutContentIt } from "@/lib/translations-it"
+import { aboutContentTr } from "@/lib/translations-tr"
+import { aboutContentRu } from "@/lib/translations-ru"
 
 const aboutImages = [
   {
@@ -73,6 +77,68 @@ const content = {
       "We invite you to discover ChefVision.",
     ],
   },
+  de: {
+    headline: "ChefVision entstand in der Hotelarbeit — nicht in einem Konzern.",
+    paragraphs: [
+      "Über 18 Jahre arbeitete ich in der Hotelgastronomie und beobachtete Probleme, die die meisten Softwareentwickler nie mit eigenen Augen gesehen haben.",
+      "Jeden Tag sah ich Gäste, die nach Informationen zu Frühstück, Restaurantmenüs, Hotelservices oder lokalen Sehenswürdigkeiten suchten. Ich sah auch Mitarbeitende, die dieselben Fragen dutzende Male am Tag beantworteten.",
+      "Die Informationen existierten.",
+      "Das Problem war, dass sie verstreut waren.",
+      "Deshalb wurde ChefVision gegründet.",
+      "Nicht als weiteres QR-Menü.",
+      "Nicht als weitere App.",
+      "Sondern als Tool, das Hotels und Restaurants hilft, besser mit Gästen zu kommunizieren, Personalzeit zu sparen und ein besseres Erlebnis während des Aufenthalts oder Besuchs zu bieten.",
+      "Wir sind Marcin und Anna Koniuszko.",
+      "Wir haben kulinarische, hospitality-, finanzielle und technologische Erfahrung vereint, um eine Lösung zu schaffen, die den realen Bedürfnissen der Hospitality-Branche entspricht.",
+      "Marcin arbeitete über 18 Jahre in der Gastronomie, unter anderem in Hilton- und AC-Marriott-Hotels, wo er für Teamorganisation, Menüerstellung, Gästeservice sowie Events und Bankette verantwortlich war. Die tägliche Arbeit mit Gästen und Personal half ihm, die Probleme zu verstehen, die ChefVision heute löst.",
+      "Anna ist seit Langem mit Finanzwesen und Banking verbunden. Ihre Erfahrung in Organisation, Analyse und Kundenarbeit hilft, ChefVision als stabiles, gut strukturiertes und glaubwürdiges Geschäftsprojekt weiterzuentwickeln. Sie unterstützt das Unternehmenswachstum operativ, finanziell und organisatorisch und stellt sicher, dass die Lösung nicht nur modern, sondern vor allem praktisch ist.",
+      "Unsere Mission ist es, Tools zu schaffen, die Hotels und Restaurants helfen:",
+    ],
+    goals: [
+      "die Kommunikation mit Gästen zu verbessern,",
+      "schnellen Zugang zu den wichtigsten Informationen zu bieten,",
+      "den Umsatz von Services und Produkten zu steigern,",
+      "Personalzeit zu sparen,",
+      "die Qualität des Gästeerlebnisses zu erhöhen.",
+    ],
+    closing: [
+      "Wir glauben, dass Technologie echte Probleme des Alltags bei der Arbeit lösen sollte. Deshalb entwickeln wir Lösungen, die einfach einzuführen, intuitiv zu bedienen und wirklich nützlich für die Hotel- und Gastronomiebranche sind.",
+      "Wir laden Sie ein, ChefVision zu entdecken.",
+    ],
+  },
+  es: {
+    headline: "ChefVision nació trabajando en hoteles, no en una corporación.",
+    paragraphs: [
+      "Durante más de 18 años trabajé en gastronomía hotelera, observando problemas que la mayoría de creadores de software nunca han visto con sus propios ojos.",
+      "Cada día veía huéspedes buscando información sobre desayunos, menús de restaurante, servicios del hotel o atracciones locales. También veía al personal respondiendo las mismas preguntas decenas de veces al día.",
+      "La información existía.",
+      "El problema era que estaba dispersa.",
+      "Por eso se creó ChefVision.",
+      "No como otro menú QR.",
+      "No como otra app.",
+      "Sino como una herramienta que ayuda a hoteles y restaurantes a comunicarse mejor con los huéspedes, ahorrar tiempo al personal y ofrecer una mejor experiencia durante la estancia o la visita.",
+      "Somos Marcin y Anna Koniuszko.",
+      "Combinamos experiencia culinaria, hotelera, financiera y tecnológica para crear una solución que responde a las necesidades reales del sector de la hostelería.",
+      "Marcin trabajó en gastronomía durante más de 18 años, incluidos hoteles Hilton y AC Marriott, donde fue responsable de la organización del equipo, creación de menús, atención al huésped y eventos y banquetes. El trabajo diario con huéspedes y personal le permitió entender los problemas que ChefVision resuelve hoy.",
+      "Anna lleva años vinculada al sector financiero y bancario. Su experiencia en organización, análisis y atención al cliente ayuda a desarrollar ChefVision como un proyecto empresarial estable, bien estructurado y creíble. Apoya el crecimiento de la empresa en lo operativo, financiero y organizativo, asegurando que la solución sea no solo moderna, sino sobre todo práctica.",
+      "Nuestra misión es crear herramientas que ayuden a hoteles y restaurantes a:",
+    ],
+    goals: [
+      "mejorar la comunicación con los huéspedes,",
+      "ofrecer acceso rápido a la información más importante,",
+      "aumentar la venta de servicios y productos,",
+      "ahorrar tiempo al personal,",
+      "elevar la calidad de la experiencia del huésped.",
+    ],
+    closing: [
+      "Creemos que la tecnología debe resolver problemas reales del trabajo diario. Por eso creamos soluciones fáciles de implementar, intuitivas de usar y genuinamente útiles para la industria hotelera y restaurantera.",
+      "Le invitamos a descubrir ChefVision.",
+    ],
+  },
+  el: aboutContentEl,
+  it: aboutContentIt,
+  tr: aboutContentTr,
+  ru: aboutContentRu,
 }
 
 export function AboutSection() {

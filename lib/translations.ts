@@ -1,4 +1,35 @@
-export type Locale = "pl" | "en"
+import { de } from "./translations-de"
+import { es } from "./translations-es"
+import { el } from "./translations-el"
+import { it } from "./translations-it"
+import { tr } from "./translations-tr"
+import { ru } from "./translations-ru"
+
+export type Locale = "pl" | "en" | "de" | "es" | "el" | "it" | "tr" | "ru"
+
+export const LOCALES: { id: Locale; code: string; label: string }[] = [
+  { id: "en", code: "GB", label: "English" },
+  { id: "de", code: "DE", label: "Deutsch" },
+  { id: "es", code: "ES", label: "Español" },
+  { id: "it", code: "IT", label: "Italiano" },
+  { id: "tr", code: "TR", label: "Türkçe" },
+  { id: "ru", code: "RU", label: "Русский" },
+  { id: "el", code: "GR", label: "Ελληνικά" },
+  { id: "pl", code: "PL", label: "Polski" },
+]
+
+export function isLocale(value: string | null): value is Locale {
+  return (
+    value === "pl" ||
+    value === "en" ||
+    value === "de" ||
+    value === "es" ||
+    value === "el" ||
+    value === "it" ||
+    value === "tr" ||
+    value === "ru"
+  )
+}
 
 export const translations = {
   pl: {
@@ -9,7 +40,7 @@ export const translations = {
       about: "O nas",
       materials: "Materiały",
       helpCenter: "Centrum pomocy",
-      cta: "Zaloguj się",
+      cta: "Zaloguj się / Załóż konto",
     },
     hero: {
       freeQrBadge: "Darmowe QR Menu dla restauracji i hoteli",
@@ -172,6 +203,11 @@ export const translations = {
         ctaTry: "Wypróbuj ChefVision",
         imageAlt: "Zadowolony gość z tradycyjnym daniem w restauracji",
       },
+      stepLabel: "Krok",
+      prevSlide: "Poprzedni slajd",
+      nextSlide: "Następny slajd",
+      goToSlide: "Przejdź do slajdu",
+      languagesCount: "{count} języków menu w ChefVision",
     },
     comparison: {
       headline: "Co zyskujesz od pierwszego dnia",
@@ -455,7 +491,7 @@ export const translations = {
         { label: "Regulamin / Terms of Service", href: "/regulamin" },
       ],
       copy: "© 2026 ChefVision.pl — Wszelkie prawa zastrzeżone.",
-      madeWith: "Stworzone z serca dla polskiej gastronomii",
+      madeWith: "Stworzone z serca dla gastronomii",
     },
   },
 
@@ -467,7 +503,7 @@ export const translations = {
       about: "About us",
       materials: "Materials",
       helpCenter: "Help Center",
-      cta: "Log in",
+      cta: "Log in / Sign up",
     },
     hero: {
       freeQrBadge: "Free QR Menu for restaurants and hotels",
@@ -630,6 +666,11 @@ export const translations = {
         ctaTry: "Try ChefVision",
         imageAlt: "Happy guest enjoying a traditional dish in a restaurant",
       },
+      stepLabel: "Step",
+      prevSlide: "Previous slide",
+      nextSlide: "Next slide",
+      goToSlide: "Go to slide",
+      languagesCount: "{count} menu languages in ChefVision",
     },
     comparison: {
       headline: "What you get from day one",
@@ -916,4 +957,10 @@ export const translations = {
       madeWith: "Made with heart for the restaurant industry",
     },
   },
+  de,
+  es,
+  el,
+  it,
+  tr,
+  ru,
 } as const
