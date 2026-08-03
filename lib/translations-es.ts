@@ -309,7 +309,7 @@ export const es = {
     pricingIntro1:
       "El plan gratuito le permite crear su propio menú QR y compartirlo con los huéspedes sin coste.",
     pricingIntro2:
-      "Start y Premium desbloquean funciones de venta adicionales, traducciones con IA y recomendaciones.",
+      "Start y Premium desbloquean funciones de venta adicionales. También puede encargar la configuración completa del menú a nuestro equipo.",
     pricingTitle:
       "Tras el periodo de prueba, puede cambiar a Start, Premium o permanecer en el menú básico gratuito.",
     freePlan: {
@@ -332,6 +332,7 @@ export const es = {
       currency: "PLN / mes",
       label: "Plan Start",
       desc: "Más herramientas de venta y un menú profesional sin marca de agua.",
+      buyBtn: "Comprar",
       features: [
         "Maridajes y upselling",
         "10 tokens de IA al mes",
@@ -347,28 +348,33 @@ export const es = {
       currency: "PLN / mes",
       label: "Plan Premium",
       desc: "Acceso completo a todas las funciones. Cancele cuando quiera — sin compromisos.",
+      buyBtn: "Comprar",
       features: [
-        "Todas las funciones del plan Start",
-        "Hotel Hub para hoteles y alojamientos",
+        "Maridajes y upselling",
+        "Traducciones del menú",
+        "Hotel Hub",
+        "Camarero / cuenta",
         "50 tokens de IA al mes",
-        "Estadísticas avanzadas",
-        "Soporte prioritario",
-        "Acceso anticipado a nuevas funciones",
+        "Menú sin marca de agua",
+        "Recomendaciones y promociones",
+        "Estadísticas",
+        "Soporte de implementación",
       ],
     },
-    tokenPack: {
-      price: "€7",
-      currency: "",
-      label: "Paquete +50 tokens",
-      desc: "Compra única. Los tokens no caducan — esperan en su cuenta hasta que se utilicen.",
+    menuService: {
+      badge: "Servicio del equipo",
+      price: "299",
+      currency: "PLN pago único",
+      label: "Encargar creación del menú",
+      desc: "Crea una cuenta como siempre — nosotros preparamos remotamente su carta digital.",
+      buyBtn: "Encargar configuración",
       features: [
-        "No caducan",
-        "Disponible solo en el plan Premium",
-        "Perfecto para actualizaciones de carta de temporada",
+        "El equipo de ChefVision crea su menú digital",
+        "Fotos, descripciones, categorías y precios",
+        "Menú público listo con enlace y QR",
+        "Usted sigue teniendo su propia cuenta y control total",
       ],
     },
-    tokenNote:
-      "💡 Los tokens de suscripción se reinician el día 1 de cada mes y no se acumulan. Los tokens del paquete no caducan.",
     ctaBtn: "Empiece a ahorrar tiempo a sus camareros",
   },
   helpCenter: {

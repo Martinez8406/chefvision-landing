@@ -313,7 +313,7 @@ export const it = {
     pricingIntro1:
       "Il piano gratuito ti permette di creare il tuo Menu QR e condividerlo con gli ospiti senza costi.",
     pricingIntro2:
-      "Start e Premium sbloccano funzionalità di vendita aggiuntive, traduzioni AI e raccomandazioni.",
+      "Start e Premium sbloccano funzionalità di vendita aggiuntive. Puoi anche ordinare la configurazione completa del menu al nostro team.",
     pricingTitle:
       "Dopo il periodo di prova, puoi passare a Start, Premium o restare sul menu base gratuito.",
     freePlan: {
@@ -340,6 +340,7 @@ export const it = {
       currency: "PLN / mese",
       label: "Piano Start",
       desc: "Più strumenti di vendita e un menu professionale senza watermark.",
+      buyBtn: "Acquista",
       features: [
         "Abbinamenti e upselling",
         "10 token AI al mese",
@@ -355,28 +356,33 @@ export const it = {
       currency: "PLN / mese",
       label: "Piano Premium",
       desc: "Accesso completo a tutte le funzionalità. Annulla in qualsiasi momento — nessun vincolo.",
+      buyBtn: "Acquista",
       features: [
-        "Tutte le funzionalità del piano Start",
-        "Hotel Hub per hotel e strutture ricettive",
+        "Abbinamenti e upselling",
+        "Traduzioni del menu",
+        "Hotel Hub",
+        "Cameriere / conto",
         "50 token AI al mese",
-        "Statistiche avanzate",
-        "Supporto prioritario",
-        "Accesso anticipato alle nuove funzionalità",
+        "Menu senza watermark",
+        "Raccomandazioni e promozioni",
+        "Statistiche",
+        "Supporto all'implementazione",
       ],
     },
-    tokenPack: {
-      price: "€7",
-      currency: "",
-      label: "Pacchetto +50 token",
-      desc: "Acquisto una tantum. I token non scadono — restano nel tuo account fino all'utilizzo.",
+    menuService: {
+      badge: "Servizio del team",
+      price: "299",
+      currency: "PLN una tantum",
+      label: "Ordina creazione del menu",
+      desc: "Crei un account come sempre — noi prepariamo da remoto il tuo menu digitale.",
+      buyBtn: "Ordina configurazione",
       features: [
-        "Non scadono mai",
-        "Disponibile solo con il piano Premium",
-        "Perfetto per aggiornamenti stagionali del menu",
+        "Il team ChefVision crea il tuo menu digitale",
+        "Foto, descrizioni, categorie e prezzi",
+        "Menu pubblico pronto con link e QR",
+        "Hai ancora il tuo account e il pieno controllo",
       ],
     },
-    tokenNote:
-      "💡 I token dell'abbonamento si azzerano il 1° di ogni mese e non vengono trasferiti. I token del pacchetto non scadono mai.",
     ctaBtn: "Inizia a risparmiare tempo ai tuoi camerieri",
   },
   helpCenter: {

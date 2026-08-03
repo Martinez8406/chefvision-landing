@@ -313,7 +313,7 @@ export const hr = {
     pricingIntro1:
       "Besplatan plan omogućuje vam stvaranje QR jelovnika i dijeljenje s gostima bez troškova.",
     pricingIntro2:
-      "Start i Premium otključavaju dodatne prodajne značajke, AI prijevode i preporuke.",
+      "Start i Premium otključavaju dodatne prodajne značajke. Također možete naručiti potpunu postavku jelovnika od našeg tima.",
     pricingTitle:
       "Nakon probnog razdoblja možete prijeći na Start, Premium ili ostati na besplatnom osnovnom jelovniku.",
     freePlan: {
@@ -340,6 +340,7 @@ export const hr = {
       currency: "PLN / mjesec",
       label: "Start plan",
       desc: "Više prodajnih alata i profesionalni jelovnik bez vodenog žiga.",
+      buyBtn: "Kupujem",
       features: [
         "Parovi i upselling",
         "10 AI tokena mjesečno",
@@ -355,28 +356,33 @@ export const hr = {
       currency: "PLN / mjesec",
       label: "Premium plan",
       desc: "Potpuni pristup svim značajkama. Otkažite bilo kada — bez obveze.",
+      buyBtn: "Kupujem",
       features: [
-        "Sve značajke Start plana",
-        "Hotel Hub za hotele i smještajne objekte",
+        "Parovi i upselling",
+        "Prijevodi jelovnika",
+        "Hotel Hub",
+        "Konobar / račun",
         "50 AI tokena mjesečno",
-        "Napredne statistike",
-        "Prioritetna podrška",
-        "Rani pristup novim značajkama",
+        "Jelovnik bez vodenog žiga",
+        "Preporuke i promocije",
+        "Statistike",
+        "Podrška pri implementaciji",
       ],
     },
-    tokenPack: {
-      price: "€7",
-      currency: "",
-      label: "Paket +50 tokena",
-      desc: "Jednokratna kupnja. Tokeni ne istječu — ostaju na vašem računu dok se ne iskoriste.",
+    menuService: {
+      badge: "Usluga tima",
+      price: "299",
+      currency: "PLN jednokratno",
+      label: "Naručite izradu jelovnika",
+      desc: "Otvarate račun kao i obično — mi udaljeno pripremamo vaš digitalni jelovnik.",
+      buyBtn: "Naručite postavku",
       features: [
-        "Nikada ne istječu",
-        "Dostupno samo s Premium planom",
-        "Savršeno za sezonska ažuriranja jelovnika",
+        "Tim ChefVision izrađuje vaš digitalni jelovnik",
+        "Fotografije, opisi, kategorije i cijene",
+        "Gotov javni jelovnik s linkom i QR-om",
+        "I dalje imate vlastiti račun i punu kontrolu",
       ],
     },
-    tokenNote:
-      "💡 Tokeni pretplate resetiraju se 1. svakog mjeseca i ne prenose se. Tokeni iz paketa nikada ne istječu.",
     ctaBtn: "Počnite štedjeti vrijeme svojim konobarima",
   },
   helpCenter: {

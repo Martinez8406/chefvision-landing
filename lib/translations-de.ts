@@ -308,7 +308,7 @@ export const de = {
     pricingIntro1:
       "Mit dem kostenlosen Plan erstellen Sie Ihr eigenes QR-Menü und teilen es ohne Kosten mit Gästen.",
     pricingIntro2:
-      "Start und Premium schalten zusätzliche Verkaufsfunktionen, KI-Übersetzungen und Empfehlungen frei.",
+      "Start und Premium schalten zusätzliche Verkaufsfunktionen frei. Sie können auch die vollständige Menüeinrichtung durch unser Team beauftragen.",
     pricingTitle:
       "Nach der Testphase können Sie zu Start, Premium wechseln oder bei der kostenlosen Basisspeisekarte bleiben.",
     freePlan: {
@@ -331,6 +331,7 @@ export const de = {
       currency: "PLN / Monat",
       label: "Start-Plan",
       desc: "Mehr Verkaufstools und eine professionelle Speisekarte ohne Wasserzeichen.",
+      buyBtn: "Kaufen",
       features: [
         "Pairings und Upselling",
         "10 KI-Tokens pro Monat",
@@ -346,28 +347,33 @@ export const de = {
       currency: "PLN / Monat",
       label: "Premium-Plan",
       desc: "Voller Zugang zu allen Funktionen. Jederzeit kündbar — keine Verpflichtungen.",
+      buyBtn: "Kaufen",
       features: [
-        "Alle Funktionen des Start-Plans",
-        "Hotel Hub für Hotels und Unterkünfte",
+        "Pairings und Upselling",
+        "Speisekartenübersetzungen",
+        "Hotel Hub",
+        "Kellner / Rechnung",
         "50 KI-Tokens pro Monat",
-        "Erweiterte Statistiken",
-        "Prioritäts-Support",
-        "Früher Zugang zu neuen Funktionen",
+        "Speisekarte ohne Wasserzeichen",
+        "Empfehlungen und Aktionen",
+        "Statistiken",
+        "Implementierungsunterstützung",
       ],
     },
-    tokenPack: {
-      price: "€7",
-      currency: "",
-      label: "+50 Token-Paket",
-      desc: "Einmaliger Kauf. Tokens verfallen nie — sie warten in Ihrem Konto, bis sie genutzt werden.",
+    menuService: {
+      badge: "Team-Service",
+      price: "299",
+      currency: "PLN einmalig",
+      label: "Menüerstellung beauftragen",
+      desc: "Sie erstellen ein Konto wie gewohnt — wir bereiten Ihre digitale Speisekarte remote vor.",
+      buyBtn: "Einrichtung beauftragen",
       features: [
-        "Verfallen nie",
-        "Nur im Premium-Plan verfügbar",
-        "Perfekt für saisonale Speisekarten-Updates",
+        "Das ChefVision-Team erstellt Ihre digitale Speisekarte",
+        "Fotos, Beschreibungen, Kategorien und Preise",
+        "Fertige öffentliche Speisekarte mit Link und QR",
+        "Sie behalten Ihr eigenes Konto und die volle Kontrolle",
       ],
     },
-    tokenNote:
-      "💡 Abo-Tokens werden am 1. jedes Monats zurückgesetzt und werden nicht übertragen. Paket-Tokens verfallen nie.",
     ctaBtn: "Zeit Ihrer Kellner sparen — jetzt starten",
   },
   helpCenter: {

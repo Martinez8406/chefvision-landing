@@ -313,7 +313,7 @@ export const tr = {
     pricingIntro1:
       "Ücretsiz plan, kendi QR Menünüzü oluşturup misafirlerle ücretsiz paylaşmanıza olanak tanır.",
     pricingIntro2:
-      "Start ve Premium ek satış özelliklerini, AI çevirilerini ve önerileri açar.",
+      "Start ve Premium ek satış özelliklerini açar. Ayrıca ekibimizden tam menü kurulumu sipariş edebilirsiniz.",
     pricingTitle:
       "Deneme süresinden sonra Start, Premium'a geçebilir veya ücretsiz temel menüde kalabilirsiniz.",
     freePlan: {
@@ -340,6 +340,7 @@ export const tr = {
       currency: "PLN / month",
       label: "Start planı",
       desc: "Daha fazla satış aracı ve filigransız profesyonel menü.",
+      buyBtn: "Satın al",
       features: [
         "Eşleştirmeler ve upselling",
         "Ayda 10 AI token",
@@ -355,28 +356,33 @@ export const tr = {
       currency: "PLN / month",
       label: "Premium planı",
       desc: "Tüm özelliklere tam erişim. İstediğiniz zaman iptal edin — taahhüt yok.",
+      buyBtn: "Satın al",
       features: [
-        "Tüm Start planı özellikleri",
-        "Oteller ve konaklama tesisleri için Hotel Hub",
+        "Eşleştirmeler ve upselling",
+        "Menü çevirileri",
+        "Hotel Hub",
+        "Garson / hesap",
         "Ayda 50 AI token",
-        "Gelişmiş istatistikler",
-        "Öncelikli destek",
-        "Yeni özelliklere erken erişim",
+        "Filigransız menü",
+        "Öneriler ve promosyonlar",
+        "İstatistikler",
+        "Uygulama desteği",
       ],
     },
-    tokenPack: {
-      price: "€7",
-      currency: "",
-      label: "+50 token paketi",
-      desc: "Tek seferlik satın alma. Tokenların süresi dolmaz — kullanılana kadar hesabınızda bekler.",
+    menuService: {
+      badge: "Ekip hizmeti",
+      price: "299",
+      currency: "PLN tek seferlik",
+      label: "Menü oluşturma siparişi",
+      desc: "Her zamanki gibi hesap oluşturursunuz — dijital menünüzü uzaktan biz hazırlarız.",
+      buyBtn: "Kurulum sipariş et",
       features: [
-        "Asla süresi dolmaz",
-        "Yalnızca Premium planda mevcut",
-        "Mevsimlik menü güncellemeleri için ideal",
+        "ChefVision ekibi dijital menünüzü oluşturur",
+        "Fotoğraflar, açıklamalar, kategoriler ve fiyatlar",
+        "Link ve QR ile hazır herkese açık menü",
+        "Hâlâ kendi hesabınıza ve tam kontrole sahipsiniz",
       ],
     },
-    tokenNote:
-      "💡 Abonelik tokenları her ayın 1'inde sıfırlanır ve devretmez. Paket tokenları asla süresi dolmaz.",
     ctaBtn: "Garsonlarınızın zamanını kazanmaya başlayın",
   },
   helpCenter: {

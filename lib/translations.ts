@@ -313,7 +313,7 @@ export const translations = {
       pricingIntro1:
         "Darmowy plan pozwala stworzyć własne QR Menu i udostępnić je gościom bez żadnych opłat.",
       pricingIntro2:
-        "Plan Start i Premium odblokowują dodatkowe funkcje zwiększające sprzedaż, tłumaczenia AI i rekomendacje.",
+        "Plan Start i Premium odblokowują dodatkowe funkcje zwiększające sprzedaż. Możesz też zlecić nam wykonanie całego menu.",
       pricingTitle:
         "Po okresie testowym możesz przejść na plan Start, Premium lub pozostać przy darmowym menu podstawowym.",
       freePlan: {
@@ -340,6 +340,7 @@ export const translations = {
         currency: "zł / miesiąc",
         label: "Plan Start",
         desc: "Więcej możliwości sprzedażowych i profesjonalne menu bez znaku wodnego.",
+        buyBtn: "Kupuję",
         features: [
           "Pairingi i upselling",
           "10 tokenów AI miesięcznie",
@@ -355,23 +356,33 @@ export const translations = {
         currency: "zł / miesiąc",
         label: "Plan Premium",
         desc: "Pełny dostęp do wszystkich funkcji. Anuluj w dowolnym momencie — bez zobowiązań.",
+        buyBtn: "Kupuję",
         features: [
-          "Wszystkie funkcje Start",
-          "Hotel Hub dla hoteli i obiektów noclegowych",
+          "Pairingi i upselling",
+          "Tłumaczenia menu",
+          "Hotel Hub",
+          "Kelner / rachunek",
           "50 tokenów AI miesięcznie",
-          "Zaawansowane statystyki",
-          "Priorytetowe wsparcie",
-          "Wczesny dostęp do nowych funkcji",
+          "Menu bez znaku wodnego",
+          "Rekomendacje i promocje",
+          "Statystyki",
+          "Pomoc we wdrożeniu",
         ],
       },
-      tokenPack: {
-        price: "30",
-        currency: "zł",
-        label: "Paczka +50 tokenów",
-        desc: "Jednorazowy zakup. Tokeny nie przedawniają się — czekają na koncie aż do wykorzystania.",
-        features: ["Bezterminowe", "Dostępne tylko w planie Premium", "Idealne na zmianę karty sezonowej"],
+      menuService: {
+        badge: "Usługa zespołu",
+        price: "299",
+        currency: "zł jednorazowo",
+        label: "Zleć wykonanie menu",
+        desc: "Zakładasz konto jak zwykle — my zdalnie przygotujemy Twoją kartę cyfrową.",
+        buyBtn: "Zlecam wykonanie",
+        features: [
+          "Zespół ChefVision buduje Twoje menu cyfrowe",
+          "Zdjęcia, opisy, kategorie i ceny",
+          "Gotowe publiczne menu z linkiem i QR",
+          "Ty nadal masz własne konto i pełną kontrolę",
+        ],
       },
-      tokenNote: "💡 Tokeny abonamentowe resetują się 1. dnia każdego miesiąca i nie przechodzą na kolejny okres. Tokeny z paczki są bezterminowe.",
       ctaBtn: "Zatrudnij cyfrowego asystenta za 3,23 zł dziennie",
     },
     helpCenter: {
@@ -776,7 +787,7 @@ export const translations = {
       pricingIntro1:
         "The free plan lets you create your own QR Menu and share it with guests at no cost.",
       pricingIntro2:
-        "Start and Premium unlock additional sales features, AI translations and recommendations.",
+        "Start and Premium unlock additional sales features. You can also order a full menu setup from our team.",
       pricingTitle:
         "After the trial period, you can switch to Start, Premium or stay on the free basic menu.",
       freePlan: {
@@ -803,6 +814,7 @@ export const translations = {
         currency: "PLN / month",
         label: "Start plan",
         desc: "More sales tools and a professional menu without watermark.",
+        buyBtn: "Buy now",
         features: [
           "Pairings and upselling",
           "10 AI tokens per month",
@@ -818,23 +830,33 @@ export const translations = {
         currency: "PLN / month",
         label: "Premium plan",
         desc: "Full access to all features. Cancel anytime — no commitments.",
+        buyBtn: "Buy now",
         features: [
-          "All Start plan features",
-          "Hotel Hub for hotels and accommodation properties",
+          "Pairings and upselling",
+          "Menu translations",
+          "Hotel Hub",
+          "Waiter / bill",
           "50 AI tokens per month",
-          "Advanced statistics",
-          "Priority support",
-          "Early access to new features",
+          "Menu without watermark",
+          "Recommendations and promotions",
+          "Statistics",
+          "Implementation support",
         ],
       },
-      tokenPack: {
-        price: "€7",
-        currency: "",
-        label: "+50 token pack",
-        desc: "One-time purchase. Tokens never expire — they wait in your account until used.",
-        features: ["Never expire", "Available on Premium plan only", "Perfect for seasonal menu updates"],
+      menuService: {
+        badge: "Team service",
+        price: "299",
+        currency: "PLN one-time",
+        label: "Order menu creation",
+        desc: "You create an account as usual — we remotely prepare your digital menu.",
+        buyBtn: "Order setup",
+        features: [
+          "The ChefVision team builds your digital menu",
+          "Photos, descriptions, categories and prices",
+          "Ready public menu with link and QR",
+          "You still have your own account and full control",
+        ],
       },
-      tokenNote: "💡 Subscription tokens reset on the 1st of each month and don't carry over. Pack tokens never expire.",
       ctaBtn: "Start saving your waiters' time",
     },
     helpCenter: {

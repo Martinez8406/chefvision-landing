@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/hero-section"
 import { GuestInfoHubSection } from "@/components/guest-info-hub-section"
 import { StatsSection } from "@/components/stats-section"
 import { AppPreviewSection } from "@/components/app-preview-section"
-import { HowItWorksSection } from "@/components/how-it-works-section"
 import { ComparisonSection } from "@/components/comparison-section"
 import { MenuLiveSection } from "@/components/menu-live-section"
 import { DishStorySection } from "@/components/dish-story-section"
@@ -23,7 +22,6 @@ export default function Home() {
       <GuestInfoHubSection />
       <StatsSection />
       <AppPreviewSection />
-      <HowItWorksSection />
       <ProfitMathSection />
       <AntiPlatformSection />
       <ComparisonSection />
