@@ -56,7 +56,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "QR Menu dla restauracji i hoteli",
       headline: "Cyfrowy asystent, który obsługuje Twoje menu.",
-      sub1: "Tłumaczy kartę na 14 języków, poleca dania i przyjmuje wezwania kelnera — 24/7, za 3,23 zł dziennie.",
+      sub1: "Tłumaczy kartę na 14 języków, opcja wezwania kelnera lub prośby o rachunek bezpośrednio ze smartfona — 24/7.",
       sub2: "Ty masz pełną kontrolę z telefonu.",
       ctaPrimary: "Wypróbuj za darmo",
       ctaSecondary: "Zobacz jak to działa",
@@ -142,7 +142,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "QR Menu for restaurants and hotels",
       headline: "A digital assistant that runs your menu.",
-      sub1: "It translates your menu into 14 languages, recommends dishes and takes waiter calls — 24/7, for 3.23 PLN a day.",
+      sub1: "It translates your menu into 14 languages, with the option to call a waiter or request the bill directly from a smartphone — 24/7.",
       sub2: "You stay in full control from your phone.",
       ctaPrimary: "Try for free",
       ctaSecondary: "See how it works",
@@ -228,7 +228,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "QR-Menü für Restaurants und Hotels",
       headline: "Ein digitaler Assistent, der Ihre Speisekarte betreut.",
-      sub1: "Er übersetzt die Karte in 14 Sprachen, empfiehlt Gerichte und nimmt Kellnerrufe entgegen — 24/7, für 3,23 PLN pro Tag.",
+      sub1: "Er übersetzt die Karte in 14 Sprachen, mit der Option, den Kellner zu rufen oder die Rechnung direkt vom Smartphone aus anzufordern — 24/7.",
       sub2: "Sie behalten die volle Kontrolle vom Handy aus.",
       ctaPrimary: "Kostenlos testen",
       ctaSecondary: "So funktioniert es",
@@ -314,7 +314,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "Menú QR para restaurantes y hoteles",
       headline: "Un asistente digital que gestiona tu carta.",
-      sub1: "Traduce la carta a 14 idiomas, recomienda platos y recibe llamadas al camarero — 24/7, por 3,23 PLN al día.",
+      sub1: "Traduce la carta a 14 idiomas, con la opción de llamar al camarero o pedir la cuenta directamente desde el smartphone — 24/7.",
       sub2: "Tú mantienes el control total desde el móvil.",
       ctaPrimary: "Pruébalo gratis",
       ctaSecondary: "Mira cómo funciona",
@@ -400,7 +400,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "QR μενού για εστιατόρια και ξενοδοχεία",
       headline: "Ένας ψηφιακός βοηθός που διαχειρίζεται το μενού σας.",
-      sub1: "Μεταφράζει τον κατάλογο σε 14 γλώσσες, προτείνει πιάτα και δέχεται κλήσεις σερβιτόρου — 24/7, με 3,23 PLN την ημέρα.",
+      sub1: "Μεταφράζει τον κατάλογο σε 14 γλώσσες, με δυνατότητα κλήσης σερβιτόρου ή αίτησης λογαριασμού απευθείας από το smartphone — 24/7.",
       sub2: "Εσείς έχετε τον πλήρη έλεγχο από το κινητό σας.",
       ctaPrimary: "Δοκιμάστε δωρεάν",
       ctaSecondary: "Δείτε πώς λειτουργεί",
@@ -486,7 +486,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "Menu QR per ristoranti e hotel",
       headline: "Un assistente digitale che gestisce il tuo menu.",
-      sub1: "Traduce il menu in 14 lingue, consiglia i piatti e riceve le chiamate al cameriere — 24/7, per 3,23 PLN al giorno.",
+      sub1: "Traduce il menu in 14 lingue, con l'opzione di chiamare il cameriere o chiedere il conto direttamente dallo smartphone — 24/7.",
       sub2: "Tu mantieni il pieno controllo dal telefono.",
       ctaPrimary: "Provalo gratis",
       ctaSecondary: "Guarda come funziona",
@@ -572,7 +572,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "Restoranlar ve oteller için QR Menü",
       headline: "Menünüzü yöneten dijital bir asistan.",
-      sub1: "Menüyü 14 dile çevirir, yemek önerir ve garson çağrılarını alır — 7/24, günde 3,23 PLN karşılığında.",
+      sub1: "Menüyü 14 dile çevirir; garson çağırma veya hesabı doğrudan akıllı telefondan isteme seçeneğiyle — 7/24.",
       sub2: "Tam kontrol telefonunuzda.",
       ctaPrimary: "Ücretsiz deneyin",
       ctaSecondary: "Nasıl çalıştığını görün",
@@ -658,7 +658,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "QR-меню для ресторанов и отелей",
       headline: "Цифровой ассистент, который ведёт ваше меню.",
-      sub1: "Переводит меню на 14 языков, рекомендует блюда и принимает вызовы официанта — 24/7, за 3,23 PLN в день.",
+      sub1: "Переводит меню на 14 языков, с возможностью вызвать официанта или попросить счёт прямо со смартфона — 24/7.",
       sub2: "Полный контроль остаётся у вас — прямо с телефона.",
       ctaPrimary: "Попробовать бесплатно",
       ctaSecondary: "Посмотреть, как это работает",
@@ -744,7 +744,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     hero: {
       badge: "QR meni za restorane i hotele",
       headline: "Digitalni asistent koji vodi vaš meni.",
-      sub1: "Prevodi meni na 14 jezika, preporučuje jela i prima pozive konobaru — 24/7, za 3,23 PLN dnevno.",
+      sub1: "Prevodi meni na 14 jezika, s opcijom poziva konobaru ili zahtjeva za račun izravno sa smartphonea — 24/7.",
       sub2: "Vi zadržavate punu kontrolu s mobitela.",
       ctaPrimary: "Isprobajte besplatno",
       ctaSecondary: "Pogledajte kako funkcionira",
