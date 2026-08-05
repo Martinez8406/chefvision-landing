@@ -12,8 +12,7 @@ export type HomeCopy = {
   hero: {
     badge: string
     headline: string
-    sub1: string
-    sub2: string
+    sub: string
     ctaPrimary: string
     ctaSecondary: string
   }
@@ -55,11 +54,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "QR Menu dla restauracji i hoteli",
-      headline: "Cyfrowy asystent, który obsługuje Twoje menu.",
-      sub1: "Tłumaczy kartę na 14 języków, opcja wezwania kelnera lub prośby o rachunek bezpośrednio ze smartfona — 24/7.",
-      sub2: "Ty masz pełną kontrolę z telefonu.",
-      ctaPrimary: "Wypróbuj za darmo",
-      ctaSecondary: "Zobacz jak to działa",
+      headline: "Twój cyfrowy asystent restauracji — w 14 językach i 24/7",
+      sub: "Szybkie wzywanie kelnera, prośba o rachunek ze smartfona gościa i pełna kontrola nad menu z Twojego telefonu. Bez prowizji i bez zbędnego sprzętu.",
+      ctaPrimary: "Wypróbuj za darmo przez 14 dni",
+      ctaSecondary: "Jak to działa",
     },
     bar: {
       headline: "Skanujesz. Wybierasz. Zamawiasz.",
@@ -141,11 +139,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "QR Menu for restaurants and hotels",
-      headline: "A digital assistant that runs your menu.",
-      sub1: "It translates your menu into 14 languages, with the option to call a waiter or request the bill directly from a smartphone — 24/7.",
-      sub2: "You stay in full control from your phone.",
-      ctaPrimary: "Try for free",
-      ctaSecondary: "See how it works",
+      headline: "Your digital restaurant assistant — in 14 languages, 24/7",
+      sub: "Fast waiter calling, bill request from the guest's smartphone and full control over the menu from your phone. No commission and no unnecessary hardware.",
+      ctaPrimary: "Try free for 14 days",
+      ctaSecondary: "How it works",
     },
     bar: {
       headline: "Scan. Choose. Order.",
@@ -227,11 +224,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "QR-Menü für Restaurants und Hotels",
-      headline: "Ein digitaler Assistent, der Ihre Speisekarte betreut.",
-      sub1: "Er übersetzt die Karte in 14 Sprachen, mit der Option, den Kellner zu rufen oder die Rechnung direkt vom Smartphone aus anzufordern — 24/7.",
-      sub2: "Sie behalten die volle Kontrolle vom Handy aus.",
-      ctaPrimary: "Kostenlos testen",
-      ctaSecondary: "So funktioniert es",
+      headline: "Ihr digitaler Restaurant-Assistent — in 14 Sprachen und 24/7",
+      sub: "Schneller Kellnerruf, Rechnungswunsch vom Smartphone des Gastes und volle Kontrolle über das Menü von Ihrem Telefon. Ohne Provision und ohne unnötige Hardware.",
+      ctaPrimary: "14 Tage kostenlos testen",
+      ctaSecondary: "Wie es funktioniert",
     },
     bar: {
       headline: "Scannen. Wählen. Bestellen.",
@@ -313,11 +309,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Menú QR para restaurantes y hoteles",
-      headline: "Un asistente digital que gestiona tu carta.",
-      sub1: "Traduce la carta a 14 idiomas, con la opción de llamar al camarero o pedir la cuenta directamente desde el smartphone — 24/7.",
-      sub2: "Tú mantienes el control total desde el móvil.",
-      ctaPrimary: "Pruébalo gratis",
-      ctaSecondary: "Mira cómo funciona",
+      headline: "Tu asistente digital de restaurante — en 14 idiomas y 24/7",
+      sub: "Llamada rápida al camarero, petición de cuenta desde el smartphone del cliente y control total del menú desde tu teléfono. Sin comisiones y sin equipo innecesario.",
+      ctaPrimary: "Pruébalo gratis 14 días",
+      ctaSecondary: "Cómo funciona",
     },
     bar: {
       headline: "Escaneas. Eliges. Pides.",
@@ -399,11 +394,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "QR μενού για εστιατόρια και ξενοδοχεία",
-      headline: "Ένας ψηφιακός βοηθός που διαχειρίζεται το μενού σας.",
-      sub1: "Μεταφράζει τον κατάλογο σε 14 γλώσσες, με δυνατότητα κλήσης σερβιτόρου ή αίτησης λογαριασμού απευθείας από το smartphone — 24/7.",
-      sub2: "Εσείς έχετε τον πλήρη έλεγχο από το κινητό σας.",
-      ctaPrimary: "Δοκιμάστε δωρεάν",
-      ctaSecondary: "Δείτε πώς λειτουργεί",
+      headline: "Ο ψηφιακός σας βοηθός εστιατορίου — σε 14 γλώσσες και 24/7",
+      sub: "Γρήγορη κλήση σερβιτόρου, αίτημα λογαριασμού από το smartphone του πελάτη και πλήρης έλεγχος του μενού από το κινητό σας. Χωρίς προμήθεια και χωρίς περιττό εξοπλισμό.",
+      ctaPrimary: "Δοκιμάστε δωρεάν για 14 ημέρες",
+      ctaSecondary: "Πώς λειτουργεί",
     },
     bar: {
       headline: "Σκανάρεις. Επιλέγεις. Παραγγέλνεις.",
@@ -485,11 +479,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Menu QR per ristoranti e hotel",
-      headline: "Un assistente digitale che gestisce il tuo menu.",
-      sub1: "Traduce il menu in 14 lingue, con l'opzione di chiamare il cameriere o chiedere il conto direttamente dallo smartphone — 24/7.",
-      sub2: "Tu mantieni il pieno controllo dal telefono.",
-      ctaPrimary: "Provalo gratis",
-      ctaSecondary: "Guarda come funziona",
+      headline: "Il tuo assistente digitale per il ristorante — in 14 lingue e 24/7",
+      sub: "Chiamata rapida al cameriere, richiesta del conto dallo smartphone dell'ospite e pieno controllo del menu dal tuo telefono. Senza commissioni e senza attrezzature inutili.",
+      ctaPrimary: "Provalo gratis per 14 giorni",
+      ctaSecondary: "Come funziona",
     },
     bar: {
       headline: "Scansioni. Scegli. Ordini.",
@@ -571,11 +564,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Restoranlar ve oteller için QR Menü",
-      headline: "Menünüzü yöneten dijital bir asistan.",
-      sub1: "Menüyü 14 dile çevirir; garson çağırma veya hesabı doğrudan akıllı telefondan isteme seçeneğiyle — 7/24.",
-      sub2: "Tam kontrol telefonunuzda.",
-      ctaPrimary: "Ücretsiz deneyin",
-      ctaSecondary: "Nasıl çalıştığını görün",
+      headline: "Dijital restoran asistanınız — 14 dilde ve 7/24",
+      sub: "Hızlı garson çağırma, misafirin akıllı telefonundan hesap isteği ve menü üzerinde telefonunuzdan tam kontrol. Komisyon yok, gereksiz ekipman yok.",
+      ctaPrimary: "14 gün ücretsiz deneyin",
+      ctaSecondary: "Nasıl çalışır",
     },
     bar: {
       headline: "Tara. Seç. Sipariş ver.",
@@ -657,11 +649,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "QR-меню для ресторанов и отелей",
-      headline: "Цифровой ассистент, который ведёт ваше меню.",
-      sub1: "Переводит меню на 14 языков, с возможностью вызвать официанта или попросить счёт прямо со смартфона — 24/7.",
-      sub2: "Полный контроль остаётся у вас — прямо с телефона.",
-      ctaPrimary: "Попробовать бесплатно",
-      ctaSecondary: "Посмотреть, как это работает",
+      headline: "Ваш цифровой ассистент ресторана — на 14 языках и 24/7",
+      sub: "Быстрый вызов официанта, запрос счёта со смартфона гостя и полный контроль над меню с вашего телефона. Без комиссии и без лишнего оборудования.",
+      ctaPrimary: "Попробуйте бесплатно 14 дней",
+      ctaSecondary: "Как это работает",
     },
     bar: {
       headline: "Сканируешь. Выбираешь. Заказываешь.",
@@ -743,11 +734,10 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "QR meni za restorane i hotele",
-      headline: "Digitalni asistent koji vodi vaš meni.",
-      sub1: "Prevodi meni na 14 jezika, s opcijom poziva konobaru ili zahtjeva za račun izravno sa smartphonea — 24/7.",
-      sub2: "Vi zadržavate punu kontrolu s mobitela.",
-      ctaPrimary: "Isprobajte besplatno",
-      ctaSecondary: "Pogledajte kako funkcionira",
+      headline: "Vaš digitalni restoran asistent — na 14 jezika i 24/7",
+      sub: "Brzi poziv konobaru, zahtjev za račun sa gostova smartphonea i puna kontrola nad menijem s vašeg telefona. Bez provizije i bez nepotrebne opreme.",
+      ctaPrimary: "Isprobajte besplatno 14 dana",
+      ctaSecondary: "Kako funkcionira",
     },
     bar: {
       headline: "Skeniraš. Biraš. Naručuješ.",

@@ -20,13 +20,12 @@ export function HeroSection() {
               {h.badge}
             </span>
 
-            <h1 className="max-w-xl text-4xl font-bold leading-[1.08] text-foreground text-balance sm:text-5xl lg:text-[3.4rem]">
+            <h1 className="max-w-xl text-4xl font-bold leading-[1.08] text-foreground text-balance sm:text-5xl lg:text-[3.25rem]">
               {h.headline}
             </h1>
 
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {h.sub1}{" "}
-              <span className="font-medium text-foreground">{h.sub2}</span>
+              {h.sub}
             </p>
           </div>
 
