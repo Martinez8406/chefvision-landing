@@ -45,7 +45,7 @@ export function HowItWorksHome() {
                   <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-primary-foreground">
                     {index + 1}
                   </span>
-                  {how.stepLabel} {index + 1}
+                  {how.stepLabel}
                 </span>
                 <h3 className="text-2xl font-semibold text-foreground sm:text-[1.7rem]">
                   {step.title}
