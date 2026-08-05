@@ -447,59 +447,46 @@ export const el = {
   materials: {
     badge: "Υλικά",
     headline: "Δωρεάν υλικά για εστιατόρια και ξενοδοχεία",
-    sub: "Κατεβάστε έτοιμα πρότυπα Canva, επικολλήστε τον κωδικό QR σας, προσθέστε το όνομα του καταστήματος και εκτυπώστε σε λίγα λεπτά. Χωρίς γραφίστα και χωρίς επιπλέον κόστος.",
-    info: "Έτοιμα υλικά για λήψη και επεξεργασία στο Canva. Αρκεί να αντικαταστήσετε τον κωδικό QR, να προσθέσετε logo ή όνομα καταστήματος και να εκτυπώσετε.",
+    sub: "",
+    info: "Έτοιμα υλικά για λήψη και επεξεργασία στο Canva. Αρκεί να επικολλήσετε τον κωδικό QR από την εφαρμογή, να προσθέσετε logo ή όνομα καταστήματος και να εκτυπώσετε.",
     downloadBtn: "Λήψη προτύπου",
     placeholderLabel: "Προεπισκόπηση προτύπου",
     items: [
       {
-        id: "restaurant-stand-a6",
-        name: "Stand ξενοδοχείου A6",
-        description:
-          "Συμπαγές stand για τραπέζι ή πάγκο — ιδανικό για QR menus και πληροφορίες για επισκέπτες ξενοδοχείου.",
-        href: "https://canva.link/4zxsd1gov0yfctl",
-        thumbnail: "/images/stand-hotelowy-a6-preview.png",
+        id: "stand-1",
+        name: "Πρότυπο 1",
+        description: "",
+        href: "https://canva.link/2xbf4ig3k2lp1px",
+        thumbnail: "/images/stands/stand-1.png",
       },
       {
-        id: "restaurant-stand-a5",
-        name: "Stand εστιατορίου A5",
-        description:
-          "Μεγαλύτερη μορφή για πάγκο ή τραπέζι — πιο ορατός κωδικός QR και όνομα καταστήματος.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-2",
+        name: "Πρότυπο 2",
+        description: "",
+        href: "https://canva.link/hzgaos7gjwkivtl",
+        thumbnail: "/images/stands/stand-2.png",
       },
       {
-        id: "hotel-reception-stand",
-        name: "Stand ξενοδοχείου – ρεσεψιόν",
-        description:
-          "Πρότυπο ρεσεψιόν με χώρο για QR, logo ξενοδοχείου και βασικές πληροφορίες για επισκέπτες.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-3",
+        name: "Πρότυπο 3",
+        description: "",
+        href: "https://canva.link/6z6vi2zbr4uhyu9",
+        thumbnail: "/images/stands/stand-3.png",
       },
       {
-        id: "hotel-room-stand",
-        name: "Stand ξενοδοχείου – δωμάτιο",
-        description:
-          "Stand δωματίου — μενού, room service και πληροφορίες ξενοδοχείου σε ένα μέρος.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-4",
+        name: "Πρότυπο 4",
+        description: "",
+        href: "https://canva.link/60hvydhkpbghk2q",
+        thumbnail: "/images/stands/stand-4.png",
       },
       {
-        id: "hotel-lobby-poster",
-        name: "Αφίσα lobby ξενοδοχείου",
-        description:
-          "Μορφή αφίσας για lobby — ενθαρρύνει επισκέπτες να σαρώσουν και να χρησιμοποιήσουν το Hotel Hub.",
-        href: "#",
-        thumbnail: "",
-      },
-      {
-        id: "chefstar-promo",
-        name: "Πρότυπο προσφοράς ChefStar",
-        description:
-          "Έτοιμο προωθητικό πρότυπο για εκτύπωση — προσαρμόστε γρήγορα στην προσφορά και τον κωδικό QR σας.",
-        href: "#",
-        thumbnail: "",
-      },
+        id: "stand-5",
+        name: "Πρότυπο 5",
+        description: "",
+        href: "https://canva.link/u32eey6e8cdezo4",
+        thumbnail: "/images/stands/stand-5.png",
+      }
     ],
   },
   footer: {

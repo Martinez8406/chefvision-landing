@@ -26,6 +26,7 @@ export function Navbar() {
     { label: nav.pricing, href: "/cennik" },
     { label: nav.faq, href: "/faq" },
     { label: nav.comparison, href: "/porownanie" },
+    { label: t.nav.materials, href: "/materialy" },
     { label: nav.about, href: "/about" },
   ]
 

@@ -446,59 +446,46 @@ export const hr = {
   materials: {
     badge: "Materijali",
     headline: "Besplatni materijali za restorane i hotele",
-    sub: "Preuzmite gotove Canva predloške, zalijepite svoj QR kod, dodajte naziv objekta i isprintajte za nekoliko minuta. Bez dizajnera i bez dodatnih troškova.",
-    info: "Materijali spremni za preuzimanje i uređivanje u Canvi. Dovoljno je zamijeniti QR kod, dodati logo ili naziv objekta i isprintati.",
+    sub: "",
+    info: "Materijali spremni za preuzimanje i uređivanje u Canvi. Dovoljno je zalijepiti QR kod iz aplikacije, dodati logo ili naziv objekta i isprintati.",
     downloadBtn: "Preuzmi predložak",
     placeholderLabel: "Pregled predloška",
     items: [
       {
-        id: "restaurant-stand-a6",
-        name: "Hotelski stalak A6",
-        description:
-          "Kompaktni stalak za stol ili pult — idealan za QR jelovnike i informacije za hotelske goste.",
-        href: "https://canva.link/4zxsd1gov0yfctl",
-        thumbnail: "/images/stand-hotelowy-a6-preview.png",
+        id: "stand-1",
+        name: "Predlozak broj 1",
+        description: "",
+        href: "https://canva.link/2xbf4ig3k2lp1px",
+        thumbnail: "/images/stands/stand-1.png",
       },
       {
-        id: "restaurant-stand-a5",
-        name: "Restoranski stalak A5",
-        description:
-          "Veći format za pult ili stol — QR kod i naziv objekta vidljiviji.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-2",
+        name: "Predlozak broj 2",
+        description: "",
+        href: "https://canva.link/hzgaos7gjwkivtl",
+        thumbnail: "/images/stands/stand-2.png",
       },
       {
-        id: "hotel-reception-stand",
-        name: "Hotelski stalak – recepcija",
-        description:
-          "Predložak za recepciju s prostorom za QR, logo hotela i ključne informacije za goste.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-3",
+        name: "Predlozak broj 3",
+        description: "",
+        href: "https://canva.link/6z6vi2zbr4uhyu9",
+        thumbnail: "/images/stands/stand-3.png",
       },
       {
-        id: "hotel-room-stand",
-        name: "Hotelski stalak – soba",
-        description:
-          "Stalak za sobu — jelovnik, room service i informacije o hotelu na jednom mjestu.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-4",
+        name: "Predlozak broj 4",
+        description: "",
+        href: "https://canva.link/60hvydhkpbghk2q",
+        thumbnail: "/images/stands/stand-4.png",
       },
       {
-        id: "hotel-lobby-poster",
-        name: "Poster za hotelski lobby",
-        description:
-          "Format postera za lobby — potiče goste da skeniraju i koriste Hotel Hub.",
-        href: "#",
-        thumbnail: "",
-      },
-      {
-        id: "chefstar-promo",
-        name: "ChefStar promotivni predložak",
-        description:
-          "Promotivni predložak spreman za tisak — brzo prilagodite svojoj ponudi i QR kodu.",
-        href: "#",
-        thumbnail: "",
-      },
+        id: "stand-5",
+        name: "Predlozak broj 5",
+        description: "",
+        href: "https://canva.link/u32eey6e8cdezo4",
+        thumbnail: "/images/stands/stand-5.png",
+      }
     ],
   },
   footer: {

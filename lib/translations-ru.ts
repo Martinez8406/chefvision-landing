@@ -446,59 +446,46 @@ export const ru = {
   materials: {
     badge: "Материалы",
     headline: "Бесплатные материалы для ресторанов и отелей",
-    sub: "Скачайте готовые шаблоны Canva, вставьте свой QR-код, добавьте название заведения и распечатайте за минуты. Без дизайнера и без дополнительных затрат.",
-    info: "Готовые материалы для скачивания и редактирования в Canva. Достаточно заменить QR-код, добавить логотип или название заведения и распечатать.",
+    sub: "",
+    info: "Готовые материалы для скачивания и редактирования в Canva. Достаточно вставить QR-код из приложения, добавить логотип или название заведения и распечатать.",
     downloadBtn: "Скачать шаблон",
     placeholderLabel: "Предпросмотр шаблона",
     items: [
       {
-        id: "restaurant-stand-a6",
-        name: "Стойка для отеля A6",
-        description:
-          "Компактная настольная стойка — идеально для QR-меню и информации для гостей отеля.",
-        href: "https://canva.link/4zxsd1gov0yfctl",
-        thumbnail: "/images/stand-hotelowy-a6-preview.png",
+        id: "stand-1",
+        name: "Шаблон номер 1",
+        description: "",
+        href: "https://canva.link/2xbf4ig3k2lp1px",
+        thumbnail: "/images/stands/stand-1.png",
       },
       {
-        id: "restaurant-stand-a5",
-        name: "Стойка для ресторана A5",
-        description:
-          "Больший формат для стойки или столика — QR-код и название заведения лучше видны.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-2",
+        name: "Шаблон номер 2",
+        description: "",
+        href: "https://canva.link/hzgaos7gjwkivtl",
+        thumbnail: "/images/stands/stand-2.png",
       },
       {
-        id: "hotel-reception-stand",
-        name: "Стойка для отеля – ресепшен",
-        description:
-          "Шаблон для ресепшена с местом для QR, логотипа отеля и ключевой информации для гостей.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-3",
+        name: "Шаблон номер 3",
+        description: "",
+        href: "https://canva.link/6z6vi2zbr4uhyu9",
+        thumbnail: "/images/stands/stand-3.png",
       },
       {
-        id: "hotel-room-stand",
-        name: "Стойка для отеля – номер",
-        description:
-          "Стойка для номера — меню, room service и информация об отеле в одном месте.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-4",
+        name: "Шаблон номер 4",
+        description: "",
+        href: "https://canva.link/60hvydhkpbghk2q",
+        thumbnail: "/images/stands/stand-4.png",
       },
       {
-        id: "hotel-lobby-poster",
-        name: "Постер для лобби отеля",
-        description:
-          "Формат постера для лобби — приглашает гостей сканировать и использовать Hotel Hub.",
-        href: "#",
-        thumbnail: "",
-      },
-      {
-        id: "chefstar-promo",
-        name: "Промо-шаблон ChefStar",
-        description:
-          "Готовый промо-шаблон для печати — быстро адаптируйте под своё предложение и QR-код.",
-        href: "#",
-        thumbnail: "",
-      },
+        id: "stand-5",
+        name: "Шаблон номер 5",
+        description: "",
+        href: "https://canva.link/u32eey6e8cdezo4",
+        thumbnail: "/images/stands/stand-5.png",
+      }
     ],
   },
   footer: {

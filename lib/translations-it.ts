@@ -446,59 +446,46 @@ export const it = {
   materials: {
     badge: "Materiali",
     headline: "Materiali gratuiti per ristoranti e hotel",
-    sub: "Scarica modelli Canva pronti, incolla il tuo codice QR, aggiungi il nome della struttura e stampa in pochi minuti. Nessun grafico e nessun costo aggiuntivo.",
-    info: "Materiali pronti da scaricare e modificare in Canva. Basta sostituire il codice QR, aggiungere il logo o il nome della struttura e stampare.",
+    sub: "",
+    info: "Materiali pronti da scaricare e modificare in Canva. Basta incollare il codice QR dall'app, aggiungere il logo o il nome della struttura e stampare.",
     downloadBtn: "Scarica modello",
     placeholderLabel: "Anteprima del modello",
     items: [
       {
-        id: "restaurant-stand-a6",
-        name: "Espositore hotel A6",
-        description:
-          "Espositore compatto per tavolo o bancone — ideale per menu QR e informazioni per gli ospiti dell'hotel.",
-        href: "https://canva.link/4zxsd1gov0yfctl",
-        thumbnail: "/images/stand-hotelowy-a6-preview.png",
+        id: "stand-1",
+        name: "Modello numero 1",
+        description: "",
+        href: "https://canva.link/2xbf4ig3k2lp1px",
+        thumbnail: "/images/stands/stand-1.png",
       },
       {
-        id: "restaurant-stand-a5",
-        name: "Espositore ristorante A5",
-        description:
-          "Formato più grande per bancone o tavolo — codice QR e nome della struttura più visibili.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-2",
+        name: "Modello numero 2",
+        description: "",
+        href: "https://canva.link/hzgaos7gjwkivtl",
+        thumbnail: "/images/stands/stand-2.png",
       },
       {
-        id: "hotel-reception-stand",
-        name: "Espositore hotel – reception",
-        description:
-          "Modello per la reception con spazio per QR, logo dell'hotel e informazioni chiave per gli ospiti.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-3",
+        name: "Modello numero 3",
+        description: "",
+        href: "https://canva.link/6z6vi2zbr4uhyu9",
+        thumbnail: "/images/stands/stand-3.png",
       },
       {
-        id: "hotel-room-stand",
-        name: "Espositore hotel – camera",
-        description:
-          "Espositore per la camera — menu, room service e informazioni dell'hotel in un unico posto.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-4",
+        name: "Modello numero 4",
+        description: "",
+        href: "https://canva.link/60hvydhkpbghk2q",
+        thumbnail: "/images/stands/stand-4.png",
       },
       {
-        id: "hotel-lobby-poster",
-        name: "Poster lobby hotel",
-        description:
-          "Formato poster per la lobby — invita gli ospiti a scansionare e usare Hotel Hub.",
-        href: "#",
-        thumbnail: "",
-      },
-      {
-        id: "chefstar-promo",
-        name: "Modello promozionale ChefStar",
-        description:
-          "Modello promozionale pronto da stampare — adattalo rapidamente alla tua offerta e al codice QR.",
-        href: "#",
-        thumbnail: "",
-      },
+        id: "stand-5",
+        name: "Modello numero 5",
+        description: "",
+        href: "https://canva.link/u32eey6e8cdezo4",
+        thumbnail: "/images/stands/stand-5.png",
+      }
     ],
   },
   footer: {

@@ -446,59 +446,46 @@ export const tr = {
   materials: {
     badge: "Materyaller",
     headline: "Restoranlar ve oteller için ücretsiz materyaller",
-    sub: "Hazır Canva şablonlarını indirin, QR kodunuzu yapıştırın, mekân adınızı ekleyin ve dakikalar içinde yazdırın. Tasarımcı ve ek maliyet yok.",
-    info: "Canva'da düzenlemek için indirilebilir hazır materyaller. QR kodu değiştirmeniz, logo veya mekân adı eklemeniz ve yazdırmanız yeterli.",
+    sub: "",
+    info: "Canva'da düzenlemek için indirilebilir hazır materyaller. Uygulamadan QR kodunu yapıştırmanız, logo veya mekân adı eklemeniz ve yazdırmanız yeterli.",
     downloadBtn: "Şablonu indir",
     placeholderLabel: "Şablon önizlemesi",
     items: [
       {
-        id: "restaurant-stand-a6",
-        name: "Otel standı A6",
-        description:
-          "Masa veya tezgah için kompakt stand — QR menüler ve otel misafirleri için bilgiler için ideal.",
-        href: "https://canva.link/4zxsd1gov0yfctl",
-        thumbnail: "/images/stand-hotelowy-a6-preview.png",
+        id: "stand-1",
+        name: "Sablon numarasi 1",
+        description: "",
+        href: "https://canva.link/2xbf4ig3k2lp1px",
+        thumbnail: "/images/stands/stand-1.png",
       },
       {
-        id: "restaurant-stand-a5",
-        name: "Restoran standı A5",
-        description:
-          "Tezgah veya masa için daha büyük format — QR kod ve mekân adı daha görünür.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-2",
+        name: "Sablon numarasi 2",
+        description: "",
+        href: "https://canva.link/hzgaos7gjwkivtl",
+        thumbnail: "/images/stands/stand-2.png",
       },
       {
-        id: "hotel-reception-stand",
-        name: "Otel standı – resepsiyon",
-        description:
-          "QR, otel logosu ve misafirler için temel bilgiler için alan içeren resepsiyon şablonu.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-3",
+        name: "Sablon numarasi 3",
+        description: "",
+        href: "https://canva.link/6z6vi2zbr4uhyu9",
+        thumbnail: "/images/stands/stand-3.png",
       },
       {
-        id: "hotel-room-stand",
-        name: "Otel standı – oda",
-        description:
-          "Oda içi stand — menü, oda servisi ve otel bilgileri tek yerde.",
-        href: "#",
-        thumbnail: "",
+        id: "stand-4",
+        name: "Sablon numarasi 4",
+        description: "",
+        href: "https://canva.link/60hvydhkpbghk2q",
+        thumbnail: "/images/stands/stand-4.png",
       },
       {
-        id: "hotel-lobby-poster",
-        name: "Otel lobisi posteri",
-        description:
-          "Lobi için poster formatı — misafirleri taramaya ve Hotel Hub kullanmaya teşvik eder.",
-        href: "#",
-        thumbnail: "",
-      },
-      {
-        id: "chefstar-promo",
-        name: "ChefStar promosyon şablonu",
-        description:
-          "Yazdırmaya hazır promosyon şablonu — teklifinize ve QR kodunuza hızla uyarlayın.",
-        href: "#",
-        thumbnail: "",
-      },
+        id: "stand-5",
+        name: "Sablon numarasi 5",
+        description: "",
+        href: "https://canva.link/u32eey6e8cdezo4",
+        thumbnail: "/images/stands/stand-5.png",
+      }
     ],
   },
   footer: {
