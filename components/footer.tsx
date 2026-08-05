@@ -3,10 +3,21 @@
 import Link from "next/link"
 import { Instagram, Twitter, Facebook } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
+import { homeContent } from "@/lib/translations-home"
 
 export function Footer() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
   const f = t.footer
+  const nav = homeContent[locale].nav
+
+  const productLinks = [
+    { label: nav.how, href: "/#jak-to-dziala" },
+    { label: nav.pricing, href: "/cennik" },
+    { label: nav.faq, href: "/faq" },
+    { label: nav.comparison, href: "/porownanie" },
+    { label: nav.about, href: "/about" },
+    { label: t.nav.materials, href: "/materialy" },
+  ]
 
   return (
     <footer className="border-t border-border bg-card">
@@ -45,7 +56,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h4 className="text-sm font-semibold text-foreground">{f.product}</h4>
             <ul className="flex flex-col gap-2.5">
-              {f.productLinks.map((item: { label: string; href: string }) => (
+              {productLinks.map((item) => (
                 <li key={item.label}>
                   <Link href={item.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {item.label}

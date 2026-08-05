@@ -6,11 +6,13 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { homeContent } from "@/lib/translations-home"
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
+  const nav = homeContent[locale].nav
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -19,12 +21,12 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { label: t.nav.features, href: "#menu-live" },
-    { label: t.nav.beta, href: "#beta-testing" },
-    { label: t.nav.examples, href: "#przyklady" },
-    { label: t.nav.materials, href: "/materialy" },
-    { label: t.nav.about, href: "#onas" },
-    { label: t.nav.helpCenter, href: "/centrum-pomocy" },
+    { label: nav.how, href: "/#jak-to-dziala" },
+    { label: nav.forWhom, href: "/#dla-kogo" },
+    { label: nav.pricing, href: "/cennik" },
+    { label: nav.faq, href: "/faq" },
+    { label: nav.comparison, href: "/porownanie" },
+    { label: nav.about, href: "/about" },
   ]
 
   return (
@@ -49,7 +51,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((item) => (
             <Link
-              key={item.href}
+              key={item.label}
               href={item.href}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -83,7 +85,7 @@ export function Navbar() {
         <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-6 py-4 flex flex-col gap-4">
           {navLinks.map((item) => (
             <Link
-              key={item.href}
+              key={item.label}
               href={item.href}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMenuOpen(false)}
