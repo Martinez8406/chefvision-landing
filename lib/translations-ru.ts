@@ -447,9 +447,27 @@ export const ru = {
     badge: "Материалы",
     headline: "Бесплатные материалы для ресторанов и отелей",
     sub: "",
-    info: "Готовые материалы для скачивания и редактирования в Canva. Достаточно вставить QR-код из приложения, добавить логотип или название заведения и распечатать.",
+    info: "Готовые материалы для скачивания и редактирования в Canva. Достаточно вставить QR-код из приложения, добавить логотип или название заведения и распечатать. Также вы можете заказать макет листовки под цвета вашего бренда — за 149 PLN я подготовлю 3 варианта листовки и 3 правки.",
     downloadBtn: "Скачать шаблон",
     placeholderLabel: "Предпросмотр шаблона",
+    stands: {
+      headline: "Где купить подставки A6 из плексигласа?",
+      text: "Напечатанные шаблоны можно поставить в готовые подставки из плексигласа (формат A6). Примеры магазинов:",
+      shops: [
+      {
+        label: "Aplex — подставки типа T / меню из плексигласа",
+        href: "https://sklep.aplex-sc.pl/produkty-z-plexi/stojaki-typ-t-menu/stojak-na-menu-opis-podstawek-z-plexi-ramka",
+      },
+      {
+        label: "Allegro — подставка для меню A6 (двусторонняя, вертикальная)",
+        href: "https://allegro.pl/produkt/stojak-na-menu-starplex-dwustronny-a6-pionowy-plexi-978a9c04-9f25-4d98-8a20-38b1dc12410f?offerId=7483747199",
+      },
+      {
+        label: "Amazon — подставка для меню A6 (двусторонняя, Yurifaz)",
+        href: "https://www.amazon.pl/Yurifaz-zdejmowanym-dwustronny-wy%C5%9Bwietlacz-restauracji/dp/B0FYDKZ1QS/ref=asc_df_B0FYDKZ1QS?mcid=f770780bb1e13dd99c6e1c9ea36a020a&tag=plshogostdde-21&linkCode=df0&hvadid=719604710151&hvpos=&hvnetw=g&hvrand=68690670135284078&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067466&hvtargid=pla-2469979013739&psc=1&hvocijid=68690670135284078-B0FYDKZ1QS-&hvexpln=0&language=pl_PL&gad_source=1",
+      }
+      ],
+    },
     items: [
       {
         id: "stand-1",
@@ -485,6 +503,13 @@ export const ru = {
         description: "",
         href: "https://canva.link/u32eey6e8cdezo4",
         thumbnail: "/images/stands/stand-5.png",
+      },
+      {
+        id: "stand-6",
+        name: "Шаблон номер 6",
+        description: "",
+        href: "https://canva.link/iy7zl03y1ztyv06",
+        thumbnail: "/images/stands/stand-6.png",
       }
     ],
   },

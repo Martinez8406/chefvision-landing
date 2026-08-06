@@ -447,9 +447,27 @@ export const hr = {
     badge: "Materijali",
     headline: "Besplatni materijali za restorane i hotele",
     sub: "",
-    info: "Materijali spremni za preuzimanje i uređivanje u Canvi. Dovoljno je zalijepiti QR kod iz aplikacije, dodati logo ili naziv objekta i isprintati.",
+    info: "Materijali spremni za preuzimanje i uređivanje u Canvi. Dovoljno je zalijepiti QR kod iz aplikacije, dodati logo ili naziv objekta i isprintati. Također možete naručiti izradu letka u bojama vašeg brenda — za 149 PLN pripremit ću 3 varijante letka i 3 korekcije.",
     downloadBtn: "Preuzmi predložak",
     placeholderLabel: "Pregled predloška",
+    stands: {
+      headline: "Gdje kupiti stalkove A6 od plexija?",
+      text: "Ispisane predloške možete staviti u gotove stalkove od plexija (format A6). Primjeri trgovina:",
+      shops: [
+      {
+        label: "Aplex — stalkovi tipa T / meni od plexija",
+        href: "https://sklep.aplex-sc.pl/produkty-z-plexi/stojaki-typ-t-menu/stojak-na-menu-opis-podstawek-z-plexi-ramka",
+      },
+      {
+        label: "Allegro — stalker za meni A6 (dvostrani, okomiti)",
+        href: "https://allegro.pl/produkt/stojak-na-menu-starplex-dwustronny-a6-pionowy-plexi-978a9c04-9f25-4d98-8a20-38b1dc12410f?offerId=7483747199",
+      },
+      {
+        label: "Amazon — stalak za jelovnik A6 (dvostrani, Yurifaz)",
+        href: "https://www.amazon.pl/Yurifaz-zdejmowanym-dwustronny-wy%C5%9Bwietlacz-restauracji/dp/B0FYDKZ1QS/ref=asc_df_B0FYDKZ1QS?mcid=f770780bb1e13dd99c6e1c9ea36a020a&tag=plshogostdde-21&linkCode=df0&hvadid=719604710151&hvpos=&hvnetw=g&hvrand=68690670135284078&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067466&hvtargid=pla-2469979013739&psc=1&hvocijid=68690670135284078-B0FYDKZ1QS-&hvexpln=0&language=pl_PL&gad_source=1",
+      }
+      ],
+    },
     items: [
       {
         id: "stand-1",
@@ -485,6 +503,13 @@ export const hr = {
         description: "",
         href: "https://canva.link/u32eey6e8cdezo4",
         thumbnail: "/images/stands/stand-5.png",
+      },
+      {
+        id: "stand-6",
+        name: "Predlozak broj 6",
+        description: "",
+        href: "https://canva.link/iy7zl03y1ztyv06",
+        thumbnail: "/images/stands/stand-6.png",
       }
     ],
   },

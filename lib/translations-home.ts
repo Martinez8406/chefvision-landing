@@ -82,7 +82,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Stawiasz kod QR na stoliku",
-          desc: "Pobierasz gotowe materiały do druku: naklejki, stojaki i ulotki. Gość skanuje kod telefonem — bez instalowania aplikacji.",
+          desc: "Pobierasz gotowe materiały do druku z zakładki „Materiały” lub zlecasz wykonanie. Gość skanuje kod telefonem — bez instalowania aplikacji.",
         },
         {
           title: "Gość czyta menu w swoim języku",
@@ -167,7 +167,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Put the QR code on the table",
-          desc: "Download ready-to-print materials: stickers, stands and flyers. Guests scan the code with their phone — no app needed.",
+          desc: "Download ready-to-print materials from the Materials tab, or order the service from us. Guests scan the code with their phone — no app needed.",
         },
         {
           title: "Guests read the menu in their language",
@@ -252,7 +252,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "QR-Code auf den Tisch stellen",
-          desc: "Fertige Druckvorlagen herunterladen: Aufkleber, Aufsteller und Flyer. Der Gast scannt den Code mit dem Handy — ohne App.",
+          desc: "Laden Sie fertige Druckvorlagen im Bereich „Materialien“ herunter oder beauftragen Sie uns. Der Gast scannt den Code mit dem Handy — ohne App.",
         },
         {
           title: "Der Gast liest das Menü in seiner Sprache",
@@ -337,7 +337,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Colocas el código QR en la mesa",
-          desc: "Descargas materiales listos para imprimir: pegatinas, soportes y folletos. El cliente escanea el código con su móvil — sin instalar nada.",
+          desc: "Descargas materiales listos para imprimir desde la pestaña „Materiales” o nos encargas la realización. El cliente escanea el código con su móvil — sin instalar nada.",
         },
         {
           title: "El cliente lee la carta en su idioma",
@@ -422,7 +422,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Τοποθετείτε τον κωδικό QR στο τραπέζι",
-          desc: "Κατεβάζετε έτοιμα υλικά για εκτύπωση: αυτοκόλλητα, σταντ και φυλλάδια. Ο πελάτης σκανάρει τον κωδικό με το κινητό — χωρίς εφαρμογή.",
+          desc: "Κατεβάζετε έτοιμα υλικά για εκτύπωση από την καρτέλα «Υλικά» ή μας αναθέτετε την εκτέλεση. Ο πελάτης σκανάρει τον κωδικό με το κινητό — χωρίς εφαρμογή.",
         },
         {
           title: "Ο πελάτης διαβάζει το μενού στη γλώσσα του",
@@ -507,7 +507,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Metti il codice QR sul tavolo",
-          desc: "Scarichi materiali pronti per la stampa: adesivi, espositori e volantini. L'ospite scansiona il codice con il telefono — senza installare nulla.",
+          desc: "Scarichi materiali pronti per la stampa dalla scheda „Materiali” oppure ci affidi l'esecuzione. L'ospite scansiona il codice con il telefono — senza installare nulla.",
         },
         {
           title: "L'ospite legge il menu nella sua lingua",
@@ -592,7 +592,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "QR kodunu masaya koyun",
-          desc: "Baskıya hazır materyalleri indirin: etiketler, standlar ve broşürler. Misafir kodu telefonuyla tarar — uygulama gerekmez.",
+          desc: "Baskıya hazır materyalleri „Materyaller” sekmesinden indirin veya üretimi bize bırakın. Misafir kodu telefonuyla tarar — uygulama gerekmez.",
         },
         {
           title: "Misafir menüyü kendi dilinde okur",
@@ -677,7 +677,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Ставите QR-код на столик",
-          desc: "Скачиваете готовые материалы для печати: наклейки, подставки и листовки. Гость сканирует код телефоном — без установки приложений.",
+          desc: "Скачиваете готовые материалы для печати во вкладке «Материалы» или поручаете выполнение нам. Гость сканирует код телефоном — без установки приложений.",
         },
         {
           title: "Гость читает меню на своём языке",
@@ -762,7 +762,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Stavite QR kod na stol",
-          desc: "Preuzmete gotove materijale za tisak: naljepnice, stalke i letke. Gost skenira kod mobitelom — bez instaliranja aplikacije.",
+          desc: "Preuzmete gotove materijale za tisak u kartici „Materijali” ili nam prepustite izradu. Gost skenira kod mobitelom — bez instaliranja aplikacije.",
         },
         {
           title: "Gost čita meni na svom jeziku",

@@ -439,9 +439,27 @@ export const es = {
     badge: "Materiales",
     headline: "Materiales gratuitos para restaurantes y hoteles",
     sub: "",
-    info: "Materiales listos para descargar y editar en Canva. Solo pegue el código QR de la aplicación, añada su logo o nombre del local e imprima.",
+    info: "Materiales listos para descargar y editar en Canva. Solo pegue el código QR de la aplicación, añada su logo o nombre del local e imprima. También puedes encargar la creación de un folleto con los colores de tu marca — por 149 PLN prepararé 3 variantes de folleto y 3 revisiones.",
     downloadBtn: "Descargar plantilla",
     placeholderLabel: "Vista previa de la plantilla",
+    stands: {
+      headline: "¿Dónde comprar expositores A6 de metacrilato?",
+      text: "Coloque las plantillas impresas en expositores de metacrilato listos (formato A6). Tiendas de ejemplo:",
+      shops: [
+      {
+        label: "Aplex — expositores tipo T / menú de metacrilato",
+        href: "https://sklep.aplex-sc.pl/produkty-z-plexi/stojaki-typ-t-menu/stojak-na-menu-opis-podstawek-z-plexi-ramka",
+      },
+      {
+        label: "Allegro — expositor de menú A6 (doble cara, vertical)",
+        href: "https://allegro.pl/produkt/stojak-na-menu-starplex-dwustronny-a6-pionowy-plexi-978a9c04-9f25-4d98-8a20-38b1dc12410f?offerId=7483747199",
+      },
+      {
+        label: "Amazon — expositor de menú A6 (doble cara, Yurifaz)",
+        href: "https://www.amazon.pl/Yurifaz-zdejmowanym-dwustronny-wy%C5%9Bwietlacz-restauracji/dp/B0FYDKZ1QS/ref=asc_df_B0FYDKZ1QS?mcid=f770780bb1e13dd99c6e1c9ea36a020a&tag=plshogostdde-21&linkCode=df0&hvadid=719604710151&hvpos=&hvnetw=g&hvrand=68690670135284078&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067466&hvtargid=pla-2469979013739&psc=1&hvocijid=68690670135284078-B0FYDKZ1QS-&hvexpln=0&language=pl_PL&gad_source=1",
+      }
+      ],
+    },
     items: [
       {
         id: "stand-1",
@@ -477,6 +495,13 @@ export const es = {
         description: "",
         href: "https://canva.link/u32eey6e8cdezo4",
         thumbnail: "/images/stands/stand-5.png",
+      },
+      {
+        id: "stand-6",
+        name: "Plantilla numero 6",
+        description: "",
+        href: "https://canva.link/iy7zl03y1ztyv06",
+        thumbnail: "/images/stands/stand-6.png",
       },
     ],
   },

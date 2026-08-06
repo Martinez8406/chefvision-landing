@@ -438,9 +438,27 @@ export const de = {
     badge: "Materialien",
     headline: "Kostenlose Materialien für Restaurants und Hotels",
     sub: "",
-    info: "Sofort herunterladbare Materialien zur Bearbeitung in Canva. Einfach den QR-Code aus der App einfügen, Logo oder Betriebsnamen hinzufügen und drucken.",
+    info: "Sofort herunterladbare Materialien zur Bearbeitung in Canva. Einfach den QR-Code aus der App einfügen, Logo oder Betriebsnamen hinzufügen und drucken. Sie können auch die Erstellung eines Flyers in Ihren Markenfarben beauftragen — für 149 PLN erstelle ich 3 Flyer-Varianten plus 3 Korrekturen.",
     downloadBtn: "Vorlage herunterladen",
     placeholderLabel: "Vorschau der Vorlage",
+    stands: {
+      headline: "Wo A6-Aufsteller aus Plexiglas kaufen?",
+      text: "Die gedruckten Vorlagen passen in fertige Plexiglas-Aufsteller (Format A6). Beispielshops:",
+      shops: [
+      {
+        label: "Aplex — Aufsteller Typ T / Menü aus Plexiglas",
+        href: "https://sklep.aplex-sc.pl/produkty-z-plexi/stojaki-typ-t-menu/stojak-na-menu-opis-podstawek-z-plexi-ramka",
+      },
+      {
+        label: "Allegro — Menüaufsteller A6 (doppelseitig, hochkant)",
+        href: "https://allegro.pl/produkt/stojak-na-menu-starplex-dwustronny-a6-pionowy-plexi-978a9c04-9f25-4d98-8a20-38b1dc12410f?offerId=7483747199",
+      },
+      {
+        label: "Amazon — A6-Menüaufsteller (doppelseitig, Yurifaz)",
+        href: "https://www.amazon.pl/Yurifaz-zdejmowanym-dwustronny-wy%C5%9Bwietlacz-restauracji/dp/B0FYDKZ1QS/ref=asc_df_B0FYDKZ1QS?mcid=f770780bb1e13dd99c6e1c9ea36a020a&tag=plshogostdde-21&linkCode=df0&hvadid=719604710151&hvpos=&hvnetw=g&hvrand=68690670135284078&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067466&hvtargid=pla-2469979013739&psc=1&hvocijid=68690670135284078-B0FYDKZ1QS-&hvexpln=0&language=pl_PL&gad_source=1",
+      }
+      ],
+    },
     items: [
       {
         id: "stand-1",
@@ -476,6 +494,13 @@ export const de = {
         description: "",
         href: "https://canva.link/u32eey6e8cdezo4",
         thumbnail: "/images/stands/stand-5.png",
+      },
+      {
+        id: "stand-6",
+        name: "Vorlage Nummer 6",
+        description: "",
+        href: "https://canva.link/iy7zl03y1ztyv06",
+        thumbnail: "/images/stands/stand-6.png",
       }
     ],
   },

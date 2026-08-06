@@ -441,9 +441,27 @@ export const translations = {
       badge: "Materiały",
       headline: "Darmowe materiały dla restauracji i hoteli",
       sub: "",
-      info: "Gotowe materiały do pobrania i edycji w Canva. Wystarczy wkleić kod QR z aplikacji, dodać logo lub nazwę lokalu i wydrukować.",
+      info: "Gotowe materiały do pobrania i edycji w Canva. Wystarczy wkleić kod QR z aplikacji, dodać logo lub nazwę lokalu i wydrukować. Możesz też zlecić wykonanie ulotki pod kolory marki — za 149 zł wykonam 3 warianty ulotki plus 3 poprawki.",
       downloadBtn: "Pobierz szablon",
       placeholderLabel: "Podgląd szablonu",
+      stands: {
+        headline: "Gdzie kupić stojaki A6 z plexi?",
+        text: "Wydrukowane szablony umieścisz w gotowych stojakach z plexi (format A6). Przykładowe sklepy:",
+        shops: [
+        {
+          label: "Aplex — stojaki typ T / menu z plexi",
+          href: "https://sklep.aplex-sc.pl/produkty-z-plexi/stojaki-typ-t-menu/stojak-na-menu-opis-podstawek-z-plexi-ramka",
+        },
+        {
+          label: "Allegro — stojak na menu A6 (dwustronny, pionowy)",
+          href: "https://allegro.pl/produkt/stojak-na-menu-starplex-dwustronny-a6-pionowy-plexi-978a9c04-9f25-4d98-8a20-38b1dc12410f?offerId=7483747199",
+        },
+        {
+          label: "Amazon — stojak na menu A6 (dwustronny, Yurifaz)",
+          href: "https://www.amazon.pl/Yurifaz-zdejmowanym-dwustronny-wy%C5%9Bwietlacz-restauracji/dp/B0FYDKZ1QS/ref=asc_df_B0FYDKZ1QS?mcid=f770780bb1e13dd99c6e1c9ea36a020a&tag=plshogostdde-21&linkCode=df0&hvadid=719604710151&hvpos=&hvnetw=g&hvrand=68690670135284078&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067466&hvtargid=pla-2469979013739&psc=1&hvocijid=68690670135284078-B0FYDKZ1QS-&hvexpln=0&language=pl_PL&gad_source=1",
+        }
+        ],
+      },
       items: [
         {
           id: "stand-1",
@@ -479,6 +497,13 @@ export const translations = {
           description: "",
           href: "https://canva.link/u32eey6e8cdezo4",
           thumbnail: "/images/stands/stand-5.png",
+        },
+        {
+          id: "stand-6",
+          name: "Szablon numer 6",
+          description: "",
+          href: "https://canva.link/iy7zl03y1ztyv06",
+          thumbnail: "/images/stands/stand-6.png",
         },
       ],
     },
@@ -908,9 +933,23 @@ export const translations = {
       badge: "Materials",
       headline: "Free materials for restaurants and hotels",
       sub: "",
-      info: "Ready-to-download materials for editing in Canva. Just paste the QR code from the app, add your logo or venue name and print.",
+      info: "Ready-to-download materials for editing in Canva. Just paste the QR code from the app, add your logo or venue name and print. You can also commission a flyer styled to your brand colors — for 149 PLN I'll create 3 flyer variants plus 3 revisions.",
       downloadBtn: "Download template",
       placeholderLabel: "Template preview",
+      stands: {
+        headline: "Where to buy A6 plexiglass stands?",
+        text: "Place your printed templates in ready-made plexiglass stands (A6 format). Example shops:",
+        shops: [
+        {
+          label: "Aplex — type T / plexiglass menu stands",
+          href: "https://sklep.aplex-sc.pl/produkty-z-plexi/stojaki-typ-t-menu/stojak-na-menu-opis-podstawek-z-plexi-ramka",
+        },
+        {
+          label: "Allegro — A6 menu stand (double-sided, vertical)",
+          href: "https://allegro.pl/produkt/stojak-na-menu-starplex-dwustronny-a6-pionowy-plexi-978a9c04-9f25-4d98-8a20-38b1dc12410f?offerId=7483747199",
+        }
+        ],
+      },
       items: [
         {
           id: "stand-1",
@@ -946,6 +985,13 @@ export const translations = {
           description: "",
           href: "https://canva.link/u32eey6e8cdezo4",
           thumbnail: "/images/stands/stand-5.png",
+        },
+        {
+          id: "stand-6",
+          name: "Template number 6",
+          description: "",
+          href: "https://canva.link/iy7zl03y1ztyv06",
+          thumbnail: "/images/stands/stand-6.png",
         },
       ],
     },

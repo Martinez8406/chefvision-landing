@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Download, FileImage } from "lucide-react"
+import { Download, ExternalLink, FileImage, ShoppingBag } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
 
@@ -81,6 +81,36 @@ export function MaterialsSection() {
             </article>
           ))}
         </div>
+
+        {m.stands ? (
+          <div className="mx-auto mt-14 max-w-3xl rounded-2xl border border-border bg-card p-6 sm:p-8">
+            <div className="flex flex-col items-center gap-3 text-center">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#7fbd04] to-[#4d7c0f]">
+                <ShoppingBag size={20} className="text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground sm:text-2xl">{m.stands.headline}</h3>
+              <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+                {m.stands.text}
+              </p>
+            </div>
+
+            <ul className="mt-6 flex flex-col gap-3">
+              {m.stands.shops.map((shop: { label: string; href: string }) => (
+                <li key={shop.href}>
+                  <a
+                    href={shop.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between gap-3 rounded-xl border border-border bg-background px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/40 hover:bg-primary/5"
+                  >
+                    <span>{shop.label}</span>
+                    <ExternalLink size={16} className="shrink-0 text-primary" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </div>
     </section>
   )
