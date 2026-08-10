@@ -339,13 +339,12 @@ export const it = {
       price: "30",
       currency: "PLN / mese",
       label: "Piano Start",
-      desc: "Più strumenti di vendita e un menu professionale senza watermark.",
+      desc: "Menu digitale professionale per il tuo ristorante.",
       buyBtn: "Acquista",
       features: [
         "10 token AI al mese",
         "Menu senza watermark",
         "Traduzioni del menu in 14 lingue",
-        "Raccomandazioni e promozioni",
         "Statistiche aperture menu",
       ],
     },
@@ -354,7 +353,7 @@ export const it = {
       price: "97",
       currency: "PLN / mese",
       label: "Piano Premium",
-      desc: "Accesso completo a tutte le funzionalità. Annulla in qualsiasi momento — nessun vincolo.",
+      desc: "Per i ristoranti che vogliono usare il menu per aumentare le vendite.",
       buyBtn: "Acquista",
       features: [
         "Abbinamenti e upselling",

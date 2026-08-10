@@ -339,13 +339,12 @@ export const tr = {
       price: "30",
       currency: "PLN / month",
       label: "Start planı",
-      desc: "Daha fazla satış aracı ve filigransız profesyonel menü.",
+      desc: "Restoranınız için profesyonel dijital menü.",
       buyBtn: "Satın al",
       features: [
         "Ayda 10 AI token",
         "Filigransız menü",
         "14 dilde menü çevirileri",
-        "Öneriler ve promosyonlar",
         "Menü açılma istatistikleri",
       ],
     },
@@ -354,7 +353,7 @@ export const tr = {
       price: "97",
       currency: "PLN / month",
       label: "Premium planı",
-      desc: "Tüm özelliklere tam erişim. İstediğiniz zaman iptal edin — taahhüt yok.",
+      desc: "Menüyü satış artırmak için kullanmak isteyen restoranlar için.",
       buyBtn: "Satın al",
       features: [
         "Eşleştirmeler ve upselling",

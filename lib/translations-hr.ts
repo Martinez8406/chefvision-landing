@@ -339,13 +339,12 @@ export const hr = {
       price: "30",
       currency: "PLN / mjesec",
       label: "Start plan",
-      desc: "Više prodajnih alata i profesionalni jelovnik bez vodenog žiga.",
+      desc: "Profesionalni digitalni jelovnik za vaš restoran.",
       buyBtn: "Kupujem",
       features: [
         "10 AI tokena mjesečno",
         "Jelovnik bez vodenog žiga",
         "Prijevodi jelovnika na 14 jezika",
-        "Preporuke i promocije",
         "Statistike otvaranja menija",
       ],
     },
@@ -354,7 +353,7 @@ export const hr = {
       price: "97",
       currency: "PLN / mjesec",
       label: "Premium plan",
-      desc: "Potpuni pristup svim značajkama. Otkažite bilo kada — bez obveze.",
+      desc: "Za restorane koji žele iskoristiti meni za povećanje prodaje.",
       buyBtn: "Kupujem",
       features: [
         "Parovi i upselling",

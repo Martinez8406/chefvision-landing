@@ -330,13 +330,12 @@ export const de = {
       price: "30",
       currency: "PLN / Monat",
       label: "Start-Plan",
-      desc: "Mehr Verkaufstools und eine professionelle Speisekarte ohne Wasserzeichen.",
+      desc: "Professionelle digitale Speisekarte für Ihr Restaurant.",
       buyBtn: "Kaufen",
       features: [
         "10 KI-Tokens pro Monat",
         "Speisekarte ohne Wasserzeichen",
         "Speisekartenübersetzungen in 14 Sprachen",
-        "Empfehlungen und Aktionen",
         "Menü-Öffnungsstatistiken",
       ],
     },
@@ -345,7 +344,7 @@ export const de = {
       price: "97",
       currency: "PLN / Monat",
       label: "Premium-Plan",
-      desc: "Voller Zugang zu allen Funktionen. Jederzeit kündbar — keine Verpflichtungen.",
+      desc: "Für Restaurants, die das Menü zur Umsatzsteigerung nutzen wollen.",
       buyBtn: "Kaufen",
       features: [
         "Pairings und Upselling",

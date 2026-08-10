@@ -331,13 +331,12 @@ export const es = {
       price: "30",
       currency: "PLN / mes",
       label: "Plan Start",
-      desc: "Más herramientas de venta y un menú profesional sin marca de agua.",
+      desc: "Menú digital profesional para tu restaurante.",
       buyBtn: "Comprar",
       features: [
         "10 tokens de IA al mes",
         "Menú sin marca de agua",
         "Traducciones del menú en 14 idiomas",
-        "Recomendaciones y promociones",
         "Estadísticas de aperturas del menú",
       ],
     },
@@ -346,7 +345,7 @@ export const es = {
       price: "97",
       currency: "PLN / mes",
       label: "Plan Premium",
-      desc: "Acceso completo a todas las funciones. Cancele cuando quiera — sin compromisos.",
+      desc: "Para restaurantes que quieren usar el menú para aumentar las ventas.",
       buyBtn: "Comprar",
       features: [
         "Maridajes y upselling",
