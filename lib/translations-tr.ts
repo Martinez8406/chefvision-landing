@@ -383,6 +383,20 @@ export const tr = {
         "Hâlâ kendi hesabınıza ve tam kontrole sahipsiniz",
       ],
     },
+    flyerService: {
+      badge: "Grafik tasarım",
+      price: "149",
+      currency: "PLN tek seferlik",
+      label: "QR Broşür",
+      desc: "İşletmenize özel QR broşür. Menünüze giden QR kodlu kişiselleştirilmiş tasarım — baskıya hazır, marka stilinize uygun.",
+      buyBtn: "Broşür sipariş et",
+      features: [
+        "Seçim için 3 tasarım varyantı",
+        "Seçilen varyanta 3 küçük düzeltme (renkler, metinler, düzen)",
+        "Baskıya hazır dosya (PDF, A5 format)",
+        "3 iş günü içinde teslimat",
+      ],
+    },
     ctaBtn: "Garsonlarınızın zamanını kazanmaya başlayın",
   },
   helpCenter: {

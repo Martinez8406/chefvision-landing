@@ -383,6 +383,20 @@ export const hr = {
         "I dalje imate vlastiti račun i punu kontrolu",
       ],
     },
+    flyerService: {
+      badge: "Grafički dizajn",
+      price: "149",
+      currency: "PLN jednokratno",
+      label: "QR letak",
+      desc: "QR letak prilagođen vašem objektu. Personalizirani dizajn s QR kodom do vašeg menija — spreman za tisak, u stilu vašeg brenda.",
+      buyBtn: "Naručite letak",
+      features: [
+        "3 varijante dizajna za odabir",
+        "3 manje korekcije odabrane varijante (boje, tekstovi, raspored)",
+        "Datoteka spremna za tisak (PDF, format A5)",
+        "Izrada u 3 radna dana",
+      ],
+    },
     ctaBtn: "Počnite štedjeti vrijeme svojim konobarima",
   },
   helpCenter: {

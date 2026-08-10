@@ -375,6 +375,20 @@ export const es = {
         "Usted sigue teniendo su propia cuenta y control total",
       ],
     },
+    flyerService: {
+      badge: "Diseño gráfico",
+      price: "149",
+      currency: "PLN pago único",
+      label: "Folleto QR",
+      desc: "Folleto QR adaptado a tu local. Diseño personalizado con código QR a tu menú — listo para imprimir, en el estilo de tu marca.",
+      buyBtn: "Encargar folleto",
+      features: [
+        "3 variantes de diseño para elegir",
+        "3 pequeñas revisiones de la variante elegida (colores, textos, diseño)",
+        "Archivo listo para imprimir (PDF, formato A5)",
+        "Entrega en 3 días laborables",
+      ],
+    },
     ctaBtn: "Empiece a ahorrar tiempo a sus camareros",
   },
   helpCenter: {

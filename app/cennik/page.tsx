@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Cennik — ChefVision | QR Menu dla restauracji i hoteli",
   description:
-    "Sprawdź cennik ChefVision. Darmowy plan QR Menu, plan Start i Premium — bez umów i bez karty kredytowej.",
+    "Sprawdź cennik ChefVision. Plan Start, Premium, zlecenie menu oraz Ulotka QR — bez umów i bez karty kredytowej.",
 }
 
 export default function PricingPage() {

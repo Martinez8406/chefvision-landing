@@ -2,7 +2,6 @@
 
 import { ArrowRight, Check, Gift, Wand2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { useLanguage } from "@/lib/language-context"
 
 const APP_URL = "https://app.chefvision.pl"
@@ -60,7 +59,7 @@ export function CtaSection() {
                 <p className="text-sm font-semibold text-primary text-center">{c.pricingRibbon}</p>
               </div>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-5 items-stretch pt-2">
+              <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5 items-stretch pt-2">
                 {/* Start */}
                 <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3">
                   <span className="inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
@@ -88,11 +87,8 @@ export function CtaSection() {
                 </div>
 
                 {/* Premium */}
-                <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 shadow-[0_0_28px_-4px_hsl(var(--primary)/0.45),0_12px_40px_-12px_hsl(var(--primary)/0.35)] ring-2 ring-primary/25 lg:scale-[1.03] lg:z-10">
-                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide shadow-md whitespace-nowrap">
-                    {c.regular.badge}
-                  </Badge>
-                  <div className="flex items-end gap-1 mt-3">
+                <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 shadow-[0_0_28px_-4px_hsl(var(--primary)/0.45),0_12px_40px_-12px_hsl(var(--primary)/0.35)] ring-2 ring-primary/25 xl:scale-[1.03] xl:z-10">
+                  <div className="flex items-end gap-1 mt-1">
                     <span className="text-4xl font-bold text-primary font-serif leading-none">{c.regular.price}</span>
                     <span className="text-sm text-muted-foreground mb-1">{c.regular.currency}</span>
                   </div>
@@ -114,7 +110,7 @@ export function CtaSection() {
                 </div>
 
                 {/* Menu service */}
-                <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3 sm:col-span-2 lg:col-span-1">
+                <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3">
                   <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-foreground px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-background">
                     <Wand2 size={11} />
                     {c.menuService.badge}
@@ -136,6 +132,32 @@ export function CtaSection() {
                   <Button className="mt-4 w-full bg-foreground text-background hover:bg-foreground/90 font-semibold" asChild>
                     <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                       {c.menuService.buyBtn}
+                    </a>
+                  </Button>
+                </div>
+
+                {/* Flyer QR */}
+                <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3">
+                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
+                    {c.flyerService.badge}
+                  </span>
+                  <div className="flex items-end gap-1 mt-1">
+                    <span className="text-3xl font-bold text-foreground font-serif">{c.flyerService.price}</span>
+                    <span className="text-sm text-muted-foreground mb-1">{c.flyerService.currency}</span>
+                  </div>
+                  <p className="text-sm font-semibold text-foreground">{c.flyerService.label}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{c.flyerService.desc}</p>
+                  <ul className="flex flex-col gap-2 mt-1 flex-1">
+                    {c.flyerService.features.map((f: string) => (
+                      <li key={f} className="flex items-start gap-2 text-sm text-foreground">
+                        <Check size={15} className="text-primary shrink-0 mt-0.5" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button className="mt-4 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold" asChild>
+                    <a href="https://app.chefvision.pl/#/cennik" target="_blank" rel="noopener noreferrer">
+                      {c.flyerService.buyBtn}
                     </a>
                   </Button>
                 </div>

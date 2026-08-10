@@ -374,6 +374,20 @@ export const de = {
         "Sie behalten Ihr eigenes Konto und die volle Kontrolle",
       ],
     },
+    flyerService: {
+      badge: "Grafikdesign",
+      price: "149",
+      currency: "PLN einmalig",
+      label: "QR-Flyer",
+      desc: "QR-Flyer passend zu Ihrem Lokal. Personalisierter Entwurf mit QR-Code zu Ihrem Menü — druckfertig, im Stil Ihrer Marke.",
+      buyBtn: "Flyer beauftragen",
+      features: [
+        "3 Entwurfsvarianten zur Auswahl",
+        "3 kleine Korrekturen der gewählten Variante (Farben, Texte, Layout)",
+        "Druckfertige Datei (PDF, Format A5)",
+        "Umsetzung in 3 Werktagen",
+      ],
+    },
     ctaBtn: "Zeit Ihrer Kellner sparen — jetzt starten",
   },
   helpCenter: {

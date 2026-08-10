@@ -383,6 +383,20 @@ export const it = {
         "Hai ancora il tuo account e il pieno controllo",
       ],
     },
+    flyerService: {
+      badge: "Progetto grafico",
+      price: "149",
+      currency: "PLN una tantum",
+      label: "Volantino QR",
+      desc: "Volantino QR su misura per il tuo locale. Progetto personalizzato con codice QR al tuo menu — pronto per la stampa, nello stile del tuo brand.",
+      buyBtn: "Ordina volantino",
+      features: [
+        "3 varianti di progetto tra cui scegliere",
+        "3 piccole revisioni della variante scelta (colori, testi, layout)",
+        "File pronto per la stampa (PDF, formato A5)",
+        "Consegna in 3 giorni lavorativi",
+      ],
+    },
     ctaBtn: "Inizia a risparmiare tempo ai tuoi camerieri",
   },
   helpCenter: {
