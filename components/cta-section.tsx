@@ -61,25 +61,22 @@ export function CtaSection() {
 
               <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5 items-stretch pt-2">
                 {/* Start */}
-                <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3">
-                  <span className="inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
-                    {c.startPlan.badge}
-                  </span>
-                  <div className="flex items-end gap-1 mt-1">
-                    <span className="text-3xl font-bold text-foreground font-serif">{c.startPlan.price}</span>
-                    <span className="text-sm text-muted-foreground mb-1">{c.startPlan.currency}</span>
+                <div className="relative rounded-2xl border border-border bg-card p-6 sm:p-7 flex flex-col gap-3 shadow-sm">
+                  <div className="flex items-end gap-1.5 mt-1">
+                    <span className="text-3xl font-bold text-foreground font-serif leading-none">{c.startPlan.price}</span>
+                    <span className="text-sm text-muted-foreground mb-0.5">{c.startPlan.currency}</span>
                   </div>
-                  <p className="text-sm font-semibold text-foreground">{c.startPlan.label}</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{c.startPlan.desc}</p>
-                  <ul className="flex flex-col gap-2 mt-1 flex-1">
+                  <p className="text-base font-semibold text-foreground">{c.startPlan.label}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{c.startPlan.desc}</p>
+                  <ul className="flex flex-col gap-2.5 mt-2 flex-1">
                     {c.startPlan.features.map((f: string) => (
-                      <li key={f} className="flex items-start gap-2 text-sm text-foreground">
-                        <Check size={15} className="text-primary shrink-0 mt-0.5" />
+                      <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
+                        <Check size={16} className="text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
                         {f}
                       </li>
                     ))}
                   </ul>
-                  <Button className="mt-4 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold" asChild>
+                  <Button className="mt-6 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold" asChild>
                     <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                       {c.startPlan.buyBtn}
                     </a>
@@ -87,22 +84,22 @@ export function CtaSection() {
                 </div>
 
                 {/* Premium */}
-                <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 shadow-[0_0_28px_-4px_hsl(var(--primary)/0.45),0_12px_40px_-12px_hsl(var(--primary)/0.35)] ring-2 ring-primary/25 xl:scale-[1.03] xl:z-10">
-                  <div className="flex items-end gap-1 mt-1">
-                    <span className="text-4xl font-bold text-primary font-serif leading-none">{c.regular.price}</span>
-                    <span className="text-sm text-muted-foreground mb-1">{c.regular.currency}</span>
+                <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 shadow-sm">
+                  <div className="flex items-end gap-1.5 mt-1">
+                    <span className="text-3xl font-bold text-foreground font-serif leading-none">{c.regular.price}</span>
+                    <span className="text-sm text-muted-foreground mb-0.5">{c.regular.currency}</span>
                   </div>
-                  <p className="text-sm font-semibold text-foreground">{c.regular.label}</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{c.regular.desc}</p>
-                  <ul className="flex flex-col gap-2 mt-1 flex-1">
+                  <p className="text-base font-semibold text-foreground">{c.regular.label}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{c.regular.desc}</p>
+                  <ul className="flex flex-col gap-2.5 mt-2 flex-1">
                     {c.regular.features.map((f: string) => (
-                      <li key={f} className="flex items-start gap-2 text-sm text-foreground">
-                        <Check size={15} className="text-primary shrink-0 mt-0.5" />
+                      <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
+                        <Check size={16} className="text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
                         {f}
                       </li>
                     ))}
                   </ul>
-                  <Button className="mt-4 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold shadow-md shadow-primary/30" asChild>
+                  <Button className="mt-6 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold" asChild>
                     <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                       {c.regular.buyBtn}
                     </a>
