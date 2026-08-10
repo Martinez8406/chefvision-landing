@@ -509,43 +509,17 @@ export function RestauracjeLanding() {
         </div>
       </section>
 
-      {/* PRICING SNAPSHOT */}
-      <section id="cennik" className="scroll-mt-20 border-y border-border/60 bg-secondary/20 py-14 lg:py-16">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <FadeIn>
-            <motion.p
-              variants={fadeUp}
-              className="text-xs font-semibold uppercase tracking-[0.16em] text-primary"
-            >
-              Cennik
-            </motion.p>
-            <motion.h2 variants={fadeUp} className="mt-2 text-3xl font-bold text-foreground sm:text-4xl">
-              Premium: 97 zł / miesiąc
-            </motion.h2>
-            <motion.p variants={fadeUp} className="mt-3 text-base text-muted-foreground sm:text-lg">
-              14 dni Premium. Bez karty kredytowej.
-            </motion.p>
-            <motion.div variants={fadeUp} className="mt-6">
-              <SignupButton
-                location="pricing"
-                className="h-12 px-8 text-sm font-semibold shadow-md shadow-black/10"
-              >
-                Wypróbuj za darmo przez 14 dni
-                <ArrowRight size={16} />
-              </SignupButton>
-            </motion.div>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* FINAL CTA */}
-      <section className="bg-[#5a8f0a] py-14 lg:py-20">
-        <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-6 px-6 text-center">
+      <section id="cennik" className="scroll-mt-20 bg-[#5a8f0a] py-14 lg:py-20">
+        <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-5 px-6 text-center sm:gap-6">
+          <span className="inline-flex rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">
+            Zacznij bez ryzyka
+          </span>
           <h2 className="text-3xl font-bold text-white text-balance sm:text-4xl lg:text-5xl">
-            Sprawdź, co ChefVision może zrobić dla Twojej restauracji.
+            Wypróbuj ChefVision przez 14 dni
           </h2>
           <p className="max-w-xl text-base text-white sm:text-lg">
-            Zacznij bez ryzyka. Przetestuj ChefVision przez 14 dni.
+            Pełny dostęp do Premium. Bez karty kredytowej.
           </p>
           <SignupButton
             location="final_cta"
@@ -555,7 +529,9 @@ export function RestauracjeLanding() {
             Wypróbuj za darmo przez 14 dni
             <ArrowRight size={16} />
           </SignupButton>
-          <p className="text-sm font-medium text-white">Bez karty kredytowej</p>
+          <p className="text-sm font-medium text-white">
+            Po okresie próbnym wybierasz plan Start lub Premium.
+          </p>
         </div>
       </section>
     </>
