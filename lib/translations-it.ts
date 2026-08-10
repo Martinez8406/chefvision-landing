@@ -360,7 +360,7 @@ export const it = {
         "Abbinamenti e upselling",
         "Hotel Hub",
         "Chiama cameriere / conto",
-        "Ranking click sui piatti",
+        "Ranking di popolarità dei piatti",
         "50 token AI",
         "Supporto all'implementazione",
       ],

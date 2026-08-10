@@ -351,7 +351,7 @@ export const de = {
         "Pairings und Upselling",
         "Hotel Hub",
         "Kellner rufen / Rechnung",
-        "Klick-Ranking der Gerichte",
+        "Beliebtheits-Ranking der Gerichte",
         "50 KI-Tokens",
         "Implementierungsunterstützung",
       ],

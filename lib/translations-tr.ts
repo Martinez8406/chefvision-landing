@@ -360,7 +360,7 @@ export const tr = {
         "Eşleştirmeler ve upselling",
         "Hotel Hub",
         "Garson çağır / hesap",
-        "Yemek tıklama sıralaması",
+        "Yemek popülerlik sıralaması",
         "50 AI token",
         "Uygulama desteği",
       ],

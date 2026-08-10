@@ -352,7 +352,7 @@ export const es = {
         "Maridajes y upselling",
         "Hotel Hub",
         "Pedir camarero / cuenta",
-        "Ranking de clics en platos",
+        "Ranking de popularidad de platos",
         "50 tokens de IA",
         "Soporte de implementación",
       ],

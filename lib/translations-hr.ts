@@ -360,7 +360,7 @@ export const hr = {
         "Parovi i upselling",
         "Hotel Hub",
         "Pozovi konobara / račun",
-        "Ranking klikova na jela",
+        "Ranking popularnosti jela",
         "50 AI tokena",
         "Podrška pri implementaciji",
       ],
