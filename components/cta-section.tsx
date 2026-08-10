@@ -91,7 +91,10 @@ export function CtaSection() {
                   </div>
                   <p className="text-base font-semibold text-foreground">{c.regular.label}</p>
                   <p className="text-sm text-muted-foreground leading-relaxed">{c.regular.desc}</p>
-                  <ul className="flex flex-col gap-2.5 mt-2 flex-1">
+                  {c.regular.includesStart ? (
+                    <p className="mt-1 text-sm font-semibold text-foreground">{c.regular.includesStart}</p>
+                  ) : null}
+                  <ul className="flex flex-col gap-2.5 mt-1 flex-1">
                     {c.regular.features.map((f: string) => (
                       <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
                         <Check size={16} className="text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
