@@ -86,6 +86,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    {
+      url: toAbsoluteUrl("/hotele"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
   ]
 
   const products = await fetchActiveProductRowsFromDatabase()
