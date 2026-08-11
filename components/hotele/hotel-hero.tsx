@@ -51,7 +51,7 @@ export function HotelHero() {
               location="hero_primary"
               className="h-12 px-8 text-sm font-semibold shadow-md shadow-black/10 hover:shadow-lg hover:shadow-black/15"
             >
-              Sprawdź ChefVision
+              Sprawdź ChefVision za darmo
               <ArrowRight size={16} />
             </SignupButton>
             <Button size="lg" variant="outline" className="h-12 px-8 text-sm font-semibold" asChild>
