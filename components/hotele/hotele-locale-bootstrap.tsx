@@ -4,21 +4,36 @@ import { useLayoutEffect } from "react"
 import { useLanguage, LOCALE_STORAGE_KEY } from "@/lib/language-context"
 import { isLocale, SEGMENT_LOCALES, type Locale } from "@/lib/translations"
 
+const ENGLISH_COUNTRIES = new Set([
+  "GB",
+  "US",
+  "IE",
+  "AU",
+  "NZ",
+  "CA",
+])
+
 function readCookie(name: string): string | null {
   if (typeof document === "undefined") return null
   const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`))
   return match ? decodeURIComponent(match[1]) : null
 }
 
+function primaryBrowserLang(): string {
+  return (navigator.language || "").toLowerCase()
+}
+
 function browserPrefersCroatian(): boolean {
-  const tags = [
-    navigator.language,
-    ...(navigator.languages ?? []),
-  ]
+  const tags = [navigator.language, ...(navigator.languages ?? [])]
     .filter(Boolean)
     .map((tag) => tag.toLowerCase())
 
   return tags.some((tag) => tag === "hr" || tag.startsWith("hr-"))
+}
+
+function browserPrefersEnglish(): boolean {
+  const primary = primaryBrowserLang()
+  return primary === "en" || primary.startsWith("en-")
 }
 
 function resolveHoteleLocale(): Locale | null {
@@ -34,8 +49,13 @@ function resolveHoteleLocale(): Locale | null {
   }
 
   const country = readCookie("cv-country")?.toUpperCase()
+
   if (country === "HR" || browserPrefersCroatian()) {
     return "hr"
+  }
+
+  if ((country && ENGLISH_COUNTRIES.has(country)) || browserPrefersEnglish()) {
+    return "en"
   }
 
   return null
@@ -43,9 +63,9 @@ function resolveHoteleLocale(): Locale | null {
 
 /**
  * Auto-język na /hotele:
- * 1) ?lang=hr|en|pl (np. link z reklamy)
- * 2) kraj HR (cookie z middleware / Vercel geo)
- * 3) język przeglądarki hr*
+ * 1) ?lang=hr|en|pl (link z reklamy)
+ * 2) kraj HR / przeglądarka hr* → chorwacki
+ * 3) kraje EN (GB, US, IE, AU, NZ, CA) / przeglądarka en* → angielski
  *
  * Nie nadpisuje ręcznie wybranego języka z localStorage
  * (chyba że użyto ?lang=…).
