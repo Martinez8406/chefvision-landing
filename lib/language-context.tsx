@@ -10,7 +10,7 @@ import {
 } from "react"
 import { Locale, translations, isLocale } from "./translations"
 
-const STORAGE_KEY = "chefvision-locale"
+export const LOCALE_STORAGE_KEY = "chefvision-locale"
 
 type LanguageContextType = {
   locale: Locale
@@ -28,7 +28,7 @@ const LanguageContext = createContext<LanguageContextType>({
 })
 
 function readStoredLocale(): Locale {
-  const saved = localStorage.getItem(STORAGE_KEY)
+  const saved = localStorage.getItem(LOCALE_STORAGE_KEY)
   return isLocale(saved) ? saved : "pl"
 }
 
@@ -43,7 +43,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale)
-    localStorage.setItem(STORAGE_KEY, newLocale)
+    localStorage.setItem(LOCALE_STORAGE_KEY, newLocale)
     document.documentElement.lang = newLocale
   }, [])
 

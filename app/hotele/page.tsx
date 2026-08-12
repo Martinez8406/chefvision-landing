@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { HoteleNavbar } from "@/components/hotele/hotele-navbar"
 import { HoteleLanding } from "@/components/hotele/hotele-landing"
+import { HoteleLocaleBootstrap } from "@/components/hotele/hotele-locale-bootstrap"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 export default function HotelePage() {
   return (
     <main className="min-h-screen bg-background">
+      <HoteleLocaleBootstrap />
       <HoteleNavbar />
       <HoteleLanding />
       <Footer />

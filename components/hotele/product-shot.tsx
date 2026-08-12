@@ -49,7 +49,7 @@ export function ProductShot({
 
 /** Encoded paths for screenshot filenames with spaces. */
 export const HOTEL_SHOTS = {
-  hub1: "/images/hotel%20hub%201.jpeg",
+  hub1: "/images/hotel%20hub%201%20en.png",
   hub2: "/images/hotel%20hub%202.jpeg",
   hub3: "/images/hotel%20hub%203.jpeg",
   languages: "/images/menu%20z%20jezykami%2014.jpeg",
