@@ -4,16 +4,13 @@ import { motion } from "framer-motion"
 import { ArrowRight, Check } from "lucide-react"
 import { FadeIn, fadeUp, stagger } from "@/components/hotele/hotele-motion"
 import { SignupButton } from "@/components/hotele/hotele-cta"
-
-const PREMIUM_INCLUDES = [
-  "Hotel Hub",
-  "Rekomendacje i promocje",
-  "Statystyki",
-  "Funkcje hotelowe",
-  "Pełne możliwości systemu",
-]
+import { useLanguage } from "@/lib/language-context"
+import { getHoteleContent } from "@/lib/translations-hotele"
 
 export function HotelOffer() {
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale).offer
+
   return (
     <section className="border-y border-border/60 bg-secondary/25 py-16 lg:py-24">
       <div className="mx-auto max-w-4xl px-6">
@@ -22,13 +19,13 @@ export function HotelOffer() {
             variants={fadeUp}
             className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
           >
-            Sprawdź, czy ChefVision sprawdzi się w Twoim hotelu.
+            {t.headline}
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Uruchom system, dodaj informacje swojego hotelu i sprawdź go w rzeczywistych warunkach.
+            {t.sub}
           </motion.p>
         </FadeIn>
 
@@ -40,30 +37,28 @@ export function HotelOffer() {
             <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
               <div className="max-w-md">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-                  Okres próbny
+                  {t.trialBadge}
                 </p>
                 <h3 className="mt-2 text-2xl font-bold text-foreground sm:text-3xl">
-                  14 dni pełnej wersji.
+                  {t.trialTitle}
                 </h3>
-                <p className="mt-3 text-base text-muted-foreground">
-                  Bez długoterminowego zobowiązania.
-                </p>
+                <p className="mt-3 text-base text-muted-foreground">{t.trialNote}</p>
 
                 <div className="mt-8 border-t border-border pt-6">
                   <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                    Premium
+                    {t.premiumLabel}
                   </p>
                   <p className="mt-1 flex items-baseline gap-1.5">
                     <span className="text-4xl font-bold tracking-tight text-foreground">97 zł</span>
-                    <span className="text-sm text-muted-foreground">/ miesiąc</span>
+                    <span className="text-sm text-muted-foreground">{t.perMonth}</span>
                   </p>
                 </div>
               </div>
 
               <div className="flex-1 lg:max-w-sm">
-                <p className="text-sm font-semibold text-foreground">Premium obejmuje:</p>
+                <p className="text-sm font-semibold text-foreground">{t.includesLabel}</p>
                 <motion.ul variants={stagger} className="mt-4 flex flex-col gap-3">
-                  {PREMIUM_INCLUDES.map((item) => (
+                  {t.includes.map((item) => (
                     <motion.li key={item} variants={fadeUp} className="flex items-start gap-2.5">
                       <Check size={18} className="mt-0.5 shrink-0 text-primary" strokeWidth={2.5} />
                       <span className="text-sm leading-relaxed text-foreground sm:text-base">{item}</span>
@@ -75,7 +70,7 @@ export function HotelOffer() {
                   location="offer_trial"
                   className="mt-8 h-12 w-full px-8 text-sm font-semibold shadow-md shadow-black/10 sm:w-auto"
                 >
-                  Sprawdź przez 14 dni
+                  {t.cta}
                   <ArrowRight size={16} />
                 </SignupButton>
               </div>

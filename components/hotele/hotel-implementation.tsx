@@ -3,40 +3,15 @@
 import { motion } from "framer-motion"
 import { FadeIn, fadeUp, stagger } from "@/components/hotele/hotele-motion"
 import { HOTEL_SHOTS, ProductShot } from "@/components/hotele/product-shot"
+import { useLanguage } from "@/lib/language-context"
+import { getHoteleContent } from "@/lib/translations-hotele"
 
-const STEPS = [
-  {
-    num: "01",
-    title: "Tworzymy przestrzeń Twojego hotelu",
-    desc: "Logo, informacje, menu i usługi.",
-    src: HOTEL_SHOTS.hub1,
-    alt: "Przestrzeń hotelu w Hotel Hub ChefVision",
-  },
-  {
-    num: "02",
-    title: "Otrzymujesz kody QR",
-    desc: "Umieszczasz je w pokojach i wybranych miejscach hotelu.",
-    src: HOTEL_SHOTS.hub2,
-    alt: "Usługi hotelu dostępne po zeskanowaniu kodu QR",
-  },
-  {
-    num: "03",
-    title: "Goście korzystają z telefonu",
-    desc: "Bez instalowania aplikacji.",
-    src: HOTEL_SHOTS.hub3,
-    alt: "Gość korzysta z usług hotelu w telefonie",
-  },
-  {
-    num: "04",
-    title: "Ty aktualizujesz informacje",
-    desc: "Zmiana menu lub informacji nie wymaga ponownego drukowania całego materiału.",
-    src: HOTEL_SHOTS.hub1,
-    alt: "Informacje hotelowe aktualizowane w Hotel Hub",
-    imageClassName: "max-h-[180px] object-cover object-[center_70%]",
-  },
-]
+const STEP_SHOTS = [HOTEL_SHOTS.hub1, HOTEL_SHOTS.hub2, HOTEL_SHOTS.hub3, HOTEL_SHOTS.hub1] as const
 
 export function HotelImplementation() {
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale).implementation
+
   return (
     <section id="jak-to-dziala" className="scroll-mt-20 border-y border-border/60 bg-secondary/20 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
@@ -45,22 +20,24 @@ export function HotelImplementation() {
             variants={fadeUp}
             className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
           >
-            Zacznij bez skomplikowanego wdrożenia.
+            {t.headline}
           </motion.h2>
         </FadeIn>
 
         <FadeIn className="mt-12">
           <motion.ol variants={stagger} className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-            {STEPS.map((step, i) => (
+            {t.steps.map((step, i) => (
               <motion.li key={step.num} variants={fadeUp} className="relative flex flex-col gap-4">
                 <div className="mx-auto w-full max-w-[140px] sm:max-w-[150px]">
                   <ProductShot
-                    src={step.src}
+                    src={STEP_SHOTS[i]}
                     alt={step.alt}
                     sizes="150px"
                     className="rounded-xl shadow-[0_10px_28px_-18px_rgba(15,23,32,0.35)]"
                     imageClassName={
-                      step.imageClassName ?? "max-h-[180px] object-cover object-top"
+                      i === 3
+                        ? "max-h-[180px] object-cover object-[center_70%]"
+                        : "max-h-[180px] object-cover object-top"
                     }
                   />
                 </div>
@@ -73,7 +50,7 @@ export function HotelImplementation() {
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.desc}</p>
                 </div>
-                {i < STEPS.length - 1 ? (
+                {i < t.steps.length - 1 ? (
                   <span
                     className="absolute -right-5 top-[12%] hidden text-xl text-primary/35 lg:block"
                     aria-hidden

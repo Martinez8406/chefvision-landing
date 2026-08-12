@@ -3,8 +3,14 @@
 import { motion } from "framer-motion"
 import { FadeIn, fadeUp, stagger } from "@/components/hotele/hotele-motion"
 import { HOTEL_SHOTS, ProductShot } from "@/components/hotele/product-shot"
+import { useLanguage } from "@/lib/language-context"
+import { getHoteleContent } from "@/lib/translations-hotele"
 
 export function HotelOperations() {
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale).operations
+  const state1Lines = t.state1Caption.split("\n")
+
   return (
     <section id="dla-hoteli" className="scroll-mt-20 bg-background py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
@@ -14,23 +20,19 @@ export function HotelOperations() {
               variants={fadeUp}
               className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
             >
-              Mniej powtarzalnych pytań. Więcej czasu na prawdziwą obsługę.
+              {t.headline}
             </motion.h2>
             <motion.div
               variants={stagger}
               className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
               <motion.p variants={fadeUp} className="font-medium text-foreground">
-                ChefVision nie zastępuje pracowników hotelu.
+                {t.p1a}
                 <br />
-                Pomaga im.
+                {t.p1b}
               </motion.p>
-              <motion.p variants={fadeUp}>
-                Technologia zabiera część powtarzalnej pracy, żeby pracownicy mogli skupić się na gościu.
-              </motion.p>
-              <motion.p variants={fadeUp}>
-                Gość może poprosić o pomoc lub rachunek bezpośrednio ze swojego telefonu.
-              </motion.p>
+              <motion.p variants={fadeUp}>{t.p2}</motion.p>
+              <motion.p variants={fadeUp}>{t.p3}</motion.p>
             </motion.div>
           </FadeIn>
 
@@ -41,32 +43,33 @@ export function HotelOperations() {
             >
               <motion.div variants={fadeUp} className="flex flex-col gap-3">
                 <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
-                  Stan 1
+                  {t.state1}
                 </p>
                 <ProductShot
                   src={HOTEL_SHOTS.callStaff}
-                  alt="ChefVision — Potrzebujesz pomocy? Wezwij obsługę"
+                  alt={t.state1Alt}
                   sizes="(max-width: 640px) 90vw, 320px"
                 />
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Potrzebujesz pomocy?
-                  <br />
-                  Wezwij obsługę
+                  {state1Lines.map((line, i) => (
+                    <span key={line}>
+                      {i > 0 ? <br /> : null}
+                      {line}
+                    </span>
+                  ))}
                 </p>
               </motion.div>
 
               <motion.div variants={fadeUp} className="flex flex-col gap-3 sm:pt-10">
                 <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
-                  Stan 2
+                  {t.state2}
                 </p>
                 <ProductShot
                   src={HOTEL_SHOTS.callStaffExpanded}
-                  alt="ChefVision — wezwij kelnera, dodatkowe zamówienie, prośba o rachunek"
+                  alt={t.state2Alt}
                   sizes="(max-width: 640px) 90vw, 320px"
                 />
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  Wezwij kelnera · Dodatkowe zamówienie · Prośba o rachunek
-                </p>
+                <p className="text-sm leading-relaxed text-muted-foreground">{t.state2Caption}</p>
               </motion.div>
             </motion.div>
           </FadeIn>

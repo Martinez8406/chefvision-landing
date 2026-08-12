@@ -20,6 +20,14 @@ export const LOCALES: { id: Locale; code: string; label: string }[] = [
   { id: "pl", code: "PL", label: "Polski" },
 ]
 
+/** Języki z pełnym tłumaczeniem landingów /restauracje i /hotele. */
+export const SEGMENT_LOCALES: Locale[] = ["pl", "en", "hr"]
+
+export function getLocalesForIds(ids: Locale[]) {
+  const set = new Set(ids)
+  return LOCALES.filter((item) => set.has(item.id))
+}
+
 export function isLocale(value: string | null): value is Locale {
   return (
     value === "pl" ||

@@ -5,50 +5,18 @@ import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FadeIn, fadeUp, stagger } from "@/components/hotele/hotele-motion"
 import { APP_SIGNUP_URL, trackHoteleCta } from "@/lib/hotele-analytics"
+import { useLanguage } from "@/lib/language-context"
+import { getHoteleContent } from "@/lib/translations-hotele"
 
-const MENU_SERVICE_URL = APP_SIGNUP_URL
-const FLYER_SERVICE_URL = "https://app.chefvision.pl/#/cennik"
-
-const SERVICES = [
-  {
-    id: "menu",
-    badge: "Usługa zespołu",
-    badgeTone: "dark" as const,
-    price: "299",
-    currency: "jednorazowo",
-    title: "Zleć wykonanie menu",
-    desc: "Zakładasz konto jak zwykle — my zdalnie przygotujemy Twoją kartę cyfrową.",
-    features: [
-      "Zespół ChefVision buduje Twoje menu cyfrowe",
-      "Zdjęcia, opisy, kategorie i ceny",
-      "Gotowe publiczne menu z linkiem i QR",
-      "Ty nadal masz własne konto i pełną kontrolę",
-    ],
-    cta: "Zlecam wykonanie",
-    href: MENU_SERVICE_URL,
-    location: "service_menu",
-  },
-  {
-    id: "flyer",
-    badge: "Projekt graficzny",
-    badgeTone: "accent" as const,
-    price: "149",
-    currency: "jednorazowo",
-    title: "Ulotka QR",
-    desc: "Ulotka QR dopasowana do Twojego hotelu. Personalizowany projekt z kodem QR do Twojego menu, gotowy do druku, w stylu Twojej marki.",
-    features: [
-      "3 warianty projektu do wyboru",
-      "3 drobne poprawki do wybranego wariantu (kolory, teksty, układ)",
-      "Plik gotowy do druku (PDF, format A5)",
-      "Realizacja w 3 dni robocze",
-    ],
-    cta: "Zlecam ulotkę",
-    href: FLYER_SERVICE_URL,
-    location: "service_flyer",
-  },
-]
+const SERVICE_URLS = {
+  menu: APP_SIGNUP_URL,
+  flyer: "https://app.chefvision.pl/#/cennik",
+} as const
 
 export function HotelServices() {
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale).services
+
   return (
     <section className="bg-background py-16 lg:py-24">
       <div className="mx-auto max-w-6xl px-6">
@@ -57,30 +25,27 @@ export function HotelServices() {
             variants={fadeUp}
             className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
           >
-            Nie chcesz przygotowywać wszystkiego sam?
+            {t.headline}
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mt-4 text-xl font-semibold text-foreground sm:text-2xl"
           >
-            Możemy przygotować to za Ciebie.
+            {t.sub}
           </motion.p>
           <motion.p
             variants={fadeUp}
             className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Ty decydujesz, jak ma wyglądać Twój hotel.
+            {t.decide}
             <br />
-            My możemy zająć się przygotowaniem materiałów.
+            {t.weHelp}
           </motion.p>
         </FadeIn>
 
         <FadeIn className="mt-12">
-          <motion.div
-            variants={stagger}
-            className="grid gap-6 md:grid-cols-2 md:gap-8"
-          >
-            {SERVICES.map((service) => (
+          <motion.div variants={stagger} className="grid gap-6 md:grid-cols-2 md:gap-8">
+            {t.items.map((service) => (
               <motion.article
                 key={service.id}
                 variants={fadeUp}
@@ -130,7 +95,7 @@ export function HotelServices() {
                   asChild
                 >
                   <a
-                    href={service.href}
+                    href={SERVICE_URLS[service.id as keyof typeof SERVICE_URLS] ?? APP_SIGNUP_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackHoteleCta(service.location)}

@@ -11,17 +11,15 @@ import {
 } from "lucide-react"
 import { FadeIn, fadeUp, stagger } from "@/components/hotele/hotele-motion"
 import { HOTEL_SHOTS, ProductShot } from "@/components/hotele/product-shot"
+import { useLanguage } from "@/lib/language-context"
+import { getHoteleContent } from "@/lib/translations-hotele"
 
-const HUB_SERVICES = [
-  { label: "Room Service", icon: ConciergeBell },
-  { label: "Restauracja", icon: UtensilsCrossed },
-  { label: "Bar", icon: Wine },
-  { label: "Spa", icon: Flower2 },
-  { label: "Śniadania", icon: Coffee },
-  { label: "Informacje o hotelu", icon: Info },
-]
+const HUB_ICONS = [ConciergeBell, UtensilsCrossed, Wine, Flower2, Coffee, Info]
 
 export function HotelHubSection() {
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale).hub
+
   return (
     <section id="funkcje" className="scroll-mt-20 border-y border-border/60 bg-secondary/25 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
@@ -30,19 +28,19 @@ export function HotelHubSection() {
             variants={fadeUp}
             className="text-xs font-semibold uppercase tracking-[0.16em] text-primary"
           >
-            Hotel Hub
+            {t.badge}
           </motion.span>
           <motion.h2
             variants={fadeUp}
             className="mt-3 text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
           >
-            Jeden kod QR. Cały hotel w telefonie gościa.
+            {t.headline}
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Gość skanuje kod QR znajdujący się w pokoju i otrzymuje dostęp do hotelowego centrum informacji.
+            {t.sub}
           </motion.p>
         </FadeIn>
 
@@ -54,7 +52,7 @@ export function HotelHubSection() {
             <motion.div variants={fadeUp} className="mx-auto w-full max-w-[400px] lg:mx-0 lg:max-w-none">
               <ProductShot
                 src={HOTEL_SHOTS.hub1}
-                alt="Hotel Hub ChefVision — główny ekran z informacjami o hotelu i Room Service"
+                alt={t.alt1}
                 sizes="(max-width: 1024px) 90vw, 460px"
                 priority
               />
@@ -64,14 +62,14 @@ export function HotelHubSection() {
               <motion.div variants={fadeUp}>
                 <ProductShot
                   src={HOTEL_SHOTS.hub2}
-                  alt="Hotel Hub — Bar, Spa i menu śniadaniowe"
+                  alt={t.alt2}
                   sizes="(max-width: 768px) 45vw, 260px"
                 />
               </motion.div>
               <motion.div variants={fadeUp} className="pt-8 sm:pt-14">
                 <ProductShot
                   src={HOTEL_SHOTS.hub3}
-                  alt="Hotel Hub — Room Service, All Day Dining i zestawy"
+                  alt={t.alt3}
                   sizes="(max-width: 768px) 45vw, 260px"
                 />
               </motion.div>
@@ -84,24 +82,27 @@ export function HotelHubSection() {
             variants={stagger}
             className="mx-auto grid max-w-4xl grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-6"
           >
-            {HUB_SERVICES.map(({ label, icon: Icon }) => (
-              <motion.li
-                key={label}
-                variants={fadeUp}
-                className="flex items-center gap-2.5 rounded-xl border border-border/80 bg-background/90 px-3 py-2.5"
-              >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Icon size={15} strokeWidth={2} />
-                </span>
-                <span className="text-sm font-semibold leading-tight text-foreground">{label}</span>
-              </motion.li>
-            ))}
+            {t.services.map((label, index) => {
+              const Icon = HUB_ICONS[index] ?? Info
+              return (
+                <motion.li
+                  key={label}
+                  variants={fadeUp}
+                  className="flex items-center gap-2.5 rounded-xl border border-border/80 bg-background/90 px-3 py-2.5"
+                >
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <Icon size={15} strokeWidth={2} />
+                  </span>
+                  <span className="text-sm font-semibold leading-tight text-foreground">{label}</span>
+                </motion.li>
+              )
+            })}
           </motion.ul>
           <motion.p
             variants={fadeUp}
             className="mx-auto mt-6 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground sm:text-base"
           >
-            Hotel Hub to nie jeden ekran — to całe doświadczenie gościa: usługi, menu i informacje w jednym miejscu.
+            {t.note}
           </motion.p>
         </FadeIn>
       </div>

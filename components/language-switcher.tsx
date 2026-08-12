@@ -3,15 +3,31 @@
 import { useEffect, useRef, useState } from "react"
 import { Globe } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
-import { LOCALES, type Locale } from "@/lib/translations"
+import {
+  LOCALES,
+  getLocalesForIds,
+  type Locale,
+} from "@/lib/translations"
 import { cn } from "@/lib/utils"
 
-export function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
+export function LanguageSwitcher({
+  compact = false,
+  locales,
+}: {
+  compact?: boolean
+  /** Jeśli podane — pokazuje tylko te języki (np. PL/EN/HR na /hotele). */
+  locales?: Locale[]
+}) {
   const { locale, setLocale } = useLanguage()
   const [open, setOpen] = useState(false)
   const rootRef = useRef<HTMLDivElement>(null)
 
-  const current = LOCALES.find((item) => item.id === locale) ?? LOCALES[2]
+  const options = locales?.length ? getLocalesForIds(locales) : LOCALES
+  const current =
+    options.find((item) => item.id === locale) ??
+    LOCALES.find((item) => item.id === locale) ??
+    options[0] ??
+    LOCALES[0]
 
   useEffect(() => {
     if (!open) return
@@ -63,7 +79,7 @@ export function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
           role="listbox"
           className="absolute right-0 top-full z-50 mt-2 min-w-[11rem] overflow-hidden rounded-xl border border-border bg-background py-1 shadow-lg"
         >
-          {LOCALES.map((item) => {
+          {options.map((item) => {
             const selected = item.id === locale
             return (
               <button

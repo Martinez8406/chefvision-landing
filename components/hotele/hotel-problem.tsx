@@ -2,16 +2,13 @@
 
 import { motion } from "framer-motion"
 import { FadeIn, fadeUp, stagger } from "@/components/hotele/hotele-motion"
-
-const GUEST_QUESTIONS = [
-  "Gdzie jest restauracja?",
-  "O której jest śniadanie?",
-  "Jak zamówić Room Service?",
-  "Czy hotel ma Spa?",
-  "Jak wygląda menu baru?",
-]
+import { useLanguage } from "@/lib/language-context"
+import { getHoteleContent } from "@/lib/translations-hotele"
 
 export function HotelProblem() {
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale).problem
+
   return (
     <section className="bg-background py-16 lg:py-28">
       <div className="mx-auto max-w-3xl px-6">
@@ -20,13 +17,13 @@ export function HotelProblem() {
             variants={fadeUp}
             className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
           >
-            Gość ma pytanie. Recepcja ma kolejne zadanie.
+            {t.headline}
           </motion.h2>
         </FadeIn>
 
         <FadeIn className="mt-14">
           <motion.ul variants={stagger} className="flex flex-col gap-6 sm:gap-7">
-            {GUEST_QUESTIONS.map((q) => (
+            {t.questions.map((q) => (
               <motion.li
                 key={q}
                 variants={fadeUp}
@@ -43,15 +40,15 @@ export function HotelProblem() {
             variants={fadeUp}
             className="text-lg leading-relaxed text-muted-foreground sm:text-xl"
           >
-            Dla gościa to proste pytania.
+            {t.forGuest}
             <br />
-            Dla pracowników hotelu — dziesiątki powtarzających się pytań każdego dnia.
+            {t.forStaff}
           </motion.p>
           <motion.p
             variants={fadeUp}
             className="text-base font-medium leading-relaxed text-foreground sm:text-lg"
           >
-            ChefVision pozwala przekazać te informacje gościowi, zanim będzie musiał o nie pytać.
+            {t.solution}
           </motion.p>
         </FadeIn>
       </div>

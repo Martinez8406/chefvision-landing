@@ -41,16 +41,18 @@ export function DemoButton({
   className,
   variant = "default",
   size = "lg",
+  href = DEMO_MAILTO_URL,
 }: {
   location: string
   children: ReactNode
   className?: string
   variant?: "default" | "outline" | "secondary"
   size?: "default" | "sm" | "lg"
+  href?: string
 }) {
   return (
     <Button size={size} variant={variant} className={className} asChild>
-      <a href={DEMO_MAILTO_URL} onClick={() => trackHoteleCta(location)}>
+      <a href={href} onClick={() => trackHoteleCta(location)}>
         {children}
       </a>
     </Button>

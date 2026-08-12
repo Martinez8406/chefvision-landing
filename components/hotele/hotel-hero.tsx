@@ -6,8 +6,13 @@ import { ArrowRight, Building2, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FadeIn, fadeUp } from "@/components/hotele/hotele-motion"
 import { SignupButton } from "@/components/hotele/hotele-cta"
+import { useLanguage } from "@/lib/language-context"
+import { getHoteleContent } from "@/lib/translations-hotele"
 
 export function HotelHero() {
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale).hero
+
   return (
     <section className="relative overflow-hidden bg-background pt-24 lg:pt-28">
       <div
@@ -21,29 +26,28 @@ export function HotelHero() {
             className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary"
           >
             <Building2 size={14} strokeWidth={2.5} />
-            ChefVision dla hoteli
+            {t.badge}
           </motion.span>
 
           <motion.h1
             variants={fadeUp}
             className="max-w-xl text-4xl font-bold leading-[1.08] text-foreground text-balance sm:text-5xl lg:text-[3.35rem]"
           >
-            Twój gość nie powinien szukać informacji.
+            {t.headline}
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Room Service, restauracja, Bar, Spa, śniadania i najważniejsze informacje o hotelu — wszystko dostępne
-            z telefonu gościa.
+            {t.sub}
           </motion.p>
 
           <motion.p
             variants={fadeUp}
             className="max-w-xl text-sm leading-relaxed text-foreground/80 sm:text-base"
           >
-            ChefVision pomaga hotelom lepiej informować gości, ułatwiać obsługę i tworzyć więcej okazji do sprzedaży.
+            {t.support}
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-col gap-3 sm:flex-row">
@@ -51,19 +55,19 @@ export function HotelHero() {
               location="hero_primary"
               className="h-12 px-8 text-sm font-semibold shadow-md shadow-black/10 hover:shadow-lg hover:shadow-black/15"
             >
-              Sprawdź ChefVision za darmo
+              {t.ctaPrimary}
               <ArrowRight size={16} />
             </SignupButton>
             <Button size="lg" variant="outline" className="h-12 px-8 text-sm font-semibold" asChild>
               <a href="#funkcje">
                 <Play size={16} />
-                Zobacz, jak działa
+                {t.ctaSecondary}
               </a>
             </Button>
           </motion.div>
 
           <motion.p variants={fadeUp} className="text-sm text-muted-foreground">
-            14 dni na sprawdzenie ChefVision. Bez zobowiązań.
+            {t.trust}
           </motion.p>
         </FadeIn>
 
@@ -71,7 +75,7 @@ export function HotelHero() {
           <motion.div variants={fadeUp} className="relative w-full max-w-xl overflow-hidden rounded-2xl lg:max-w-none">
             <Image
               src="/images/hero-hotel-mockup.png"
-              alt="Hotel Hub ChefVision na telefonie gościa obok kodu QR w pokoju hotelowym"
+              alt={t.imageAlt}
               width={820}
               height={720}
               className="w-full object-cover transition-transform duration-500 hover:scale-[1.02]"

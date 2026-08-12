@@ -4,8 +4,13 @@ import { motion } from "framer-motion"
 import { MapPin } from "lucide-react"
 import { FadeIn, fadeUp } from "@/components/hotele/hotele-motion"
 import { DemoButton } from "@/components/hotele/hotele-cta"
+import { useLanguage } from "@/lib/language-context"
+import { getHoteleContent, getHoteleDemoMailto } from "@/lib/translations-hotele"
 
 export function HotelLocalOffer() {
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale).local
+
   return (
     <section className="border-y border-border/60 bg-background py-10 lg:py-14">
       <div className="mx-auto max-w-5xl px-6">
@@ -22,20 +27,19 @@ export function HotelLocalOffer() {
               <div className="max-w-2xl">
                 <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary">
                   <MapPin size={14} strokeWidth={2.5} />
-                  Hotele z Wrocławia i okolic
+                  {t.badge}
                 </span>
                 <h2 className="mt-3 text-2xl font-bold text-foreground text-balance sm:text-3xl">
-                  Osobiście pomogę Ci wdrożyć ChefVision — bez dodatkowych kosztów.
+                  {t.headline}
                 </h2>
-                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                  Pokażę Ci, jak przygotować system, skonfigurować Hotel Hub i uruchomić go dla Twoich gości.
-                </p>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">{t.text}</p>
               </div>
               <DemoButton
                 location="local_offer"
+                href={getHoteleDemoMailto(locale)}
                 className="h-12 shrink-0 px-7 text-sm font-semibold shadow-sm"
               >
-                Umów bezpłatne wdrożenie
+                {t.cta}
               </DemoButton>
             </div>
           </motion.div>

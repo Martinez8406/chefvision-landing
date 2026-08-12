@@ -5,6 +5,8 @@ import Image from "next/image"
 import { motion, useReducedMotion } from "framer-motion"
 import { ArrowRight, Check, CircleCheck, Play, UtensilsCrossed } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/lib/language-context"
+import { getRestauracjeContent } from "@/lib/translations-restauracje"
 import { APP_SIGNUP_URL, trackRestauracjeCta } from "@/lib/restauracje-analytics"
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -23,13 +25,6 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.08, delayChildren: 0.02 } },
 }
 
-/**
- * Scroll reveal bez ryzyka niewidocznej treści:
- * - domyślnie opacity 1 (pełna czytelność),
- * - tylko delikatny translateY,
- * - once: true → po wejściu w viewport zostaje w pełni czytelne,
- * - prefers-reduced-motion → od razu stan końcowy.
- */
 function FadeIn({
   children,
   className,
@@ -51,98 +46,6 @@ function FadeIn({
     </motion.div>
   )
 }
-
-const HERO_TRUST = ["14 języków", "Bez karty kredytowej", "14 dni Premium", "Darmowy plan"]
-
-const PROBLEMS = [
-  "Nie rozumiem menu.",
-  "Nie wiem, co wybrać.",
-  "Nie znam lokalnych dań.",
-]
-
-const STEPS = [
-  {
-    num: "01",
-    title: "Zrozum",
-    desc: "Menu dostępne w języku gościa.",
-  },
-  {
-    num: "02",
-    title: "Odkryj",
-    desc: "Zdjęcia i informacje pomagają poznać danie.",
-  },
-  {
-    num: "03",
-    title: "Wybierz",
-    desc: "Rekomendacje i pairingi pomagają zdecydować.",
-  },
-]
-
-const RECOS = [
-  {
-    label: "Polecane",
-    example: "Polecamy do tego dania",
-  },
-  {
-    label: "Popularne",
-    example: "Inni często zamawiają z",
-  },
-  {
-    label: "W zestawie taniej",
-    example: "Najpopularniejszy zestaw",
-  },
-]
-
-const LANGUAGES = [
-  "Polski",
-  "English",
-  "Deutsch",
-  "Español",
-  "Italiano",
-  "Français",
-  "中文",
-  "日本語",
-  "한국어",
-  "العربية",
-  "Українська",
-  "Čeština",
-  "Nederlands",
-  "עברית",
-]
-
-const JOURNEY = [
-  { label: "Niepewność", src: "/images/story/scene-1-confused-guest.png", alt: "Gość niepewny przy papierowym menu" },
-  { label: "Zrozumienie", src: "/images/story/scene-2-qr-translation.png", alt: "Gość czyta menu w swoim języku" },
-  { label: "Pewność wyboru", src: "/images/story/scene-3-recommendations.png", alt: "Gość korzysta z rekomendacji" },
-  { label: "Lepsze doświadczenie", src: "/images/story/scene-4-happy-ending.png", alt: "Zadowolony gość przy stole" },
-]
-
-const BENEFITS = [
-  {
-    title: "Menu QR",
-    desc: "Gość otwiera kartę na swoim telefonie — bez aplikacji i bez czekania na kelnera z menu.",
-  },
-  {
-    title: "14 języków",
-    desc: "Zagraniczny gość samodzielnie rozumie ofertę i zamawia pewniej.",
-  },
-  {
-    title: "Zdjęcia dań",
-    desc: "Gość widzi, co dostanie — mniej pytań, więcej świadomych wyborów.",
-  },
-  {
-    title: "Rekomendacje i pairingi",
-    desc: "Promujesz wybrane dania, napoje i zestawy w momencie decyzji.",
-  },
-  {
-    title: "Promocje",
-    desc: "Podnosisz widoczność pozycji, które chcesz sprzedawać częściej.",
-  },
-  {
-    title: "Statystyki",
-    desc: "Widzisz, co goście oglądają i co warto podkreślić w karcie.",
-  },
-]
 
 function SignupButton({
   location,
@@ -172,6 +75,9 @@ function SignupButton({
 }
 
 export function RestauracjeLanding() {
+  const { locale } = useLanguage()
+  const t = getRestauracjeContent(locale)
+
   return (
     <>
       {/* HERO */}
@@ -183,21 +89,21 @@ export function RestauracjeLanding() {
               className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary"
             >
               <UtensilsCrossed size={14} strokeWidth={2.5} />
-              ChefVision dla restauracji
+              {t.hero.badge}
             </motion.span>
 
             <motion.h1
               variants={fadeUp}
               className="max-w-xl text-4xl font-bold leading-[1.08] text-foreground text-balance sm:text-5xl lg:text-[3.25rem]"
             >
-              Pomóż gościom wybrać więcej. Sprzedaj więcej.
+              {t.hero.headline}
             </motion.h1>
 
             <motion.p
               variants={fadeUp}
               className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              ChefVision pomaga gościom zrozumieć menu, odkrywać dania i korzystać z rekomendacji — w 14 językach.
+              {t.hero.sub}
             </motion.p>
 
             <motion.div variants={fadeUp} className="flex flex-col gap-3 sm:flex-row">
@@ -205,19 +111,19 @@ export function RestauracjeLanding() {
                 location="hero_primary"
                 className="h-12 px-8 text-sm font-semibold shadow-md shadow-black/10 hover:shadow-lg hover:shadow-black/15"
               >
-                Wypróbuj za darmo przez 14 dni
+                {t.hero.ctaPrimary}
                 <ArrowRight size={16} />
               </SignupButton>
               <Button size="lg" variant="outline" className="h-12 px-8 text-sm font-semibold" asChild>
                 <a href="#jak-to-dziala">
                   <Play size={16} />
-                  Zobacz, jak działa
+                  {t.hero.ctaSecondary}
                 </a>
               </Button>
             </motion.div>
 
             <motion.div variants={fadeUp} className="flex flex-wrap gap-x-5 gap-y-2">
-              {HERO_TRUST.map((item) => (
+              {t.hero.trust.map((item) => (
                 <span key={item} className="inline-flex items-center gap-1.5 text-xs text-muted-foreground sm:text-sm">
                   <CircleCheck size={14} className="shrink-0 text-primary" />
                   {item}
@@ -230,7 +136,7 @@ export function RestauracjeLanding() {
             <motion.div variants={fadeUp} className="relative w-full max-w-xl overflow-hidden rounded-2xl lg:max-w-none">
               <Image
                 src="/images/step-qr-stand-table.png"
-                alt="Gość skanuje kod QR ChefVision przy stoliku w restauracji"
+                alt={t.hero.imageAlt}
                 width={760}
                 height={640}
                 className="w-full object-cover transition-transform duration-500 hover:scale-[1.02]"
@@ -249,14 +155,13 @@ export function RestauracjeLanding() {
               variants={fadeUp}
               className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
             >
-              Nie każdy gość wie, co zamówić.
+              {t.problem.headline}
             </motion.h2>
             <motion.p
               variants={fadeUp}
               className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              Zwłaszcza gdy menu jest w obcym języku. Nieznane składniki, lokalne dania i brak pewności często kończą się
-              wyborem najbezpieczniejszej opcji.
+              {t.problem.text}
             </motion.p>
           </FadeIn>
 
@@ -264,14 +169,14 @@ export function RestauracjeLanding() {
             <motion.div variants={fadeUp} className="overflow-hidden rounded-2xl">
               <Image
                 src="/images/story/scene-1-confused-guest.png"
-                alt="Gość zdezorientowany papierowym menu w obcym języku"
+                alt={t.problem.imageAlt}
                 width={560}
                 height={420}
                 className="h-full w-full object-cover"
               />
             </motion.div>
             <motion.ul variants={stagger} className="flex flex-col gap-5">
-              {PROBLEMS.map((p) => (
+              {t.problem.items.map((p) => (
                 <motion.li
                   key={p}
                   variants={fadeUp}
@@ -293,15 +198,15 @@ export function RestauracjeLanding() {
               variants={fadeUp}
               className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
             >
-              ChefVision pomaga gościowi podjąć decyzję.
+              {t.solution.headline}
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-3 text-base text-muted-foreground sm:text-lg">
-              Od pierwszego spojrzenia na menu do pewnego wyboru.
+              {t.solution.sub}
             </motion.p>
           </FadeIn>
 
           <FadeIn className="mt-10 grid gap-8 md:grid-cols-3 md:gap-8">
-            {STEPS.map((step) => (
+            {t.solution.steps.map((step) => (
               <motion.div key={step.num} variants={fadeUp} className="flex flex-col gap-3">
                 <span className="text-sm font-semibold tracking-[0.2em] text-primary">{step.num}</span>
                 <h3 className="text-2xl font-semibold text-foreground">{step.title}</h3>
@@ -320,14 +225,14 @@ export function RestauracjeLanding() {
               variants={fadeUp}
               className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
             >
-              Nie tylko pokazuj menu. Pomóż sprzedać więcej.
+              {t.recommendations.headline}
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              ChefVision pozwala restauracji wykorzystać moment, w którym gość właśnie wybiera danie.
+              {t.recommendations.sub}
             </motion.p>
 
             <motion.div variants={stagger} className="mt-8 flex flex-col gap-5">
-              {RECOS.map((r) => (
+              {t.recommendations.items.map((r) => (
                 <motion.div key={r.label} variants={fadeUp} className="border-l-2 border-primary/50 pl-5">
                   <p className="text-lg font-semibold text-foreground">{r.label}</p>
                   <p className="mt-1 text-sm text-muted-foreground">{r.example}</p>
@@ -339,7 +244,7 @@ export function RestauracjeLanding() {
               variants={fadeUp}
               className="mt-6 text-sm font-medium text-foreground sm:text-base"
             >
-              Restauracja sama decyduje, co rekomendować.
+              {t.recommendations.note}
             </motion.p>
           </FadeIn>
 
@@ -347,7 +252,7 @@ export function RestauracjeLanding() {
             <motion.div variants={fadeUp} className="w-full max-w-sm">
               <Image
                 src="/images/mockup.png"
-                alt="Rekomendacje i pairingi w cyfrowym menu ChefVision"
+                alt={t.recommendations.imageAlt}
                 width={420}
                 height={820}
                 className="mx-auto h-auto w-full object-contain drop-shadow-xl transition-transform duration-500 hover:scale-[1.02]"
@@ -365,20 +270,19 @@ export function RestauracjeLanding() {
               variants={fadeUp}
               className="text-3xl font-bold text-foreground text-balance sm:text-4xl"
             >
-              Twój gość nie musi mówić po polsku.
+              {t.languages.headline}
             </motion.h2>
             <motion.p
               variants={fadeUp}
               className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              Menu ChefVision może być dostępne w 14 językach, dzięki czemu zagraniczny gość może samodzielnie zrozumieć
-              ofertę.
+              {t.languages.text}
             </motion.p>
             <motion.div
               variants={stagger}
               className="mt-8 flex flex-wrap justify-center gap-2.5"
             >
-              {LANGUAGES.map((lang) => (
+              {t.languages.list.map((lang) => (
                 <motion.span
                   key={lang}
                   variants={fadeUp}
@@ -400,13 +304,13 @@ export function RestauracjeLanding() {
               variants={fadeUp}
               className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
             >
-              Gość przychodzi po doświadczenie. Nie po instrukcję obsługi.
+              {t.journey.headline}
             </motion.h2>
           </FadeIn>
 
           <FadeIn className="mt-10">
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {JOURNEY.map((step, i) => (
+              {t.journey.steps.map((step, i) => (
                 <motion.div key={step.label} variants={fadeUp} className="relative flex flex-col gap-3">
                   <div className="overflow-hidden rounded-2xl">
                     <Image
@@ -423,7 +327,7 @@ export function RestauracjeLanding() {
                     </span>
                     <p className="text-sm font-semibold uppercase tracking-wide text-foreground">{step.label}</p>
                   </div>
-                  {i < JOURNEY.length - 1 ? (
+                  {i < t.journey.steps.length - 1 ? (
                     <span
                       className="absolute -right-5 top-[22%] hidden text-xl text-primary/50 lg:block"
                       aria-hidden
@@ -435,7 +339,7 @@ export function RestauracjeLanding() {
               ))}
             </div>
             <p className="mt-6 text-center text-sm text-muted-foreground lg:hidden">
-              Niepewność → Zrozumienie → Pewność wyboru → Lepsze doświadczenie
+              {t.journey.mobileFlow}
             </p>
           </FadeIn>
         </div>
@@ -449,15 +353,15 @@ export function RestauracjeLanding() {
               variants={fadeUp}
               className="text-3xl font-bold text-foreground text-balance sm:text-4xl lg:text-5xl"
             >
-              Stworzone z myślą o prawdziwej gastronomii.
+              {t.benefits.headline}
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-3 text-base text-muted-foreground sm:text-lg">
-              Nie lista technologii — rozwiązania problemów, które znasz z sali.
+              {t.benefits.sub}
             </motion.p>
           </FadeIn>
 
           <FadeIn className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-            {BENEFITS.map((b) => (
+            {t.benefits.items.map((b) => (
               <motion.div key={b.title} variants={fadeUp} className="flex flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <Check size={18} className="shrink-0 text-primary" strokeWidth={2.5} />
@@ -477,7 +381,7 @@ export function RestauracjeLanding() {
             <motion.div variants={fadeUp} className="overflow-hidden rounded-2xl">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260403-WA0091-RVUddaoBC2IEHmgK5Mndc134DhCYjW.jpg"
-                alt="Marcin Koniuszko — założyciel ChefVision"
+                alt={t.story.imageAlt}
                 width={520}
                 height={640}
                 className="aspect-[4/5] w-full object-cover"
@@ -490,20 +394,17 @@ export function RestauracjeLanding() {
               variants={fadeUp}
               className="text-xs font-semibold uppercase tracking-[0.16em] text-primary"
             >
-              Historia
+              {t.story.badge}
             </motion.span>
             <motion.h2
               variants={fadeUp}
               className="mt-2 text-3xl font-bold text-foreground text-balance sm:text-4xl"
             >
-              ChefVision powstał w gastronomii.
+              {t.story.headline}
             </motion.h2>
             <motion.div variants={stagger} className="mt-5 space-y-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              <motion.p variants={fadeUp}>
-                Przez ponad 18 lat pracowałem w gastronomii hotelowej. Widziałem, jak często goście mają problem ze
-                zrozumieniem menu — szczególnie gdy przyjeżdżają z zagranicy.
-              </motion.p>
-              <motion.p variants={fadeUp}>ChefVision powstał z potrzeby rozwiązania tego problemu.</motion.p>
+              <motion.p variants={fadeUp}>{t.story.p1}</motion.p>
+              <motion.p variants={fadeUp}>{t.story.p2}</motion.p>
             </motion.div>
           </FadeIn>
         </div>
@@ -513,24 +414,24 @@ export function RestauracjeLanding() {
       <section id="cennik" className="scroll-mt-20 bg-[#5a8f0a] py-14 lg:py-20">
         <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-5 px-6 text-center sm:gap-6">
           <span className="inline-flex rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">
-            Zacznij bez ryzyka
+            {t.finalCta.badge}
           </span>
           <h2 className="text-3xl font-bold text-white text-balance sm:text-4xl lg:text-5xl">
-            Wypróbuj ChefVision przez 14 dni
+            {t.finalCta.headline}
           </h2>
           <p className="max-w-xl text-base text-white sm:text-lg">
-            Pełny dostęp do Premium. Bez karty kredytowej.
+            {t.finalCta.sub}
           </p>
           <SignupButton
             location="final_cta"
             className="h-12 bg-white px-8 text-sm font-semibold text-[#3f6212] shadow-md hover:bg-white"
             variant="secondary"
           >
-            Wypróbuj za darmo przez 14 dni
+            {t.finalCta.button}
             <ArrowRight size={16} />
           </SignupButton>
           <p className="text-sm font-medium text-white">
-            Po okresie próbnym wybierasz plan Start lub Premium.
+            {t.finalCta.note}
           </p>
         </div>
       </section>

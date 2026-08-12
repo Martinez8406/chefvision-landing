@@ -4,24 +4,30 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { LanguageSwitcher } from "@/components/language-switcher"
+import { useLanguage } from "@/lib/language-context"
+import { SEGMENT_LOCALES } from "@/lib/translations"
+import { getHoteleContent } from "@/lib/translations-hotele"
 import { APP_SIGNUP_URL, trackHoteleCta } from "@/lib/hotele-analytics"
-
-const navLinks = [
-  { label: "Funkcje", href: "#funkcje" },
-  { label: "Jak to działa", href: "#jak-to-dziala" },
-  { label: "Dla hoteli", href: "#dla-hoteli" },
-  { label: "O nas", href: "#o-nas" },
-]
 
 export function HoteleNavbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const { locale } = useLanguage()
+  const t = getHoteleContent(locale)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const navLinks = [
+    { label: t.nav.features, href: "#funkcje" },
+    { label: t.nav.how, href: "#jak-to-dziala" },
+    { label: t.nav.forHotels, href: "#dla-hoteli" },
+    { label: t.nav.about, href: "#o-nas" },
+  ]
 
   return (
     <header
@@ -32,7 +38,7 @@ export function HoteleNavbar() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <Link href="/hotele" className="flex items-center gap-2.5" aria-label="ChefVision dla hoteli">
+        <Link href="/hotele" className="flex items-center gap-2.5" aria-label={t.nav.logoAria}>
           <span className="brand-logo-mark h-9 w-9 shrink-0 rounded-lg" aria-hidden />
           <span className="text-lg font-semibold tracking-tight text-foreground">
             Chef<span className="text-primary">Vision</span>
@@ -42,7 +48,7 @@ export function HoteleNavbar() {
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((item) => (
             <Link
-              key={item.label}
+              key={item.href}
               href={item.href}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
@@ -51,7 +57,8 @@ export function HoteleNavbar() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <LanguageSwitcher locales={SEGMENT_LOCALES} />
           <Button
             size="sm"
             className="bg-primary px-5 font-medium text-primary-foreground hover:brightness-[0.93]"
@@ -63,26 +70,29 @@ export function HoteleNavbar() {
               rel="noopener noreferrer"
               onClick={() => trackHoteleCta("navbar")}
             >
-              Sprawdź ChefVision
+              {t.nav.cta}
             </a>
           </Button>
         </div>
 
-        <button
-          type="button"
-          className="p-1 text-foreground md:hidden"
-          onClick={() => setMenuOpen((v) => !v)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher compact locales={SEGMENT_LOCALES} />
+          <button
+            type="button"
+            className="p-1 text-foreground"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label={t.nav.menuToggle}
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
 
       {menuOpen ? (
         <div className="flex flex-col gap-4 border-b border-border bg-background/95 px-6 py-4 backdrop-blur-md md:hidden">
           {navLinks.map((item) => (
             <Link
-              key={item.label}
+              key={item.href}
               href={item.href}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               onClick={() => setMenuOpen(false)}
@@ -100,7 +110,7 @@ export function HoteleNavbar() {
                 setMenuOpen(false)
               }}
             >
-              Sprawdź ChefVision
+              {t.nav.cta}
             </a>
           </Button>
         </div>

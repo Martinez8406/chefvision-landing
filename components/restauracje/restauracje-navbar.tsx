@@ -4,24 +4,30 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { LanguageSwitcher } from "@/components/language-switcher"
+import { useLanguage } from "@/lib/language-context"
+import { SEGMENT_LOCALES } from "@/lib/translations"
+import { getRestauracjeContent } from "@/lib/translations-restauracje"
 import { APP_SIGNUP_URL, trackRestauracjeCta } from "@/lib/restauracje-analytics"
-
-const navLinks = [
-  { label: "Jak to działa?", href: "#jak-to-dziala" },
-  { label: "Dla kogo?", href: "#dla-kogo" },
-  { label: "Cennik", href: "#cennik" },
-  { label: "FAQ", href: "/faq" },
-]
 
 export function RestauracjeNavbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const { locale } = useLanguage()
+  const t = getRestauracjeContent(locale)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const navLinks = [
+    { label: t.nav.how, href: "#jak-to-dziala" },
+    { label: t.nav.forWhom, href: "#dla-kogo" },
+    { label: t.nav.pricing, href: "#cennik" },
+    { label: t.nav.faq, href: "/faq" },
+  ]
 
   return (
     <header
@@ -32,7 +38,7 @@ export function RestauracjeNavbar() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <Link href="/restauracje" className="flex items-center gap-2.5" aria-label="ChefVision dla restauracji">
+        <Link href="/restauracje" className="flex items-center gap-2.5" aria-label={t.nav.logoAria}>
           <span className="brand-logo-mark h-9 w-9 shrink-0 rounded-lg" aria-hidden />
           <span className="text-lg font-semibold tracking-tight text-foreground">
             Chef<span className="text-primary">Vision</span>
@@ -42,7 +48,7 @@ export function RestauracjeNavbar() {
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((item) => (
             <Link
-              key={item.label}
+              key={item.href}
               href={item.href}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
@@ -51,7 +57,8 @@ export function RestauracjeNavbar() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <LanguageSwitcher locales={SEGMENT_LOCALES} />
           <Button
             size="sm"
             className="bg-primary px-5 font-medium text-primary-foreground hover:brightness-[0.93]"
@@ -63,26 +70,29 @@ export function RestauracjeNavbar() {
               rel="noopener noreferrer"
               onClick={() => trackRestauracjeCta("navbar")}
             >
-              Wypróbuj za darmo
+              {t.nav.cta}
             </a>
           </Button>
         </div>
 
-        <button
-          type="button"
-          className="p-1 text-foreground md:hidden"
-          onClick={() => setMenuOpen((v) => !v)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher compact locales={SEGMENT_LOCALES} />
+          <button
+            type="button"
+            className="p-1 text-foreground"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label={t.nav.menuToggle}
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
 
       {menuOpen ? (
         <div className="flex flex-col gap-4 border-b border-border bg-background/95 px-6 py-4 backdrop-blur-md md:hidden">
           {navLinks.map((item) => (
             <Link
-              key={item.label}
+              key={item.href}
               href={item.href}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               onClick={() => setMenuOpen(false)}
@@ -100,7 +110,7 @@ export function RestauracjeNavbar() {
                 setMenuOpen(false)
               }}
             >
-              Wypróbuj za darmo
+              {t.nav.cta}
             </a>
           </Button>
         </div>
