@@ -328,7 +328,7 @@ export const es = {
     },
     startPlan: {
       badge: "Ideal para empezar",
-      price: "30",
+      price: "39",
       currency: "PLN / mes",
       label: "Plan Start",
       desc: "Menú digital profesional para tu restaurante.",

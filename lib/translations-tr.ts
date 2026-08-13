@@ -336,7 +336,7 @@ export const tr = {
     },
     startPlan: {
       badge: "Başlamak için ideal",
-      price: "30",
+      price: "39",
       currency: "PLN / month",
       label: "Start planı",
       desc: "Restoranınız için profesyonel dijital menü.",

@@ -337,7 +337,7 @@ export const el = {
     },
     startPlan: {
       badge: "Ιδανικό για αρχή",
-      price: "30",
+      price: "39",
       currency: "PLN / μήνα",
       label: "Πλάνο Start",
       desc: "Επαγγελματικό ψηφιακό μενού για το εστιατόριό σας.",

@@ -336,7 +336,7 @@ export const hr = {
     },
     startPlan: {
       badge: "Idealno za početak",
-      price: "30",
+      price: "39",
       currency: "PLN / mjesec",
       label: "Start plan",
       desc: "Profesionalni digitalni jelovnik za vaš restoran.",

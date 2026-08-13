@@ -336,7 +336,7 @@ export const ru = {
     },
     startPlan: {
       badge: "Лучший для старта",
-      price: "30",
+      price: "39",
       currency: "PLN / month",
       label: "План Start",
       desc: "Профессиональное цифровое меню для вашего ресторана.",

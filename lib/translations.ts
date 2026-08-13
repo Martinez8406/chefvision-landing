@@ -344,7 +344,7 @@ export const translations = {
       },
       startPlan: {
         badge: "Najlepszy na start",
-        price: "30",
+        price: "39",
         currency: "zł / miesiąc",
         label: "Plan Start",
         desc: "Profesjonalne cyfrowe menu dla Twojej restauracji.",
@@ -846,7 +846,7 @@ export const translations = {
       },
       startPlan: {
         badge: "Best to start",
-        price: "30",
+        price: "39",
         currency: "PLN / month",
         label: "Start plan",
         desc: "A professional digital menu for your restaurant.",
