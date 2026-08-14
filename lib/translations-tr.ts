@@ -368,7 +368,9 @@ export const tr = {
     menuService: {
       badge: "Ekip hizmeti",
       price: "299",
-      currency: "PLN tek seferlik",
+      currency: "PLN",
+      freeLabel: "ÜCRETSİZ",
+      offerNote: "Yeni müşteriler için kurulum teklifi.",
       label: "Menü oluşturma siparişi",
       desc: "Her zamanki gibi hesap oluşturursunuz — dijital menünüzü uzaktan biz hazırlarız.",
       buyBtn: "Kurulum sipariş et",
@@ -382,7 +384,9 @@ export const tr = {
     flyerService: {
       badge: "Grafik tasarım",
       price: "149",
-      currency: "PLN tek seferlik",
+      currency: "PLN",
+      freeLabel: "ÜCRETSİZ",
+      offerNote: "Yeni müşteriler için kurulum teklifi.",
       label: "QR Broşür",
       desc: "İşletmenize özel QR broşür. Menünüze giden QR kodlu kişiselleştirilmiş tasarım — baskıya hazır, marka stilinize uygun.",
       buyBtn: "Broşür sipariş et",
@@ -457,7 +461,7 @@ export const tr = {
     badge: "Materyaller",
     headline: "Restoranlar ve oteller için ücretsiz materyaller",
     sub: "",
-    info: "Canva'da düzenlemek için indirilebilir hazır materyaller. Uygulamadan QR kodunu yapıştırmanız, logo veya mekân adı eklemeniz ve yazdırmanız yeterli. Ayrıca marka renklerine göre bir broşürün hazırlanmasını da yaptırabilirsiniz — 149 PLN karşılığında 3 broşür varyantı ve 3 düzeltme hazırlayacağım.",
+    info: "Canva'da düzenlemek için indirilebilir hazır materyaller. Uygulamadan QR kodunu yapıştırmanız, logo veya mekân adı eklemeniz ve yazdırmanız yeterli. Ayrıca marka renklerine göre bir broşürün hazırlanmasını da yaptırabilirsiniz — yeni müşteriler için kurulum teklifinde ÜCRETSİZ (3 varyant + 3 düzeltme).",
     downloadBtn: "Şablonu indir",
     placeholderLabel: "Şablon önizlemesi",
     stands: {

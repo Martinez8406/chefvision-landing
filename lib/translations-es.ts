@@ -360,7 +360,9 @@ export const es = {
     menuService: {
       badge: "Servicio del equipo",
       price: "299",
-      currency: "PLN pago único",
+      currency: "PLN",
+      freeLabel: "GRATIS",
+      offerNote: "Oferta de implementación para nuevos clientes.",
       label: "Encargar creación del menú",
       desc: "Crea una cuenta como siempre — nosotros preparamos remotamente su carta digital.",
       buyBtn: "Encargar configuración",
@@ -374,7 +376,9 @@ export const es = {
     flyerService: {
       badge: "Diseño gráfico",
       price: "149",
-      currency: "PLN pago único",
+      currency: "PLN",
+      freeLabel: "GRATIS",
+      offerNote: "Oferta de implementación para nuevos clientes.",
       label: "Folleto QR",
       desc: "Folleto QR adaptado a tu local. Diseño personalizado con código QR a tu menú — listo para imprimir, en el estilo de tu marca.",
       buyBtn: "Encargar folleto",
@@ -449,7 +453,7 @@ export const es = {
     badge: "Materiales",
     headline: "Materiales gratuitos para restaurantes y hoteles",
     sub: "",
-    info: "Materiales listos para descargar y editar en Canva. Solo pegue el código QR de la aplicación, añada su logo o nombre del local e imprima. También puedes encargar la creación de un folleto con los colores de tu marca — por 149 PLN prepararé 3 variantes de folleto y 3 revisiones.",
+    info: "Materiales listos para descargar y editar en Canva. Solo pegue el código QR de la aplicación, añada su logo o nombre del local e imprima. También puedes encargar la creación de un folleto con los colores de tu marca — GRATIS como oferta de implementación para nuevos clientes (3 variantes + 3 revisiones).",
     downloadBtn: "Descargar plantilla",
     placeholderLabel: "Vista previa de la plantilla",
     stands: {

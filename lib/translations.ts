@@ -376,7 +376,9 @@ export const translations = {
       menuService: {
         badge: "Usługa zespołu",
         price: "299",
-        currency: "zł jednorazowo",
+        currency: "zł",
+        freeLabel: "GRATIS",
+        offerNote: "Oferta wdrożeniowa dla nowych klientów.",
         label: "Zleć wykonanie menu",
         desc: "Zakładasz konto jak zwykle — my zdalnie przygotujemy Twoją kartę cyfrową.",
         buyBtn: "Zlecam wykonanie",
@@ -390,7 +392,9 @@ export const translations = {
       flyerService: {
         badge: "Projekt graficzny",
         price: "149",
-        currency: "zł jednorazowo",
+        currency: "zł",
+        freeLabel: "GRATIS",
+        offerNote: "Oferta wdrożeniowa dla nowych klientów.",
         label: "Ulotka QR",
         desc: "Ulotka QR dopasowana do Twojego lokalu. Spersonalizowany projekt z kodem QR do Twojego menu — gotowy do druku, w stylu Twojej marki.",
         buyBtn: "Zlecam ulotkę",
@@ -459,7 +463,7 @@ export const translations = {
       badge: "Materiały",
       headline: "Darmowe materiały dla restauracji i hoteli",
       sub: "",
-      info: "Gotowe materiały do pobrania i edycji w Canva. Wystarczy wkleić kod QR z aplikacji, dodać logo lub nazwę lokalu i wydrukować. Możesz też zlecić wykonanie ulotki pod kolory marki — za 149 zł wykonam 3 warianty ulotki plus 3 poprawki.",
+      info: "Gotowe materiały do pobrania i edycji w Canva. Wystarczy wkleić kod QR z aplikacji, dodać logo lub nazwę lokalu i wydrukować. Możesz też zlecić wykonanie ulotki pod kolory marki — w ofercie wdrożeniowej dla nowych klientów GRATIS (3 warianty + 3 poprawki).",
       downloadBtn: "Pobierz szablon",
       placeholderLabel: "Podgląd szablonu",
       stands: {
@@ -878,7 +882,9 @@ export const translations = {
       menuService: {
         badge: "Team service",
         price: "299",
-        currency: "PLN one-time",
+        currency: "PLN",
+        freeLabel: "FREE",
+        offerNote: "Launch offer for new customers.",
         label: "Order menu creation",
         desc: "You create an account as usual — we remotely prepare your digital menu.",
         buyBtn: "Order setup",
@@ -892,7 +898,9 @@ export const translations = {
       flyerService: {
         badge: "Graphic design",
         price: "149",
-        currency: "PLN one-time",
+        currency: "PLN",
+        freeLabel: "FREE",
+        offerNote: "Launch offer for new customers.",
         label: "QR Flyer",
         desc: "A QR flyer tailored to your venue. A personalized design with a QR code to your menu — print-ready, in your brand style.",
         buyBtn: "Order flyer",
@@ -961,7 +969,7 @@ export const translations = {
       badge: "Materials",
       headline: "Free materials for restaurants and hotels",
       sub: "",
-      info: "Ready-to-download materials for editing in Canva. Just paste the QR code from the app, add your logo or venue name and print. You can also commission a flyer styled to your brand colors — for 149 PLN I'll create 3 flyer variants plus 3 revisions.",
+      info: "Ready-to-download materials for editing in Canva. Just paste the QR code from the app, add your logo or venue name and print. You can also commission a flyer styled to your brand colors — FREE as a launch offer for new customers (3 variants + 3 revisions).",
       downloadBtn: "Download template",
       placeholderLabel: "Template preview",
       stands: {

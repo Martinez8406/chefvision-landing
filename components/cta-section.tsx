@@ -115,9 +115,16 @@ export function CtaSection() {
                     <Wand2 size={11} />
                     {c.menuService.badge}
                   </span>
-                  <div className="flex items-end gap-1 mt-1">
-                    <span className="text-3xl font-bold text-foreground font-serif">{c.menuService.price}</span>
-                    <span className="text-sm text-muted-foreground mb-1">{c.menuService.currency}</span>
+                  <div className="mt-1">
+                    <p className="text-sm text-muted-foreground line-through">
+                      {c.menuService.price} {c.menuService.currency}
+                    </p>
+                    <p className="text-3xl font-bold text-foreground font-serif leading-none">
+                      {c.menuService.freeLabel}
+                    </p>
+                    <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
+                      {c.menuService.offerNote}
+                    </p>
                   </div>
                   <p className="text-sm font-semibold text-foreground">{c.menuService.label}</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">{c.menuService.desc}</p>
@@ -141,9 +148,16 @@ export function CtaSection() {
                   <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
                     {c.flyerService.badge}
                   </span>
-                  <div className="flex items-end gap-1 mt-1">
-                    <span className="text-3xl font-bold text-foreground font-serif">{c.flyerService.price}</span>
-                    <span className="text-sm text-muted-foreground mb-1">{c.flyerService.currency}</span>
+                  <div className="mt-1">
+                    <p className="text-sm text-muted-foreground line-through">
+                      {c.flyerService.price} {c.flyerService.currency}
+                    </p>
+                    <p className="text-3xl font-bold text-foreground font-serif leading-none">
+                      {c.flyerService.freeLabel}
+                    </p>
+                    <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
+                      {c.flyerService.offerNote}
+                    </p>
                   </div>
                   <p className="text-sm font-semibold text-foreground">{c.flyerService.label}</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">{c.flyerService.desc}</p>

@@ -368,7 +368,9 @@ export const hr = {
     menuService: {
       badge: "Usluga tima",
       price: "299",
-      currency: "PLN jednokratno",
+      currency: "PLN",
+      freeLabel: "GRATIS",
+      offerNote: "Ponuda implementacije za nove klijente.",
       label: "Naručite izradu jelovnika",
       desc: "Otvarate račun kao i obično — mi udaljeno pripremamo vaš digitalni jelovnik.",
       buyBtn: "Naručite postavku",
@@ -382,7 +384,9 @@ export const hr = {
     flyerService: {
       badge: "Grafički dizajn",
       price: "149",
-      currency: "PLN jednokratno",
+      currency: "PLN",
+      freeLabel: "GRATIS",
+      offerNote: "Ponuda implementacije za nove klijente.",
       label: "QR letak",
       desc: "QR letak prilagođen vašem objektu. Personalizirani dizajn s QR kodom do vašeg menija — spreman za tisak, u stilu vašeg brenda.",
       buyBtn: "Naručite letak",
@@ -457,7 +461,7 @@ export const hr = {
     badge: "Materijali",
     headline: "Besplatni materijali za restorane i hotele",
     sub: "",
-    info: "Materijali spremni za preuzimanje i uređivanje u Canvi. Dovoljno je zalijepiti QR kod iz aplikacije, dodati logo ili naziv objekta i isprintati. Također možete naručiti izradu letka u bojama vašeg brenda — za 149 PLN pripremit ću 3 varijante letka i 3 korekcije.",
+    info: "Materijali spremni za preuzimanje i uređivanje u Canvi. Dovoljno je zalijepiti QR kod iz aplikacije, dodati logo ili naziv objekta i isprintati. Također možete naručiti izradu letka u bojama vašeg brenda — GRATIS u ponudi implementacije za nove klijente (3 varijante + 3 korekcije).",
     downloadBtn: "Preuzmi predložak",
     placeholderLabel: "Pregled predloška",
     stands: {

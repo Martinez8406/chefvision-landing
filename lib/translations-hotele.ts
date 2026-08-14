@@ -94,6 +94,8 @@ export type HoteleCopy = {
       badgeTone: "dark" | "accent"
       price: string
       currency: string
+      freeLabel: string
+      offerNote: string
       title: string
       desc: string
       features: string[]
@@ -278,7 +280,9 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
           badge: "Usługa zespołu",
           badgeTone: "dark",
           price: "299",
-          currency: "jednorazowo",
+          currency: "zł",
+          freeLabel: "GRATIS",
+          offerNote: "Oferta wdrożeniowa dla nowych klientów.",
           title: "Zleć wykonanie menu",
           desc: "Zakładasz konto jak zwykle — my zdalnie przygotujemy Twoją kartę cyfrową.",
           features: [
@@ -295,7 +299,9 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
           badge: "Projekt graficzny",
           badgeTone: "accent",
           price: "149",
-          currency: "jednorazowo",
+          currency: "zł",
+          freeLabel: "GRATIS",
+          offerNote: "Oferta wdrożeniowa dla nowych klientów.",
           title: "Ulotka QR",
           desc: "Ulotka QR dopasowana do Twojego hotelu. Personalizowany projekt z kodem QR do Twojego menu, gotowy do druku, w stylu Twojej marki.",
           features: [
@@ -473,7 +479,9 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
           badge: "Team service",
           badgeTone: "dark",
           price: "299",
-          currency: "one-time",
+          currency: "PLN",
+          freeLabel: "FREE",
+          offerNote: "Launch offer for new customers.",
           title: "Commission menu setup",
           desc: "You create an account as usual — we remotely prepare your digital menu.",
           features: [
@@ -490,7 +498,9 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
           badge: "Graphic design",
           badgeTone: "accent",
           price: "149",
-          currency: "one-time",
+          currency: "PLN",
+          freeLabel: "FREE",
+          offerNote: "Launch offer for new customers.",
           title: "QR flyer",
           desc: "A QR flyer tailored to your hotel. A personalized design with a QR code to your menu, print-ready, in your brand style.",
           features: [
@@ -668,7 +678,9 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
           badge: "Usluga tima",
           badgeTone: "dark",
           price: "299",
-          currency: "jednokratno",
+          currency: "PLN",
+          freeLabel: "GRATIS",
+          offerNote: "Ponuda implementacije za nove klijente.",
           title: "Naručite izradu menija",
           desc: "Otvorite račun kao i obično — mi ćemo na daljinu pripremiti vašu digitalnu kartu.",
           features: [
@@ -685,7 +697,9 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
           badge: "Grafički dizajn",
           badgeTone: "accent",
           price: "149",
-          currency: "jednokratno",
+          currency: "PLN",
+          freeLabel: "GRATIS",
+          offerNote: "Ponuda implementacije za nove klijente.",
           title: "QR letak",
           desc: "QR letak prilagođen vašem hotelu. Personalizirani dizajn s QR kodom do vašeg menija, spreman za tisak, u stilu vaše marke.",
           features: [

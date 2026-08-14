@@ -359,7 +359,9 @@ export const de = {
     menuService: {
       badge: "Team-Service",
       price: "299",
-      currency: "PLN einmalig",
+      currency: "PLN",
+      freeLabel: "GRATIS",
+      offerNote: "Einführungsangebot für Neukunden.",
       label: "Menüerstellung beauftragen",
       desc: "Sie erstellen ein Konto wie gewohnt — wir bereiten Ihre digitale Speisekarte remote vor.",
       buyBtn: "Einrichtung beauftragen",
@@ -373,7 +375,9 @@ export const de = {
     flyerService: {
       badge: "Grafikdesign",
       price: "149",
-      currency: "PLN einmalig",
+      currency: "PLN",
+      freeLabel: "GRATIS",
+      offerNote: "Einführungsangebot für Neukunden.",
       label: "QR-Flyer",
       desc: "QR-Flyer passend zu Ihrem Lokal. Personalisierter Entwurf mit QR-Code zu Ihrem Menü — druckfertig, im Stil Ihrer Marke.",
       buyBtn: "Flyer beauftragen",
@@ -448,7 +452,7 @@ export const de = {
     badge: "Materialien",
     headline: "Kostenlose Materialien für Restaurants und Hotels",
     sub: "",
-    info: "Sofort herunterladbare Materialien zur Bearbeitung in Canva. Einfach den QR-Code aus der App einfügen, Logo oder Betriebsnamen hinzufügen und drucken. Sie können auch die Erstellung eines Flyers in Ihren Markenfarben beauftragen — für 149 PLN erstelle ich 3 Flyer-Varianten plus 3 Korrekturen.",
+    info: "Sofort herunterladbare Materialien zur Bearbeitung in Canva. Einfach den QR-Code aus der App einfügen, Logo oder Betriebsnamen hinzufügen und drucken. Sie können auch die Erstellung eines Flyers in Ihren Markenfarben beauftragen — GRATIS als Einführungsangebot für Neukunden (3 Varianten + 3 Korrekturen).",
     downloadBtn: "Vorlage herunterladen",
     placeholderLabel: "Vorschau der Vorlage",
     stands: {

@@ -368,7 +368,9 @@ export const it = {
     menuService: {
       badge: "Servizio del team",
       price: "299",
-      currency: "PLN una tantum",
+      currency: "PLN",
+      freeLabel: "GRATIS",
+      offerNote: "Offerta di avvio per i nuovi clienti.",
       label: "Ordina creazione del menu",
       desc: "Crei un account come sempre — noi prepariamo da remoto il tuo menu digitale.",
       buyBtn: "Ordina configurazione",
@@ -382,7 +384,9 @@ export const it = {
     flyerService: {
       badge: "Progetto grafico",
       price: "149",
-      currency: "PLN una tantum",
+      currency: "PLN",
+      freeLabel: "GRATIS",
+      offerNote: "Offerta di avvio per i nuovi clienti.",
       label: "Volantino QR",
       desc: "Volantino QR su misura per il tuo locale. Progetto personalizzato con codice QR al tuo menu — pronto per la stampa, nello stile del tuo brand.",
       buyBtn: "Ordina volantino",
@@ -457,7 +461,7 @@ export const it = {
     badge: "Materiali",
     headline: "Materiali gratuiti per ristoranti e hotel",
     sub: "",
-    info: "Materiali pronti da scaricare e modificare in Canva. Basta incollare il codice QR dall'app, aggiungere il logo o il nome della struttura e stampare. Puoi anche richiedere la realizzazione di un volantino nei colori del tuo brand — per 149 PLN preparerò 3 varianti di volantino più 3 revisioni.",
+    info: "Materiali pronti da scaricare e modificare in Canva. Basta incollare il codice QR dall'app, aggiungere il logo o il nome della struttura e stampare. Puoi anche richiedere la realizzazione di un volantino nei colori del tuo brand — GRATIS come offerta di avvio per i nuovi clienti (3 varianti + 3 revisioni).",
     downloadBtn: "Scarica modello",
     placeholderLabel: "Anteprima del modello",
     stands: {
