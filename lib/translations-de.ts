@@ -337,6 +337,7 @@ export const de = {
         "Speisekarte ohne Wasserzeichen",
         "Speisekartenübersetzungen in 14 Sprachen",
         "Menü-Öffnungsstatistiken",
+        "Nachricht an den Manager aus dem Menü — bevor ein Gast eine negative Google-Bewertung hinterlässt",
       ],
     },
     regular: {
@@ -350,10 +351,28 @@ export const de = {
       features: [
         "Pairings und Upselling",
         "Hotel Hub",
+        "Infopanel",
         "Kellner rufen / Rechnung",
         "Beliebtheits-Ranking der Gerichte",
         "50 KI-Tokens",
         "Implementierungsunterstützung",
+      ],
+    },
+    lifetimePlan: {
+      badge: "Nur 10 Konten zu diesem Preis",
+      price: "599",
+      currency: "PLN",
+      billing: "einmalig",
+      noMonthly: "Kein monatliches Abonnement",
+      nextTier: "Nächste 10 Konten: 799 PLN",
+      label: "Founder Lifetime",
+      desc: "ChefVision Founder Lifetime — lebenslanger Zugang zu Premium-Funktionen gegen eine einmalige Gebühr. KI bleibt tokenbasiert: lebenslanger Zugang bedeutet nicht unbegrenzte Nutzung des Generators.",
+      buyBtn: "Kaufen",
+      features: [
+        "Alles aus dem Premium-Plan",
+        "Lebenslanger Zugang zu ChefVision",
+        "Kein monatliches Abonnement",
+        "100 KI-Tokens zur Verbesserung von Gerichtsfotos und für professionelle Hintergründe. Tokens werden einmalig vergeben und verfallen nicht.",
       ],
     },
     menuService: {

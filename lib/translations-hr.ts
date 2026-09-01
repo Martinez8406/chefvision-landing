@@ -346,6 +346,7 @@ export const hr = {
         "Jelovnik bez vodenog žiga",
         "Prijevodi jelovnika na 14 jezika",
         "Statistike otvaranja menija",
+        "Poruka manageru iz menija — prije nego gost ostavi negativnu recenziju na Googleu",
       ],
     },
     regular: {
@@ -359,10 +360,28 @@ export const hr = {
       features: [
         "Parovi i upselling",
         "Hotel Hub",
+        "Informacijska ploča",
         "Pozovi konobara / račun",
         "Ranking popularnosti jela",
         "50 AI tokena",
         "Podrška pri implementaciji",
+      ],
+    },
+    lifetimePlan: {
+      badge: "Samo 10 računa po ovoj cijeni",
+      price: "599",
+      currency: "PLN",
+      billing: "jednokratno",
+      noMonthly: "Bez mjesečne pretplate",
+      nextTier: "Sljedećih 10 računa: 799 PLN",
+      label: "Founder Lifetime",
+      desc: "ChefVision Founder Lifetime — doživotni pristup Premium značajkama uz jednokratnu uplatu. AI ostaje na tokenima: bezvremenski pristup ne znači neograničeno korištenje generatora.",
+      buyBtn: "Kupujem",
+      features: [
+        "Sve iz Premium plana",
+        "Doživotni pristup ChefVisionu",
+        "Bez mjesečne pretplate",
+        "100 AI tokena za poboljšanje fotografija jela i izradu profesionalne pozadine. Tokeni se dodjeljuju jednokratno i bez roka valjanosti.",
       ],
     },
     menuService: {

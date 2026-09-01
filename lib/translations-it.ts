@@ -346,6 +346,7 @@ export const it = {
         "Menu senza watermark",
         "Traduzioni del menu in 14 lingue",
         "Statistiche aperture menu",
+        "Messaggio al manager dal menu — prima che l'ospite lasci una recensione negativa su Google",
       ],
     },
     regular: {
@@ -359,10 +360,28 @@ export const it = {
       features: [
         "Abbinamenti e upselling",
         "Hotel Hub",
+        "Pannello informativo",
         "Chiama cameriere / conto",
         "Ranking di popolarità dei piatti",
         "50 token AI",
         "Supporto all'implementazione",
+      ],
+    },
+    lifetimePlan: {
+      badge: "Solo 10 account a questo prezzo",
+      price: "599",
+      currency: "PLN",
+      billing: "una tantum",
+      noMonthly: "Nessun abbonamento mensile",
+      nextTier: "Prossimi 10 account: 799 PLN",
+      label: "Founder Lifetime",
+      desc: "ChefVision Founder Lifetime — accesso a vita alle funzioni Premium con un pagamento unico. L'AI resta basata sui token: l'accesso a tempo indeterminato non significa uso illimitato del generatore.",
+      buyBtn: "Acquista",
+      features: [
+        "Tutto del piano Premium",
+        "Accesso a vita a ChefVision",
+        "Nessun abbonamento mensile",
+        "100 token AI per migliorare le foto dei piatti e creare sfondi professionali. Token assegnati una sola volta e senza scadenza.",
       ],
     },
     menuService: {

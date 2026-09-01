@@ -346,6 +346,7 @@ export const tr = {
         "Filigransız menü",
         "14 dilde menü çevirileri",
         "Menü açılma istatistikleri",
+        "Menüden yöneticiye mesaj — misafir Google'da olumsuz yorum bırakmadan önce",
       ],
     },
     regular: {
@@ -359,10 +360,28 @@ export const tr = {
       features: [
         "Eşleştirmeler ve upselling",
         "Hotel Hub",
+        "Bilgi paneli",
         "Garson çağır / hesap",
         "Yemek popülerlik sıralaması",
         "50 AI token",
         "Uygulama desteği",
+      ],
+    },
+    lifetimePlan: {
+      badge: "Bu fiyata yalnızca 10 hesap",
+      price: "599",
+      currency: "PLN",
+      billing: "tek seferlik",
+      noMonthly: "Aylık abonelik yok",
+      nextTier: "Sonraki 10 hesap: 799 PLN",
+      label: "Founder Lifetime",
+      desc: "ChefVision Founder Lifetime — tek seferlik ödeme ile Premium özelliklere ömür boyu erişim. AI token tabanlı kalır: süresiz erişim, üreticinin sınırsız kullanımı anlamına gelmez.",
+      buyBtn: "Satın al",
+      features: [
+        "Premium plandaki her şey",
+        "ChefVision'a ömür boyu erişim",
+        "Aylık abonelik yok",
+        "Yemek fotoğraflarını iyileştirmek ve profesyonel arka plan oluşturmak için 100 AI token. Tokenler bir kez verilir ve süresi dolmaz.",
       ],
     },
     menuService: {

@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Check, Gift, Wand2 } from "lucide-react"
+import { ArrowRight, Check, Crown, Gift, Wand2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
 
@@ -59,121 +59,185 @@ export function CtaSection() {
                 <p className="text-sm font-semibold text-primary text-center">{c.pricingRibbon}</p>
               </div>
 
-              <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5 items-stretch pt-2">
-                {/* Start */}
-                <div className="relative rounded-2xl border border-border bg-card p-6 sm:p-7 flex flex-col gap-3 shadow-sm">
-                  <div className="flex items-end gap-1.5 mt-1">
-                    <span className="text-3xl font-bold text-foreground font-serif leading-none">{c.startPlan.price}</span>
-                    <span className="text-sm text-muted-foreground mb-0.5">{c.startPlan.currency}</span>
+              <div className="space-y-5 pt-2">
+                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 items-stretch">
+                  {/* Start */}
+                  <div className="relative rounded-2xl border border-border bg-card p-6 sm:p-7 flex flex-col gap-3 shadow-sm">
+                    <div className="flex items-end gap-1.5 mt-1">
+                      <span className="text-3xl font-bold text-foreground font-serif leading-none">
+                        {c.startPlan.price}
+                      </span>
+                      <span className="text-sm text-muted-foreground mb-0.5">{c.startPlan.currency}</span>
+                    </div>
+                    <p className="text-base font-semibold text-foreground">{c.startPlan.label}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{c.startPlan.desc}</p>
+                    <ul className="flex flex-col gap-2.5 mt-2 flex-1">
+                      {c.startPlan.features.map((f: string) => (
+                        <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
+                          <Check size={16} className="text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <Button
+                      className="mt-6 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold"
+                      asChild
+                    >
+                      <a href={APP_URL} target="_blank" rel="noopener noreferrer">
+                        {c.startPlan.buyBtn}
+                      </a>
+                    </Button>
                   </div>
-                  <p className="text-base font-semibold text-foreground">{c.startPlan.label}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{c.startPlan.desc}</p>
-                  <ul className="flex flex-col gap-2.5 mt-2 flex-1">
-                    {c.startPlan.features.map((f: string) => (
-                      <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
-                        <Check size={16} className="text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="mt-6 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold" asChild>
-                    <a href={APP_URL} target="_blank" rel="noopener noreferrer">
-                      {c.startPlan.buyBtn}
-                    </a>
-                  </Button>
+
+                  {/* Premium */}
+                  <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 shadow-sm">
+                    <div className="flex items-end gap-1.5 mt-1">
+                      <span className="text-3xl font-bold text-foreground font-serif leading-none">
+                        {c.regular.price}
+                      </span>
+                      <span className="text-sm text-muted-foreground mb-0.5">{c.regular.currency}</span>
+                    </div>
+                    <p className="text-base font-semibold text-foreground">{c.regular.label}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{c.regular.desc}</p>
+                    {c.regular.includesStart ? (
+                      <p className="mt-1 text-sm font-semibold text-foreground">{c.regular.includesStart}</p>
+                    ) : null}
+                    <ul className="flex flex-col gap-2.5 mt-1 flex-1">
+                      {c.regular.features.map((f: string) => (
+                        <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
+                          <Check size={16} className="text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <Button
+                      className="mt-6 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold"
+                      asChild
+                    >
+                      <a href={APP_URL} target="_blank" rel="noopener noreferrer">
+                        {c.regular.buyBtn}
+                      </a>
+                    </Button>
+                  </div>
+
+                  {/* Founder Lifetime */}
+                  <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-amber-500 bg-card p-6 sm:p-7 shadow-sm sm:col-span-2 xl:col-span-1">
+                    <span className="inline-flex w-fit items-center gap-1.5 rounded-md bg-amber-500 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white">
+                      <Crown size={11} />
+                      {c.lifetimePlan.badge}
+                    </span>
+                    <div className="mt-1">
+                      <div className="flex items-end gap-1.5">
+                        <span className="text-3xl font-bold text-foreground font-serif leading-none">
+                          {c.lifetimePlan.price} {c.lifetimePlan.currency}
+                        </span>
+                        <span className="text-sm text-muted-foreground mb-0.5">
+                          {c.lifetimePlan.billing}
+                        </span>
+                      </div>
+                      <p className="mt-2 text-sm font-medium text-foreground">
+                        {c.lifetimePlan.noMonthly}
+                      </p>
+                      <p className="mt-1 text-xs text-muted-foreground">{c.lifetimePlan.nextTier}</p>
+                    </div>
+                    <p className="text-base font-semibold text-foreground">{c.lifetimePlan.label}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{c.lifetimePlan.desc}</p>
+                    <ul className="flex flex-col gap-2.5 mt-1 flex-1">
+                      {c.lifetimePlan.features.map((f: string) => (
+                        <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
+                          <Check size={16} className="text-amber-500 shrink-0 mt-0.5" strokeWidth={2.5} />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <Button
+                      className="mt-6 w-full bg-amber-500 text-foreground hover:bg-amber-500/90 font-semibold"
+                      asChild
+                    >
+                      <a href={APP_URL} target="_blank" rel="noopener noreferrer">
+                        {c.lifetimePlan.buyBtn}
+                      </a>
+                    </Button>
+                  </div>
                 </div>
 
-                {/* Premium */}
-                <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-primary bg-background p-6 sm:p-7 shadow-sm">
-                  <div className="flex items-end gap-1.5 mt-1">
-                    <span className="text-3xl font-bold text-foreground font-serif leading-none">{c.regular.price}</span>
-                    <span className="text-sm text-muted-foreground mb-0.5">{c.regular.currency}</span>
+                <div className="grid sm:grid-cols-2 gap-5 items-stretch">
+                  {/* Menu service */}
+                  <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3">
+                    <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-foreground px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-background">
+                      <Wand2 size={11} />
+                      {c.menuService.badge}
+                    </span>
+                    <div className="mt-1">
+                      <p className="text-sm text-muted-foreground line-through">
+                        {c.menuService.price} {c.menuService.currency}
+                      </p>
+                      <p className="text-3xl font-bold text-foreground font-serif leading-none">
+                        {c.menuService.freeLabel}
+                      </p>
+                      <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
+                        {c.menuService.offerNote}
+                      </p>
+                    </div>
+                    <p className="text-sm font-semibold text-foreground">{c.menuService.label}</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{c.menuService.desc}</p>
+                    <ul className="flex flex-col gap-2 mt-1 flex-1">
+                      {c.menuService.features.map((f: string) => (
+                        <li key={f} className="flex items-start gap-2 text-sm text-foreground">
+                          <Check size={15} className="text-primary shrink-0 mt-0.5" />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <Button
+                      className="mt-4 w-full bg-foreground text-background hover:bg-foreground/90 font-semibold"
+                      asChild
+                    >
+                      <a href={APP_URL} target="_blank" rel="noopener noreferrer">
+                        {c.menuService.buyBtn}
+                      </a>
+                    </Button>
                   </div>
-                  <p className="text-base font-semibold text-foreground">{c.regular.label}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{c.regular.desc}</p>
-                  {c.regular.includesStart ? (
-                    <p className="mt-1 text-sm font-semibold text-foreground">{c.regular.includesStart}</p>
-                  ) : null}
-                  <ul className="flex flex-col gap-2.5 mt-1 flex-1">
-                    {c.regular.features.map((f: string) => (
-                      <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
-                        <Check size={16} className="text-primary shrink-0 mt-0.5" strokeWidth={2.5} />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="mt-6 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold" asChild>
-                    <a href={APP_URL} target="_blank" rel="noopener noreferrer">
-                      {c.regular.buyBtn}
-                    </a>
-                  </Button>
-                </div>
 
-                {/* Menu service */}
-                <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3">
-                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-foreground px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-background">
-                    <Wand2 size={11} />
-                    {c.menuService.badge}
-                  </span>
-                  <div className="mt-1">
-                    <p className="text-sm text-muted-foreground line-through">
-                      {c.menuService.price} {c.menuService.currency}
-                    </p>
-                    <p className="text-3xl font-bold text-foreground font-serif leading-none">
-                      {c.menuService.freeLabel}
-                    </p>
-                    <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-                      {c.menuService.offerNote}
-                    </p>
+                  {/* Flyer QR */}
+                  <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3">
+                    <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
+                      {c.flyerService.badge}
+                    </span>
+                    <div className="mt-1">
+                      <p className="text-sm text-muted-foreground line-through">
+                        {c.flyerService.price} {c.flyerService.currency}
+                      </p>
+                      <p className="text-3xl font-bold text-foreground font-serif leading-none">
+                        {c.flyerService.freeLabel}
+                      </p>
+                      <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
+                        {c.flyerService.offerNote}
+                      </p>
+                    </div>
+                    <p className="text-sm font-semibold text-foreground">{c.flyerService.label}</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{c.flyerService.desc}</p>
+                    <ul className="flex flex-col gap-2 mt-1 flex-1">
+                      {c.flyerService.features.map((f: string) => (
+                        <li key={f} className="flex items-start gap-2 text-sm text-foreground">
+                          <Check size={15} className="text-primary shrink-0 mt-0.5" />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <Button
+                      className="mt-4 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold"
+                      asChild
+                    >
+                      <a
+                        href="https://app.chefvision.pl/#/cennik"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {c.flyerService.buyBtn}
+                      </a>
+                    </Button>
                   </div>
-                  <p className="text-sm font-semibold text-foreground">{c.menuService.label}</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{c.menuService.desc}</p>
-                  <ul className="flex flex-col gap-2 mt-1 flex-1">
-                    {c.menuService.features.map((f: string) => (
-                      <li key={f} className="flex items-start gap-2 text-sm text-foreground">
-                        <Check size={15} className="text-primary shrink-0 mt-0.5" />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="mt-4 w-full bg-foreground text-background hover:bg-foreground/90 font-semibold" asChild>
-                    <a href={APP_URL} target="_blank" rel="noopener noreferrer">
-                      {c.menuService.buyBtn}
-                    </a>
-                  </Button>
-                </div>
-
-                {/* Flyer QR */}
-                <div className="relative rounded-2xl border border-border bg-card p-6 flex flex-col gap-3">
-                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
-                    {c.flyerService.badge}
-                  </span>
-                  <div className="mt-1">
-                    <p className="text-sm text-muted-foreground line-through">
-                      {c.flyerService.price} {c.flyerService.currency}
-                    </p>
-                    <p className="text-3xl font-bold text-foreground font-serif leading-none">
-                      {c.flyerService.freeLabel}
-                    </p>
-                    <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-                      {c.flyerService.offerNote}
-                    </p>
-                  </div>
-                  <p className="text-sm font-semibold text-foreground">{c.flyerService.label}</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{c.flyerService.desc}</p>
-                  <ul className="flex flex-col gap-2 mt-1 flex-1">
-                    {c.flyerService.features.map((f: string) => (
-                      <li key={f} className="flex items-start gap-2 text-sm text-foreground">
-                        <Check size={15} className="text-primary shrink-0 mt-0.5" />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="mt-4 w-full bg-primary text-primary-foreground hover:brightness-[0.93] font-semibold" asChild>
-                    <a href="https://app.chefvision.pl/#/cennik" target="_blank" rel="noopener noreferrer">
-                      {c.flyerService.buyBtn}
-                    </a>
-                  </Button>
                 </div>
               </div>
             </div>
