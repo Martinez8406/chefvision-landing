@@ -37,6 +37,30 @@ export type RestauracjeCopy = {
     note: string
     imageAlt: string
   }
+  guestClub: {
+    badge: string
+    headline: string
+    sub: string
+    steps: { title: string; desc: string }[]
+    guestMock: {
+      offerTitle: string
+      offerSub: string
+      codeLabel: string
+      code: string
+      hint: string
+    }
+    verifyMock: {
+      title: string
+      code: string
+      status: string
+      offer: string
+      action: string
+    }
+    businessHeadline: string
+    businessSub: string
+    ctaPrimary: string
+    ctaSecondary: string
+  }
   languages: {
     headline: string
     text: string
@@ -69,10 +93,10 @@ export type RestauracjeCopy = {
 }
 
 const journeyImages = {
-  scene1: "/images/story/scene-1-confused-guest.png",
-  scene2: "/images/story/scene-2-qr-translation.png",
-  scene3: "/images/story/scene-3-recommendations.png",
-  scene4: "/images/story/scene-4-happy-ending.png",
+  scene1: "/images/story/journey-1-niepewnosc.png",
+  scene2: "/images/story/journey-2-zrozumienie.png",
+  scene3: "/images/story/journey-3-pewnosc-wyboru.png",
+  scene4: "/images/story/journey-4-lepsze-doswiadczenie.png",
 } as const
 
 const languageNames = [
@@ -122,9 +146,9 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       headline: "ChefVision pomaga gościowi podjąć decyzję.",
       sub: "Od pierwszego spojrzenia na menu do pewnego wyboru.",
       steps: [
-        { num: "01", title: "Zrozum", desc: "Menu dostępne w języku gościa." },
-        { num: "02", title: "Odkryj", desc: "Zdjęcia i informacje pomagają poznać danie." },
-        { num: "03", title: "Wybierz", desc: "Rekomendacje i pairingi pomagają zdecydować." },
+        { num: "1", title: "Zrozum", desc: "Menu dostępne w języku gościa." },
+        { num: "2", title: "Odkryj", desc: "Zdjęcia i informacje pomagają poznać danie." },
+        { num: "3", title: "Wybierz", desc: "Rekomendacje i pairingi pomagają zdecydować." },
       ],
     },
     recommendations: {
@@ -137,6 +161,48 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       ],
       note: "Restauracja sama decyduje, co rekomendować.",
       imageAlt: "Rekomendacje i pairingi w cyfrowym menu ChefVision",
+    },
+    guestClub: {
+      badge: "Nowość · Guest Club",
+      headline: "Zamień jednorazowego gościa w klienta, który wraca.",
+      sub: "Gość skanuje QR, odbiera specjalną ofertę i zostawia kontakt. Ty budujesz własną bazę klientów i możesz zaprosić ich ponownie — bez pozyskiwania ich od zera.",
+      steps: [
+        {
+          title: "Daj powód do zapisu",
+          desc: "Np. darmowy deser do dania głównego lub oferta dostępna tylko dla gości z QR menu.",
+        },
+        {
+          title: "Gość zostawia email",
+          desc: "Potwierdza adres i otrzymuje swój jednorazowy kod promocyjny.",
+        },
+        {
+          title: "Kelner realizuje kod",
+          desc: "Obsługa sprawdza kod w prostym ChefVision Verify — bez dostępu do panelu managera.",
+        },
+        {
+          title: "Zaproś go ponownie",
+          desc: "Wyślij później ofertę na słabszy dzień, nowe danie lub specjalne wydarzenie.",
+        },
+      ],
+      guestMock: {
+        offerTitle: "Darmowy deser",
+        offerSub: "Do zamówienia dania głównego.",
+        codeLabel: "Twój kod:",
+        code: "KT-4827",
+        hint: "Pokaż kod kelnerowi.",
+      },
+      verifyMock: {
+        title: "ChefVision Verify",
+        code: "KT-4827",
+        status: "Kod aktywny",
+        offer: "Darmowy deser",
+        action: "Zrealizuj",
+      },
+      businessHeadline: "Nie budujesz kolejnego newslettera.\nBudujesz własny kanał powrotu klientów.",
+      businessSub:
+        "Każdy zdobyty kontakt daje restauracji możliwość ponownego zaproszenia gościa bez zaczynania całego procesu pozyskania od zera.",
+      ctaPrimary: "Chcę przetestować Guest Club",
+      ctaSecondary: "Zobacz jak to działa",
     },
     languages: {
       headline: "Twój gość nie musi mówić po polsku.",
@@ -243,9 +309,9 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       headline: "ChefVision helps the guest decide.",
       sub: "From the first look at the menu to a confident choice.",
       steps: [
-        { num: "01", title: "Understand", desc: "The menu is available in the guest’s language." },
-        { num: "02", title: "Discover", desc: "Photos and details help guests learn about each dish." },
-        { num: "03", title: "Choose", desc: "Recommendations and pairings help them decide." },
+        { num: "1", title: "Understand", desc: "The menu is available in the guest’s language." },
+        { num: "2", title: "Discover", desc: "Photos and details help guests learn about each dish." },
+        { num: "3", title: "Choose", desc: "Recommendations and pairings help them decide." },
       ],
     },
     recommendations: {
@@ -258,6 +324,48 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       ],
       note: "The restaurant decides what to recommend.",
       imageAlt: "Recommendations and pairings in the ChefVision digital menu",
+    },
+    guestClub: {
+      badge: "New · Guest Club",
+      headline: "Turn a one-time guest into a customer who comes back.",
+      sub: "The guest scans the QR, claims a special offer and leaves their contact. You build your own customer base and can invite them again — without starting from scratch.",
+      steps: [
+        {
+          title: "Give a reason to sign up",
+          desc: "For example a free dessert with a main course, or an offer available only to guests from the QR menu.",
+        },
+        {
+          title: "The guest leaves an email",
+          desc: "They confirm the address and receive a one-time promo code.",
+        },
+        {
+          title: "Staff redeems the code",
+          desc: "The team checks the code in simple ChefVision Verify — without access to the manager panel.",
+        },
+        {
+          title: "Invite them back",
+          desc: "Later send an offer for a quieter day, a new dish or a special event.",
+        },
+      ],
+      guestMock: {
+        offerTitle: "Free dessert",
+        offerSub: "With a main course order.",
+        codeLabel: "Your code:",
+        code: "KT-4827",
+        hint: "Show this code to your waiter.",
+      },
+      verifyMock: {
+        title: "ChefVision Verify",
+        code: "KT-4827",
+        status: "Code active",
+        offer: "Free dessert",
+        action: "Redeem",
+      },
+      businessHeadline: "You’re not building another newsletter.\nYou’re building your own return channel.",
+      businessSub:
+        "Every contact you collect gives the restaurant a way to invite the guest back — without starting the whole acquisition process from zero.",
+      ctaPrimary: "I want to try Guest Club",
+      ctaSecondary: "See how it works",
     },
     languages: {
       headline: "Your guest doesn’t have to speak Polish.",
@@ -364,9 +472,9 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       headline: "ChefVision pomaže gostu donijeti odluku.",
       sub: "Od prvog pogleda na meni do sigurnog izbora.",
       steps: [
-        { num: "01", title: "Razumij", desc: "Meni je dostupan na jeziku gosta." },
-        { num: "02", title: "Otkrij", desc: "Fotografije i informacije pomažu upoznati jelo." },
-        { num: "03", title: "Odaberi", desc: "Preporuke i uparivanja pomažu donijeti odluku." },
+        { num: "1", title: "Razumij", desc: "Meni je dostupan na jeziku gosta." },
+        { num: "2", title: "Otkrij", desc: "Fotografije i informacije pomažu upoznati jelo." },
+        { num: "3", title: "Odaberi", desc: "Preporuke i uparivanja pomažu donijeti odluku." },
       ],
     },
     recommendations: {
@@ -379,6 +487,48 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       ],
       note: "Restoran sam odlučuje što preporučiti.",
       imageAlt: "Preporuke i uparivanja u digitalnom meniju ChefVision",
+    },
+    guestClub: {
+      badge: "Novo · Guest Club",
+      headline: "Pretvorite jednokratnog gosta u gosta koji se vraća.",
+      sub: "Gost skenira QR, preuzima posebnu ponudu i ostavlja kontakt. Vi gradite vlastitu bazu gostiju i možete ih ponovno pozvati — bez privlačenja od nule.",
+      steps: [
+        {
+          title: "Dajte razlog za prijavu",
+          desc: "Npr. besplatni desert uz glavno jelo ili ponuda dostupna samo gostima s QR menija.",
+        },
+        {
+          title: "Gost ostavlja email",
+          desc: "Potvrđuje adresu i dobiva jednokratni promotivni kod.",
+        },
+        {
+          title: "Konobar realizira kod",
+          desc: "Osoblje provjerava kod u jednostavnom ChefVision Verify — bez pristupa panelu managera.",
+        },
+        {
+          title: "Pozovite ga ponovno",
+          desc: "Kasnije pošaljite ponudu za slabiji dan, novo jelo ili poseban događaj.",
+        },
+      ],
+      guestMock: {
+        offerTitle: "Besplatni desert",
+        offerSub: "Uz narudžbu glavnog jela.",
+        codeLabel: "Vaš kod:",
+        code: "KT-4827",
+        hint: "Pokažite kod konobaru.",
+      },
+      verifyMock: {
+        title: "ChefVision Verify",
+        code: "KT-4827",
+        status: "Kod aktivan",
+        offer: "Besplatni desert",
+        action: "Realiziraj",
+      },
+      businessHeadline: "Ne gradite još jedan newsletter.\nGradite vlastiti kanal povratka gostiju.",
+      businessSub:
+        "Svaki prikupljeni kontakt daje restoranu mogućnost ponovnog poziva gosta bez započinjanja cijelog procesa privlačenja od nule.",
+      ctaPrimary: "Želim isprobati Guest Club",
+      ctaSecondary: "Pogledajte kako funkcionira",
     },
     languages: {
       headline: "Vaš gost ne mora govoriti poljski.",

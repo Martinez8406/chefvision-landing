@@ -5,6 +5,7 @@ import Image from "next/image"
 import { motion, useReducedMotion } from "framer-motion"
 import { ArrowRight, Check, CircleCheck, Play, UtensilsCrossed } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { GuestClubSection } from "@/components/restauracje/guest-club-section"
 import { useLanguage } from "@/lib/language-context"
 import { getRestauracjeContent } from "@/lib/translations-restauracje"
 import { APP_SIGNUP_URL, trackRestauracjeCta } from "@/lib/restauracje-analytics"
@@ -168,7 +169,7 @@ export function RestauracjeLanding() {
           <FadeIn className="mt-10 grid gap-8 sm:grid-cols-[1fr_1.1fr] sm:items-center">
             <motion.div variants={fadeUp} className="overflow-hidden rounded-2xl">
               <Image
-                src="/images/story/scene-1-confused-guest.png"
+                src="/images/story/problem-confused-guest.png"
                 alt={t.problem.imageAlt}
                 width={560}
                 height={420}
@@ -261,6 +262,8 @@ export function RestauracjeLanding() {
           </FadeIn>
         </div>
       </section>
+
+      <GuestClubSection />
 
       {/* LANGUAGES */}
       <section className="border-y border-border/60 bg-secondary/20 py-16 lg:py-20">
