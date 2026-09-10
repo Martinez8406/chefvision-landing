@@ -12,8 +12,8 @@ const _montserrat = Montserrat({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Darmowe QR Menu dla Restauracji i Hoteli | ChefVision',
-  description: 'Stwórz darmowe QR Menu dla restauracji lub hotelu. 14 dni Premium bez karty kredytowej. Menu w 14 językach, zdjęcia dań i rekomendacje sprzedażowe.',
+  title: 'Cyfrowy asystent gościa dla restauracji i hoteli | ChefVision',
+  description: 'Cyfrowy asystent gościa — bez aplikacji i bez prowizji. Po zeskanowaniu kodu QR gość rozumie ofertę w swoim języku, wybiera dania dzięki rekomendacjom i szybko znajduje informacje. 14 dni Premium bez karty.',
   generator: 'v0.app',
   manifest: '/images/favicon_io22/site.webmanifest',
   icons: {

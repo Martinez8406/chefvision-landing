@@ -9,13 +9,13 @@ export const hr = {
     cta: "Prijava / Registracija",
   },
   hero: {
-    freeQrBadge: "Besplatan QR jelovnik za restorane i hotele",
+    freeQrBadge: "Digitalni asistent gosta za restorane i hotele",
     badge: "ZA HOTELE I RESTORANE",
     headlineBefore: "Bolja komunikacija. Bolje ",
     headlineHighlight: "iskustvo gosta",
     headlineAfter: ".",
     freeQrSub:
-      "Stvorite svoj QR jelovnik besplatno. 14 dana punog Premiuma bez kreditne kartice. Nakon probnog razdoblja možete ostati na besplatnom planu.",
+      "Besplatno ponudite digitalnog asistenta gosta. 14 dana punog Premiuma bez kreditne kartice. Nakon probnog razdoblja možete ostati na besplatnom planu.",
     sub: "ChefVision pomaže hotelima i restoranima poboljšati komunikaciju s gostima, smanjiti ponavljajuća pitanja i omogućiti brz pristup najvažnijim informacijama.",
     cta1: "Isprobajte besplatno",
     cta2: "Pogledajte kako radi",
@@ -60,7 +60,7 @@ export const hr = {
     badge: "Iskustvo gosta",
     headline: "Jedno mjesto za sve informacije",
     description:
-      "Hotel Hub objedinjuje jelovnike, room service, bar, spa i sve informacije o hotelu u jednoj aplikaciji. Gost skenira QR kod — i sve mu je na dohvat ruke.",
+      "Hotel Hub objedinjuje jelovnike, room service, bar, spa i sve informacije o hotelu na jednom mjestu. Gost skenira QR kod — i sve mu je na dohvat ruke.",
     hubLabel: "Hotel Hub",
     hubTitle: "Sve što vašem gostu treba",
     hubDescription:
@@ -74,11 +74,11 @@ export const hr = {
   },
   qrMenuSeo: {
     whatIs: {
-      headline: "Što je QR jelovnik?",
-      text: "QR jelovnik je digitalni jelovnik dostupan skeniranjem QR koda telefonom. S ChefVisionom restorani i hoteli mogu ažurirati jelovnik online bez tiskanja novih kartica i dijeliti ga s gostima na više jezika.",
+      headline: "Što je ChefVision?",
+      text: "ChefVision je digitalni asistent gosta za restorane i hotele, dostupan nakon skeniranja QR koda — bez instaliranja aplikacije. Pomaže gostima razumjeti ponudu na svom jeziku, odabrati jela i dodatke zahvaljujući preporukama te brzo pronaći hotelske informacije (Room Service, bar, spa, doručak).",
     },
     whyUse: {
-      headline: "Zašto koristiti QR jelovnik?",
+      headline: "Zašto imati asistenta gosta?",
       bullets: [
         "Bez troškova tiska",
         "Trenutačna ažuriranja",
@@ -91,12 +91,12 @@ export const hr = {
   },
   faq: {
     badge: "Često postavljana pitanja",
-    headline: "Pitanja o besplatnom QR jelovniku",
+    headline: "Pitanja o ChefVisionu",
     items: [
       {
-        question: "Je li QR jelovnik besplatan?",
+        question: "Je li ChefVision besplatan?",
         answer:
-          "Da. ChefVision nudi besplatan plan koji vam omogućuje stvaranje i dijeljenje QR jelovnika bez troškova.",
+          "Da. ChefVision nudi besplatan plan — gosti koriste asistenta nakon skeniranja QR koda, bez aplikacije i bez troškova.",
       },
       {
         question: "Trebam li kreditnu karticu?",
@@ -189,11 +189,11 @@ export const hr = {
   },
   comparison: {
     headline: "Što dobivate od prvog dana",
-    sub: "Bez ugovora, bez hardvera, bez IT odjela. Spremno za rad za 15 minuta.",
+    sub: "Bez ugovora, bez hardvera, bez IT odjela. Uvođenje traje nekoliko sati — potom su svakodnevna ažuriranja jednostavna.",
     benefits: [
       "Digitalni jelovnik na 14 jezika — gost skenira QR i vidi jelovnik na svom jeziku",
       "Pozovite konobara, naručite dodatak ili zatražite račun — bez mahanja rukom",
-      "Hotel Hub — sve informacije o hotelu u jednoj aplikaciji",
+      "Hotel Hub — sve informacije o hotelu na jednom mjestu",
       "Parovi i preporuke — postavite s telefona, bez programera",
       "Promotivni paketi — Burger + Cola + Pomfrit -15% jednim klikom",
       "Ažurirajte cijene i jelovnik bez tiskanja novih kartica",
@@ -311,7 +311,7 @@ export const hr = {
     ],
     pricingRibbon: "Započnite besplatno — kreditna kartica nije potrebna",
     pricingIntro1:
-      "Besplatan plan omogućuje vam stvaranje QR jelovnika i dijeljenje s gostima bez troškova.",
+      "Besplatan plan omogućuje vam da gostima ponudite digitalnog asistenta bez troškova — pristup QR kodom, bez aplikacije.",
     pricingIntro2:
       "Start i Premium otključavaju dodatne prodajne značajke. Također možete naručiti potpunu postavku jelovnika od našeg tima.",
     pricingTitle:
@@ -322,12 +322,12 @@ export const hr = {
       label: "Besplatan plan",
       desc: "I dalje imate pristup svom digitalnom jelovniku u osnovnoj verziji.",
       highlights: [
-        "Besplatan QR jelovnik",
+        "Besplatan asistent gosta",
         "Bez vremenskog ograničenja",
         "Bez kreditne kartice",
       ],
       features: [
-        "Digitalni QR jelovnik",
+        "Digitalni jelovnik putem QR koda",
         "Osnovni prijevod (EN)",
         "Ažuriranja jelovnika",
         "Hosting jelovnika",
@@ -548,7 +548,7 @@ export const hr = {
   },
   footer: {
     tagline:
-      "Digitalni prodajni asistent za restorane. Jelovnik na 14 jezika, Google recenzije i fotografije jela — za €0.77/day.",
+      "Digitalni asistent gosta za restorane i hotele. Jelovnik na 14 jezika i preporuke — za €0.77/day. Bez aplikacije, bez provizije.",
     product: "Proizvod",
     support: "Podrška",
     productLinks: [
@@ -570,7 +570,7 @@ export const hr = {
 export const aboutContentHr = {
   headline: "ChefVision je nastao radeći u hotelima, a ne u korporaciji.",
   paragraphs: [
-    "Više od 18 godina radio sam u hotelskoj gastronomiji, promatrajući probleme koje većina kreatora softvera nikada nije vidjela vlastitim očima.",
+    "18 godina radio sam u HoReCa — uglavnom u kuhinji hotela i restorana; na početku oko 3 godine kao konobar i barmen. Problem sam vidio s obje strane: nesigurnost gosta, ista pitanja osoblju i izgubljene preporuke. U hotelima su tu i pitanja o doručku, Room Serviceu, baru i spa.",
     "Svaki dan vidio sam goste kako traže informacije o doručku, jelovniku restorana, uslugama hotela ili lokalnim atrakcijama. Vidio sam i osoblje kako odgovara na ista pitanja desetke puta dnevno.",
     "Informacije su postojale.",
     "Problem je bio u tome što su bile raspršene.",
@@ -580,7 +580,7 @@ export const aboutContentHr = {
     "Već kao alat koji pomaže hotelima i restoranima bolje komunicirati s gostima, štedjeti vrijeme osoblja i pružiti bolje iskustvo tijekom boravka ili posjeta.",
     "Mi smo Marcin i Anna Koniuszko.",
     "Spojili smo kulinarsko, hotelsko, financijsko i tehnološko iskustvo kako bismo stvorili rješenje koje odgovara stvarnim potrebama ugostiteljskog sektora.",
-    "Marcin je više od 18 godina radio u gastronomiji, između ostalog u hotelima Hilton i AC Marriott, gdje je bio odgovoran za organizaciju tima, izradu jelovnika, uslugu gostima te događaje i bankete. Svakodnevni rad s gostima i osobljem omogućio mu je razumjeti probleme koje ChefVision danas rješava.",
+    "Marcin je 18 godina radio u HoReCa — uglavnom u kuhinji hotela i restorana, između ostalog u hotelima Hilton i AC Marriott; na početku oko 3 godine kao konobar i barmen. Bio je odgovoran za organizaciju tima, izradu jelovnika, uslugu gostima te događaje i bankete. Svakodnevni rad iz kuhinje i iz sale omogućio mu je razumjeti probleme koje ChefVision danas rješava.",
     "Anna je godinama povezana s financijskim i bankarskim sektorom. Njezino iskustvo u organizaciji, analizi i radu s klijentima pomaže razvijati ChefVision kao stabilan, dobro strukturiran i vjerodostojan poslovni projekt. Podržava rast tvrtke operativno, financijski i organizacijski, osiguravajući da rješenje bude ne samo moderno, već prije svega praktično.",
     "Naša misija je stvarati alate koji pomažu hotelima i restoranima da:",
   ],

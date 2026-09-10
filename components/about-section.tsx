@@ -23,7 +23,7 @@ const content = {
   pl: {
     headline: "ChefVision powstał podczas pracy w hotelach, nie w korporacji.",
     paragraphs: [
-      "Przez ponad 18 lat pracowałem w gastronomii hotelowej, obserwując problemy, których większość twórców oprogramowania nigdy nie widziała na własne oczy.",
+      "Przez 18 lat pracowałem w HoReCa — głównie w kuchni hoteli i restauracji; na początku około 3 lata jako kelner i barman. Widziałem problem z obu stron: niepewność gościa, te same pytania do personelu i stracone rekomendacje. W hotelach dodatkowo pytania o śniadania, Room Service, bar i spa.",
       "Codziennie widziałem gości szukających informacji o śniadaniach, menu restauracji, usługach hotelowych czy atrakcjach w okolicy. Widziałem też pracowników odpowiadających na te same pytania dziesiątki razy każdego dnia.",
       "Informacje istniały.",
       "Problem polegał na tym, że były rozproszone.",
@@ -33,7 +33,7 @@ const content = {
       "Ale jako narzędzie, które pomaga hotelom i restauracjom lepiej komunikować się z gośćmi, oszczędzać czas personelu i zapewniać lepsze doświadczenie podczas pobytu lub wizyty.",
       "Jesteśmy Marcin i Anna Koniuszko.",
       "Połączyliśmy doświadczenie gastronomiczne, hotelarskie, finansowe i technologiczne, aby stworzyć rozwiązanie odpowiadające na realne potrzeby branży hospitality.",
-      "Marcin przez ponad 18 lat pracował w gastronomii, między innymi w hotelach Hilton i AC Marriott, gdzie odpowiadał za organizację pracy zespołów, tworzenie menu, obsługę gości oraz realizację wydarzeń i bankietów. To właśnie codzienna praca z gośćmi i personelem pozwoliła mu zrozumieć problemy, które dziś rozwiązuje ChefVision.",
+      "Marcin przez 18 lat pracował w HoReCa — głównie w kuchni hoteli i restauracji, między innymi w Hilton i AC Marriott; na początku około 3 lata jako kelner i barman. Odpowiadał za organizację pracy zespołów, tworzenie menu, obsługę gości oraz wydarzenia i bankiety. To właśnie codzienność z kuchni i z sali pozwoliła mu zrozumieć problemy, które dziś rozwiązuje ChefVision.",
       "Ania od lat związana jest z branżą finansową i bankowością. Jej doświadczenie w organizacji, analizie i pracy z klientem pomaga rozwijać ChefVision jako stabilny, uporządkowany i wiarygodny projekt biznesowy. Wspiera rozwój firmy od strony operacyjnej, finansowej i organizacyjnej, dbając o to, aby rozwiązanie było nie tylko nowoczesne, ale przede wszystkim praktyczne.",
       "Naszą misją jest tworzenie narzędzi, które pomagają hotelom i restauracjom:",
     ],
@@ -52,7 +52,7 @@ const content = {
   en: {
     headline: "ChefVision was built while working in hotels, not in a corporation.",
     paragraphs: [
-      "For over 18 years I worked in hotel gastronomy, observing problems that most software creators have never seen with their own eyes.",
+      "For 18 years I worked in HoReCa — mainly in hotel and restaurant kitchens; at the start about 3 years as a waiter and bartender. I saw the problem from both sides: guest uncertainty, the same staff questions, and lost recommendations. In hotels there were also breakfast, Room Service, bar and spa questions.",
       "Every day I saw guests looking for information about breakfasts, restaurant menus, hotel services or local attractions. I also saw staff answering the same questions dozens of times each day.",
       "The information existed.",
       "The problem was that it was scattered.",
@@ -62,7 +62,7 @@ const content = {
       "But as a tool that helps hotels and restaurants communicate better with guests, save staff time and deliver a better experience during a stay or visit.",
       "We are Marcin and Anna Koniuszko.",
       "We combined culinary, hospitality, financial and technological experience to create a solution that meets the real needs of the hospitality industry.",
-      "Marcin worked in gastronomy for over 18 years, including at Hilton and AC Marriott hotels, where he was responsible for team organisation, menu creation, guest service and events and banquets. Daily work with guests and staff helped him understand the problems that ChefVision solves today.",
+      "Marcin worked in HoReCa for 18 years — mainly in hotel and restaurant kitchens, including Hilton and AC Marriott; at the start about 3 years as a waiter and bartender. He was responsible for team organisation, menu creation, guest service and events and banquets. Daily work from the kitchen and the floor helped him understand the problems that ChefVision solves today.",
       "Anna has long been connected to finance and banking. Her experience in organisation, analysis and client work helps develop ChefVision as a stable, well-structured and credible business project. She supports the company's growth on the operational, financial and organisational side, ensuring the solution is not only modern but above all practical.",
       "Our mission is to create tools that help hotels and restaurants:",
     ],
@@ -81,7 +81,7 @@ const content = {
   de: {
     headline: "ChefVision entstand in der Hotelarbeit — nicht in einem Konzern.",
     paragraphs: [
-      "Über 18 Jahre arbeitete ich in der Hotelgastronomie und beobachtete Probleme, die die meisten Softwareentwickler nie mit eigenen Augen gesehen haben.",
+      "18 Jahre arbeitete ich in der HoReCa — vor allem in Hotel- und Restaurantküchen; am Anfang rund 3 Jahre als Kellner und Barkeeper. Ich sah das Problem von beiden Seiten: Unsicherheit der Gäste, dieselben Fragen ans Personal und verlorene Empfehlungen. In Hotels kamen Fragen zu Frühstück, Room Service, Bar und Spa hinzu.",
       "Jeden Tag sah ich Gäste, die nach Informationen zu Frühstück, Restaurantmenüs, Hotelservices oder lokalen Sehenswürdigkeiten suchten. Ich sah auch Mitarbeitende, die dieselben Fragen dutzende Male am Tag beantworteten.",
       "Die Informationen existierten.",
       "Das Problem war, dass sie verstreut waren.",
@@ -91,7 +91,7 @@ const content = {
       "Sondern als Tool, das Hotels und Restaurants hilft, besser mit Gästen zu kommunizieren, Personalzeit zu sparen und ein besseres Erlebnis während des Aufenthalts oder Besuchs zu bieten.",
       "Wir sind Marcin und Anna Koniuszko.",
       "Wir haben kulinarische, hospitality-, finanzielle und technologische Erfahrung vereint, um eine Lösung zu schaffen, die den realen Bedürfnissen der Hospitality-Branche entspricht.",
-      "Marcin arbeitete über 18 Jahre in der Gastronomie, unter anderem in Hilton- und AC-Marriott-Hotels, wo er für Teamorganisation, Menüerstellung, Gästeservice sowie Events und Bankette verantwortlich war. Die tägliche Arbeit mit Gästen und Personal half ihm, die Probleme zu verstehen, die ChefVision heute löst.",
+      "Marcin arbeitete 18 Jahre in der HoReCa — vor allem in Hotel- und Restaurantküchen, unter anderem in Hilton- und AC-Marriott-Hotels; am Anfang rund 3 Jahre als Kellner und Barkeeper. Er war verantwortlich für Teamorganisation, Menüerstellung, Gästeservice sowie Events und Bankette. Die tägliche Arbeit aus Küche und Service half ihm, die Probleme zu verstehen, die ChefVision heute löst.",
       "Anna ist seit Langem mit Finanzwesen und Banking verbunden. Ihre Erfahrung in Organisation, Analyse und Kundenarbeit hilft, ChefVision als stabiles, gut strukturiertes und glaubwürdiges Geschäftsprojekt weiterzuentwickeln. Sie unterstützt das Unternehmenswachstum operativ, finanziell und organisatorisch und stellt sicher, dass die Lösung nicht nur modern, sondern vor allem praktisch ist.",
       "Unsere Mission ist es, Tools zu schaffen, die Hotels und Restaurants helfen:",
     ],
@@ -110,7 +110,7 @@ const content = {
   es: {
     headline: "ChefVision nació trabajando en hoteles, no en una corporación.",
     paragraphs: [
-      "Durante más de 18 años trabajé en gastronomía hotelera, observando problemas que la mayoría de creadores de software nunca han visto con sus propios ojos.",
+      "Durante 18 años trabajé en HoReCa — principalmente en cocinas de hoteles y restaurantes; al principio unos 3 años como camarero y bartender. Vi el problema desde ambos lados: la inseguridad del huésped, las mismas preguntas al personal y recomendaciones perdidas. En los hoteles también había preguntas sobre desayunos, Room Service, bar y spa.",
       "Cada día veía huéspedes buscando información sobre desayunos, menús de restaurante, servicios del hotel o atracciones locales. También veía al personal respondiendo las mismas preguntas decenas de veces al día.",
       "La información existía.",
       "El problema era que estaba dispersa.",
@@ -120,7 +120,7 @@ const content = {
       "Sino como una herramienta que ayuda a hoteles y restaurantes a comunicarse mejor con los huéspedes, ahorrar tiempo al personal y ofrecer una mejor experiencia durante la estancia o la visita.",
       "Somos Marcin y Anna Koniuszko.",
       "Combinamos experiencia culinaria, hotelera, financiera y tecnológica para crear una solución que responde a las necesidades reales del sector de la hostelería.",
-      "Marcin trabajó en gastronomía durante más de 18 años, incluidos hoteles Hilton y AC Marriott, donde fue responsable de la organización del equipo, creación de menús, atención al huésped y eventos y banquetes. El trabajo diario con huéspedes y personal le permitió entender los problemas que ChefVision resuelve hoy.",
+      "Marcin trabajó 18 años en HoReCa — principalmente en cocinas de hoteles y restaurantes, incluidos Hilton y AC Marriott; al principio unos 3 años como camarero y bartender. Fue responsable de la organización del equipo, creación de menús, atención al huésped y eventos y banquetes. El trabajo diario desde la cocina y la sala le permitió entender los problemas que ChefVision resuelve hoy.",
       "Anna lleva años vinculada al sector financiero y bancario. Su experiencia en organización, análisis y atención al cliente ayuda a desarrollar ChefVision como un proyecto empresarial estable, bien estructurado y creíble. Apoya el crecimiento de la empresa en lo operativo, financiero y organizativo, asegurando que la solución sea no solo moderna, sino sobre todo práctica.",
       "Nuestra misión es crear herramientas que ayuden a hoteles y restaurantes a:",
     ],

@@ -61,7 +61,7 @@ export function HeroSection() {
         <div className="relative flex justify-center lg:justify-end">
           <Image
             src="/images/hero-hotel-mockup.png"
-            alt="ChefVision — aplikacja hotelowa na telefonie i kod QR dla gości"
+            alt="ChefVision — cyfrowy asystent gościa na telefonie i kod QR dla gości"
             width={760}
             height={640}
             className="w-full max-w-xl object-contain drop-shadow-xl lg:max-w-none"

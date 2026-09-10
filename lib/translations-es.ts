@@ -9,13 +9,13 @@ export const es = {
     cta: "Iniciar sesión / Crear cuenta",
   },
   hero: {
-    freeQrBadge: "Menú QR gratuito para restaurantes y hoteles",
+    freeQrBadge: "Asistente digital del huésped para restaurantes y hoteles",
     badge: "PARA HOTELES Y RESTAURANTES",
     headlineBefore: "Mejor comunicación. Mejor ",
     headlineHighlight: "experiencia del huésped",
     headlineAfter: ".",
     freeQrSub:
-      "Cree su propio menú QR gratis. 14 días de Premium completo sin tarjeta de crédito. Tras el periodo de prueba, puede permanecer en el plan gratuito.",
+      "Ponga a disposición un asistente digital del huésped gratis. 14 días de Premium completo sin tarjeta de crédito. Tras el periodo de prueba, puede permanecer en el plan gratuito.",
     sub: "ChefVision ayuda a hoteles y restaurantes a mejorar la comunicación con los huéspedes, reducir las preguntas repetitivas y ofrecer acceso rápido a la información más importante.",
     cta1: "Probar gratis",
     cta2: "Ver cómo funciona",
@@ -56,7 +56,7 @@ export const es = {
     badge: "Experiencia del huésped",
     headline: "Un solo lugar para toda la información",
     description:
-      "Hotel Hub reúne menús, room service, bar, spa y toda la información del hotel en una sola app. Los huéspedes escanean un código QR — y lo tienen todo al alcance de la mano.",
+      "Hotel Hub reúne menús, room service, bar, spa y toda la información del hotel en un solo lugar. Los huéspedes escanean un código QR — y lo tienen todo al alcance de la mano.",
     hubLabel: "Hotel Hub",
     hubTitle: "Todo lo que su huésped necesita",
     hubDescription:
@@ -70,11 +70,11 @@ export const es = {
   },
   qrMenuSeo: {
     whatIs: {
-      headline: "¿Qué es un menú QR?",
-      text: "Un menú QR es una carta digital accesible al escanear un código QR con el móvil. Con ChefVision, restaurantes y hoteles pueden actualizar su menú online sin imprimir nuevas cartas y compartirlo con los huéspedes en varios idiomas.",
+      headline: "¿Qué es ChefVision?",
+      text: "ChefVision es un asistente digital del huésped para restaurantes y hoteles, disponible al escanear un código QR — sin instalar ninguna app. Ayuda a entender la oferta en su idioma, elegir platos y extras con recomendaciones y encontrar rápido información del hotel (Room Service, bar, spa, desayunos).",
     },
     whyUse: {
-      headline: "¿Por qué usar un menú QR?",
+      headline: "¿Por qué tener un asistente del huésped?",
       bullets: [
         "Sin costes de impresión",
         "Actualizaciones al instante",
@@ -87,12 +87,12 @@ export const es = {
   },
   faq: {
     badge: "Preguntas frecuentes",
-    headline: "Preguntas sobre el menú QR gratuito",
+    headline: "Preguntas sobre ChefVision",
     items: [
       {
-        question: "¿El menú QR es gratuito?",
+        question: "¿ChefVision es gratuito?",
         answer:
-          "Sí. ChefVision ofrece un plan gratuito que le permite crear y compartir su propio menú QR sin coste.",
+          "Sí. ChefVision ofrece un plan gratuito — los huéspedes usan el asistente tras escanear un código QR, sin instalar app y sin coste.",
       },
       {
         question: "¿Necesito una tarjeta de crédito?",
@@ -185,11 +185,11 @@ export const es = {
   },
   comparison: {
     headline: "Lo que obtiene desde el primer día",
-    sub: "Sin contratos, sin hardware, sin informática. En funcionamiento en 15 minutos.",
+    sub: "Sin contratos, sin hardware, sin informática. La implantación lleva unas horas — después las actualizaciones del día a día son sencillas.",
     benefits: [
       "Menú digital en 14 idiomas — los huéspedes escanean QR y ven la carta en su idioma",
       "Llamar al camarero, pedir un extra o solicitar la cuenta — sin hacer señas",
-      "Hotel Hub — toda la información del hotel en una sola app",
+      "Hotel Hub — toda la información del hotel en un solo lugar",
       "Maridajes y recomendaciones — configúrelos desde el móvil, sin desarrollador",
       "Combos promocionales — Burger + Cola + Patatas -15 % con un clic",
       "Actualice precios y menú sin imprimir nuevas cartas",
@@ -307,7 +307,7 @@ export const es = {
     ],
     pricingRibbon: "Empiece gratis — sin tarjeta de crédito",
     pricingIntro1:
-      "El plan gratuito le permite crear su propio menú QR y compartirlo con los huéspedes sin coste.",
+      "El plan gratuito le permite poner a disposición de los huéspedes un asistente digital sin coste — acceso por código QR, sin app.",
     pricingIntro2:
       "Start y Premium desbloquean funciones de venta adicionales. También puede encargar la configuración completa del menú a nuestro equipo.",
     pricingTitle:
@@ -317,9 +317,9 @@ export const es = {
       currency: "/ mes",
       label: "Plan gratuito",
       desc: "Sigue teniendo acceso a su menú digital en la versión básica.",
-      highlights: ["Menú QR gratuito", "Sin límite de tiempo", "Sin tarjeta de crédito"],
+      highlights: ["Asistente del huésped gratuito", "Sin límite de tiempo", "Sin tarjeta de crédito"],
       features: [
-        "Menú QR digital",
+        "Menú digital por código QR",
         "Traducción básica (EN)",
         "Actualizaciones del menú",
         "Alojamiento del menú",
@@ -540,7 +540,7 @@ export const es = {
   },
   footer: {
     tagline:
-      "Asistente de ventas digital para restaurantes. Menú en 14 idiomas, reseñas en Google y fotos de platos — por €0,77/día.",
+      "Asistente digital del huésped para restaurantes y hoteles. Menú en 14 idiomas y recomendaciones — por €0,77/día. Sin app, sin comisión.",
     product: "Producto",
     support: "Soporte",
     productLinks: [

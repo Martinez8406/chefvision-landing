@@ -9,13 +9,13 @@ export const tr = {
     cta: "Giriş yap / Hesap oluştur",
   },
   hero: {
-    freeQrBadge: "Restoranlar ve oteller için ücretsiz QR Menü",
+    freeQrBadge: "Restoranlar ve oteller için dijital misafir asistanı",
     badge: "OTELLER VE RESTORANLAR İÇİN",
     headlineBefore: "Daha iyi iletişim. Daha iyi ",
     headlineHighlight: "misafir deneyimi",
     headlineAfter: ".",
     freeQrSub:
-      "QR Menünüzü ücretsiz oluşturun. Kredi kartı olmadan 14 gün tam Premium. Deneme süresinden sonra ücretsiz planda kalabilirsiniz.",
+      "Dijital misafir asistanını ücretsiz sunun. Kredi kartı olmadan 14 gün tam Premium. Deneme süresinden sonra ücretsiz planda kalabilirsiniz.",
     sub: "ChefVision, otellerin ve restoranların misafirlerle iletişimini iyileştirmesine, tekrarlayan soruları azaltmasına ve en önemli bilgilere hızlı erişim sağlamasına yardımcı olur.",
     cta1: "Ücretsiz dene",
     cta2: "Nasıl çalıştığını gör",
@@ -60,7 +60,7 @@ export const tr = {
     badge: "Misafir deneyimi",
     headline: "Tüm bilgiler için tek nokta",
     description:
-      "Hotel Hub menüleri, oda servisini, barı, spayı ve tüm otel bilgilerini tek uygulamada bir araya getirir. Misafir QR kodu tarar — ve her şey elinin altında olur.",
+      "Hotel Hub menüleri, oda servisini, barı, spayı ve tüm otel bilgilerini tek yerde bir araya getirir. Misafir QR kodu tarar — ve her şey elinin altında olur.",
     hubLabel: "Hotel Hub",
     hubTitle: "Misafirinizin ihtiyaç duyduğu her şey",
     hubDescription:
@@ -74,11 +74,11 @@ export const tr = {
   },
   qrMenuSeo: {
     whatIs: {
-      headline: "QR Menü nedir?",
-      text: "QR Menü, telefonla QR kod taranarak erişilebilen dijital bir menü kartıdır. ChefVision ile restoranlar ve oteller menülerini yeni kart basmadan çevrimiçi güncelleyebilir ve misafirlerle birçok dilde paylaşabilir.",
+      headline: "ChefVision nedir?",
+      text: "ChefVision, restoranlar ve oteller için dijital bir misafir asistanıdır; QR kod tarandıktan sonra erişilir — uygulama kurulumu yoktur. Misafirlerin teklifi kendi dilinde anlamasına, önerilerle yemek ve ekleri seçmesine ve otel bilgilerini hızlı bulmasına yardım eder (Room Service, bar, spa, kahvaltı).",
     },
     whyUse: {
-      headline: "Neden QR Menü kullanmalısınız?",
+      headline: "Neden bir misafir asistanı?",
       bullets: [
         "Baskı maliyeti yok",
         "Anında güncellemeler",
@@ -91,12 +91,12 @@ export const tr = {
   },
   faq: {
     badge: "Sık sorulan sorular",
-    headline: "Ücretsiz QR Menü hakkında sorular",
+    headline: "ChefVision hakkında sorular",
     items: [
       {
-        question: "QR Menü ücretsiz mi?",
+        question: "ChefVision ücretsiz mi?",
         answer:
-          "Evet. ChefVision, kendi QR Menünüzü ücretsiz oluşturup paylaşmanıza olanak tanıyan bir ücretsiz plan sunar.",
+          "Evet. ChefVision ücretsiz bir plan sunar — misafirler QR kodu taradıktan sonra asistanı kullanır, uygulama yok ve ücret yok.",
       },
       {
         question: "Kredi kartı gerekli mi?",
@@ -189,11 +189,11 @@ export const tr = {
   },
   comparison: {
     headline: "İlk günden elde ettikleriniz",
-    sub: "Sözleşme yok, donanım yok, BT departmanı yok. 15 dakikada çalışır hale gelir.",
+    sub: "Sözleşme yok, donanım yok, BT departmanı yok. Kurulum birkaç saat sürer — sonra günlük güncellemeler basittir.",
     benefits: [
       "14 dilde dijital menü — misafir QR tarar ve menüyü kendi dilinde görür",
       "Garson çağır, ek sipariş ver veya hesap iste — el sallamaya gerek yok",
-      "Hotel Hub — tüm otel bilgileri tek uygulamada",
+      "Hotel Hub — tüm otel bilgileri tek yerde",
       "Eşleştirmeler ve öneriler — geliştirici gerekmeden telefondan ayarlayın",
       "Promosyon paketleri — Burger + Kola + Patates -15% tek tıkla",
       "Yeni kart basmadan fiyat ve menü güncelleyin",
@@ -311,7 +311,7 @@ export const tr = {
     ],
     pricingRibbon: "Ücretsiz başlayın — kredi kartı gerekmez",
     pricingIntro1:
-      "Ücretsiz plan, kendi QR Menünüzü oluşturup misafirlerle ücretsiz paylaşmanıza olanak tanır.",
+      "Ücretsiz plan, misafirlere dijital asistanı ücretsiz sunmanıza olanak tanır — QR kod ile erişim, uygulama yok.",
     pricingIntro2:
       "Start ve Premium ek satış özelliklerini açar. Ayrıca ekibimizden tam menü kurulumu sipariş edebilirsiniz.",
     pricingTitle:
@@ -322,12 +322,12 @@ export const tr = {
       label: "Ücretsiz plan",
       desc: "Dijital menünüze temel sürümde hâlâ erişiminiz var.",
       highlights: [
-        "Ücretsiz QR Menü",
+        "Ücretsiz misafir asistanı",
         "Süre sınırı yok",
         "Kredi kartı gerekmez",
       ],
       features: [
-        "Dijital QR menü",
+        "QR kod ile dijital menü",
         "Temel çeviri (EN)",
         "Menü güncellemeleri",
         "Menü barındırma",
@@ -548,7 +548,7 @@ export const tr = {
   },
   footer: {
     tagline:
-      "Restoranlar için dijital satış asistanı. 14 dilde menü, Google yorumları ve yemek fotoğrafları — €0.77/day.",
+      "Restoranlar ve oteller için dijital misafir asistanı. 14 dilde menü ve öneriler — €0.77/day. Uygulama yok, komisyon yok.",
     product: "Ürün",
     support: "Destek",
     productLinks: [
@@ -570,7 +570,7 @@ export const tr = {
 export const aboutContentTr = {
   headline: "ChefVision otellerde çalışırken kuruldu, bir şirkette değil.",
   paragraphs: [
-    "18 yılı aşkın süredir otel gastronomisinde çalıştım ve yazılım geliştiricilerinin çoğunun hiç gözleriyle görmediği sorunları gözlemledim.",
+    "18 yıl HoReCa'da çalıştım — ağırlıklı olarak otel ve restoran mutfaklarında; başlangıçta yaklaşık 3 yıl garson ve barmen olarak. Sorunu iki taraftan da gördüm: misafir belirsizliği, personele aynı sorular ve kaybolan öneriler. Otellerde kahvaltı, Room Service, bar ve spa soruları da vardı.",
     "Her gün misafirlerin kahvaltı, restoran menüsü, otel hizmetleri veya yerel gezilecek yerler hakkında bilgi aradığını gördüm. Personelin de aynı soruları her gün onlarca kez yanıtladığını gördüm.",
     "Bilgiler vardı.",
     "Sorun, dağınık olmalarıydı.",
@@ -580,7 +580,7 @@ export const aboutContentTr = {
     "Ama otellerin ve restoranların misafirlerle daha iyi iletişim kurmasına, personel zamanı kazanmasına ve konaklama veya ziyaret sırasında daha iyi bir deneyim sunmasına yardımcı olan bir araç olarak.",
     "Biz Marcin ve Anna Koniuszko'yuz.",
     "Konaklama sektörünün gerçek ihtiyaçlarını karşılayan bir çözüm oluşturmak için mutfak, otelcilik, finans ve teknoloji deneyimimizi birleştirdik.",
-    "Marcin 18 yılı aşkın süredir gastronomide çalıştı; Hilton ve AC Marriott otelleri de dahil olmak üzere ekip organizasyonu, menü oluşturma, misafir hizmeti ile etkinlik ve banketlerden sorumluydu. Misafirler ve personelle günlük çalışma, ChefVision'ın bugün çözdüğü sorunları anlamasına yardımcı oldu.",
+    "Marcin 18 yıl HoReCa'da çalıştı — ağırlıklı olarak otel ve restoran mutfaklarında, Hilton ve AC Marriott dahil; başlangıçta yaklaşık 3 yıl garson ve barmen olarak. Ekip organizasyonu, menü oluşturma, misafir hizmeti ile etkinlik ve banketlerden sorumluydu. Mutfaktan ve salondan günlük çalışma, ChefVision'ın bugün çözdüğü sorunları anlamasına yardımcı oldu.",
     "Anna uzun süredir finans ve bankacılık sektörüyle bağlantılı. Organizasyon, analiz ve müşteri çalışmasındaki deneyimi, ChefVision'ı istikrarlı, iyi yapılandırılmış ve güvenilir bir iş projesi olarak geliştirmeye yardımcı olur. Şirketin büyümesini operasyonel, finansal ve organizasyonel olarak destekler; çözümün yalnızca modern değil, her şeyden önce pratik olmasını sağlar.",
     "Misyonumuz otellerin ve restoranların şunlara yardımcı olacak araçlar oluşturmaktır:",
   ],

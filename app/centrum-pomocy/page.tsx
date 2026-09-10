@@ -6,7 +6,7 @@ import { Navbar } from "@/components/navbar"
 export const metadata: Metadata = {
   title: "Centrum pomocy | ChefVision.pl",
   description:
-    "Poradniki wideo ChefVision — nauka obsługi aplikacji, menu, promocji i ustawień krok po kroku.",
+    "Poradniki wideo ChefVision — obsługa panelu, menu, promocji i ustawień krok po kroku.",
 }
 
 export default function HelpCenterPage() {

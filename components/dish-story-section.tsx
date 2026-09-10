@@ -24,7 +24,7 @@ const content = {
     ],
     whyTitle: "Dlaczego to buduje lojalność klientów",
     stats: [
-      { stat: "3×", label: "większe zaangażowanie", desc: "Wideo przy daniu sprawia, że goście spędzają 3 razy więcej czasu na przeglądaniu menu." },
+      { stat: "3×", label: "dłuższe oglądanie karty", desc: "Wideo przy daniu sprawia, że goście spędzają 3 razy więcej czasu na przeglądaniu menu." },
       { stat: "100%", label: "autentyczność", desc: "Żadna platforma dostawcza nie pokaże klientowi Twojej kuchni od środka. Tylko Ty możesz to zrobić." },
       { stat: "0 zł", label: "dodatkowych kosztów", desc: "Wystarczy telefon i konto na YouTube, TikToku lub Instagramie. Link podpinasz w panelu w kilka sekund." },
     ],
@@ -42,7 +42,7 @@ const content = {
     ],
     whyTitle: "Why this builds customer loyalty",
     stats: [
-      { stat: "3×", label: "more engagement", desc: "Video next to a dish makes guests spend 3 times longer browsing the menu." },
+      { stat: "3×", label: "longer browsing", desc: "Video next to a dish makes guests spend 3 times longer browsing the menu." },
       { stat: "100%", label: "authenticity", desc: "No delivery platform will show your customers inside your kitchen. Only you can do that." },
       { stat: "€0", label: "extra cost", desc: "All you need is a phone and a YouTube, TikTok or Instagram account. You attach the link in the panel in seconds." },
     ],
@@ -60,7 +60,7 @@ const content = {
     ],
     whyTitle: "Warum das Kundenloyalität stärkt",
     stats: [
-      { stat: "3×", label: "mehr Engagement", desc: "Video neben einem Gericht lässt Gäste dreimal länger in der Speisekarte stöbern." },
+      { stat: "3×", label: "längeres Stöbern", desc: "Video neben einem Gericht lässt Gäste dreimal länger in der Speisekarte stöbern." },
       { stat: "100%", label: "Authentizität", desc: "Keine Lieferplattform zeigt Ihren Kunden Ihre Küche von innen. Nur Sie können das." },
       { stat: "€0", label: "Zusatzkosten", desc: "Alles, was Sie brauchen, ist ein Handy und ein YouTube-, TikTok- oder Instagram-Konto. Den Link fügen Sie in Sekunden im Panel hinzu." },
     ],
@@ -78,7 +78,7 @@ const content = {
     ],
     whyTitle: "Por qué esto fomenta la fidelidad del cliente",
     stats: [
-      { stat: "3×", label: "más engagement", desc: "El vídeo junto a un plato hace que los huéspedes pasen 3 veces más tiempo navegando por el menú." },
+      { stat: "3×", label: "más tiempo en la carta", desc: "El vídeo junto a un plato hace que los huéspedes pasen 3 veces más tiempo navegando por el menú." },
       { stat: "100%", label: "autenticidad", desc: "Ninguna plataforma de delivery mostrará a sus clientes el interior de su cocina. Solo usted puede hacerlo." },
       { stat: "€0", label: "coste adicional", desc: "Solo necesita un móvil y una cuenta en YouTube, TikTok o Instagram. Vincula el enlace en el panel en segundos." },
     ],

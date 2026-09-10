@@ -240,7 +240,7 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       sub: "Nie lista technologii — rozwiązania problemów, które znasz z sali.",
       items: [
         {
-          title: "Menu QR",
+          title: "Dostęp po kodzie QR",
           desc: "Gość otwiera kartę na swoim telefonie — bez aplikacji i bez czekania na kelnera z menu.",
         },
         {
@@ -268,8 +268,8 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
     story: {
       badge: "Historia",
       headline: "ChefVision powstał w gastronomii.",
-      p1: "Przez ponad 18 lat pracowałem w gastronomii hotelowej. Widziałem, jak często goście mają problem ze zrozumieniem menu — szczególnie gdy przyjeżdżają z zagranicy.",
-      p2: "ChefVision powstał z potrzeby rozwiązania tego problemu.",
+      p1: "Przez 18 lat pracowałem w HoReCa — głównie w kuchni hoteli i restauracji; na początku około 3 lata jako kelner i barman. Widziałem, jak goście nie rozumieją karty — szczególnie z zagranicy — a personel powtarza te same pytania i traci rekomendacje.",
+      p2: "ChefVision powstał z tej potrzeby.",
       imageAlt: "Marcin Koniuszko — założyciel ChefVision",
     },
     finalCta: {
@@ -403,7 +403,7 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       sub: "Not a list of technology — solutions to problems you know from the floor.",
       items: [
         {
-          title: "QR menu",
+          title: "Access via QR code",
           desc: "Guests open the menu on their phone — no app and no waiting for a waiter with a paper menu.",
         },
         {
@@ -431,8 +431,8 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
     story: {
       badge: "Story",
       headline: "ChefVision was born in hospitality.",
-      p1: "For more than 18 years I worked in hotel gastronomy. I saw how often guests struggle to understand the menu — especially when they arrive from abroad.",
-      p2: "ChefVision was created to solve that problem.",
+      p1: "For 18 years I worked in HoReCa — mainly in hotel and restaurant kitchens; at the start about 3 years as a waiter and bartender. I saw how guests struggle to understand the menu — especially from abroad — while staff repeat the same questions and lose recommendations.",
+      p2: "ChefVision was born from that need.",
       imageAlt: "Marcin Koniuszko — founder of ChefVision",
     },
     finalCta: {
@@ -566,7 +566,7 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       sub: "Ne popis tehnologije — rješenja problema koje poznajete iz sale.",
       items: [
         {
-          title: "QR meni",
+          title: "Pristup QR kodom",
           desc: "Gost otvara kartu na svom telefonu — bez aplikacije i bez čekanja konobara s menijem.",
         },
         {
@@ -594,8 +594,8 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
     story: {
       badge: "Priča",
       headline: "ChefVision je nastao u gastronomiji.",
-      p1: "Više od 18 godina radio sam u hotelskoj gastronomiji. Vidio sam koliko često gosti imaju problem s razumijevanjem menija — osobito kada stižu iz inozemstva.",
-      p2: "ChefVision je nastao iz potrebe da se taj problem riješi.",
+      p1: "18 godina radio sam u HoReCa — uglavnom u kuhinji hotela i restorana; na početku oko 3 godine kao konobar i barmen. Vidio sam kako gosti ne razumiju jelovnik — osobito iz inozemstva — a osoblje ponavlja ista pitanja i gubi preporuke.",
+      p2: "ChefVision je nastao iz te potrebe.",
       imageAlt: "Marcin Koniuszko — osnivač ChefVisiona",
     },
     finalCta: {
