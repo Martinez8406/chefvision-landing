@@ -5,8 +5,8 @@ import { motion, useReducedMotion } from "framer-motion"
 import {
   ArrowDown,
   ArrowRight,
+  BadgeCheck,
   CheckCircle2,
-  Gift,
   Mail,
   RotateCcw,
 } from "lucide-react"
@@ -31,7 +31,7 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.08, delayChildren: 0.02 } },
 }
 
-const STEP_ICONS = [Gift, Mail, CheckCircle2, RotateCcw] as const
+const STEP_ICONS = [BadgeCheck, Mail, CheckCircle2, RotateCcw] as const
 
 function FadeIn({
   children,
@@ -152,8 +152,8 @@ export function GuestClubSection() {
               <PhoneFrame>
                 <div className="flex min-h-[320px] flex-col px-5 py-6">
                   <div className="flex items-start gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/15 text-lg">
-                      🎁
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-xs font-bold uppercase tracking-wide text-primary">
+                      VIP
                     </span>
                     <div>
                       <p className="text-base font-semibold text-foreground">

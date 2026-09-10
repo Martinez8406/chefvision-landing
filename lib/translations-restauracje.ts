@@ -165,15 +165,15 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
     guestClub: {
       badge: "Nowość · Guest Club",
       headline: "Zamień jednorazowego gościa w klienta, który wraca.",
-      sub: "Gość skanuje QR, odbiera specjalną ofertę i zostawia kontakt. Ty budujesz własną bazę klientów i możesz zaprosić ich ponownie — bez pozyskiwania ich od zera.",
+      sub: "Gość od razu wie, na czym stoi: dołącza do Klubu Gości Premium i otrzymuje dostęp do promocji oraz ofert premium. Zostawia kontakt — Ty budujesz własną bazę klientów i możesz zaprosić ich ponownie.",
       steps: [
         {
-          title: "Daj powód do zapisu",
-          desc: "Np. darmowy deser do dania głównego lub oferta dostępna tylko dla gości z QR menu.",
+          title: "Jasna propozycja od pierwszego QR",
+          desc: "Na ulotce jest wprost: dołącz do Klubu Gości Premium i otrzymasz dostęp do promocji oraz ofert premium. Bez haczyków i ukrytych intencji.",
         },
         {
           title: "Gość zostawia email",
-          desc: "Potwierdza adres i otrzymuje swój jednorazowy kod promocyjny.",
+          desc: "Potwierdza adres i dołącza do klubu — z pełną świadomością korzyści.",
         },
         {
           title: "Kelner realizuje kod",
@@ -181,21 +181,21 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
         },
         {
           title: "Zaproś go ponownie",
-          desc: "Wyślij później ofertę na słabszy dzień, nowe danie lub specjalne wydarzenie.",
+          desc: "Wyślij później promocję na słabszy dzień, nowe danie lub specjalne wydarzenie — tylko dla członków klubu.",
         },
       ],
       guestMock: {
-        offerTitle: "Darmowy deser",
-        offerSub: "Do zamówienia dania głównego.",
+        offerTitle: "Klub Gości Premium",
+        offerSub: "Dostęp do promocji i ofert premium.",
         codeLabel: "Twój kod:",
         code: "KT-4827",
-        hint: "Pokaż kod kelnerowi.",
+        hint: "Pokaż kod kelnerowi przy realizacji oferty.",
       },
       verifyMock: {
         title: "ChefVision Verify",
         code: "KT-4827",
         status: "Kod aktywny",
-        offer: "Darmowy deser",
+        offer: "Oferta premium",
         action: "Zrealizuj",
       },
       businessHeadline: "Nie budujesz kolejnego newslettera.\nBudujesz własny kanał powrotu klientów.",
@@ -328,15 +328,15 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
     guestClub: {
       badge: "New · Guest Club",
       headline: "Turn a one-time guest into a customer who comes back.",
-      sub: "The guest scans the QR, claims a special offer and leaves their contact. You build your own customer base and can invite them again — without starting from scratch.",
+      sub: "The guest knows the deal from the start: join the Premium Guest Club and get access to promotions and premium offers. They leave their contact — you build your own customer base and can invite them again.",
       steps: [
         {
-          title: "Give a reason to sign up",
-          desc: "For example a free dessert with a main course, or an offer available only to guests from the QR menu.",
+          title: "A clear offer from the first QR",
+          desc: "The flyer says it outright: join the Premium Guest Club and get access to promotions and premium offers. No hooks, no hidden agenda.",
         },
         {
           title: "The guest leaves an email",
-          desc: "They confirm the address and receive a one-time promo code.",
+          desc: "They confirm the address and join the club — fully aware of the benefits.",
         },
         {
           title: "Staff redeems the code",
@@ -344,21 +344,21 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
         },
         {
           title: "Invite them back",
-          desc: "Later send an offer for a quieter day, a new dish or a special event.",
+          desc: "Later send a promotion for a quieter day, a new dish or a special event — for club members only.",
         },
       ],
       guestMock: {
-        offerTitle: "Free dessert",
-        offerSub: "With a main course order.",
+        offerTitle: "Premium Guest Club",
+        offerSub: "Access to promotions and premium offers.",
         codeLabel: "Your code:",
         code: "KT-4827",
-        hint: "Show this code to your waiter.",
+        hint: "Show this code to your waiter when redeeming an offer.",
       },
       verifyMock: {
         title: "ChefVision Verify",
         code: "KT-4827",
         status: "Code active",
-        offer: "Free dessert",
+        offer: "Premium offer",
         action: "Redeem",
       },
       businessHeadline: "You’re not building another newsletter.\nYou’re building your own return channel.",
@@ -491,15 +491,15 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
     guestClub: {
       badge: "Novo · Guest Club",
       headline: "Pretvorite jednokratnog gosta u gosta koji se vraća.",
-      sub: "Gost skenira QR, preuzima posebnu ponudu i ostavlja kontakt. Vi gradite vlastitu bazu gostiju i možete ih ponovno pozvati — bez privlačenja od nule.",
+      sub: "Gost odmah zna o čemu se radi: pridružuje se Premium Guest Clubu i dobiva pristup promocijama te premium ponudama. Ostavi kontakt — vi gradite vlastitu bazu gostiju i možete ih ponovno pozvati.",
       steps: [
         {
-          title: "Dajte razlog za prijavu",
-          desc: "Npr. besplatni desert uz glavno jelo ili ponuda dostupna samo gostima s QR menija.",
+          title: "Jasna ponuda već od prvog QR-a",
+          desc: "Na letku piše izravno: pridruži se Premium Guest Clubu i dobit ćeš pristup promocijama te premium ponudama. Bez zamki i skrivenih namjera.",
         },
         {
           title: "Gost ostavlja email",
-          desc: "Potvrđuje adresu i dobiva jednokratni promotivni kod.",
+          desc: "Potvrđuje adresu i pridružuje se klubu — uz potpunu svijest o koristima.",
         },
         {
           title: "Konobar realizira kod",
@@ -507,21 +507,21 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
         },
         {
           title: "Pozovite ga ponovno",
-          desc: "Kasnije pošaljite ponudu za slabiji dan, novo jelo ili poseban događaj.",
+          desc: "Kasnije pošaljite promociju za slabiji dan, novo jelo ili poseban događaj — samo za članove kluba.",
         },
       ],
       guestMock: {
-        offerTitle: "Besplatni desert",
-        offerSub: "Uz narudžbu glavnog jela.",
+        offerTitle: "Premium Guest Club",
+        offerSub: "Pristup promocijama i premium ponudama.",
         codeLabel: "Vaš kod:",
         code: "KT-4827",
-        hint: "Pokažite kod konobaru.",
+        hint: "Pokažite kod konobaru pri realizaciji ponude.",
       },
       verifyMock: {
         title: "ChefVision Verify",
         code: "KT-4827",
         status: "Kod aktivan",
-        offer: "Besplatni desert",
+        offer: "Premium ponuda",
         action: "Realiziraj",
       },
       businessHeadline: "Ne gradite još jedan newsletter.\nGradite vlastiti kanal povratka gostiju.",
