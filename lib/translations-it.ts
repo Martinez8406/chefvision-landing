@@ -9,13 +9,13 @@ export const it = {
     cta: "Accedi / Crea account",
   },
   hero: {
-    freeQrBadge: "Menu QR gratuito per ristoranti e hotel",
+    freeQrBadge: "Assistente digitale dell'ospite per ristoranti e hotel",
     badge: "PER HOTEL E RISTORANTI",
     headlineBefore: "Comunicazione migliore. Migliore ",
     headlineHighlight: "esperienza dell'ospite",
     headlineAfter: ".",
     freeQrSub:
-      "Crea il tuo Menu QR gratuitamente. 14 giorni di Premium completo senza carta di credito. Dopo la prova, puoi restare sul piano gratuito.",
+      "Metti a disposizione un assistente digitale dell'ospite gratis. 14 giorni di Premium completo senza carta di credito. Dopo la prova, puoi restare sul piano gratuito.",
     sub: "ChefVision aiuta hotel e ristoranti a migliorare la comunicazione con gli ospiti, ridurre le domande ripetitive e offrire un accesso rapido alle informazioni più importanti.",
     cta1: "Prova gratis",
     cta2: "Scopri come funziona",
@@ -60,7 +60,7 @@ export const it = {
     badge: "Esperienza dell'ospite",
     headline: "Un unico punto per tutte le informazioni",
     description:
-      "Hotel Hub riunisce menu, room service, bar, spa e tutte le informazioni dell'hotel in un'unica app. L'ospite scansiona un codice QR — e ha tutto a portata di mano.",
+      "Hotel Hub riunisce menu, room service, bar, spa e tutte le informazioni dell'hotel in un unico posto. L'ospite scansiona un codice QR — e ha tutto a portata di mano.",
     hubLabel: "Hotel Hub",
     hubTitle: "Tutto ciò di cui il tuo ospite ha bisogno",
     hubDescription:
@@ -74,11 +74,11 @@ export const it = {
   },
   qrMenuSeo: {
     whatIs: {
-      headline: "Cos'è un Menu QR?",
-      text: "Un Menu QR è una carta menu digitale accessibile scansionando un codice QR con il telefono. Con ChefVision, ristoranti e hotel possono aggiornare il menu online senza stampare nuove carte e condividerlo con gli ospiti in più lingue.",
+      headline: "Cos'è ChefVision?",
+      text: "ChefVision è un assistente digitale dell'ospite per ristoranti e hotel, disponibile dopo la scansione di un codice QR — senza installare alcuna app. Aiuta gli ospiti a capire l'offerta nella propria lingua, scegliere piatti ed extra grazie alle raccomandazioni e trovare in fretta le informazioni dell'hotel (Room Service, bar, spa, colazioni).",
     },
     whyUse: {
-      headline: "Perché usare un Menu QR?",
+      headline: "Perché avere un assistente dell'ospite?",
       bullets: [
         "Nessun costo di stampa",
         "Aggiornamenti immediati",
@@ -91,12 +91,12 @@ export const it = {
   },
   faq: {
     badge: "Domande frequenti",
-    headline: "Domande sul Menu QR gratuito",
+    headline: "Domande su ChefVision",
     items: [
       {
-        question: "Il Menu QR è gratuito?",
+        question: "ChefVision è gratuito?",
         answer:
-          "Sì. ChefVision offre un piano gratuito che ti permette di creare e condividere il tuo Menu QR senza costi.",
+          "Sì. ChefVision offre un piano gratuito — gli ospiti usano l'assistente dopo la scansione di un codice QR, senza app e senza costi.",
       },
       {
         question: "Serve una carta di credito?",
@@ -189,11 +189,11 @@ export const it = {
   },
   comparison: {
     headline: "Cosa ottieni dal primo giorno",
-    sub: "Nessun contratto, nessun hardware, nessun reparto IT. Operativo in 15 minuti.",
+    sub: "Nessun contratto, nessun hardware, nessun reparto IT. L'implementazione richiede alcune ore — poi gli aggiornamenti quotidiani sono semplici.",
     benefits: [
       "Menu digitale in 14 lingue — l'ospite scansiona il QR e vede il menu nella sua lingua",
       "Chiama il cameriere, ordina un extra o richiedi il conto — senza agitare le mani",
-      "Hotel Hub — tutte le informazioni dell'hotel in un'unica app",
+      "Hotel Hub — tutte le informazioni dell'hotel in un unico posto",
       "Abbinamenti e raccomandazioni — impostati dal telefono, senza bisogno di uno sviluppatore",
       "Pacchetti promozionali — Burger + Cola + Patatine -15% con un clic",
       "Aggiorna prezzi e menu senza stampare nuove carte",
@@ -311,7 +311,7 @@ export const it = {
     ],
     pricingRibbon: "Inizia gratis — nessuna carta di credito richiesta",
     pricingIntro1:
-      "Il piano gratuito ti permette di creare il tuo Menu QR e condividerlo con gli ospiti senza costi.",
+      "Il piano gratuito ti permette di mettere a disposizione degli ospiti un assistente digitale senza costi — accesso tramite codice QR, senza app.",
     pricingIntro2:
       "Start e Premium sbloccano funzionalità di vendita aggiuntive. Puoi anche ordinare la configurazione completa del menu al nostro team.",
     pricingTitle:
@@ -322,12 +322,12 @@ export const it = {
       label: "Piano gratuito",
       desc: "Hai ancora accesso al tuo menu digitale nella versione base.",
       highlights: [
-        "Menu QR gratuito",
+        "Assistente dell'ospite gratuito",
         "Nessun limite di tempo",
         "Nessuna carta di credito",
       ],
       features: [
-        "Menu QR digitale",
+        "Menu digitale tramite codice QR",
         "Traduzione base (EN)",
         "Aggiornamenti del menu",
         "Hosting del menu",
@@ -548,7 +548,7 @@ export const it = {
   },
   footer: {
     tagline:
-      "Assistente digitale alle vendite per ristoranti. Menu in 14 lingue, recensioni Google e foto dei piatti — per €0.77/day.",
+      "Assistente digitale dell'ospite per ristoranti e hotel. Menu in 14 lingue e raccomandazioni — per €0.77/day. Senza app, senza commissioni.",
     product: "Prodotto",
     support: "Assistenza",
     productLinks: [
@@ -570,7 +570,7 @@ export const it = {
 export const aboutContentIt = {
   headline: "ChefVision è nato lavorando negli hotel, non in una corporation.",
   paragraphs: [
-    "Per oltre 18 anni ho lavorato nella gastronomia alberghiera, osservando problemi che la maggior parte dei creatori di software non ha mai visto con i propri occhi.",
+    "Per 18 anni ho lavorato in HoReCa — soprattutto in cucina di hotel e ristoranti; all'inizio circa 3 anni come cameriere e bartender. Ho visto il problema da entrambi i lati: l'incertezza dell'ospite, le stesse domande al personale e le raccomandazioni perse. Negli hotel c'erano anche domande su colazione, Room Service, bar e spa.",
     "Ogni giorno vedevo ospiti cercare informazioni su colazioni, menu del ristorante, servizi dell'hotel o attrazioni locali. Vedevo anche il personale rispondere alle stesse domande decine di volte ogni giorno.",
     "Le informazioni esistevano.",
     "Il problema era che erano sparse.",
@@ -580,7 +580,7 @@ export const aboutContentIt = {
     "Ma come uno strumento che aiuta hotel e ristoranti a comunicare meglio con gli ospiti, risparmiare tempo del personale e offrire una migliore esperienza durante il soggiorno o la visita.",
     "Siamo Marcin e Anna Koniuszko.",
     "Abbiamo unito esperienza culinaria, alberghiera, finanziaria e tecnologica per creare una soluzione che risponde alle reali esigenze del settore dell'ospitalità.",
-    "Marcin ha lavorato nella gastronomia per oltre 18 anni, tra l'altro negli hotel Hilton e AC Marriott, dove era responsabile dell'organizzazione del team, della creazione del menu, del servizio agli ospiti e di eventi e banchetti. Il lavoro quotidiano con ospiti e personale gli ha permesso di capire i problemi che ChefVision risolve oggi.",
+    "Marcin ha lavorato 18 anni in HoReCa — soprattutto in cucina di hotel e ristoranti, tra l'altro negli hotel Hilton e AC Marriott; all'inizio circa 3 anni come cameriere e bartender. Era responsabile dell'organizzazione del team, della creazione del menu, del servizio agli ospiti e di eventi e banchetti. Il lavoro quotidiano da cucina e sala gli ha permesso di capire i problemi che ChefVision risolve oggi.",
     "Anna è da anni legata al settore finanziario e bancario. La sua esperienza in organizzazione, analisi e rapporto con i clienti aiuta a sviluppare ChefVision come progetto aziendale stabile, strutturato e credibile. Sostiene la crescita dell'azienda sul piano operativo, finanziario e organizzativo, assicurando che la soluzione sia non solo moderna, ma soprattutto pratica.",
     "La nostra missione è creare strumenti che aiutino hotel e ristoranti a:",
   ],
@@ -632,7 +632,7 @@ export const dishStoryContentIt = {
   stats: [
     {
       stat: "3×",
-      label: "più engagement",
+      label: "più tempo sul menu",
       desc: "Il video accanto a un piatto fa passare agli ospiti 3 volte più tempo a sfogliare il menu.",
     },
     {

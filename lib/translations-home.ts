@@ -53,9 +53,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "O nas",
     },
     hero: {
-      badge: "QR Menu dla restauracji i hoteli",
-      headline: "Twój cyfrowy asystent restauracji — w 14 językach i 24/7",
-      sub: "Szybkie wzywanie kelnera, prośba o rachunek ze smartfona gościa i pełna kontrola nad menu z Twojego telefonu. Bez prowizji i bez zbędnego sprzętu.",
+      badge: "Cyfrowy asystent gościa dla restauracji i hoteli",
+      headline: "Twój cyfrowy asystent gościa — w 14 językach i 24/7",
+      sub: "Gość nie zawsze rozumie kartę i nie wie, co wybrać. ChefVision pomaga zrozumieć ofertę, wybrać dania i dodatki oraz szybko znaleźć informacje — bez aplikacji i bez prowizji. Ty zyskujesz spokojniejszą salę i więcej sprzedaży.",
       ctaPrimary: "Wypróbuj za darmo przez 14 dni",
       ctaSecondary: "Jak to działa",
     },
@@ -73,7 +73,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "Jak to działa?",
       headline: "Od kodu QR do zadowolonego gościa",
-      sub: "Konfiguracja zajmuje kilka minut. Bez instalacji, bez integracji i bez umów.",
+      sub: "Wdrożenie zajmuje kilka godzin: konfiguracja, treści i kody QR. Potem aktualizacje robisz sam z telefonu — a support jest dostępny.",
       stepLabel: "Krok",
       steps: [
         {
@@ -123,7 +123,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "Zacznij w 5 minut. Za 0 zł.",
+      headline: "Zacznij bez karty. Za 0 zł.",
       sub: "14 dni pełnej wersji Premium bez karty kredytowej. Po okresie próbnym możesz zostać na darmowym planie.",
       btn: "Załóż darmowe konto",
     },
@@ -138,9 +138,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "About us",
     },
     hero: {
-      badge: "QR Menu for restaurants and hotels",
-      headline: "Your digital restaurant assistant — in 14 languages, 24/7",
-      sub: "Fast waiter calling, bill request from the guest's smartphone and full control over the menu from your phone. No commission and no unnecessary hardware.",
+      badge: "Digital guest assistant for restaurants and hotels",
+      headline: "Your digital guest assistant — in 14 languages, 24/7",
+      sub: "Guests often don’t understand the menu and don’t know what to choose. ChefVision helps them understand the offer, pick dishes and extras, and quickly find information — no app, no commission. You get a calmer floor and more sales.",
       ctaPrimary: "Try free for 14 days",
       ctaSecondary: "How it works",
     },
@@ -158,7 +158,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "How it works?",
       headline: "From QR code to a happy guest",
-      sub: "Setup takes a few minutes. No installation, no integrations, no contracts.",
+      sub: "Implementation takes a few hours: setup, content and QR codes. After that, day-to-day updates are simple — and support is available.",
       stepLabel: "Step",
       steps: [
         {
@@ -208,7 +208,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "Start in 5 minutes. For free.",
+      headline: "Start with no credit card. For free.",
       sub: "14 days of full Premium with no credit card. After the trial you can stay on the free plan.",
       btn: "Create a free account",
     },
@@ -223,9 +223,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Über uns",
     },
     hero: {
-      badge: "QR-Menü für Restaurants und Hotels",
-      headline: "Ihr digitaler Restaurant-Assistent — in 14 Sprachen und 24/7",
-      sub: "Schneller Kellnerruf, Rechnungswunsch vom Smartphone des Gastes und volle Kontrolle über das Menü von Ihrem Telefon. Ohne Provision und ohne unnötige Hardware.",
+      badge: "Digitaler Gästeassistent für Restaurants und Hotels",
+      headline: "Ihr digitaler Gästeassistent — in 14 Sprachen und 24/7",
+      sub: "Gäste verstehen die Karte oft nicht und wissen nicht, was sie wählen sollen. ChefVision hilft, das Angebot zu verstehen, Gerichte und Beilagen zu wählen und Informationen schnell zu finden — ohne App, ohne Provision. Sie gewinnen ruhigeren Service und mehr Umsatz.",
       ctaPrimary: "14 Tage kostenlos testen",
       ctaSecondary: "Wie es funktioniert",
     },
@@ -243,7 +243,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "Wie funktioniert es?",
       headline: "Vom QR-Code zum zufriedenen Gast",
-      sub: "Die Einrichtung dauert wenige Minuten. Ohne Installation, ohne Integrationen, ohne Verträge.",
+      sub: "Die Einführung dauert einige Stunden: Konfiguration, Inhalte und QR-Codes. Danach sind Alltagsänderungen einfach — Support ist verfügbar.",
       stepLabel: "Schritt",
       steps: [
         {
@@ -293,7 +293,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "Starten Sie in 5 Minuten. Für 0 zł.",
+      headline: "Starten Sie ohne Kreditkarte. Für 0 zł.",
       sub: "14 Tage volle Premium-Version ohne Kreditkarte. Nach der Testphase können Sie beim kostenlosen Plan bleiben.",
       btn: "Kostenloses Konto erstellen",
     },
@@ -308,9 +308,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Sobre nosotros",
     },
     hero: {
-      badge: "Menú QR para restaurantes y hoteles",
-      headline: "Tu asistente digital de restaurante — en 14 idiomas y 24/7",
-      sub: "Llamada rápida al camarero, petición de cuenta desde el smartphone del cliente y control total del menú desde tu teléfono. Sin comisiones y sin equipo innecesario.",
+      badge: "Asistente digital del huésped para restaurantes y hoteles",
+      headline: "Tu asistente digital del huésped — en 14 idiomas y 24/7",
+      sub: "El huésped a menudo no entiende la carta y no sabe qué elegir. ChefVision le ayuda a entender la oferta, elegir platos y extras y encontrar información rápido — sin app y sin comisión. Tú ganas un servicio más tranquilo y más ventas.",
       ctaPrimary: "Pruébalo gratis 14 días",
       ctaSecondary: "Cómo funciona",
     },
@@ -328,7 +328,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "¿Cómo funciona?",
       headline: "Del código QR a un cliente satisfecho",
-      sub: "La configuración lleva unos minutos. Sin instalación, sin integraciones y sin contratos.",
+      sub: "La implantación lleva unas horas: configuración, contenidos y códigos QR. Después, las actualizaciones del día a día son sencillas — y hay soporte.",
       stepLabel: "Paso",
       steps: [
         {
@@ -378,7 +378,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "Empieza en 5 minutos. Gratis.",
+      headline: "Empieza sin tarjeta. Gratis.",
       sub: "14 días de la versión Premium completa sin tarjeta de crédito. Tras la prueba puedes quedarte en el plan gratuito.",
       btn: "Crea una cuenta gratuita",
     },
@@ -393,9 +393,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Σχετικά με εμάς",
     },
     hero: {
-      badge: "QR μενού για εστιατόρια και ξενοδοχεία",
-      headline: "Ο ψηφιακός σας βοηθός εστιατορίου — σε 14 γλώσσες και 24/7",
-      sub: "Γρήγορη κλήση σερβιτόρου, αίτημα λογαριασμού από το smartphone του πελάτη και πλήρης έλεγχος του μενού από το κινητό σας. Χωρίς προμήθεια και χωρίς περιττό εξοπλισμό.",
+      badge: "Ψηφιακός βοηθός επισκέπτη για εστιατόρια και ξενοδοχεία",
+      headline: "Ο ψηφιακός σας βοηθός επισκέπτη — σε 14 γλώσσες και 24/7",
+      sub: "Ο επισκέπτης συχνά δεν καταλαβαίνει τον κατάλογο και δεν ξέρει τι να διαλέξει. Το ChefVision βοηθά να κατανοήσει την προσφορά, να επιλέξει πιάτα και συνοδευτικά και να βρει πληροφορίες γρήγορα — χωρίς εφαρμογή και χωρίς προμήθεια. Εσείς κερδίζετε πιο ήρεμη εξυπηρέτηση και περισσότερες πωλήσεις.",
       ctaPrimary: "Δοκιμάστε δωρεάν για 14 ημέρες",
       ctaSecondary: "Πώς λειτουργεί",
     },
@@ -413,7 +413,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "Πώς λειτουργεί;",
       headline: "Από τον κωδικό QR στον ικανοποιημένο πελάτη",
-      sub: "Η ρύθμιση διαρκεί λίγα λεπτά. Χωρίς εγκατάσταση, χωρίς ενσωματώσεις, χωρίς συμβόλαια.",
+      sub: "Η υλοποίηση διαρκεί μερικές ώρες: ρύθμιση, περιεχόμενο και κωδικοί QR. Μετά, οι καθημερινές ενημερώσεις είναι απλές — και υπάρχει υποστήριξη.",
       stepLabel: "Βήμα",
       steps: [
         {
@@ -463,7 +463,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "Ξεκινήστε σε 5 λεπτά. Δωρεάν.",
+      headline: "Ξεκινήστε χωρίς κάρτα. Δωρεάν.",
       sub: "14 ημέρες πλήρους έκδοσης Premium χωρίς πιστωτική κάρτα. Μετά τη δοκιμή μπορείτε να μείνετε στο δωρεάν πλάνο.",
       btn: "Δημιουργήστε δωρεάν λογαριασμό",
     },
@@ -478,9 +478,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Chi siamo",
     },
     hero: {
-      badge: "Menu QR per ristoranti e hotel",
-      headline: "Il tuo assistente digitale per il ristorante — in 14 lingue e 24/7",
-      sub: "Chiamata rapida al cameriere, richiesta del conto dallo smartphone dell'ospite e pieno controllo del menu dal tuo telefono. Senza commissioni e senza attrezzature inutili.",
+      badge: "Assistente digitale dell'ospite per ristoranti e hotel",
+      headline: "Il tuo assistente digitale dell'ospite — in 14 lingue e 24/7",
+      sub: "L'ospite spesso non capisce il menu e non sa cosa scegliere. ChefVision aiuta a capire l'offerta, scegliere piatti e extra e trovare informazioni in fretta — senza app e senza commissioni. Tu ottieni un servizio più calmo e più vendite.",
       ctaPrimary: "Provalo gratis per 14 giorni",
       ctaSecondary: "Come funziona",
     },
@@ -498,7 +498,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "Come funziona?",
       headline: "Dal codice QR all'ospite soddisfatto",
-      sub: "La configurazione richiede pochi minuti. Senza installazione, senza integrazioni e senza contratti.",
+      sub: "L'implementazione richiede alcune ore: configurazione, contenuti e codici QR. Poi gli aggiornamenti quotidiani sono semplici — e il supporto è disponibile.",
       stepLabel: "Passo",
       steps: [
         {
@@ -548,7 +548,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "Inizia in 5 minuti. Gratis.",
+      headline: "Inizia senza carta. Gratis.",
       sub: "14 giorni di versione Premium completa senza carta di credito. Dopo la prova puoi restare sul piano gratuito.",
       btn: "Crea un account gratuito",
     },
@@ -563,9 +563,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Hakkımızda",
     },
     hero: {
-      badge: "Restoranlar ve oteller için QR Menü",
-      headline: "Dijital restoran asistanınız — 14 dilde ve 7/24",
-      sub: "Hızlı garson çağırma, misafirin akıllı telefonundan hesap isteği ve menü üzerinde telefonunuzdan tam kontrol. Komisyon yok, gereksiz ekipman yok.",
+      badge: "Restoranlar ve oteller için dijital misafir asistanı",
+      headline: "Dijital misafir asistanınız — 14 dilde ve 7/24",
+      sub: "Misafir menüyü her zaman anlamaz ve ne seçeceğini bilemez. ChefVision teklifi anlamaya, yemek ve ekleri seçmeye ve bilgiyi hızlı bulmaya yardım eder — uygulama yok, komisyon yok. Siz daha sakin bir salon ve daha fazla satış kazanırsınız.",
       ctaPrimary: "14 gün ücretsiz deneyin",
       ctaSecondary: "Nasıl çalışır",
     },
@@ -583,7 +583,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "Nasıl çalışır?",
       headline: "QR kodundan memnun misafire",
-      sub: "Kurulum birkaç dakika sürer. Kurulum yok, entegrasyon yok, sözleşme yok.",
+      sub: "Kurulum birkaç saat sürer: yapılandırma, içerik ve QR kodları. Sonrasında günlük güncellemeler basittir — destek de vardır.",
       stepLabel: "Adım",
       steps: [
         {
@@ -633,7 +633,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "5 dakikada başlayın. Ücretsiz.",
+      headline: "Kart olmadan başlayın. Ücretsiz.",
       sub: "Kredi kartı olmadan 14 gün tam Premium sürüm. Deneme sonrasında ücretsiz planda kalabilirsiniz.",
       btn: "Ücretsiz hesap oluşturun",
     },
@@ -648,9 +648,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "О нас",
     },
     hero: {
-      badge: "QR-меню для ресторанов и отелей",
-      headline: "Ваш цифровой ассистент ресторана — на 14 языках и 24/7",
-      sub: "Быстрый вызов официанта, запрос счёта со смартфона гостя и полный контроль над меню с вашего телефона. Без комиссии и без лишнего оборудования.",
+      badge: "Цифровой ассистент гостя для ресторанов и отелей",
+      headline: "Ваш цифровой ассистент гостя — на 14 языках и 24/7",
+      sub: "Гость часто не понимает меню и не знает, что выбрать. ChefVision помогает понять предложение, выбрать блюда и дополнения и быстро найти информацию — без приложения и без комиссии. Вы получаете спокойнее зал и больше продаж.",
       ctaPrimary: "Попробуйте бесплатно 14 дней",
       ctaSecondary: "Как это работает",
     },
@@ -668,7 +668,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "Как это работает?",
       headline: "От QR-кода до довольного гостя",
-      sub: "Настройка занимает несколько минут. Без установки, без интеграций, без договоров.",
+      sub: "Внедрение занимает несколько часов: настройка, контент и QR-коды. Дальше повседневные обновления простые — поддержка доступна.",
       stepLabel: "Шаг",
       steps: [
         {
@@ -718,7 +718,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "Начните за 5 минут. Бесплатно.",
+      headline: "Начните без карты. Бесплатно.",
       sub: "14 дней полной версии Premium без банковской карты. После пробного периода можно остаться на бесплатном плане.",
       btn: "Создать бесплатный аккаунт",
     },
@@ -733,9 +733,9 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "O nama",
     },
     hero: {
-      badge: "QR meni za restorane i hotele",
-      headline: "Vaš digitalni restoran asistent — na 14 jezika i 24/7",
-      sub: "Brzi poziv konobaru, zahtjev za račun sa gostova smartphonea i puna kontrola nad menijem s vašeg telefona. Bez provizije i bez nepotrebne opreme.",
+      badge: "Digitalni asistent gosta za restorane i hotele",
+      headline: "Vaš digitalni asistent gosta — na 14 jezika i 24/7",
+      sub: "Gost često ne razumije jelovnik i ne zna što odabrati. ChefVision pomaže razumjeti ponudu, odabrati jela i dodatke te brzo pronaći informacije — bez aplikacije i bez provizije. Vi dobivate mirniju salu i više prodaje.",
       ctaPrimary: "Isprobajte besplatno 14 dana",
       ctaSecondary: "Kako funkcionira",
     },
@@ -753,7 +753,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     how: {
       badge: "Kako funkcionira?",
       headline: "Od QR koda do zadovoljnog gosta",
-      sub: "Postavljanje traje nekoliko minuta. Bez instalacije, bez integracija i bez ugovora.",
+      sub: "Uvođenje traje nekoliko sati: konfiguracija, sadržaj i QR kodovi. Nakon toga su svakodnevna ažuriranja jednostavna — podrška je dostupna.",
       stepLabel: "Korak",
       steps: [
         {
@@ -803,7 +803,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
     },
     finalCta: {
-      headline: "Krenite za 5 minuta. Besplatno.",
+      headline: "Krenite bez kartice. Besplatno.",
       sub: "14 dana pune Premium verzije bez kreditne kartice. Nakon probnog razdoblja možete ostati na besplatnom planu.",
       btn: "Otvorite besplatan račun",
     },

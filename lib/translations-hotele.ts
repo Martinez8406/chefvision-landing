@@ -168,7 +168,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
     local: {
       badge: "Hotele z Wrocławia i okolic",
       headline: "Osobiście pomogę Ci wdrożyć ChefVision — bez dodatkowych kosztów.",
-      text: "Pokażę Ci, jak przygotować system, skonfigurować Hotel Hub i uruchomić go dla Twoich gości.",
+      text: "Pokażę Ci, jak przygotować system, skonfigurować Hotel Hub i uruchomić go dla Twoich gości. Wdrożenie zajmuje kilka godzin (konfiguracja, treści, QR) — potem aktualizacje są proste.",
       cta: "Umów bezpłatne wdrożenie",
     },
     problem: {
@@ -228,7 +228,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
     story: {
       badge: "Historia",
       headline: "ChefVision powstał z doświadczenia hotelowej gastronomii.",
-      p1: "Pracuję w hotelarstwie od ponad 18 lat.",
+      p1: "Przez 18 lat pracowałem w HoReCa — głównie w kuchni hoteli i restauracji; na początku około 3 lata jako kelner i barman.",
       p2: "Przez lata widziałem te same problemy:",
       problems: [
         "Gość nie rozumie menu.",
@@ -241,7 +241,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
       imageAlt: "Marcin Koniuszko — założyciel ChefVision",
     },
     implementation: {
-      headline: "Zacznij bez skomplikowanego wdrożenia.",
+      headline: "Wdrożenie zajmuje kilka godzin — nie tygodnie.",
       steps: [
         {
           num: "01",
@@ -367,7 +367,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
     local: {
       badge: "Hotels in Wrocław and nearby",
       headline: "I’ll personally help you implement ChefVision — at no extra cost.",
-      text: "I’ll show you how to prepare the system, configure Hotel Hub and launch it for your guests.",
+      text: "I’ll show you how to prepare the system, configure Hotel Hub and launch it for your guests. Implementation takes a few hours (setup, content, QR) — then day-to-day updates are simple.",
       cta: "Book a free setup",
     },
     problem: {
@@ -427,7 +427,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
     story: {
       badge: "Story",
       headline: "ChefVision was born from hotel gastronomy experience.",
-      p1: "I have worked in hospitality for more than 18 years.",
+      p1: "For 18 years I worked in HoReCa — mainly in hotel and restaurant kitchens; at the start about 3 years as a waiter and bartender.",
       p2: "Over the years I saw the same problems:",
       problems: [
         "The guest doesn’t understand the menu.",
@@ -440,7 +440,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
       imageAlt: "Marcin Koniuszko — founder of ChefVision",
     },
     implementation: {
-      headline: "Start without a complicated setup.",
+      headline: "Implementation takes a few hours — not weeks.",
       steps: [
         {
           num: "01",
@@ -566,7 +566,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
     local: {
       badge: "Hoteli iz Wrocławia i okolice",
       headline: "Osobno ću vam pomoći uvesti ChefVision — bez dodatnih troškova.",
-      text: "Pokazat ću vam kako pripremiti sustav, konfigurirati Hotel Hub i pokrenuti ga za vaše goste.",
+      text: "Pokazat ću vam kako pripremiti sustav, konfigurirati Hotel Hub i pokrenuti ga za vaše goste. Uvođenje traje nekoliko sati (konfiguracija, sadržaj, QR) — potom su ažuriranja jednostavna.",
       cta: "Dogovorite besplatnu implementaciju",
     },
     problem: {
@@ -626,7 +626,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
     story: {
       badge: "Priča",
       headline: "ChefVision je nastao iz iskustva hotelske gastronomije.",
-      p1: "Radim u hotelijerstvu više od 18 godina.",
+      p1: "18 godina radio sam u HoReCa — uglavnom u kuhinji hotela i restorana; na početku oko 3 godine kao konobar i barmen.",
       p2: "Kroz godine vidio sam iste probleme:",
       problems: [
         "Gost ne razumije meni.",
@@ -639,7 +639,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
       imageAlt: "Marcin Koniuszko — osnivač ChefVisiona",
     },
     implementation: {
-      headline: "Započnite bez složene implementacije.",
+      headline: "Uvođenje traje nekoliko sati — ne tjedne.",
       steps: [
         {
           num: "01",

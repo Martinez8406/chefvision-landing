@@ -4,9 +4,9 @@ import { FaqSection } from "@/components/faq-section"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "FAQ — ChefVision | Najczęstsze pytania o QR Menu",
+  title: "FAQ — ChefVision | Najczęstsze pytania o asystenta gościa",
   description:
-    "Odpowiedzi na najczęstsze pytania o darmowe QR Menu ChefVision: plany, języki, karta kredytowa i konfiguracja.",
+    "Odpowiedzi na najczęstsze pytania o ChefVision: plany, języki, karta kredytowa i wdrożenie.",
 }
 
 export default function FaqPage() {

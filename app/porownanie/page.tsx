@@ -5,7 +5,7 @@ import { ComparisonSection } from "@/components/comparison-section"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Porównanie — ChefVision | QR Menu vs platformy dostaw",
+  title: "Porównanie — ChefVision | Asystent gościa vs platformy dostaw",
   description:
     "Zobacz, czym ChefVision różni się od platform dostaw i tradycyjnych kart menu. Bez prowizji i bez pośredników.",
 }

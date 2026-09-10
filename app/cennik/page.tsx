@@ -4,7 +4,7 @@ import { CtaSection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Cennik — ChefVision | QR Menu dla restauracji i hoteli",
+  title: "Cennik — ChefVision | Cyfrowy asystent gościa dla restauracji i hoteli",
   description:
     "Sprawdź cennik ChefVision. Plan Start, Premium, zlecenie menu oraz Ulotka QR — bez umów i bez karty kredytowej.",
 }
