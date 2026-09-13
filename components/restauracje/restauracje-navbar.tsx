@@ -25,7 +25,7 @@ export function RestauracjeNavbar() {
   const navLinks = [
     { label: t.nav.how, href: "#jak-to-dziala" },
     { label: t.nav.forWhom, href: "#dla-kogo" },
-    { label: t.nav.pricing, href: "#cennik" },
+    { label: t.nav.pricing, href: "/cennik" },
     { label: t.nav.faq, href: "/faq" },
   ]
 
