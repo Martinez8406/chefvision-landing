@@ -120,7 +120,7 @@ export function CtaSection() {
                     </Button>
                   </div>
 
-                  {/* Founder Annual */}
+                  {/* Plan Roczny */}
                   <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-amber-500 bg-card p-6 sm:p-7 shadow-sm sm:col-span-2 xl:col-span-1">
                     <span className="inline-flex w-fit items-center gap-1.5 rounded-md bg-amber-500 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white">
                       <Crown size={11} />
@@ -139,12 +139,16 @@ export function CtaSection() {
                       <p className="mt-2 text-sm font-medium text-foreground">
                         {c.lifetimePlan.priceLockNote}
                       </p>
-                      <p className="mt-1 text-xs font-medium text-amber-700 dark:text-amber-400">
-                        {c.lifetimePlan.limitedNote}
-                      </p>
                     </div>
                     <p className="text-base font-semibold text-foreground">{c.lifetimePlan.label}</p>
                     <p className="text-sm text-muted-foreground leading-relaxed">{c.lifetimePlan.desc}</p>
+                    <div className="rounded-xl border border-border/80 bg-secondary/40 px-3.5 py-3 space-y-1">
+                      <p className="text-xs text-muted-foreground">{c.lifetimePlan.compareMonthly}</p>
+                      <p className="text-xs font-medium text-foreground">{c.lifetimePlan.compareAnnual}</p>
+                      <p className="text-xs font-semibold text-amber-700 dark:text-amber-400">
+                        {c.lifetimePlan.savings}
+                      </p>
+                    </div>
                     <ul className="flex flex-col gap-2.5 mt-1 flex-1">
                       {c.lifetimePlan.features.map((f: string) => (
                         <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">

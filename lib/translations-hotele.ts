@@ -110,6 +110,7 @@ export type HoteleCopy = {
     trialTitle: string
     trialNote: string
     premiumLabel: string
+    premiumPrice: string
     perMonth: string
     includesLabel: string
     includes: string[]
@@ -322,6 +323,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
       trialTitle: "14 dni pełnej wersji.",
       trialNote: "Bez długoterminowego zobowiązania.",
       premiumLabel: "Premium",
+      premiumPrice: "50 zł",
       perMonth: "/ miesiąc",
       includesLabel: "Premium obejmuje:",
       includes: [
@@ -521,6 +523,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
       trialTitle: "14 days of the full version.",
       trialNote: "No long-term commitment.",
       premiumLabel: "Premium",
+      premiumPrice: "50 PLN",
       perMonth: "/ month",
       includesLabel: "Premium includes:",
       includes: [
@@ -720,6 +723,7 @@ export const hoteleContent: Record<"pl" | "en" | "hr", HoteleCopy> = {
       trialTitle: "14 dana pune verzije.",
       trialNote: "Bez dugoročne obveze.",
       premiumLabel: "Premium",
+      premiumPrice: "50 PLN",
       perMonth: "/ mjesec",
       includesLabel: "Premium uključuje:",
       includes: [

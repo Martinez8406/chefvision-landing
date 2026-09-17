@@ -49,7 +49,7 @@ export function HotelOffer() {
                     {t.premiumLabel}
                   </p>
                   <p className="mt-1 flex items-baseline gap-1.5">
-                    <span className="text-4xl font-bold tracking-tight text-foreground">97 zł</span>
+                    <span className="text-4xl font-bold tracking-tight text-foreground">{t.premiumPrice}</span>
                     <span className="text-sm text-muted-foreground">{t.perMonth}</span>
                   </p>
                 </div>
