@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/language-context"
 import { homeContent } from "@/lib/translations-home"
 
 export function HeroSection() {
-  const { t, locale } = useLanguage()
+  const { locale } = useLanguage()
   const h = homeContent[locale].hero
 
   return (
@@ -49,7 +49,7 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-wrap gap-x-5 gap-y-2">
-            {t.hero.ctaTrust.map((item: string) => (
+            {h.trust.map((item) => (
               <span key={item} className="inline-flex items-center gap-1.5 text-xs text-muted-foreground sm:text-sm">
                 <CircleCheck size={14} className="shrink-0 text-primary" />
                 {item}

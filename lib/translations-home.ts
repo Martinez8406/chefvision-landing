@@ -15,6 +15,7 @@ export type HomeCopy = {
     sub: string
     ctaPrimary: string
     ctaSecondary: string
+    trust: string[]
   }
   bar: {
     headline: string
@@ -54,10 +55,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Cyfrowy asystent gościa dla restauracji i hoteli",
-      headline: "Twój cyfrowy asystent gościa — w 14 językach i 24/7",
-      sub: "Gość nie zawsze rozumie kartę i nie wie, co wybrać. ChefVision pomaga zrozumieć ofertę, wybrać dania i dodatki oraz szybko znaleźć informacje — bez aplikacji i bez prowizji. Ty zyskujesz spokojniejszą salę i więcej sprzedaży.",
-      ctaPrimary: "Wypróbuj za darmo przez 14 dni",
-      ctaSecondary: "Jak to działa",
+      headline: "Każdy gość rozumie Twoją ofertę — w swoim języku.",
+      sub: "Goście szybciej znajdują potrzebne informacje, a Twój zespół ma mniej pytań i więcej czasu na obsługę. ChefVision pomaga lepiej prezentować dania, dodatki i rekomendacje, które mogą zwiększać wartość zamówienia.",
+      ctaPrimary: "Wypróbuj bezpłatnie przez 14 dni",
+      ctaSecondary: "Zobacz, jak to działa",
+      trust: ["14 języków", "Bez aplikacji", "Dla restauracji i hoteli"],
     },
     bar: {
       headline: "Skanujesz. Wybierasz. Zamawiasz.",
@@ -139,10 +141,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Digital guest assistant for restaurants and hotels",
-      headline: "Your digital guest assistant — in 14 languages, 24/7",
-      sub: "Guests often don’t understand the menu and don’t know what to choose. ChefVision helps them understand the offer, pick dishes and extras, and quickly find information — no app, no commission. You get a calmer floor and more sales.",
+      headline: "Every guest understands your offer — in their language.",
+      sub: "Guests find the information they need faster, and your team gets fewer questions and more time for service. ChefVision helps present dishes, extras and recommendations that can increase order value.",
       ctaPrimary: "Try free for 14 days",
-      ctaSecondary: "How it works",
+      ctaSecondary: "See how it works",
+      trust: ["14 languages", "No app", "For restaurants and hotels"],
     },
     bar: {
       headline: "Scan. Choose. Order.",
@@ -224,10 +227,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Digitaler Gästeassistent für Restaurants und Hotels",
-      headline: "Ihr digitaler Gästeassistent — in 14 Sprachen und 24/7",
-      sub: "Gäste verstehen die Karte oft nicht und wissen nicht, was sie wählen sollen. ChefVision hilft, das Angebot zu verstehen, Gerichte und Beilagen zu wählen und Informationen schnell zu finden — ohne App, ohne Provision. Sie gewinnen ruhigeren Service und mehr Umsatz.",
+      headline: "Jeder Gast versteht Ihr Angebot — in seiner Sprache.",
+      sub: "Gäste finden benötigte Informationen schneller, und Ihr Team hat weniger Fragen und mehr Zeit für den Service. ChefVision hilft, Gerichte, Extras und Empfehlungen besser zu präsentieren — und so den Bestellwert zu steigern.",
       ctaPrimary: "14 Tage kostenlos testen",
-      ctaSecondary: "Wie es funktioniert",
+      ctaSecondary: "So funktioniert’s",
+      trust: ["14 Sprachen", "Ohne App", "Für Restaurants und Hotels"],
     },
     bar: {
       headline: "Scannen. Wählen. Bestellen.",
@@ -309,10 +313,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Asistente digital del huésped para restaurantes y hoteles",
-      headline: "Tu asistente digital del huésped — en 14 idiomas y 24/7",
-      sub: "El huésped a menudo no entiende la carta y no sabe qué elegir. ChefVision le ayuda a entender la oferta, elegir platos y extras y encontrar información rápido — sin app y sin comisión. Tú ganas un servicio más tranquilo y más ventas.",
+      headline: "Cada huésped entiende tu oferta — en su idioma.",
+      sub: "Los huéspedes encuentran antes la información que necesitan, y tu equipo tiene menos preguntas y más tiempo para atender. ChefVision ayuda a presentar mejor platos, extras y recomendaciones que pueden aumentar el valor del pedido.",
       ctaPrimary: "Pruébalo gratis 14 días",
-      ctaSecondary: "Cómo funciona",
+      ctaSecondary: "Mira cómo funciona",
+      trust: ["14 idiomas", "Sin app", "Para restaurantes y hoteles"],
     },
     bar: {
       headline: "Escaneas. Eliges. Pides.",
@@ -394,10 +399,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Ψηφιακός βοηθός επισκέπτη για εστιατόρια και ξενοδοχεία",
-      headline: "Ο ψηφιακός σας βοηθός επισκέπτη — σε 14 γλώσσες και 24/7",
-      sub: "Ο επισκέπτης συχνά δεν καταλαβαίνει τον κατάλογο και δεν ξέρει τι να διαλέξει. Το ChefVision βοηθά να κατανοήσει την προσφορά, να επιλέξει πιάτα και συνοδευτικά και να βρει πληροφορίες γρήγορα — χωρίς εφαρμογή και χωρίς προμήθεια. Εσείς κερδίζετε πιο ήρεμη εξυπηρέτηση και περισσότερες πωλήσεις.",
+      headline: "Κάθε επισκέπτης καταλαβαίνει την προσφορά σας — στη γλώσσα του.",
+      sub: "Οι επισκέπτες βρίσκουν πιο γρήγορα τις πληροφορίες που χρειάζονται και η ομάδα σας έχει λιγότερες ερωτήσεις και περισσότερο χρόνο για εξυπηρέτηση. Το ChefVision βοηθά να παρουσιάζετε καλύτερα πιάτα, συνοδευτικά και προτάσεις που μπορούν να αυξήσουν την αξία παραγγελίας.",
       ctaPrimary: "Δοκιμάστε δωρεάν για 14 ημέρες",
-      ctaSecondary: "Πώς λειτουργεί",
+      ctaSecondary: "Δείτε πώς λειτουργεί",
+      trust: ["14 γλώσσες", "Χωρίς εφαρμογή", "Για εστιατόρια και ξενοδοχεία"],
     },
     bar: {
       headline: "Σκανάρεις. Επιλέγεις. Παραγγέλνεις.",
@@ -479,10 +485,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Assistente digitale dell'ospite per ristoranti e hotel",
-      headline: "Il tuo assistente digitale dell'ospite — in 14 lingue e 24/7",
-      sub: "L'ospite spesso non capisce il menu e non sa cosa scegliere. ChefVision aiuta a capire l'offerta, scegliere piatti e extra e trovare informazioni in fretta — senza app e senza commissioni. Tu ottieni un servizio più calmo e più vendite.",
+      headline: "Ogni ospite capisce la tua offerta — nella sua lingua.",
+      sub: "Gli ospiti trovano più in fretta le informazioni di cui hanno bisogno e il tuo team ha meno domande e più tempo per il servizio. ChefVision aiuta a presentare meglio piatti, extra e raccomandazioni che possono aumentare il valore dell'ordine.",
       ctaPrimary: "Provalo gratis per 14 giorni",
-      ctaSecondary: "Come funziona",
+      ctaSecondary: "Guarda come funziona",
+      trust: ["14 lingue", "Senza app", "Per ristoranti e hotel"],
     },
     bar: {
       headline: "Scansioni. Scegli. Ordini.",
@@ -564,10 +571,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Restoranlar ve oteller için dijital misafir asistanı",
-      headline: "Dijital misafir asistanınız — 14 dilde ve 7/24",
-      sub: "Misafir menüyü her zaman anlamaz ve ne seçeceğini bilemez. ChefVision teklifi anlamaya, yemek ve ekleri seçmeye ve bilgiyi hızlı bulmaya yardım eder — uygulama yok, komisyon yok. Siz daha sakin bir salon ve daha fazla satış kazanırsınız.",
+      headline: "Her misafir teklifinizi kendi dilinde anlar.",
+      sub: "Misafirler ihtiyaç duydukları bilgilere daha hızlı ulaşır; ekibiniz ise daha az soru ve servis için daha fazla zaman kazanır. ChefVision, sipariş değerini artırabilecek yemekleri, ekleri ve önerileri daha iyi sunmanıza yardımcı olur.",
       ctaPrimary: "14 gün ücretsiz deneyin",
-      ctaSecondary: "Nasıl çalışır",
+      ctaSecondary: "Nasıl çalıştığını görün",
+      trust: ["14 dil", "Uygulama yok", "Restoranlar ve oteller için"],
     },
     bar: {
       headline: "Tara. Seç. Sipariş ver.",
@@ -649,10 +657,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Цифровой ассистент гостя для ресторанов и отелей",
-      headline: "Ваш цифровой ассистент гостя — на 14 языках и 24/7",
-      sub: "Гость часто не понимает меню и не знает, что выбрать. ChefVision помогает понять предложение, выбрать блюда и дополнения и быстро найти информацию — без приложения и без комиссии. Вы получаете спокойнее зал и больше продаж.",
+      headline: "Каждый гость понимает ваше предложение — на своём языке.",
+      sub: "Гости быстрее находят нужную информацию, а ваша команда получает меньше вопросов и больше времени на обслуживание. ChefVision помогает лучше показывать блюда, дополнения и рекомендации, которые могут увеличить сумму заказа.",
       ctaPrimary: "Попробуйте бесплатно 14 дней",
-      ctaSecondary: "Как это работает",
+      ctaSecondary: "Смотрите, как это работает",
+      trust: ["14 языков", "Без приложения", "Для ресторанов и отелей"],
     },
     bar: {
       headline: "Сканируешь. Выбираешь. Заказываешь.",
@@ -734,10 +743,11 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Digitalni asistent gosta za restorane i hotele",
-      headline: "Vaš digitalni asistent gosta — na 14 jezika i 24/7",
-      sub: "Gost često ne razumije jelovnik i ne zna što odabrati. ChefVision pomaže razumjeti ponudu, odabrati jela i dodatke te brzo pronaći informacije — bez aplikacije i bez provizije. Vi dobivate mirniju salu i više prodaje.",
+      headline: "Svaki gost razumije vašu ponudu — na svom jeziku.",
+      sub: "Gosti brže pronalaze potrebne informacije, a vaš tim ima manje pitanja i više vremena za uslugu. ChefVision pomaže bolje predstaviti jela, dodatke i preporuke koje mogu povećati vrijednost narudžbe.",
       ctaPrimary: "Isprobajte besplatno 14 dana",
-      ctaSecondary: "Kako funkcionira",
+      ctaSecondary: "Pogledajte kako funkcionira",
+      trust: ["14 jezika", "Bez aplikacije", "Za restorane i hotele"],
     },
     bar: {
       headline: "Skeniraš. Biraš. Naručuješ.",

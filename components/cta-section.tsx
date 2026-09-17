@@ -120,7 +120,7 @@ export function CtaSection() {
                     </Button>
                   </div>
 
-                  {/* Founder Lifetime */}
+                  {/* Founder Annual */}
                   <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-amber-500 bg-card p-6 sm:p-7 shadow-sm sm:col-span-2 xl:col-span-1">
                     <span className="inline-flex w-fit items-center gap-1.5 rounded-md bg-amber-500 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white">
                       <Crown size={11} />
@@ -129,16 +129,19 @@ export function CtaSection() {
                     <div className="mt-1">
                       <div className="flex items-end gap-1.5">
                         <span className="text-3xl font-bold text-foreground font-serif leading-none">
-                          {c.lifetimePlan.price} {c.lifetimePlan.currency}
+                          {c.lifetimePlan.price}
                         </span>
                         <span className="text-sm text-muted-foreground mb-0.5">
-                          {c.lifetimePlan.billing}
+                          {c.lifetimePlan.currency}
                         </span>
                       </div>
+                      <p className="mt-2 text-sm text-muted-foreground">{c.lifetimePlan.billing}</p>
                       <p className="mt-2 text-sm font-medium text-foreground">
-                        {c.lifetimePlan.noMonthly}
+                        {c.lifetimePlan.priceLockNote}
                       </p>
-                      <p className="mt-1 text-xs text-muted-foreground">{c.lifetimePlan.nextTier}</p>
+                      <p className="mt-1 text-xs font-medium text-amber-700 dark:text-amber-400">
+                        {c.lifetimePlan.limitedNote}
+                      </p>
                     </div>
                     <p className="text-base font-semibold text-foreground">{c.lifetimePlan.label}</p>
                     <p className="text-sm text-muted-foreground leading-relaxed">{c.lifetimePlan.desc}</p>
@@ -150,8 +153,11 @@ export function CtaSection() {
                         </li>
                       ))}
                     </ul>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {c.lifetimePlan.renewalNote}
+                    </p>
                     <Button
-                      className="mt-6 w-full bg-amber-500 text-foreground hover:bg-amber-500/90 font-semibold"
+                      className="mt-6 w-full bg-amber-500 text-foreground hover:bg-amber-500/90 font-semibold text-sm sm:text-base"
                       asChild
                     >
                       <a href={APP_URL} target="_blank" rel="noopener noreferrer">
