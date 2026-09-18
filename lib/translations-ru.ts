@@ -565,6 +565,7 @@ export const ru = {
     supportLinks: [
       { label: "Центр помощи", href: "/centrum-pomocy" },
       { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
+      { label: "tel. 570 230 684", href: "tel:+48570230684" },
       { label: "Политика конфиденциальности", href: "/polityka-prywatnosci" },
       { label: "Regulamin / Terms of Service", href: "/regulamin" },
     ],

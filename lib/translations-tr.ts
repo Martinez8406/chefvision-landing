@@ -565,6 +565,7 @@ export const tr = {
     supportLinks: [
       { label: "Yardım merkezi", href: "/centrum-pomocy" },
       { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
+      { label: "tel. 570 230 684", href: "tel:+48570230684" },
       { label: "Gizlilik politikası", href: "/polityka-prywatnosci" },
       { label: "Hizmet şartları", href: "/regulamin" },
     ],

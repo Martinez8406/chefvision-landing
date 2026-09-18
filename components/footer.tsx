@@ -72,12 +72,21 @@ export function Footer() {
             <ul className="flex flex-col gap-2.5">
               {f.supportLinks.map((item: { label: string; href: string }) => (
                 <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {item.label}
-                  </Link>
+                  {item.href.startsWith("mailto:") || item.href.startsWith("tel:") ? (
+                    <a
+                      href={item.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

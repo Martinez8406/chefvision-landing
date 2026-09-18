@@ -565,6 +565,7 @@ export const it = {
     supportLinks: [
       { label: "Centro assistenza", href: "/centrum-pomocy" },
       { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
+      { label: "tel. 570 230 684", href: "tel:+48570230684" },
       { label: "Informativa sulla privacy", href: "/polityka-prywatnosci" },
       { label: "Termini di servizio", href: "/regulamin" },
     ],

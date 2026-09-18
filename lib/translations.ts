@@ -566,6 +566,7 @@ export const translations = {
       supportLinks: [
         { label: "Centrum pomocy", href: "/centrum-pomocy" },
         { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
+        { label: "tel. 570 230 684", href: "tel:+48570230684" },
         { label: "Polityka prywatności", href: "/polityka-prywatnosci" },
         { label: "Regulamin / Terms of Service", href: "/regulamin" },
       ],
@@ -1093,6 +1094,7 @@ export const translations = {
       supportLinks: [
         { label: "Help Center", href: "/centrum-pomocy" },
         { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
+        { label: "tel. 570 230 684", href: "tel:+48570230684" },
         { label: "Privacy Policy", href: "/polityka-prywatnosci" },
         { label: "Regulamin / Terms of Service", href: "/regulamin" },
       ],

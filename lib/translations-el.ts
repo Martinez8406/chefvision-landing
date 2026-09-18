@@ -566,6 +566,7 @@ export const el = {
     supportLinks: [
       { label: "Κέντρο βοήθειας", href: "/centrum-pomocy" },
       { label: "kontakt@chefvision.pl", href: "mailto:kontakt@chefvision.pl" },
+      { label: "tel. 570 230 684", href: "tel:+48570230684" },
       { label: "Πολιτική απορρήτου", href: "/polityka-prywatnosci" },
       { label: "Όροι χρήσης / Terms of Service", href: "/regulamin" },
     ],
