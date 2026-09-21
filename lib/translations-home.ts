@@ -55,7 +55,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Cyfrowy asystent gościa dla restauracji i hoteli",
-      headline: "Każdy gość rozumie Twoją ofertę — w swoim języku.",
+      headline: "Podnieś średni rachunek i obsłuż gości w 14 językach za 67 groszy dziennie – bez prowizji",
       sub: "Goście szybciej znajdują potrzebne informacje, a Twój zespół ma mniej pytań i więcej czasu na obsługę. ChefVision pomaga lepiej prezentować dania, dodatki i rekomendacje, które mogą zwiększać wartość zamówienia.",
       ctaPrimary: "Wypróbuj bezpłatnie przez 14 dni",
       ctaSecondary: "Zobacz, jak to działa",
@@ -141,7 +141,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Digital guest assistant for restaurants and hotels",
-      headline: "Every guest understands your offer — in their language.",
+      headline: "Raise the average check and serve guests in 14 languages for 67 groszy a day – no commission",
       sub: "Guests find the information they need faster, and your team gets fewer questions and more time for service. ChefVision helps present dishes, extras and recommendations that can increase order value.",
       ctaPrimary: "Try free for 14 days",
       ctaSecondary: "See how it works",
@@ -227,7 +227,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Digitaler Gästeassistent für Restaurants und Hotels",
-      headline: "Jeder Gast versteht Ihr Angebot — in seiner Sprache.",
+      headline: "Heben Sie den Durchschnittsbon und bedienen Sie Gäste in 14 Sprachen für 67 Groszy am Tag – ohne Provision",
       sub: "Gäste finden benötigte Informationen schneller, und Ihr Team hat weniger Fragen und mehr Zeit für den Service. ChefVision hilft, Gerichte, Extras und Empfehlungen besser zu präsentieren — und so den Bestellwert zu steigern.",
       ctaPrimary: "14 Tage kostenlos testen",
       ctaSecondary: "So funktioniert’s",
@@ -313,7 +313,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Asistente digital del huésped para restaurantes y hoteles",
-      headline: "Cada huésped entiende tu oferta — en su idioma.",
+      headline: "Sube el ticket medio y atiende a los huéspedes en 14 idiomas por 67 groszy al día – sin comisión",
       sub: "Los huéspedes encuentran antes la información que necesitan, y tu equipo tiene menos preguntas y más tiempo para atender. ChefVision ayuda a presentar mejor platos, extras y recomendaciones que pueden aumentar el valor del pedido.",
       ctaPrimary: "Pruébalo gratis 14 días",
       ctaSecondary: "Mira cómo funciona",
@@ -399,7 +399,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Ψηφιακός βοηθός επισκέπτη για εστιατόρια και ξενοδοχεία",
-      headline: "Κάθε επισκέπτης καταλαβαίνει την προσφορά σας — στη γλώσσα του.",
+      headline: "Αυξήστε τον μέσο λογαριασμό και εξυπηρετήστε επισκέπτες σε 14 γλώσσες με 67 γρόσια την ημέρα – χωρίς προμήθεια",
       sub: "Οι επισκέπτες βρίσκουν πιο γρήγορα τις πληροφορίες που χρειάζονται και η ομάδα σας έχει λιγότερες ερωτήσεις και περισσότερο χρόνο για εξυπηρέτηση. Το ChefVision βοηθά να παρουσιάζετε καλύτερα πιάτα, συνοδευτικά και προτάσεις που μπορούν να αυξήσουν την αξία παραγγελίας.",
       ctaPrimary: "Δοκιμάστε δωρεάν για 14 ημέρες",
       ctaSecondary: "Δείτε πώς λειτουργεί",
@@ -485,7 +485,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Assistente digitale dell'ospite per ristoranti e hotel",
-      headline: "Ogni ospite capisce la tua offerta — nella sua lingua.",
+      headline: "Alza lo scontrino medio e servi gli ospiti in 14 lingue per 67 groszy al giorno – senza commissioni",
       sub: "Gli ospiti trovano più in fretta le informazioni di cui hanno bisogno e il tuo team ha meno domande e più tempo per il servizio. ChefVision aiuta a presentare meglio piatti, extra e raccomandazioni che possono aumentare il valore dell'ordine.",
       ctaPrimary: "Provalo gratis per 14 giorni",
       ctaSecondary: "Guarda come funziona",
@@ -571,7 +571,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Restoranlar ve oteller için dijital misafir asistanı",
-      headline: "Her misafir teklifinizi kendi dilinde anlar.",
+      headline: "Ortalama hesabı yükseltin ve misafirlere 14 dilde hizmet verin, günde 67 groszy – komisyonsuz",
       sub: "Misafirler ihtiyaç duydukları bilgilere daha hızlı ulaşır; ekibiniz ise daha az soru ve servis için daha fazla zaman kazanır. ChefVision, sipariş değerini artırabilecek yemekleri, ekleri ve önerileri daha iyi sunmanıza yardımcı olur.",
       ctaPrimary: "14 gün ücretsiz deneyin",
       ctaSecondary: "Nasıl çalıştığını görün",
@@ -657,7 +657,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Цифровой ассистент гостя для ресторанов и отелей",
-      headline: "Каждый гость понимает ваше предложение — на своём языке.",
+      headline: "Поднимите средний чек и обслуживайте гостей на 14 языках за 67 грошей в день – без комиссии",
       sub: "Гости быстрее находят нужную информацию, а ваша команда получает меньше вопросов и больше времени на обслуживание. ChefVision помогает лучше показывать блюда, дополнения и рекомендации, которые могут увеличить сумму заказа.",
       ctaPrimary: "Попробуйте бесплатно 14 дней",
       ctaSecondary: "Смотрите, как это работает",
@@ -743,7 +743,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     },
     hero: {
       badge: "Digitalni asistent gosta za restorane i hotele",
-      headline: "Svaki gost razumije vašu ponudu — na svom jeziku.",
+      headline: "Podignite prosječni račun i uslužite goste na 14 jezika za 67 groša dnevno – bez provizije",
       sub: "Gosti brže pronalaze potrebne informacije, a vaš tim ima manje pitanja i više vremena za uslugu. ChefVision pomaže bolje predstaviti jela, dodatke i preporuke koje mogu povećati vrijednost narudžbe.",
       ctaPrimary: "Isprobajte besplatno 14 dana",
       ctaSecondary: "Pogledajte kako funkcionira",
