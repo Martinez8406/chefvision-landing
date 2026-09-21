@@ -352,6 +352,7 @@ export const translations = {
           "Menu bez znaku wodnego",
           "Tłumaczenia menu na 14 języków",
           "Rekomendacje i promocje",
+          "Klub Gości Premium — własna baza kontaktów",
           "Statystyki otwarć menu",
           "Wiadomość do managera z poziomu menu",
           "10 tokenów AI miesięcznie",
@@ -366,6 +367,7 @@ export const translations = {
         includesStart: "Wszystko ze Start +",
         buyBtn: "Wybieram Premium",
         features: [
+          "Klub Gości Premium — własna baza kontaktów",
           "Hotel Hub",
           "Panel informacyjny",
           "Poproś kelnera / poproś o rachunek",
@@ -884,6 +886,7 @@ export const translations = {
           "Menu without watermark",
           "Menu translations in 14 languages",
           "Recommendations and promotions",
+          "Premium Guest Club — your own customer list",
           "Menu open statistics",
           "Message to the manager from the menu",
           "10 AI tokens per month",
@@ -898,6 +901,7 @@ export const translations = {
         includesStart: "Everything in Start +",
         buyBtn: "Choose Premium",
         features: [
+          "Premium Guest Club — your own customer list",
           "Hotel Hub",
           "Info panel",
           "Ask waiter / request the bill",

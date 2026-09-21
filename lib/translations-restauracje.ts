@@ -168,20 +168,20 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
       sub: "Gość od razu wie, na czym stoi: dołącza do Klubu Gości Premium i otrzymuje dostęp do promocji oraz ofert premium. Zostawia kontakt — Ty budujesz własną bazę klientów i możesz zaprosić ich ponownie.",
       steps: [
         {
-          title: "Jasna propozycja od pierwszego QR",
-          desc: "Na ulotce jest wprost: dołącz do Klubu Gości Premium i otrzymasz dostęp do promocji oraz ofert premium. Bez haczyków i ukrytych intencji.",
+          title: "Jasna propozycja",
+          desc: "Na ulotce prosty przekaz: dołącz do Klubu Gości Premium, a otrzymasz dostęp do promocji oraz ofert premium. Bez haczyków i ukrytych intencji.",
         },
         {
           title: "Gość zostawia email",
           desc: "Potwierdza adres i dołącza do klubu — z pełną świadomością korzyści.",
         },
         {
-          title: "Kelner realizuje kod",
-          desc: "Obsługa sprawdza kod w prostym ChefVision Verify — bez dostępu do panelu managera.",
+          title: "Zaproś go ponownie",
+          desc: "Użyj gotowych szablonów i wyślij promocję, nowe danie lub wydarzenie — tylko do członków klubu.",
         },
         {
-          title: "Zaproś go ponownie",
-          desc: "Wyślij później promocję na słabszy dzień, nowe danie lub specjalne wydarzenie — tylko dla członków klubu.",
+          title: "Kelner realizuje kod",
+          desc: "Obsługa sprawdza kod w prostym ChefVision Verify.",
         },
       ],
       guestMock: {
@@ -339,12 +339,12 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
           desc: "They confirm the address and join the club — fully aware of the benefits.",
         },
         {
-          title: "Staff redeems the code",
-          desc: "The team checks the code in simple ChefVision Verify — without access to the manager panel.",
-        },
-        {
           title: "Invite them back",
           desc: "Later send a promotion for a quieter day, a new dish or a special event — for club members only.",
+        },
+        {
+          title: "Staff redeems the code",
+          desc: "The team checks the code in simple ChefVision Verify — without access to the manager panel.",
         },
       ],
       guestMock: {
@@ -502,12 +502,12 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
           desc: "Potvrđuje adresu i pridružuje se klubu — uz potpunu svijest o koristima.",
         },
         {
-          title: "Konobar realizira kod",
-          desc: "Osoblje provjerava kod u jednostavnom ChefVision Verify — bez pristupa panelu managera.",
-        },
-        {
           title: "Pozovite ga ponovno",
           desc: "Kasnije pošaljite promociju za slabiji dan, novo jelo ili poseban događaj — samo za članove kluba.",
+        },
+        {
+          title: "Konobar realizira kod",
+          desc: "Osoblje provjerava kod u jednostavnom ChefVision Verify — bez pristupa panelu managera.",
         },
       ],
       guestMock: {

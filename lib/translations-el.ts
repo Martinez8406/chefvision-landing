@@ -345,6 +345,7 @@ export const el = {
         "Μενού χωρίς watermark",
         "Μεταφράσεις μενού σε 14 γλώσσες",
         "Προτάσεις και προσφορές",
+        "Premium Guest Club — δική σας βάση πελατών",
         "Στατιστικά ανοιγμάτων μενού",
         "Μήνυμα στον manager από το μενού",
         "10 AI tokens τον μήνα",
@@ -359,6 +360,7 @@ export const el = {
       includesStart: "Όλα από το Start +",
       buyBtn: "Επιλέγω Premium",
       features: [
+        "Premium Guest Club — δική σας βάση πελατών",
         "Hotel Hub",
         "Πίνακας πληροφοριών",
         "Κάλεσε σερβιτόρο / ζήτα λογαριασμό",

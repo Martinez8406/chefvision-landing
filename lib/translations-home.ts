@@ -30,6 +30,14 @@ export type HomeCopy = {
     steps: { title: string; desc: string }[]
     cta: string
   }
+  guestClub: {
+    badge: string
+    headline: string
+    sub: string
+    steps: { title: string; desc: string }[]
+    ctaPrimary: string
+    ctaSecondary: string
+  }
   who: {
     badge: string
     headline: string
@@ -100,6 +108,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
       ],
       cta: "Sprawdź cennik",
+    },
+    guestClub: {
+      badge: "Nowość · Klub Gości Premium",
+      headline: "Zamień jednorazowego gościa w klienta, który wraca.",
+      sub: "Dostępny w planach Start i Premium. Gość dołącza do klubu, zostawia kontakt — Ty budujesz własną bazę i zapraszasz go ponownie.",
+      steps: [
+        {
+          title: "Jasna propozycja",
+          desc: "Na ulotce prosty przekaz: dołącz do Klubu Gości Premium, a otrzymasz dostęp do promocji oraz ofert premium.",
+        },
+        {
+          title: "Gość zostawia e-mail",
+          desc: "Potwierdza adres i dołącza do klubu — z pełną świadomością korzyści.",
+        },
+        {
+          title: "Zaproś go ponownie",
+          desc: "Użyj gotowych szablonów i wyślij promocję, nowe danie lub wydarzenie — tylko do członków klubu.",
+        },
+        {
+          title: "Kelner realizuje kod",
+          desc: "Obsługa sprawdza kod w ChefVision Verify.",
+        },
+      ],
+      ctaPrimary: "Zobacz, jak działa Klub Gości",
+      ctaSecondary: "Wypróbuj bezpłatnie",
     },
     who: {
       badge: "Dla kogo?",
@@ -187,6 +220,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
       cta: "See pricing",
     },
+    guestClub: {
+      badge: "New · Premium Guest Club",
+      headline: "Turn a one-time guest into a customer who comes back.",
+      sub: "Included in Start and Premium. The guest joins the club and leaves a contact — you build your own list and invite them again.",
+      steps: [
+        {
+          title: "A clear offer from the first QR",
+          desc: "The flyer says it outright: join the Premium Guest Club and get access to promotions and premium offers.",
+        },
+        {
+          title: "The guest leaves an email",
+          desc: "They confirm the address and join the club — fully aware of the benefits.",
+        },
+        {
+          title: "Invite them back",
+          desc: "Send a promotion for a quieter day, a new dish or an event — only to club members.",
+        },
+        {
+          title: "The waiter redeems the code",
+          desc: "Staff checks the code in ChefVision Verify — without access to the manager panel.",
+        },
+      ],
+      ctaPrimary: "See how Guest Club works",
+      ctaSecondary: "Try it free",
+    },
     who: {
       badge: "Who is it for?",
       headline: "Who is ChefVision for?",
@@ -272,6 +330,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
       ],
       cta: "Preise ansehen",
+    },
+    guestClub: {
+      badge: "Neu · Premium Guest Club",
+      headline: "Machen Sie aus einem einmaligen Gast einen Stammgast.",
+      sub: "Enthalten in Start und Premium. Der Gast tritt dem Club bei und hinterlässt Kontakt — Sie bauen Ihre eigene Liste auf und laden erneut ein.",
+      steps: [
+        {
+          title: "Klares Angebot ab dem ersten QR",
+          desc: "Auf dem Flyer steht klar: treten Sie dem Premium Guest Club bei und erhalten Sie Zugang zu Aktionen und Premium-Angeboten.",
+        },
+        {
+          title: "Der Gast hinterlässt eine E-Mail",
+          desc: "Er bestätigt die Adresse und tritt dem Club bei — mit klarem Nutzen.",
+        },
+        {
+          title: "Laden Sie erneut ein",
+          desc: "Senden Sie eine Aktion für einen schwächeren Tag, ein neues Gericht oder ein Event — nur an Clubmitglieder.",
+        },
+        {
+          title: "Der Kellner löst den Code ein",
+          desc: "Das Team prüft den Code in ChefVision Verify — ohne Zugriff auf das Manager-Panel.",
+        },
+      ],
+      ctaPrimary: "So funktioniert der Guest Club",
+      ctaSecondary: "Kostenlos testen",
     },
     who: {
       badge: "Für wen?",
@@ -359,6 +442,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
       cta: "Ver precios",
     },
+    guestClub: {
+      badge: "Nuevo · Club de Huéspedes Premium",
+      headline: "Convierte a un cliente ocasional en alguien que vuelve.",
+      sub: "Incluido en Start y Premium. El huésped se une al club y deja su contacto: tú construyes tu propia base y lo vuelves a invitar.",
+      steps: [
+        {
+          title: "Oferta clara desde el primer QR",
+          desc: "En el folleto se dice abiertamente: únete al Club de Huéspedes Premium y accede a promociones y ofertas premium.",
+        },
+        {
+          title: "El huésped deja un email",
+          desc: "Confirma la dirección y se une al club, con pleno conocimiento de los beneficios.",
+        },
+        {
+          title: "Invítalo de nuevo",
+          desc: "Envía una promoción para un día más flojo, un plato nuevo o un evento, solo a miembros del club.",
+        },
+        {
+          title: "El camarero canjea el código",
+          desc: "El equipo comprueba el código en ChefVision Verify, sin acceso al panel del manager.",
+        },
+      ],
+      ctaPrimary: "Ver cómo funciona el club",
+      ctaSecondary: "Pruébalo gratis",
+    },
     who: {
       badge: "¿Para quién?",
       headline: "¿Para quién es ChefVision?",
@@ -444,6 +552,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
       ],
       cta: "Δείτε τις τιμές",
+    },
+    guestClub: {
+      badge: "Νέο · Premium Guest Club",
+      headline: "Μετατρέψτε έναν επισκέπτη μιας φοράς σε πελάτη που επιστρέφει.",
+      sub: "Στα πακέτα Start και Premium. Ο επισκέπτης μπαίνει στο club και αφήνει επαφή — εσείς χτίζετε δική σας βάση και τον καλείτε ξανά.",
+      steps: [
+        {
+          title: "Σαφής πρόταση από το πρώτο QR",
+          desc: "Στο φυλλάδιο λέει ευθέως: μπείτε στο Premium Guest Club και αποκτήστε πρόσβαση σε προσφορές premium.",
+        },
+        {
+          title: "Ο επισκέπτης αφήνει email",
+          desc: "Επιβεβαιώνει τη διεύθυνση και μπαίνει στο club, γνωρίζοντας τα οφέλη.",
+        },
+        {
+          title: "Καλέστε τον ξανά",
+          desc: "Στείλτε προσφορά για πιο ήσυχη μέρα, νέο πιάτο ή εκδήλωση — μόνο στα μέλη του club.",
+        },
+        {
+          title: "Ο σερβιτόρος εξαργυρώνει τον κωδικό",
+          desc: "Το προσωπικό ελέγχει τον κωδικό στο ChefVision Verify — χωρίς πρόσβαση στο panel του manager.",
+        },
+      ],
+      ctaPrimary: "Δείτε πώς λειτουργεί το club",
+      ctaSecondary: "Δοκιμάστε δωρεάν",
     },
     who: {
       badge: "Για ποιον είναι;",
@@ -531,6 +664,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
       cta: "Vedi i prezzi",
     },
+    guestClub: {
+      badge: "Novità · Premium Guest Club",
+      headline: "Trasforma un ospite occasionale in un cliente che torna.",
+      sub: "Incluso in Start e Premium. L'ospite entra nel club e lascia un contatto — tu costruisci la tua lista e lo inviti di nuovo.",
+      steps: [
+        {
+          title: "Offerta chiara dal primo QR",
+          desc: "Sul volantino c'è scritto: unisciti al Premium Guest Club e accedi a promozioni e offerte premium.",
+        },
+        {
+          title: "L'ospite lascia l'email",
+          desc: "Conferma l'indirizzo e entra nel club, consapevole dei vantaggi.",
+        },
+        {
+          title: "Invitalo di nuovo",
+          desc: "Invia una promozione per un giorno più debole, un nuovo piatto o un evento — solo ai membri del club.",
+        },
+        {
+          title: "Il cameriere riscatta il codice",
+          desc: "Lo staff verifica il codice in ChefVision Verify — senza accesso al pannello del manager.",
+        },
+      ],
+      ctaPrimary: "Scopri come funziona il club",
+      ctaSecondary: "Provalo gratis",
+    },
     who: {
       badge: "Per chi è?",
       headline: "Per chi è ChefVision?",
@@ -616,6 +774,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
       ],
       cta: "Fiyatlara bakın",
+    },
+    guestClub: {
+      badge: "Yeni · Premium Guest Club",
+      headline: "Tek seferlik misafiri geri gelen müşteriye dönüştürün.",
+      sub: "Start ve Premium planlarda. Misafir kulübe katılır ve iletişim bırakır — siz kendi listenizi oluşturur ve tekrar davet edersiniz.",
+      steps: [
+        {
+          title: "İlk QR’dan net teklif",
+          desc: "Broşürde açıkça yazar: Premium Guest Club’a katılın, kampanya ve premium tekliflere erişin.",
+        },
+        {
+          title: "Misafir e-posta bırakır",
+          desc: "Adresi onaylar ve kulübe katılır — faydaların farkında olarak.",
+        },
+        {
+          title: "Tekrar davet edin",
+          desc: "Sakin gün, yeni yemek veya etkinlik kampanyasını yalnızca kulüp üyelerine gönderin.",
+        },
+        {
+          title: "Garson kodu kullanır",
+          desc: "Ekip kodu ChefVision Verify’da kontrol eder — yönetici paneline erişmeden.",
+        },
+      ],
+      ctaPrimary: "Guest Club nasıl çalışır",
+      ctaSecondary: "Ücretsiz deneyin",
     },
     who: {
       badge: "Kimler için?",
@@ -703,6 +886,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
       ],
       cta: "Посмотреть цены",
     },
+    guestClub: {
+      badge: "Новинка · Premium Guest Club",
+      headline: "Превратите разового гостя в клиента, который возвращается.",
+      sub: "В планах Start и Premium. Гость вступает в клуб и оставляет контакт — вы строите свою базу и приглашаете снова.",
+      steps: [
+        {
+          title: "Понятное предложение с первого QR",
+          desc: "На флаере прямо: вступите в Premium Guest Club и получите доступ к акциям и премиум-предложениям.",
+        },
+        {
+          title: "Гость оставляет email",
+          desc: "Подтверждает адрес и вступает в клуб, понимая выгоду.",
+        },
+        {
+          title: "Пригласите снова",
+          desc: "Отправьте акцию на слабый день, новое блюдо или событие — только членам клуба.",
+        },
+        {
+          title: "Официант погашает код",
+          desc: "Сотрудники проверяют код в ChefVision Verify — без доступа к панели менеджера.",
+        },
+      ],
+      ctaPrimary: "Как работает Guest Club",
+      ctaSecondary: "Попробовать бесплатно",
+    },
     who: {
       badge: "Для кого?",
       headline: "Для кого ChefVision?",
@@ -788,6 +996,31 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
       ],
       cta: "Pogledajte cjenik",
+    },
+    guestClub: {
+      badge: "Novo · Premium Guest Club",
+      headline: "Pretvorite jednokratnog gosta u klijenta koji se vraća.",
+      sub: "U planovima Start i Premium. Gost se pridruži klubu i ostavi kontakt — vi gradite vlastitu bazu i pozovete ga ponovno.",
+      steps: [
+        {
+          title: "Jasna ponuda od prvog QR-a",
+          desc: "Na letku piše izravno: pridruži se Premium Guest Clubu i dobij pristup promocijama i premium ponudama.",
+        },
+        {
+          title: "Gost ostavlja e-mail",
+          desc: "Potvrđuje adresu i pridružuje se klubu — uz svijest o koristima.",
+        },
+        {
+          title: "Pozovite ga ponovno",
+          desc: "Pošaljite promociju za slabiji dan, novo jelo ili događaj — samo članovima kluba.",
+        },
+        {
+          title: "Konobar realizira kod",
+          desc: "Osoblje provjerava kod u ChefVision Verify — bez pristupa panelu managera.",
+        },
+      ],
+      ctaPrimary: "Pogledajte kako klub radi",
+      ctaSecondary: "Isprobajte besplatno",
     },
     who: {
       badge: "Za koga?",

@@ -344,6 +344,7 @@ export const tr = {
         "Filigransız menü",
         "14 dilde menü çevirileri",
         "Öneriler ve kampanyalar",
+        "Premium Guest Club — kendi müşteri listeniz",
         "Menü açılma istatistikleri",
         "Menüden yöneticiye mesaj",
         "Ayda 10 AI token",
@@ -358,6 +359,7 @@ export const tr = {
       includesStart: "Start’taki her şey +",
       buyBtn: "Premium'u seçiyorum",
       features: [
+        "Premium Guest Club — kendi müşteri listeniz",
         "Hotel Hub",
         "Bilgi paneli",
         "Garson çağır / hesap iste",

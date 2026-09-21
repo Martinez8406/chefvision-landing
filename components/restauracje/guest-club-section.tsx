@@ -31,7 +31,7 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.08, delayChildren: 0.02 } },
 }
 
-const STEP_ICONS = [BadgeCheck, Mail, CheckCircle2, RotateCcw] as const
+const STEP_ICONS = [BadgeCheck, Mail, RotateCcw, CheckCircle2] as const
 
 function FadeIn({
   children,

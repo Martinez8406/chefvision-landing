@@ -344,6 +344,7 @@ export const it = {
         "Menu senza watermark",
         "Traduzioni del menu in 14 lingue",
         "Raccomandazioni e promozioni",
+        "Premium Guest Club — la tua lista clienti",
         "Statistiche aperture menu",
         "Messaggio al manager dal menu",
         "10 token AI al mese",
@@ -358,6 +359,7 @@ export const it = {
       includesStart: "Tutto di Start +",
       buyBtn: "Scelgo Premium",
       features: [
+        "Premium Guest Club — la tua lista clienti",
         "Hotel Hub",
         "Pannello informativo",
         "Chiama cameriere / chiedi il conto",

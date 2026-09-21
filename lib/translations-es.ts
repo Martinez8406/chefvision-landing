@@ -337,6 +337,7 @@ export const es = {
         "Menú sin marca de agua",
         "Traducciones del menú en 14 idiomas",
         "Recomendaciones y promociones",
+        "Club de Huéspedes Premium — tu propia base de clientes",
         "Estadísticas de aperturas del menú",
         "Mensaje al manager desde el menú",
         "10 tokens de IA al mes",
@@ -351,6 +352,7 @@ export const es = {
       includesStart: "Todo de Start +",
       buyBtn: "Elijo Premium",
       features: [
+        "Club de Huéspedes Premium — tu propia base de clientes",
         "Hotel Hub",
         "Panel informativo",
         "Pedir camarero / pedir la cuenta",

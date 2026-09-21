@@ -344,6 +344,7 @@ export const hr = {
         "Jelovnik bez vodenog žiga",
         "Prijevodi jelovnika na 14 jezika",
         "Preporuke i promocije",
+        "Premium Guest Club — vlastita baza gostiju",
         "Statistike otvaranja menija",
         "Poruka manageru iz menija",
         "10 AI tokena mjesečno",
@@ -358,6 +359,7 @@ export const hr = {
       includesStart: "Sve iz Start +",
       buyBtn: "Biram Premium",
       features: [
+        "Premium Guest Club — vlastita baza gostiju",
         "Hotel Hub",
         "Informacijska ploča",
         "Pozovi konobara / zatraži račun",

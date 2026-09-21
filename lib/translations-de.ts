@@ -336,6 +336,7 @@ export const de = {
         "Speisekarte ohne Wasserzeichen",
         "Speisekartenübersetzungen in 14 Sprachen",
         "Empfehlungen und Aktionen",
+        "Premium Guest Club — eigene Kundenliste",
         "Menü-Öffnungsstatistiken",
         "Nachricht an den Manager aus dem Menü",
         "10 KI-Tokens pro Monat",
@@ -350,6 +351,7 @@ export const de = {
       includesStart: "Alles aus Start +",
       buyBtn: "Premium wählen",
       features: [
+        "Premium Guest Club — eigene Kundenliste",
         "Hotel Hub",
         "Infopanel",
         "Kellner rufen / Rechnung anfordern",
