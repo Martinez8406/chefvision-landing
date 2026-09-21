@@ -20,7 +20,7 @@ export function HeroSection() {
               {h.badge}
             </span>
 
-            <h1 className="max-w-2xl text-3xl font-bold leading-[1.12] text-foreground text-balance sm:text-4xl lg:text-[2.65rem]">
+            <h1 className="max-w-xl whitespace-pre-line text-3xl font-bold leading-[1.12] text-foreground text-balance sm:text-4xl lg:text-[3.25rem]">
               {h.headline}
             </h1>
 
