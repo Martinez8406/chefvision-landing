@@ -204,7 +204,7 @@ export const tr = {
   },
   antiPlatform: {
     headline: "ChefVision ≠ UberEats, Glovo veya Wolt",
-    sub: "Biz bir teslimat platformu değiliz. Marjınızı almıyoruz. ChefVision sizin çalışanınızdır — sadece €0.77/day tutar ve asla rapor vermez.",
+    sub: "Biz bir teslimat platformu değiliz. Marjınızı almıyoruz. ChefVision sizin çalışanınızdır — sadece günde 67 groszy tutar ve asla rapor vermez.",
     featureCol: "Özellik",
     themCol: "Teslimat platformları",
     usCol: "ChefVision",
@@ -263,7 +263,7 @@ export const tr = {
         points: [
           "Garsonlar masada menüyü çevirmek için ortalama 5–7 dakika harcar (Cornell University)",
           "3 garsonla bu günde ~€20 tasarruf = €580/ay",
-          "ChefVision maliyeti: €23/mo = €0.77/day",
+          "ChefVision maliyeti: 20 zł/mo = günde 67 groszy",
           "Yatırım getirisi sadece 3–4 günde",
         ],
       },
@@ -554,7 +554,7 @@ export const tr = {
   },
   footer: {
     tagline:
-      "Restoranlar ve oteller için dijital misafir asistanı. 14 dilde menü ve öneriler — €0.77/day. Uygulama yok, komisyon yok.",
+      "Restoranlar ve oteller için dijital misafir asistanı. 14 dilde menü ve öneriler — günde 67 groszy. Uygulama yok, komisyon yok.",
     product: "Ürün",
     support: "Destek",
     productLinks: [

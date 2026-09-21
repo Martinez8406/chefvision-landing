@@ -204,7 +204,7 @@ export const hr = {
   },
   antiPlatform: {
     headline: "ChefVision ≠ UberEats, Glovo ili Wolt",
-    sub: "Nismo platforma za dostavu. Ne uzimamo vašu maržu. ChefVision je vaš suradnik — košta samo €0.77/day i nikada ne uzima bolovanje.",
+    sub: "Nismo platforma za dostavu. Ne uzimamo vašu maržu. ChefVision je vaš suradnik — košta samo 67 groša dnevno i nikada ne uzima bolovanje.",
     featureCol: "Značajka",
     themCol: "Platforme za dostavu",
     usCol: "ChefVision",
@@ -263,7 +263,7 @@ export const hr = {
         points: [
           "Konobari u prosjeku troše 5–7 minuta po stolu na prevođenje jelovnika (Cornell University)",
           "S 3 konobara to je ~€20 uštede dnevno = €580/mjesečno",
-          "Trošak ChefVisiona: €23/mo = €0.77/day",
+          "Trošak ChefVisiona: 20 zł/mo = 67 groša dnevno",
           "Povrat investicije već za 3–4 dana",
         ],
       },
@@ -554,7 +554,7 @@ export const hr = {
   },
   footer: {
     tagline:
-      "Digitalni asistent gosta za restorane i hotele. Jelovnik na 14 jezika i preporuke — za €0.77/day. Bez aplikacije, bez provizije.",
+      "Digitalni asistent gosta za restorane i hotele. Jelovnik na 14 jezika i preporuke — za 67 groša dnevno. Bez aplikacije, bez provizije.",
     product: "Proizvod",
     support: "Podrška",
     productLinks: [

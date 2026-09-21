@@ -200,7 +200,7 @@ export const de = {
   },
   antiPlatform: {
     headline: "ChefVision ≠ UberEats, Glovo oder Wolt",
-    sub: "Wir sind keine Lieferplattform. Wir nehmen Ihnen keine Marge. ChefVision ist Ihr Mitarbeiter — kostet nur €0,77/Tag und meldet sich nie krank.",
+    sub: "Wir sind keine Lieferplattform. Wir nehmen Ihnen keine Marge. ChefVision ist Ihr Mitarbeiter — kostet nur 67 Groszy am Tag und meldet sich nie krank.",
     featureCol: "Funktion",
     themCol: "Lieferplattformen",
     usCol: "ChefVision",
@@ -259,7 +259,7 @@ export const de = {
         points: [
           "Kellner verbringen durchschnittlich 5–7 Minuten pro Tisch mit der Übersetzung der Speisekarte (Cornell University)",
           "Mit 3 Kellnern sind das ~€20 Ersparnis pro Tag = €580/Monat",
-          "Kosten von ChefVision: €23/mo = €0,77/Tag",
+          "Kosten von ChefVision: 20 zł/mo = 67 Groszy am Tag",
           "Return on Investment in nur 3–4 Tagen",
         ],
       },
@@ -546,7 +546,7 @@ export const de = {
   },
   footer: {
     tagline:
-      "Digitaler Gästeassistent für Restaurants und Hotels. Speisekarte in 14 Sprachen und Empfehlungen — für €0,77/Tag. Ohne App, ohne Provision.",
+      "Digitaler Gästeassistent für Restaurants und Hotels. Speisekarte in 14 Sprachen und Empfehlungen — für 67 Groszy am Tag. Ohne App, ohne Provision.",
     product: "Produkt",
     support: "Support",
     productLinks: [

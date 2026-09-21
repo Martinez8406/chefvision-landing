@@ -237,7 +237,7 @@ export const translations = {
     },
     antiPlatform: {
       headline: "ChefVision ≠ UberEats, Glovo czy Wolt",
-      sub: "Nie jesteśmy platformą jak Pyszne.pl. Nie zabieramy Twojej marży. ChefVision to Twój pracownik, który kosztuje tylko 3,30 zł dziennie i nigdy nie idzie na chorobowe.",
+      sub: "Nie jesteśmy platformą jak Pyszne.pl. Nie zabieramy Twojej marży. ChefVision to Twój pracownik, który kosztuje tylko 67 groszy dziennie i nigdy nie idzie na chorobowe.",
       featureCol: "Funkcja",
       themCol: "Platformy Dostawcze",
       usCol: "ChefVision",
@@ -271,7 +271,7 @@ export const translations = {
           points: [
             "Kelner traci średnio 5–7 minut na stolik na tłumaczenie karty (Cornell University)",
             "Przy 3 kelnerach to ~84 zł oszczędności dziennie = 2 500 zł miesięcznie",
-            "Koszt ChefVision: 50 zł/msc = 1,67 zł dziennie",
+            "Koszt ChefVision: 20 zł/msc = 67 groszy dziennie",
             "Zwrot z inwestycji już po 3–4 dniach",
           ],
         },
@@ -430,7 +430,7 @@ export const translations = {
           "Realizacja w 3 dni robocze",
         ],
       },
-      ctaBtn: "Zatrudnij cyfrowego asystenta gościa za 1,67 zł dziennie",
+      ctaBtn: "Zatrudnij cyfrowego asystenta gościa za 67 groszy dziennie",
     },
     helpCenter: {
       badge: "Poradniki wideo",
@@ -555,7 +555,7 @@ export const translations = {
       ],
     },
     footer: {
-      tagline: "Cyfrowy asystent gościa dla restauracji i hoteli. Menu w 14 językach i rekomendacje — za 1,67 zł dziennie. Bez aplikacji i bez prowizji.",
+      tagline: "Cyfrowy asystent gościa dla restauracji i hoteli. Menu w 14 językach i rekomendacje — za 67 groszy dziennie. Bez aplikacji i bez prowizji.",
       product: "Produkt",
       support: "Wsparcie",
       productLinks: [
@@ -769,7 +769,7 @@ export const translations = {
     },
     antiPlatform: {
       headline: "ChefVision ≠ UberEats, Glovo or Wolt",
-      sub: "We are not a delivery platform. We don't take your margin. ChefVision is your employee — costs only €0.40/day and never calls in sick.",
+      sub: "We are not a delivery platform. We don't take your margin. ChefVision is your employee — costs only 67 groszy a day and never calls in sick.",
       featureCol: "Feature",
       themCol: "Delivery Platforms",
       usCol: "ChefVision",
@@ -803,7 +803,7 @@ export const translations = {
           points: [
             "Waiters spend an average of 5–7 minutes per table translating the menu (Cornell University)",
             "With 3 waiters that's ~€20 in savings per day = €580/month",
-            "Cost of ChefVision: €12/mo = €0.40/day",
+            "Cost of ChefVision: 20 zł/mo = 67 groszy a day",
             "Return on investment in just 3–4 days",
           ],
         },
@@ -1083,7 +1083,7 @@ export const translations = {
       ],
     },
     footer: {
-      tagline: "Digital guest assistant for restaurants and hotels. Menu in 14 languages and recommendations — for €0.40/day. No app, no commission.",
+      tagline: "Digital guest assistant for restaurants and hotels. Menu in 14 languages and recommendations — for 67 groszy a day. No app, no commission.",
       product: "Product",
       support: "Support",
       productLinks: [

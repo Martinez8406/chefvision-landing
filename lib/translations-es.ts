@@ -201,7 +201,7 @@ export const es = {
   },
   antiPlatform: {
     headline: "ChefVision ≠ UberEats, Glovo o Wolt",
-    sub: "No somos una plataforma de delivery. No nos llevamos su margen. ChefVision es su empleado — cuesta solo €0,77/día y nunca se pone enfermo.",
+    sub: "No somos una plataforma de delivery. No nos llevamos su margen. ChefVision es su empleado — cuesta solo 67 groszy al día y nunca se pone enfermo.",
     featureCol: "Función",
     themCol: "Plataformas de delivery",
     usCol: "ChefVision",
@@ -260,7 +260,7 @@ export const es = {
         points: [
           "Los camareros dedican de media 5–7 minutos por mesa a traducir la carta (Cornell University)",
           "Con 3 camareros son ~€20 de ahorro al día = €580/mes",
-          "Coste de ChefVision: €23/mo = €0,77/día",
+          "Coste de ChefVision: 20 zł/mo = 67 groszy al día",
           "Retorno de la inversión en solo 3–4 días",
         ],
       },
@@ -547,7 +547,7 @@ export const es = {
   },
   footer: {
     tagline:
-      "Asistente digital del huésped para restaurantes y hoteles. Menú en 14 idiomas y recomendaciones — por €0,77/día. Sin app, sin comisión.",
+      "Asistente digital del huésped para restaurantes y hoteles. Menú en 14 idiomas y recomendaciones — por 67 groszy al día. Sin app, sin comisión.",
     product: "Producto",
     support: "Soporte",
     productLinks: [
