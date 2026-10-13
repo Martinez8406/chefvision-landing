@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
+import { HotelHubHome } from "@/components/hotel-hub-home"
 import { ScanBarSection } from "@/components/scan-bar-section"
 import { HowItWorksHome } from "@/components/how-it-works-home"
 import { GuestClubHome } from "@/components/guest-club-home"
@@ -12,6 +13,7 @@ export default function Home() {
     <main className="bg-background min-h-screen">
       <Navbar />
       <HeroSection />
+      <HotelHubHome />
       <ScanBarSection />
       <HowItWorksHome />
       <GuestClubHome />

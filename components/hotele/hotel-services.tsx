@@ -62,12 +62,23 @@ export function HotelServices() {
                 </span>
 
                 <div className="mt-5">
-                  <p className="text-sm text-muted-foreground line-through">
-                    {service.price} {service.currency}
-                  </p>
-                  <p className="text-4xl font-bold tracking-tight text-foreground">
-                    {service.freeLabel}
-                  </p>
+                  {service.freeLabel ? (
+                    <>
+                      <p className="text-sm text-muted-foreground line-through">
+                        {service.price} {service.currency}
+                      </p>
+                      <p className="text-4xl font-bold tracking-tight text-foreground">
+                        {service.freeLabel}
+                      </p>
+                    </>
+                  ) : (
+                    <p className="flex items-baseline gap-1.5">
+                      <span className="text-4xl font-bold tracking-tight text-foreground">
+                        {service.price}
+                      </span>
+                      <span className="text-sm text-muted-foreground">{service.currency}</span>
+                    </p>
+                  )}
                   <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
                     {service.offerNote}
                   </p>

@@ -120,7 +120,7 @@ export function CtaSection() {
                     </Button>
                   </div>
 
-                  {/* Plan Roczny */}
+                  {/* Premium roczny */}
                   <div className="relative flex flex-col gap-3 rounded-2xl border-2 border-amber-500 bg-card p-6 sm:p-7 shadow-sm sm:col-span-2 xl:col-span-1">
                     <span className="inline-flex w-fit items-center gap-1.5 rounded-md bg-amber-500 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white">
                       <Crown size={11} />
@@ -179,12 +179,25 @@ export function CtaSection() {
                       {c.menuService.badge}
                     </span>
                     <div className="mt-1">
-                      <p className="text-sm text-muted-foreground line-through">
-                        {c.menuService.price} {c.menuService.currency}
-                      </p>
-                      <p className="text-3xl font-bold text-foreground font-serif leading-none">
-                        {c.menuService.freeLabel}
-                      </p>
+                      {c.menuService.freeLabel ? (
+                        <>
+                          <p className="text-sm text-muted-foreground line-through">
+                            {c.menuService.price} {c.menuService.currency}
+                          </p>
+                          <p className="text-3xl font-bold text-foreground font-serif leading-none">
+                            {c.menuService.freeLabel}
+                          </p>
+                        </>
+                      ) : (
+                        <div className="flex items-end gap-1.5">
+                          <span className="text-3xl font-bold text-foreground font-serif leading-none">
+                            {c.menuService.price}
+                          </span>
+                          <span className="mb-0.5 text-sm text-muted-foreground">
+                            {c.menuService.currency}
+                          </span>
+                        </div>
+                      )}
                       <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
                         {c.menuService.offerNote}
                       </p>
