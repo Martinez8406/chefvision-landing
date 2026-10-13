@@ -19,6 +19,13 @@ export function Footer() {
     { label: t.nav.materials, href: "/materialy" },
   ]
 
+  const seoLinks = [
+    { label: "QR menu", href: "/qr-menu" },
+    { label: "Menu online", href: "/menu-online" },
+    { label: "Tłumaczenie menu", href: "/tlumaczenie-menu" },
+    { label: "Asystent kelnera", href: "/asystent-kelnera" },
+  ]
+
   return (
     <footer className="border-t border-border bg-card">
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -92,6 +99,18 @@ export function Footer() {
             </ul>
           </div>
         </div>
+
+        <nav aria-label="Rozwiązania" className="mt-10 flex flex-wrap gap-x-4 gap-y-2">
+          {seoLinks.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
