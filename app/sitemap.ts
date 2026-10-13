@@ -92,6 +92,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    {
+      url: toAbsoluteUrl("/qr-menu"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: toAbsoluteUrl("/menu-online"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: toAbsoluteUrl("/tlumaczenie-menu"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: toAbsoluteUrl("/asystent-kelnera"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
   ]
 
   const products = await fetchActiveProductRowsFromDatabase()
