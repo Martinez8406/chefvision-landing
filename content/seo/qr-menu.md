@@ -57,6 +57,8 @@ Uruchomienie zajmuje kilka godzin i nie robisz tego sam. Wygląda to tak:
 
 Po starcie codzienne zmiany, takie jak nowe danie, inne zdjęcie czy poprawiony opis, robisz z telefonu w kilka minut.
 
+Ten sam link do karty możesz dodać do Instagrama, Facebooka i wizytówki Google — więcej w [Menu online](/menu-online).
+
 ## Najczęstsze pytania
 
 ### Czy gość musi instalować aplikację?
