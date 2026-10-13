@@ -54,6 +54,10 @@ Uruchomienie zajmuje kilka godzin i dostajesz przy tym wsparcie.
 
 Później zmiana dania, zdjęcia czy opisu to kilka minut z telefonu.
 
+## Twoja karta i zdjęcia pracują też w sieci
+
+Ten sam link do karty wrzucasz do bio na Instagramie, na Facebooka i do wizytówki Google. Gość widzi kartę w swoim języku, zanim przyjdzie, i łatwiej mu wybrać właśnie Ciebie. Zdjęcia dań, które ChefVision poprawia (światło, tło, rozmycie), to wciąż Twoje prawdziwe dania — nadają się od razu do postów i relacji. Bez agencji, bez osobnej sesji zdjęciowej.
+
 ## Najczęstsze pytania
 
 ### Czy menu online może być na mojej stronie internetowej?
