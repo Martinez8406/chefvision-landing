@@ -17,6 +17,13 @@ export type HomeCopy = {
     ctaSecondary: string
     trust: string[]
   }
+  hub: {
+    badge: string
+    headline: string
+    sub: string
+    items: string[]
+    note: string
+  }
   bar: {
     headline: string
     sub: string
@@ -62,12 +69,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "O nas",
     },
     hero: {
-      badge: "Cyfrowy asystent gościa dla restauracji i hoteli",
+      badge: "Cyfrowy asystent gościa dla restauracji, hoteli i pensjonatów",
       headline: "Menu nie powinno tylko pokazywać dań.\nPowinno pomagać je sprzedawać.",
-      sub: "ChefVision pomaga gościom zrozumieć ofertę, wybrać odpowiednie dania i wrócić do restauracji — bez instalowania aplikacji.",
+      sub: "Dla restauracji, hoteli i pensjonatów. Gość skanuje kod QR, rozumie ofertę i znajduje informacje o obiekcie — bez instalowania aplikacji.",
       ctaPrimary: "Wypróbuj bezpłatnie przez 14 dni",
       ctaSecondary: "Zobacz, jak to działa",
       trust: ["14 języków", "Bez prowizji", "Bez instalowania aplikacji"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "Jeden kod QR. Cały hotel w telefonie gościa.",
+      sub: "Menu restauracji, room service, spa, śniadania i informacje o obiekcie — dla hoteli, pensjonatów i agroturystyki.",
+      items: ["Menu restauracji", "Room service", "Spa", "Śniadania", "Informacje o hotelu", "Bar"],
+      note: "Gość skanuje jeden kod w pokoju i ma wszystko pod ręką. Bez instalowania aplikacji.",
     },
     bar: {
       headline: "Skanujesz. Wybierasz. Zamawiasz.",
@@ -173,12 +187,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "About us",
     },
     hero: {
-      badge: "Digital guest assistant for restaurants and hotels",
+      badge: "Digital guest assistant for restaurants, hotels and guesthouses",
       headline: "A menu shouldn't just show dishes.\nIt should help sell them.",
-      sub: "ChefVision helps guests understand the offer, choose the right dishes and come back to the restaurant — without installing an app.",
+      sub: "For restaurants, hotels and guesthouses. Guests scan a QR code, understand the offer and find property information — without installing an app.",
       ctaPrimary: "Try free for 14 days",
       ctaSecondary: "See how it works",
       trust: ["14 languages", "No commission", "No app to install"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "One QR code. The whole hotel on the guest’s phone.",
+      sub: "Restaurant menu, room service, spa, breakfast and hotel information — for hotels, guesthouses and agritourism.",
+      items: ["Restaurant menu", "Room service", "Spa", "Breakfast", "Hotel information", "Bar"],
+      note: "The guest scans one code in the room and has everything at hand. No app to install.",
     },
     bar: {
       headline: "Scan. Choose. Order.",
@@ -284,12 +305,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Über uns",
     },
     hero: {
-      badge: "Digitaler Gästeassistent für Restaurants und Hotels",
+      badge: "Digitaler Gästeassistent für Restaurants, Hotels und Pensionen",
       headline: "Eine Speisekarte sollte Gerichte nicht nur zeigen.\nSie sollte helfen, sie zu verkaufen.",
-      sub: "ChefVision hilft Gästen, das Angebot zu verstehen, die richtigen Gerichte zu wählen und ins Restaurant zurückzukehren — ohne App.",
+      sub: "Für Restaurants, Hotels und Pensionen. Der Gast scannt einen QR-Code, versteht das Angebot und findet Informationen zum Haus — ohne App.",
       ctaPrimary: "14 Tage kostenlos testen",
       ctaSecondary: "So funktioniert’s",
       trust: ["14 Sprachen", "Ohne Provision", "Ohne App-Installation"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "Ein QR-Code. Das ganze Hotel auf dem Telefon des Gastes.",
+      sub: "Restaurantmenü, Room Service, Spa, Frühstück und Hotelinformationen — für Hotels, Pensionen und Agritourismus.",
+      items: ["Restaurantmenü", "Room Service", "Spa", "Frühstück", "Hotelinformationen", "Bar"],
+      note: "Der Gast scannt einen Code im Zimmer und hat alles griffbereit. Ohne App.",
     },
     bar: {
       headline: "Scannen. Wählen. Bestellen.",
@@ -395,12 +423,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Sobre nosotros",
     },
     hero: {
-      badge: "Asistente digital del huésped para restaurantes y hoteles",
+      badge: "Asistente digital del huésped para restaurantes, hoteles y casas rurales",
       headline: "El menú no debería solo mostrar platos.\nDebería ayudar a venderlos.",
-      sub: "ChefVision ayuda a los huéspedes a entender la oferta, elegir los platos adecuados y volver al restaurante — sin instalar una app.",
+      sub: "Para restaurantes, hoteles y casas rurales. El huésped escanea un código QR, entiende la oferta y encuentra la información del alojamiento — sin instalar una app.",
       ctaPrimary: "Pruébalo gratis 14 días",
       ctaSecondary: "Mira cómo funciona",
       trust: ["14 idiomas", "Sin comisión", "Sin instalar app"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "Un código QR. Todo el hotel en el teléfono del huésped.",
+      sub: "Carta del restaurante, room service, spa, desayuno e información del hotel — para hoteles, casas rurales y agroturismo.",
+      items: ["Carta del restaurante", "Room service", "Spa", "Desayuno", "Información del hotel", "Bar"],
+      note: "El huésped escanea un código en la habitación y lo tiene todo a mano. Sin instalar una app.",
     },
     bar: {
       headline: "Escaneas. Eliges. Pides.",
@@ -506,12 +541,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Σχετικά με εμάς",
     },
     hero: {
-      badge: "Ψηφιακός βοηθός επισκέπτη για εστιατόρια και ξενοδοχεία",
+      badge: "Ψηφιακός βοηθός επισκέπτη για εστιατόρια, ξενοδοχεία και ξενώνες",
       headline: "Το μενού δεν πρέπει μόνο να δείχνει πιάτα.\nΠρέπει να βοηθά να τα πουλήσετε.",
-      sub: "Το ChefVision βοηθά τους επισκέπτες να καταλάβουν την προσφορά, να επιλέξουν τα σωστά πιάτα και να επιστρέψουν στο εστιατόριο — χωρίς εγκατάσταση εφαρμογής.",
+      sub: "Για εστιατόρια, ξενοδοχεία και ξενώνες. Ο επισκέπτης σκανάρει έναν κωδικό QR, καταλαβαίνει την προσφορά και βρίσκει πληροφορίες για το κατάλυμα — χωρίς εφαρμογή.",
       ctaPrimary: "Δοκιμάστε δωρεάν για 14 ημέρες",
       ctaSecondary: "Δείτε πώς λειτουργεί",
       trust: ["14 γλώσσες", "Χωρίς προμήθεια", "Χωρίς εγκατάσταση εφαρμογής"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "Ένας κωδικός QR. Όλο το ξενοδοχείο στο τηλέφωνο του επισκέπτη.",
+      sub: "Μενού εστιατορίου, room service, spa, πρωινό και πληροφορίες ξενοδοχείου — για ξενοδοχεία, ξενώνες και αγροτουρισμό.",
+      items: ["Μενού εστιατορίου", "Room service", "Spa", "Πρωινό", "Πληροφορίες ξενοδοχείου", "Bar"],
+      note: "Ο επισκέπτης σκανάρει έναν κωδικό στο δωμάτιο και τα έχει όλα πρόχειρα. Χωρίς εφαρμογή.",
     },
     bar: {
       headline: "Σκανάρεις. Επιλέγεις. Παραγγέλνεις.",
@@ -617,12 +659,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Chi siamo",
     },
     hero: {
-      badge: "Assistente digitale dell'ospite per ristoranti e hotel",
+      badge: "Assistente digitale dell'ospite per ristoranti, hotel e pensioni",
       headline: "Il menu non dovrebbe solo mostrare i piatti.\nDovrebbe aiutare a venderli.",
-      sub: "ChefVision aiuta gli ospiti a capire l'offerta, scegliere i piatti giusti e tornare al ristorante — senza installare un'app.",
+      sub: "Per ristoranti, hotel e pensioni. L'ospite scansiona un codice QR, capisce l'offerta e trova le informazioni sulla struttura — senza installare un'app.",
       ctaPrimary: "Provalo gratis per 14 giorni",
       ctaSecondary: "Guarda come funziona",
       trust: ["14 lingue", "Senza commissioni", "Senza installare app"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "Un codice QR. Tutto l'hotel sul telefono dell'ospite.",
+      sub: "Menu del ristorante, room service, spa, colazione e informazioni sull'hotel — per hotel, pensioni e agriturismi.",
+      items: ["Menu del ristorante", "Room service", "Spa", "Colazione", "Informazioni sull'hotel", "Bar"],
+      note: "L'ospite scansiona un codice in camera e ha tutto a portata di mano. Senza installare un'app.",
     },
     bar: {
       headline: "Scansioni. Scegli. Ordini.",
@@ -728,12 +777,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "Hakkımızda",
     },
     hero: {
-      badge: "Restoranlar ve oteller için dijital misafir asistanı",
+      badge: "Restoranlar, oteller ve pansiyonlar için dijital misafir asistanı",
       headline: "Menü yemekleri sadece göstermemeli.\nOnları satmaya yardım etmeli.",
-      sub: "ChefVision misafirlerin teklifi anlamasına, doğru yemekleri seçmesine ve restorana geri dönmesine yardımcı olur — uygulama indirmeden.",
+      sub: "Restoranlar, oteller ve pansiyonlar için. Misafir QR kodunu tarar, teklifi anlar ve tesis bilgilerini bulur — uygulama indirmeden.",
       ctaPrimary: "14 gün ücretsiz deneyin",
       ctaSecondary: "Nasıl çalıştığını görün",
       trust: ["14 dil", "Komisyonsuz", "Uygulama indirmeden"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "Tek QR kod. Tüm otel misafirin telefonunda.",
+      sub: "Restoran menüsü, oda servisi, spa, kahvaltı ve otel bilgileri — oteller, pansiyonlar ve agroturizm için.",
+      items: ["Restoran menüsü", "Oda servisi", "Spa", "Kahvaltı", "Otel bilgileri", "Bar"],
+      note: "Misafir odadaki kodu tarar ve her şey elinin altındadır. Uygulama indirmeden.",
     },
     bar: {
       headline: "Tara. Seç. Sipariş ver.",
@@ -839,12 +895,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "О нас",
     },
     hero: {
-      badge: "Цифровой ассистент гостя для ресторанов и отелей",
+      badge: "Цифровой ассистент гостя для ресторанов, отелей и пансионатов",
       headline: "Меню не должно только показывать блюда.\nОно должно помогать их продавать.",
-      sub: "ChefVision помогает гостям понять предложение, выбрать подходящие блюда и вернуться в ресторан — без установки приложения.",
+      sub: "Для ресторанов, отелей и пансионатов. Гость сканирует QR-код, понимает предложение и находит информацию об объекте — без установки приложения.",
       ctaPrimary: "Попробуйте бесплатно 14 дней",
       ctaSecondary: "Смотрите, как это работает",
       trust: ["14 языков", "Без комиссии", "Без установки приложения"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "Один QR-код. Весь отель в телефоне гостя.",
+      sub: "Меню ресторана, рум-сервис, спа, завтрак и информация об отеле — для отелей, пансионатов и агротуризма.",
+      items: ["Меню ресторана", "Рум-сервис", "Спа", "Завтрак", "Информация об отеле", "Бар"],
+      note: "Гость сканирует один код в номере и всё под рукой. Без установки приложения.",
     },
     bar: {
       headline: "Сканируешь. Выбираешь. Заказываешь.",
@@ -950,12 +1013,19 @@ export const homeContent: Record<Locale, HomeCopy> = {
       about: "O nama",
     },
     hero: {
-      badge: "Digitalni asistent gosta za restorane i hotele",
+      badge: "Digitalni asistent gosta za restorane, hotele i pansione",
       headline: "Jelovnik ne bi trebao samo pokazivati jela.\nTrebao bi pomagati da se prodaju.",
-      sub: "ChefVision pomaže gostima razumjeti ponudu, odabrati prava jela i vratiti se u restoran — bez instaliranja aplikacije.",
+      sub: "Za restorane, hotele i pansione. Gost skenira QR kod, razumije ponudu i pronalazi informacije o objektu — bez instaliranja aplikacije.",
       ctaPrimary: "Isprobajte besplatno 14 dana",
       ctaSecondary: "Pogledajte kako funkcionira",
       trust: ["14 jezika", "Bez provizije", "Bez instaliranja aplikacije"],
+    },
+    hub: {
+      badge: "Hotel Hub",
+      headline: "Jedan QR kod. Cijeli hotel na telefonu gosta.",
+      sub: "Meni restorana, room service, spa, doručak i informacije o hotelu — za hotele, pansione i agroturizam.",
+      items: ["Meni restorana", "Room service", "Spa", "Doručak", "Informacije o hotelu", "Bar"],
+      note: "Gost skenira jedan kod u sobi i sve ima pri ruci. Bez instaliranja aplikacije.",
     },
     bar: {
       headline: "Skeniraš. Biraš. Naručuješ.",
