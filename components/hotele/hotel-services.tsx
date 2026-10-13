@@ -51,25 +51,19 @@ export function HotelServices() {
                 variants={fadeUp}
                 className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition-colors hover:border-primary/25 sm:p-8"
               >
-                <span
-                  className={
-                    service.badgeTone === "dark"
-                      ? "inline-flex w-fit rounded-full bg-foreground px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-background"
-                      : "inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary"
-                  }
-                >
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
                   {service.badge}
-                </span>
+                </p>
 
-                <div className="mt-5">
-                  <p className="text-sm text-muted-foreground line-through">
-                    {service.price} {service.currency}
+                <div className="mt-4">
+                  <p className="flex flex-wrap items-baseline gap-x-1.5">
+                    <span className="text-4xl font-extrabold tracking-tight text-foreground">
+                      {service.price} {service.currency}
+                    </span>
+                    <span className="text-base font-medium text-foreground">{service.billingLabel}</span>
                   </p>
-                  <p className="text-4xl font-bold tracking-tight text-foreground">
-                    {service.freeLabel}
-                  </p>
-                  <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-                    {service.offerNote}
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {service.freeNote}
                   </p>
                 </div>
 
@@ -92,11 +86,7 @@ export function HotelServices() {
                 </ul>
 
                 <Button
-                  className={
-                    service.badgeTone === "dark"
-                      ? "mt-8 h-11 w-full bg-foreground font-semibold text-background hover:bg-foreground/90"
-                      : "mt-8 h-11 w-full font-semibold"
-                  }
+                  className="mt-8 h-12 w-full rounded-2xl bg-[#3dcf8e] text-base font-bold text-[#102117] hover:bg-[#34c484]"
                   asChild
                 >
                   <a
