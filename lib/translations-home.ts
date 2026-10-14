@@ -124,7 +124,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Zaproś go ponownie",
-          desc: "Użyj gotowych szablonów i wyślij promocję, nowe danie lub wydarzenie — tylko do członków klubu.",
+          desc: "Zachęć gości do dołączenia do klubu jednorazowym rabatem powitalnym. Zbieraj kontakty za ich zgodą i buduj bazę odbiorców przyszłych ofert.",
         },
         {
           title: "Kelner realizuje kod",
@@ -235,7 +235,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invite them back",
-          desc: "Send a promotion for a quieter day, a new dish or an event — only to club members.",
+          desc: "Encourage guests to join the club with a one-time welcome discount. Collect contacts with their consent and build an audience for future offers.",
         },
         {
           title: "The waiter redeems the code",
@@ -346,7 +346,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Laden Sie erneut ein",
-          desc: "Senden Sie eine Aktion für einen schwächeren Tag, ein neues Gericht oder ein Event — nur an Clubmitglieder.",
+          desc: "Ermutigen Sie Gäste, dem Club mit einem einmaligen Willkommensrabatt beizutreten. Sammeln Sie Kontakte mit ihrer Einwilligung und bauen Sie ein Publikum für künftige Angebote auf.",
         },
         {
           title: "Der Kellner löst den Code ein",
@@ -457,7 +457,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invítalo de nuevo",
-          desc: "Envía una promoción para un día más flojo, un plato nuevo o un evento, solo a miembros del club.",
+          desc: "Anima a los huéspedes a unirse al club con un descuento de bienvenida de un solo uso. Recoge contactos con su consentimiento y crea una audiencia para futuras ofertas.",
         },
         {
           title: "El camarero canjea el código",
@@ -568,7 +568,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Καλέστε τον ξανά",
-          desc: "Στείλτε προσφορά για πιο ήσυχη μέρα, νέο πιάτο ή εκδήλωση — μόνο στα μέλη του club.",
+          desc: "Ενθαρρύνετε τους επισκέπτες να γίνουν μέλη του club με μια εφάπαξ έκπτωση καλωσορίσματος. Συλλέξτε επαφές με τη συγκατάθεσή τους και χτίστε κοινό για μελλοντικές προσφορές.",
         },
         {
           title: "Ο σερβιτόρος εξαργυρώνει τον κωδικό",
@@ -679,7 +679,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invitalo di nuovo",
-          desc: "Invia una promozione per un giorno più debole, un nuovo piatto o un evento — solo ai membri del club.",
+          desc: "Incoraggia gli ospiti a unirsi al club con uno sconto di benvenuto una tantum. Raccogli i contatti con il loro consenso e costruisci un pubblico per le offerte future.",
         },
         {
           title: "Il cameriere riscatta il codice",
@@ -790,7 +790,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Tekrar davet edin",
-          desc: "Sakin gün, yeni yemek veya etkinlik kampanyasını yalnızca kulüp üyelerine gönderin.",
+          desc: "Misafirleri tek seferlik bir hoş geldin indirimiyle kulübe katılmaya teşvik edin. İzinleriyle iletişim bilgilerini toplayın ve gelecekteki teklifler için bir kitle oluşturun.",
         },
         {
           title: "Garson kodu kullanır",
@@ -901,7 +901,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Пригласите снова",
-          desc: "Отправьте акцию на слабый день, новое блюдо или событие — только членам клуба.",
+          desc: "Поощряйте гостей вступать в клуб с помощью разовой приветственной скидки. Собирайте контакты с их согласия и формируйте аудиторию для будущих предложений.",
         },
         {
           title: "Официант погашает код",
@@ -1012,7 +1012,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Pozovite ga ponovno",
-          desc: "Pošaljite promociju za slabiji dan, novo jelo ili događaj — samo članovima kluba.",
+          desc: "Potaknite goste da se pridruže klubu jednokratnim popustom dobrodošlice. Prikupljajte kontakte uz njihov pristanak i gradite publiku za buduće ponude.",
         },
         {
           title: "Konobar realizira kod",

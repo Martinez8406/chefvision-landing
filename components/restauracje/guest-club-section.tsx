@@ -1,6 +1,7 @@
 "use client"
 
 import { type ReactNode } from "react"
+import Link from "next/link"
 import { motion, useReducedMotion } from "framer-motion"
 import {
   ArrowDown,
@@ -124,6 +125,14 @@ export function GuestClubSection() {
                   <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
                     {step.desc}
                   </p>
+                  {index === 2 ? (
+                    <Link
+                      href="/pozyskiwanie-gosci"
+                      className="mt-2 text-sm font-medium text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary"
+                    >
+                      Pozyskiwanie gości
+                    </Link>
+                  ) : null}
 
                   {!isLast ? (
                     <>
