@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Check } from "lucide-react"
+import { ArrowRight, Check } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import {
   extractFaq,
   faqPageJsonLd,
@@ -36,6 +37,30 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
 
 const FAQ_HEADING = "Najczęstsze pytania"
 const CLOSING_HEADING = "Zobacz, jak to wygląda u gościa"
+const HOW_GUEST_HEADING = "Jak to działa dla gościa"
+const EXAMPLE_SLUGS = new Set(["/qr-menu", "/menu-online"])
+const HAMPTON_EXAMPLE_URL = "https://app.chefvision.pl/menu/e1137650-eb5e-4323-9a90-83e2db4f048c"
+
+function GuestExample() {
+  return (
+    <div className="mt-10 rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+      <h3 className="text-lg font-semibold text-foreground sm:text-xl">Zobacz, jak to wygląda u gościa</h3>
+      <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+        Tak wygląda asystent gościa w Hampton by Hilton Wrocław — otwórz na telefonie, tak jak zobaczy go gość po zeskanowaniu kodu.
+      </p>
+      <Button
+        size="lg"
+        className="mt-5 h-auto min-h-12 w-full whitespace-normal px-6 py-3 text-center text-sm font-semibold shadow-md shadow-black/10 sm:w-auto sm:px-8"
+        asChild
+      >
+        <a href={HAMPTON_EXAMPLE_URL} target="_blank" rel="noopener">
+          Otwórz przykład: Hampton Wrocław
+          <ArrowRight size={16} />
+        </a>
+      </Button>
+    </div>
+  )
+}
 
 function RichText({
   content,
@@ -302,12 +327,14 @@ export function SeoLanding({ doc }: { doc: SeoDocument }) {
         }
 
         const band = index % 2 === 0 ? "border-y border-border/60 bg-background" : "bg-secondary/30"
+        const showExample = section.heading === HOW_GUEST_HEADING && EXAMPLE_SLUGS.has(doc.meta.slug)
 
         return (
           <section key={section.heading} className={`py-16 lg:py-24 ${band}`}>
             <div className="mx-auto max-w-3xl px-6">
               <h2 className="text-3xl font-bold text-balance text-foreground sm:text-4xl">{section.heading}</h2>
               <SectionBlocks blocks={section.blocks} />
+              {showExample ? <GuestExample /> : null}
             </div>
           </section>
         )
