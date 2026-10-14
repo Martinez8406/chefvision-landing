@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { BenefitsNavDesktop, BenefitsNavMobile } from "@/components/benefits-nav"
 import { homeContent } from "@/lib/translations-home"
 
 export function Navbar() {
@@ -39,7 +40,7 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5" aria-label="ChefVision — strona główna">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="ChefVision — strona główna">
           <span
             className="brand-logo-mark h-9 w-9 shrink-0 rounded-lg"
             aria-hidden
@@ -49,19 +50,26 @@ export function Navbar() {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((item) => (
+        <nav className="hidden min-w-0 items-center gap-x-4 xl:gap-x-6 lg:flex" aria-label="Główne">
+          <Link
+            href={navLinks[0].href}
+            className="shrink-0 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            {navLinks[0].label}
+          </Link>
+          <BenefitsNavDesktop label={nav.whatYouGet} />
+          {navLinks.slice(1).map((item) => (
             <Link
-              key={item.label}
+              key={item.href}
               href={item.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="shrink-0 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <LanguageSwitcher />
           <Button size="sm" className="bg-primary text-primary-foreground hover:brightness-[0.93] font-medium px-5" asChild>
             <a href="https://app.chefvision.pl" target="_blank" rel="noopener noreferrer">
@@ -70,11 +78,12 @@ export function Navbar() {
           </Button>
         </div>
 
-        <div className="md:hidden flex items-center gap-2">
+        <div className="flex items-center gap-2 lg:hidden">
           <LanguageSwitcher compact />
           <button
-            className="text-foreground p-1"
+            className="rounded-md p-1 text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-expanded={menuOpen}
             aria-label="Toggle menu"
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -83,12 +92,20 @@ export function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-6 py-4 flex flex-col gap-4">
-          {navLinks.map((item) => (
+        <div className="flex max-h-[calc(100dvh-4rem)] flex-col gap-4 overflow-y-auto border-b border-border bg-background/95 px-6 py-4 backdrop-blur-md lg:hidden">
+          <Link
+            href={navLinks[0].href}
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            onClick={() => setMenuOpen(false)}
+          >
+            {navLinks[0].label}
+          </Link>
+          <BenefitsNavMobile label={nav.whatYouGet} onNavigate={() => setMenuOpen(false)} />
+          {navLinks.slice(1).map((item) => (
             <Link
-              key={item.label}
+              key={item.href}
               href={item.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               onClick={() => setMenuOpen(false)}
             >
               {item.label}
