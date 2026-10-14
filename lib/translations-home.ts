@@ -124,7 +124,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Zaproś go ponownie",
-          desc: "Pobierz listę maili jako CSV i wyślij promocję swoim narzędziem. Rabat z klubu gość dostaje jednorazowym kodem.",
+          desc: "Zachęć gości do dołączenia do klubu jednorazowym rabatem powitalnym. Zbieraj kontakty za ich zgodą i buduj bazę odbiorców przyszłych ofert.",
         },
         {
           title: "Kelner realizuje kod",
@@ -235,7 +235,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invite them back",
-          desc: "Download the email list as a CSV and send the promotion with your own tool. The club discount is a one-time code.",
+          desc: "Encourage guests to join the club with a one-time welcome discount. Collect contacts with their consent and build an audience for future offers.",
         },
         {
           title: "The waiter redeems the code",
@@ -346,7 +346,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Laden Sie erneut ein",
-          desc: "Laden Sie die E-Mail-Liste als CSV herunter und senden Sie die Aktion mit Ihrem eigenen Tool. Der Club-Rabatt ist ein einmaliger Code.",
+          desc: "Ermutigen Sie Gäste, dem Club mit einem einmaligen Willkommensrabatt beizutreten. Sammeln Sie Kontakte mit ihrer Einwilligung und bauen Sie ein Publikum für künftige Angebote auf.",
         },
         {
           title: "Der Kellner löst den Code ein",
@@ -457,7 +457,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invítalo de nuevo",
-          desc: "Descarga la lista de correos en CSV y envía la promoción con tu propia herramienta. El descuento del club es un código de un solo uso.",
+          desc: "Anima a los huéspedes a unirse al club con un descuento de bienvenida de un solo uso. Recoge contactos con su consentimiento y crea una audiencia para futuras ofertas.",
         },
         {
           title: "El camarero canjea el código",
@@ -568,7 +568,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Καλέστε τον ξανά",
-          desc: "Κατεβάστε τη λίστα email σε CSV και στείλτε την προσφορά με το δικό σας εργαλείο. Η έκπτωση του club είναι κωδικός μίας χρήσης.",
+          desc: "Ενθαρρύνετε τους επισκέπτες να γίνουν μέλη του club με μια εφάπαξ έκπτωση καλωσορίσματος. Συλλέξτε επαφές με τη συγκατάθεσή τους και χτίστε κοινό για μελλοντικές προσφορές.",
         },
         {
           title: "Ο σερβιτόρος εξαργυρώνει τον κωδικό",
@@ -679,7 +679,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invitalo di nuovo",
-          desc: "Scarica l’elenco email in CSV e invia la promozione con il tuo strumento. Lo sconto del club è un codice monouso.",
+          desc: "Incoraggia gli ospiti a unirsi al club con uno sconto di benvenuto una tantum. Raccogli i contatti con il loro consenso e costruisci un pubblico per le offerte future.",
         },
         {
           title: "Il cameriere riscatta il codice",
@@ -790,7 +790,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Tekrar davet edin",
-          desc: "E-posta listesini CSV olarak indirin ve kampanyayı kendi aracınızla gönderin. Kulüp indirimi tek kullanımlık koddur.",
+          desc: "Misafirleri tek seferlik bir hoş geldin indirimiyle kulübe katılmaya teşvik edin. İzinleriyle iletişim bilgilerini toplayın ve gelecekteki teklifler için bir kitle oluşturun.",
         },
         {
           title: "Garson kodu kullanır",
@@ -901,7 +901,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Пригласите снова",
-          desc: "Скачайте список адресов в CSV и отправьте акцию своим инструментом. Скидка клуба — одноразовый код.",
+          desc: "Поощряйте гостей вступать в клуб с помощью разовой приветственной скидки. Собирайте контакты с их согласия и формируйте аудиторию для будущих предложений.",
         },
         {
           title: "Официант погашает код",
@@ -1012,7 +1012,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Pozovite ga ponovno",
-          desc: "Preuzmite popis e-mailova kao CSV i pošaljite promociju svojim alatom. Popust kluba je jednokratni kod.",
+          desc: "Potaknite goste da se pridruže klubu jednokratnim popustom dobrodošlice. Prikupljajte kontakte uz njihov pristanak i gradite publiku za buduće ponude.",
         },
         {
           title: "Konobar realizira kod",
