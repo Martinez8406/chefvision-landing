@@ -49,6 +49,14 @@ export function GuestClubHome() {
                 </p>
                 <h3 className="text-lg font-semibold text-foreground">{step.title}</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">{step.desc}</p>
+                {index === 2 ? (
+                  <Link
+                    href="/pozyskiwanie-gosci"
+                    className="text-sm font-medium text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary"
+                  >
+                    Pozyskiwanie gości
+                  </Link>
+                ) : null}
               </li>
             )
           })}

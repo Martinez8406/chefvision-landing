@@ -28,6 +28,10 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
     src: "/images/telefon.png",
     alt: "Telefon gościa z kartą dań przy stoliku",
   },
+  "/pozyskiwanie-gosci": {
+    src: "/images/story/scene-4-happy-ending.png",
+    alt: "Gość przy stoliku po posiłku",
+  },
 }
 
 const FAQ_HEADING = "Najczęstsze pytania"

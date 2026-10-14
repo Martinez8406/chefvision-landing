@@ -116,6 +116,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: toAbsoluteUrl("/pozyskiwanie-gosci"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
   ]
 
   const products = await fetchActiveProductRowsFromDatabase()

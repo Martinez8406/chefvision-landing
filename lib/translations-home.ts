@@ -124,7 +124,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Zaproś go ponownie",
-          desc: "Użyj gotowych szablonów i wyślij promocję, nowe danie lub wydarzenie — tylko do członków klubu.",
+          desc: "Pobierz listę maili jako CSV i wyślij promocję swoim narzędziem. Rabat z klubu gość dostaje jednorazowym kodem.",
         },
         {
           title: "Kelner realizuje kod",
@@ -235,7 +235,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invite them back",
-          desc: "Send a promotion for a quieter day, a new dish or an event — only to club members.",
+          desc: "Download the email list as a CSV and send the promotion with your own tool. The club discount is a one-time code.",
         },
         {
           title: "The waiter redeems the code",
@@ -346,7 +346,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Laden Sie erneut ein",
-          desc: "Senden Sie eine Aktion für einen schwächeren Tag, ein neues Gericht oder ein Event — nur an Clubmitglieder.",
+          desc: "Laden Sie die E-Mail-Liste als CSV herunter und senden Sie die Aktion mit Ihrem eigenen Tool. Der Club-Rabatt ist ein einmaliger Code.",
         },
         {
           title: "Der Kellner löst den Code ein",
@@ -457,7 +457,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invítalo de nuevo",
-          desc: "Envía una promoción para un día más flojo, un plato nuevo o un evento, solo a miembros del club.",
+          desc: "Descarga la lista de correos en CSV y envía la promoción con tu propia herramienta. El descuento del club es un código de un solo uso.",
         },
         {
           title: "El camarero canjea el código",
@@ -568,7 +568,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Καλέστε τον ξανά",
-          desc: "Στείλτε προσφορά για πιο ήσυχη μέρα, νέο πιάτο ή εκδήλωση — μόνο στα μέλη του club.",
+          desc: "Κατεβάστε τη λίστα email σε CSV και στείλτε την προσφορά με το δικό σας εργαλείο. Η έκπτωση του club είναι κωδικός μίας χρήσης.",
         },
         {
           title: "Ο σερβιτόρος εξαργυρώνει τον κωδικό",
@@ -679,7 +679,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Invitalo di nuovo",
-          desc: "Invia una promozione per un giorno più debole, un nuovo piatto o un evento — solo ai membri del club.",
+          desc: "Scarica l’elenco email in CSV e invia la promozione con il tuo strumento. Lo sconto del club è un codice monouso.",
         },
         {
           title: "Il cameriere riscatta il codice",
@@ -790,7 +790,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Tekrar davet edin",
-          desc: "Sakin gün, yeni yemek veya etkinlik kampanyasını yalnızca kulüp üyelerine gönderin.",
+          desc: "E-posta listesini CSV olarak indirin ve kampanyayı kendi aracınızla gönderin. Kulüp indirimi tek kullanımlık koddur.",
         },
         {
           title: "Garson kodu kullanır",
@@ -901,7 +901,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Пригласите снова",
-          desc: "Отправьте акцию на слабый день, новое блюдо или событие — только членам клуба.",
+          desc: "Скачайте список адресов в CSV и отправьте акцию своим инструментом. Скидка клуба — одноразовый код.",
         },
         {
           title: "Официант погашает код",
@@ -1012,7 +1012,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
         },
         {
           title: "Pozovite ga ponovno",
-          desc: "Pošaljite promociju za slabiji dan, novo jelo ili događaj — samo članovima kluba.",
+          desc: "Preuzmite popis e-mailova kao CSV i pošaljite promociju svojim alatom. Popust kluba je jednokratni kod.",
         },
         {
           title: "Konobar realizira kod",

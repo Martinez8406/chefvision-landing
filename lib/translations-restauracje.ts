@@ -177,7 +177,7 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
         },
         {
           title: "Zaproś go ponownie",
-          desc: "Użyj gotowych szablonów i wyślij promocję, nowe danie lub wydarzenie — tylko do członków klubu.",
+          desc: "Pobierz listę maili jako CSV i wyślij promocję swoim narzędziem. Rabat z klubu gość dostaje jednorazowym kodem.",
         },
         {
           title: "Kelner realizuje kod",
@@ -340,7 +340,7 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
         },
         {
           title: "Invite them back",
-          desc: "Later send a promotion for a quieter day, a new dish or a special event — for club members only.",
+          desc: "Download the email list as a CSV and send the promotion with your own tool. The club discount is a one-time code.",
         },
         {
           title: "Staff redeems the code",
@@ -503,7 +503,7 @@ export const restauracjeContent: Record<"pl" | "en" | "hr", RestauracjeCopy> = {
         },
         {
           title: "Pozovite ga ponovno",
-          desc: "Kasnije pošaljite promociju za slabiji dan, novo jelo ili poseban događaj — samo za članove kluba.",
+          desc: "Preuzmite popis e-mailova kao CSV i pošaljite promociju svojim alatom. Popust kluba je jednokratni kod.",
         },
         {
           title: "Konobar realizira kod",

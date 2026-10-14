@@ -24,6 +24,7 @@ export function Footer() {
     { label: "Menu online", href: "/menu-online" },
     { label: "Tłumaczenie menu", href: "/tlumaczenie-menu" },
     { label: "Asystent kelnera", href: "/asystent-kelnera" },
+    { label: "Pozyskiwanie gości", href: "/pozyskiwanie-gosci" },
   ]
 
   return (
