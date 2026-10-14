@@ -3,6 +3,7 @@ import type { Locale } from "./translations"
 export type HomeCopy = {
   nav: {
     how: string
+    whatYouGet: string
     forWhom: string
     pricing: string
     faq: string
@@ -55,6 +56,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   pl: {
     nav: {
       how: "Jak to działa?",
+      whatYouGet: "Co zyskujesz",
       forWhom: "Dla kogo?",
       pricing: "Cennik",
       faq: "FAQ",
@@ -166,6 +168,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   en: {
     nav: {
       how: "How it works?",
+      whatYouGet: "What you get",
       forWhom: "Who is it for?",
       pricing: "Pricing",
       faq: "FAQ",
@@ -277,6 +280,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   de: {
     nav: {
       how: "Wie funktioniert es?",
+      whatYouGet: "Was Sie bekommen",
       forWhom: "Für wen?",
       pricing: "Preise",
       faq: "FAQ",
@@ -388,6 +392,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   es: {
     nav: {
       how: "¿Cómo funciona?",
+      whatYouGet: "Qué obtienes",
       forWhom: "¿Para quién?",
       pricing: "Precios",
       faq: "FAQ",
@@ -499,6 +504,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   el: {
     nav: {
       how: "Πώς λειτουργεί;",
+      whatYouGet: "Τι παίρνετε",
       forWhom: "Για ποιον είναι;",
       pricing: "Τιμές",
       faq: "Συχνές ερωτήσεις",
@@ -610,6 +616,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   it: {
     nav: {
       how: "Come funziona?",
+      whatYouGet: "Cosa ottieni",
       forWhom: "Per chi è?",
       pricing: "Prezzi",
       faq: "FAQ",
@@ -721,6 +728,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   tr: {
     nav: {
       how: "Nasıl çalışır?",
+      whatYouGet: "Ne elde edersiniz",
       forWhom: "Kimler için?",
       pricing: "Fiyatlar",
       faq: "SSS",
@@ -832,6 +840,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   ru: {
     nav: {
       how: "Как это работает?",
+      whatYouGet: "Что вы получаете",
       forWhom: "Для кого?",
       pricing: "Цены",
       faq: "FAQ",
@@ -943,6 +952,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
   hr: {
     nav: {
       how: "Kako funkcionira?",
+      whatYouGet: "Što dobivate",
       forWhom: "Za koga?",
       pricing: "Cjenik",
       faq: "FAQ",
