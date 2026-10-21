@@ -114,7 +114,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "Nowość · Klub Gości Premium",
       headline: "Zamień jednorazowego gościa w klienta, który wraca.",
-      sub: "Dostępny w planach Start i Premium. Gość dołącza do klubu, zostawia kontakt — Ty budujesz własną bazę i zapraszasz go ponownie.",
+      sub: "Dostępny w planie Premium. Gość dołącza do klubu, zostawia kontakt — Ty budujesz własną bazę i zapraszasz go ponownie.",
       steps: [
         {
           title: "Jasna propozycja",
@@ -226,7 +226,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "New · Premium Guest Club",
       headline: "Turn a one-time guest into a customer who comes back.",
-      sub: "Included in Start and Premium. The guest joins the club and leaves a contact — you build your own list and invite them again.",
+      sub: "Included in the Premium plan. The guest joins the club and leaves a contact — you build your own list and invite them again.",
       steps: [
         {
           title: "A clear offer from the first QR",
@@ -338,7 +338,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "Neu · Premium Guest Club",
       headline: "Machen Sie aus einem einmaligen Gast einen Stammgast.",
-      sub: "Enthalten in Start und Premium. Der Gast tritt dem Club bei und hinterlässt Kontakt — Sie bauen Ihre eigene Liste auf und laden erneut ein.",
+      sub: "Enthalten im Premium-Plan. Der Gast tritt dem Club bei und hinterlässt Kontakt — Sie bauen Ihre eigene Liste auf und laden erneut ein.",
       steps: [
         {
           title: "Klares Angebot ab dem ersten QR",
@@ -450,7 +450,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "Nuevo · Club de Huéspedes Premium",
       headline: "Convierte a un cliente ocasional en alguien que vuelve.",
-      sub: "Incluido en Start y Premium. El huésped se une al club y deja su contacto: tú construyes tu propia base y lo vuelves a invitar.",
+      sub: "Incluido en el plan Premium. El huésped se une al club y deja su contacto: tú construyes tu propia base y lo vuelves a invitar.",
       steps: [
         {
           title: "Oferta clara desde el primer QR",
@@ -562,7 +562,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "Νέο · Premium Guest Club",
       headline: "Μετατρέψτε έναν επισκέπτη μιας φοράς σε πελάτη που επιστρέφει.",
-      sub: "Στα πακέτα Start και Premium. Ο επισκέπτης μπαίνει στο club και αφήνει επαφή — εσείς χτίζετε δική σας βάση και τον καλείτε ξανά.",
+      sub: "Στο πακέτο Premium. Ο επισκέπτης μπαίνει στο club και αφήνει επαφή — εσείς χτίζετε δική σας βάση και τον καλείτε ξανά.",
       steps: [
         {
           title: "Σαφής πρόταση από το πρώτο QR",
@@ -674,7 +674,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "Novità · Premium Guest Club",
       headline: "Trasforma un ospite occasionale in un cliente che torna.",
-      sub: "Incluso in Start e Premium. L'ospite entra nel club e lascia un contatto — tu costruisci la tua lista e lo inviti di nuovo.",
+      sub: "Incluso nel piano Premium. L'ospite entra nel club e lascia un contatto — tu costruisci la tua lista e lo inviti di nuovo.",
       steps: [
         {
           title: "Offerta chiara dal primo QR",
@@ -786,7 +786,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "Yeni · Premium Guest Club",
       headline: "Tek seferlik misafiri geri gelen müşteriye dönüştürün.",
-      sub: "Start ve Premium planlarda. Misafir kulübe katılır ve iletişim bırakır — siz kendi listenizi oluşturur ve tekrar davet edersiniz.",
+      sub: "Premium planda. Misafir kulübe katılır ve iletişim bırakır — siz kendi listenizi oluşturur ve tekrar davet edersiniz.",
       steps: [
         {
           title: "İlk QR’dan net teklif",
@@ -898,7 +898,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "Новинка · Premium Guest Club",
       headline: "Превратите разового гостя в клиента, который возвращается.",
-      sub: "В планах Start и Premium. Гость вступает в клуб и оставляет контакт — вы строите свою базу и приглашаете снова.",
+      sub: "В плане Premium. Гость вступает в клуб и оставляет контакт — вы строите свою базу и приглашаете снова.",
       steps: [
         {
           title: "Понятное предложение с первого QR",
@@ -1010,7 +1010,7 @@ export const homeContent: Record<Locale, HomeCopy> = {
     guestClub: {
       badge: "Novo · Premium Guest Club",
       headline: "Pretvorite jednokratnog gosta u klijenta koji se vraća.",
-      sub: "U planovima Start i Premium. Gost se pridruži klubu i ostavi kontakt — vi gradite vlastitu bazu i pozovete ga ponovno.",
+      sub: "U planu Premium. Gost se pridruži klubu i ostavi kontakt — vi gradite vlastitu bazu i pozovete ga ponovno.",
       steps: [
         {
           title: "Jasna ponuda od prvog QR-a",
